@@ -1,0 +1,89 @@
+↓Complex [steps.XMLComplexStep-1579627043544]: 
+  nodeName: datasets
+  ↓Attribute [steps.XMLAttributeStep-1579627049609]: 
+    nodeName: type
+    nodeText: array
+  ↓Complex [steps.XMLComplexStep-1579627202106]: 
+    nodeName: dataset
+    ↓Attribute [steps.XMLAttributeStep-1579627225897]: 
+      nodeName: type
+      nodeText: object
+    ↓Element [steps.XMLElementStep-1579627151048]: 
+      nodeName: label
+      nodeText: My first data set
+    ↓Complex [steps.XMLComplexStep-1579627358213]: 
+      nodeName: data
+      ↓Attribute [steps.XMLAttributeStep-1579627374469]: 
+        nodeName: type
+        nodeText: array
+      ↓Call_Sequence [steps.SequenceStep-1579627401537]: 
+        sourceSequence: MobileBuilderComponents.generateRandomNumbers
+        ↓min [variables.StepVariable-1579627401539]: 
+          value: 2
+        ↓max [variables.StepVariable-1579627401541]: 
+          value: 90
+        ↓qty [variables.StepVariable-1579627401543]: 
+          value: 7
+      ↓Iterator [steps.IteratorStep-1579627464892]: 
+        sourceDefinition: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1579627401537
+              - java.lang.String: 
+                - ↑value: ./document/number
+        ↓Element [steps.XMLElementStep-1579627485998]: 
+          sourceDefinition: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1579627464892
+                - java.lang.String: 
+                  - ↑value: ./text()
+          ↓Attribute [steps.XMLAttributeStep-1579627507820]: 
+            nodeName: type
+            nodeText: integer
+  ↓Complex1 [steps.XMLComplexStep-1579627244503]: 
+    nodeName: dataset
+    ↓Attribute [steps.XMLAttributeStep-1579627244506]: 
+      nodeName: type
+      nodeText: object
+    ↓Element [steps.XMLElementStep-1579627244509]: 
+      nodeName: label
+      nodeText: My second data set
+    ↓Complex [steps.XMLComplexStep-1579627529693]: 
+      nodeName: data
+      ↓Attribute [steps.XMLAttributeStep-1579627529696]: 
+        nodeName: type
+        nodeText: array
+      ↓Call_Sequence [steps.SequenceStep-1579627529699]: 
+        sourceSequence: MobileBuilderComponents.generateRandomNumbers
+        ↓min [variables.StepVariable-1579627529702]: 
+          value: 5
+        ↓max [variables.StepVariable-1579627529705]: 
+          value: 90
+        ↓qty [variables.StepVariable-1579627529708]: 
+          value: 7
+      ↓Iterator [steps.IteratorStep-1579627529711]: 
+        sourceDefinition: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: 1579627529699
+              - java.lang.String: 
+                - ↑value: ./document/number
+        ↓Element [steps.XMLElementStep-1579627529714]: 
+          sourceDefinition: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1579627529711
+                - java.lang.String: 
+                  - ↑value: ./text()
+          ↓Attribute [steps.XMLAttributeStep-1579627529717]: 
+            nodeName: type
+            nodeText: integer

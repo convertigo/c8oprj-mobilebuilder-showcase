@@ -1,0 +1,92 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	public JSON: any;
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		this.JSON = JSON;
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        '
+segment: path-to-page_texttospeech
+title: Text To Speech
+↓Header [mobile.components.UIDynamicElement-1578662578718]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1578662578721]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1578662578724]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1578662578727]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Text To Speech
+    ↓Button [mobile.components.UIDynamicElement-1579171063406]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579171063409]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1578662578730]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓Div [mobile.components.UIDynamicElement-1578662578733]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Button [mobile.components.UIDynamicElement-1578662578736]: 
+      beanData: '{"ionBean":"Button","IconPosition":"plain:icon-end"}'
+      tagName: button
+      ↓Text [mobile.components.UIText-1578662892006]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Speak "Convertigo"
+      ↓Icon [mobile.components.UIDynamicElement-1578662578739]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:volume-up"}'
+        tagName: ion-icon
+      ↓Event [mobile.components.UIControlEvent-1578662578742]: 
+        ↓SetGlobal [mobile.components.UIDynamicAction-1578662578745]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:TTspeech",
+             "Value": "script:undefined"
+            }'
+          ↓TextToSpeech [mobile.components.UIDynamicAction-1578662666095]: 
+            beanData: '{"ionBean":"TextToSpeechAction","text":"plain:Convertigo!"}'
+            ↓SetGlobal [mobile.components.UIDynamicAction-1578662578751]: 
+              beanData: |
+                '{
+                 "ionBean": "SetGlobalAction",
+                 "Property": "plain:TTspeech",
+                 "Value": "script:out"
+                }'
+  ↓Div2 [mobile.components.UIDynamicElement-1578662578754]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Directive [mobile.components.UIControlDirective-1578662762130]: 
+      directiveName: If
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.TTspeech !== undefined
+      ↓Text [mobile.components.UIText-1578662578757]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:''success: ''+this.global.TTspeech'

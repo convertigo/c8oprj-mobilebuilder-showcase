@@ -1,0 +1,155 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	dequotes(d) {
+        	    //this.c8o.log.debug(''d: '' + d);
+        	    if(d === undefined)
+        	        return null;
+        	    return d;
+        	}
+        	/*End_c8o_PageFunction*/
+        '
+segment: path-to-page_charts
+title: Charts
+↓Header [mobile.components.UIDynamicElement-1579620096861]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579620096864]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579620096867]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579620096870]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Charts
+    ↓Button [mobile.components.UIDynamicElement-1579620096873]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579620096876]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579620096879]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1579622940248]: 
+    beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1579622945300]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579622950688]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓SlidesContainer [mobile.components.UIDynamicElement-1579690441251]: 
+          beanData: '{"ionBean":"Slides"}'
+          tagName: ion-slides
+          ↓SlideItem [mobile.components.UIDynamicElement-1579690462060]: 
+            beanData: '{"ionBean":"Slide"}'
+            tagName: ion-slide
+            ↓Directive [mobile.components.UIControlDirective-1579686867303]: 
+              directiveName: If
+              directiveSource: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generateChart#CHART'])?.datasets"}
+              ↓Chart [mobile.components.UIDynamicElement-1579622966088]: 
+                beanData: |
+                  '{
+                   "ionBean": "Charts",
+                   "datasets": "source:{\"filter\":\"Sequence\",\"project\":\"MobileBuilderComponents\",\"input\":\"listen([''MobileBuilderComponents.generateChart#CHART''])?.datasets\"}",
+                   "Height": "plain:100%"
+                  }'
+                tagName: canvas
+          ↓SlideItem1 [mobile.components.UIDynamicElement-1579691458264]: 
+            beanData: '{"ionBean":"Slide"}'
+            tagName: ion-slide
+            ↓Directive [mobile.components.UIControlDirective-1579691458267]: 
+              directiveName: If
+              directiveSource: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generateChart#CHART'])?.datasets"}
+              ↓Chart [mobile.components.UIDynamicElement-1579691458270]: 
+                beanData: |
+                  '{
+                   "ionBean": "Charts",
+                   "datasets": "source:{\"filter\":\"Sequence\",\"project\":\"MobileBuilderComponents\",\"input\":\"listen([''MobileBuilderComponents.generateChart#CHART''])?.datasets\"}",
+                   "Height": "plain:100%",
+                   "ChartType": "plain:line"
+                  }'
+                tagName: canvas
+↓Footer [mobile.components.UIDynamicElement-1579620096882]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1579620096885]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579620096888]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579620096891]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579620096894]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 1
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579620096897]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579620096900]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579620096903]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2
+↓PageEvent [mobile.components.UIPageEvent-1579632133454]: 
+  ↓CallSequence_generateChart [mobile.components.UIDynamicAction-1579632156804]: 
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:MobileBuilderComponents.generateChart",
+       "marker": "plain:CHART"
+      }'
+↓Style [mobile.components.UIStyle-1579691311971]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'ion-slide .slide-zoom {
+          	height: 100%;
+          }
+          
+          ion-slides {
+          	height: 95%;
+          }
+          
+          canvas {
+          	padding-bottom: 25px;
+          }'

@@ -1,0 +1,175 @@
+componentScriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_AppImport*/
+        /*End_c8o_AppImport*/
+        /*Begin_c8o_AppDeclaration*/
+        	/*End_c8o_AppDeclaration*/
+        /*Begin_c8o_AppConstructor*/
+        		/*End_c8o_AppConstructor*/
+        /*Begin_c8o_AppInitialization*/
+                        /* Uncomment the following lines to enable the i18n feature.
+                         * You should add a json per language in the assets/i18n folder. */
+                        translate.setDefaultLang('en');
+                        translate.use(translate.getBrowserLang());
+                        
+                        /* Uncomment the following lines to enable the custom status bar color. */
+                        // statusBar.overlaysWebView(false);
+                        // statusBar.backgroundColorByHexString("#000000");
+                        // statusBar.styleBlackOpaque();
+        			/*End_c8o_AppInitialization*/
+        /*Begin_c8o_AppFunction*/
+        	/*End_c8o_AppFunction*/
+        
+tplProjectName: mobilebuilder_tpl_7_7_0
+↓Menu [mobile.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
+↓RightMenu [mobile.components.UIDynamicMenu-1579279159205]: 🗏 mobileMenus/RightMenu.yaml
+↓getPeople [mobile.components.UIActionStack-1579513546604]: 🗏 mobileSharedActions/getPeople.yaml
+↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
+↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
+↓Page_Animation [mobile.components.PageComponent-1579103295466]: 🗏 mobilePages/Page_Animation.yaml
+↓Page_Attribute [mobile.components.PageComponent-1576144418242]: 🗏 mobilePages/Page_Attribute.yaml
+↓Page_Barcode [mobile.components.PageComponent-1578661180634]: 🗏 mobilePages/Page_Barcode.yaml
+↓Page_Camera [mobile.components.PageComponent-1578655148107]: 🗏 mobilePages/Page_Camera.yaml
+↓Page_Charts [mobile.components.PageComponent-1579620096330]: 🗏 mobilePages/Page_Charts.yaml
+↓Page_FileChooser [mobile.components.PageComponent-1578661956046]: 🗏 mobilePages/Page_FileChooser.yaml
+↓Page_Finally [mobile.components.PageComponent-1577959939689]: 🗏 mobilePages/Page_Finally.yaml
+↓Page_Fingerprint [mobile.components.PageComponent-1579603139459]: 🗏 mobilePages/Page_Fingerprint.yaml
+↓Page_Fragment [mobile.components.PageComponent-1579166567728]: 🗏 mobilePages/Page_Fragment.yaml
+↓Page_IconInput [mobile.components.PageComponent-1576148711969]: 🗏 mobilePages/Page_IconInput.yaml
+↓Page_Lists [mobile.components.PageComponent-1579283173880]: 🗏 mobilePages/Page_Lists.yaml
+↓Page_modal [mobile.components.PageComponent-1576057381386]: 🗏 mobilePages/Page_modal.yaml
+↓Page_modal1 [mobile.components.PageComponent-1576058487795]: 🗏 mobilePages/Page_modal1.yaml
+↓Page_Pause [mobile.components.PageComponent-1575036271785]: 🗏 mobilePages/Page_Pause.yaml
+↓Page_Signature [mobile.components.PageComponent-1574951079411]: 🗏 mobilePages/Page_Signature.yaml
+↓Page_SpeechToText [mobile.components.PageComponent-1578662209808]: 🗏 mobilePages/Page_SpeechToText.yaml
+↓Page_Style [mobile.components.PageComponent-1579191468247]: 🗏 mobilePages/Page_Style.yaml
+↓Page_Tabs [mobile.components.PageComponent-1579531139518]: 🗏 mobilePages/Page_Tabs.yaml
+↓Page_Tabs_Contacts [mobile.components.PageComponent-1579531610323]: 🗏 mobilePages/Page_Tabs_Contacts.yaml
+↓Page_Tabs_Map [mobile.components.PageComponent-1579539014048]: 🗏 mobilePages/Page_Tabs_Map.yaml
+↓Page_Tabs_Chat [mobile.components.PageComponent-1579539073197]: 🗏 mobilePages/Page_Tabs_Chat.yaml
+↓Page_Tag [mobile.components.PageComponent-1579257993469]: 🗏 mobilePages/Page_Tag.yaml
+↓Page_Text [mobile.components.PageComponent-1579258848753]: 🗏 mobilePages/Page_Text.yaml
+↓Page_TextToSpeech [mobile.components.PageComponent-1578662578479]: 🗏 mobilePages/Page_TextToSpeech.yaml
+↓Page_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Tooltip.yaml
+↓Theme [mobile.components.UITheme-1491635018260]: 
+  comment: Global color themes can be customized here
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '// Ionic Variables and Theming. For more info, please see:
+          // http://ionicframework.com/docs/v2/theming/ 
+          $font-path: "../assets/fonts";
+          
+          @import "ionic.globals";
+          
+          
+          // Shared Variables
+          // --------------------------------------------------
+          // To customize the look and feel of this app, you can override
+          // the Sass variables found in Ionic''s source scss files.
+          // To view all the possible Ionic variables, see:
+          // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+          
+          
+          
+          
+          // Named Color Variables
+          // --------------------------------------------------
+          // Named colors makes it easy to reuse colors on various components.
+          // It''s highly recommended to change the default colors
+          // to match your app''s branding. Ionic uses a Sass map of
+          // colors so you can add, rename and remove colors as needed.
+          // The "primary" color is the only required color in the map.
+          
+          $colors: (
+                  primary:    #387ef5,
+                  secondary:  #32db64,
+                  danger:     #f53d3d,
+                  light:      #f4f4f4,
+                  dark:       #222
+          );
+          
+          
+          // App iOS Variables
+          // --------------------------------------------------
+          // iOS only Sass variables can go here
+          
+          
+          
+          
+          // App Material Design Variables
+          // --------------------------------------------------
+          // Material Design only Sass variables can go here
+          
+          
+          
+          
+          // App Windows Variables
+          // --------------------------------------------------
+          // Windows only Sass variables can go here
+          
+          
+          
+          
+          // App Theme
+          // --------------------------------------------------
+          // Ionic apps can have different themes applied, which can
+          // then be future customized. This import comes last
+          // so that the above variables are used and Ionic''s
+          // default are overridden.
+          
+          @import "ionic.theme.default";
+          
+          
+          // Ionicons
+          // --------------------------------------------------
+          // The premium icon font for Ionic. For more info, please see:
+          // http://ionicframework.com/docs/v2/ionicons/
+          
+          @import "ionic.ionicons";
+          
+          
+          // Fonts
+          // --------------------------------------------------
+          
+          @import "roboto";
+          @import "noto-sans";'
+↓Style [mobile.components.UIStyle-1491635462437]: 
+  comment: You can add some global application styles here
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.content {
+          	/* add some styling CSS rules here for the body of your app
+          	   for example,
+          	 		background-color: your color; 
+          	 		background-image: url(some background image);
+          	*/
+          }
+          
+          .toolbar-background {
+          	/* add some styling CSS rules here for the Headers and Footers
+          	   for example,
+          	 		background-color: your color; 
+          	*/
+          }
+          
+          xion-grid {
+          	border: 1px solid red;
+          }
+          
+          xion-row {
+          	border: 1px solid blue;
+          }
+          
+          xion-col {
+          	border: 1px solid green;
+          }
+          '

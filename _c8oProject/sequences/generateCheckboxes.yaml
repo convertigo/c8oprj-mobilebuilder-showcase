@@ -1,0 +1,29 @@
+↓Sequence_JS [steps.SimpleStep-1576083378737]: 
+  expression: |
+    'var min=1;
+    var max = 10;
+    var nb = Math.floor(Math.random() * (max - min +1)) + min;
+    log.warning("nb:" + nb);
+    var checks= [];
+    
+    for(var i = 0; i < nb; i++) {
+    	checks.push((Math.floor(Math.random() * 101)) % 2 == 0);
+    }'
+↓Complex [steps.XMLComplexStep-1576084615988]: 
+  nodeName: items
+  ↓Attribute [steps.XMLAttributeStep-1576088217310]: 
+    nodeName: type
+    nodeText: array
+  ↓jWhile [steps.WhileStep-1576084409758]: 
+    condition: nb-->0
+    ↓Complex [steps.XMLComplexStep-1576084517137]: 
+      nodeName: item
+      ↓Attribute [steps.XMLAttributeStep-1576088231208]: 
+        nodeName: type
+        nodeText: object
+      ↓jElement [steps.ElementStep-1576084435175]: 
+        expression: '''Choices'' + (nb+1)'
+        nodeName: label
+      ↓jElement1 [steps.ElementStep-1576084560030]: 
+        expression: checks[nb]
+        nodeName: value

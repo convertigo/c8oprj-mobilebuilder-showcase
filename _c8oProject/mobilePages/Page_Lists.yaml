@@ -1,0 +1,220 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	public groupedPeople = [];
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_lists
+title: Lists
+↓Header [mobile.components.UIDynamicElement-1579283174178]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579283174181]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579283174184]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579283174187]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Lists
+    ↓Button [mobile.components.UIDynamicElement-1579283174190]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579283174193]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579283174196]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓ListContainer [mobile.components.UIDynamicElement-1579530626198]: 
+    beanData: '{"ionBean":"List"}'
+    tagName: ion-list
+    ↓Directive [mobile.components.UIControlDirective-1579513980954]: 
+      directiveIndexName: index
+      directiveItemName: group
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.groupedPeople
+      ↓GroupItem [mobile.components.UIDynamicElement-1579527441957]: 
+        beanData: '{"ionBean":"Listgroup"}'
+        tagName: ion-item-group
+        ↓DividerItem [mobile.components.UIDynamicElement-1579527587441]: 
+          beanData: '{"ionBean":"Listdivider","IonColor":"plain:light"}'
+          tagName: ion-item-divider
+          ↓Text [mobile.components.UIText-1579527600414]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:group.letter
+        ↓Directive [mobile.components.UIControlDirective-1579527535287]: 
+          directiveItemName: contact
+          directiveSource: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:group.contacts
+          ↓SlidingItem [mobile.components.UIDynamicElement-1579530376542]: 
+            beanData: '{"ionBean":"Sliding"}'
+            tagName: ion-item-sliding
+            ↓ListItem [mobile.components.UIDynamicElement-1579527687596]: 
+              beanData: '{"ionBean":"ListItem"}'
+              tagName: ion-item
+              ↓AvatarItem [mobile.components.UIDynamicElement-1579528110197]: 
+                beanData: '{"ionBean":"Avatar"}'
+                tagName: ion-avatar
+                ↓Image [mobile.components.UIDynamicElement-1579528147411]: 
+                  beanData: '{"ionBean":"Image","url":"script:''assets\/avatar\/icons8-user-male.png''"}'
+                  selfClose: true
+                  tagName: img
+              ↓H2 [mobile.components.UIDynamicElement-1579528194709]: 
+                beanData: '{"ionBean":"Heading2"}'
+                tagName: h2
+                ↓Text [mobile.components.UIText-1579527818288]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: script:contact.lastname
+                ↓Text1 [mobile.components.UIText-1579527859834]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: script:contact.firstname
+              ↓Paragraph [mobile.components.UIDynamicElement-1579528228633]: 
+                beanData: '{"ionBean":"Paragraph"}'
+                tagName: p
+                ↓Text1 [mobile.components.UIText-1579528236868]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: script:contact.email
+            ↓SlidingOption [mobile.components.UIDynamicElement-1579530410663]: 
+              beanData: '{"ionBean":"SlidingOption","side":"plain:right"}'
+              tagName: ion-item-options
+              ↓Button [mobile.components.UIDynamicElement-1579530421168]: 
+                beanData: '{"ionBean":"Button","IonColor":"plain:secondary"}'
+                tagName: button
+                ↓Icon [mobile.components.UIDynamicElement-1579530429591]: 
+                  beanData: '{"ionBean":"Icon","IconName":"plain:call"}'
+                  tagName: ion-icon
+                ↓Text [mobile.components.UIText-1579530665524]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:call
+              ↓Button1 [mobile.components.UIDynamicElement-1579530678395]: 
+                beanData: '{"ionBean":"Button","IonColor":"plain:primary"}'
+                tagName: button
+                ↓Icon [mobile.components.UIDynamicElement-1579530678398]: 
+                  beanData: '{"ionBean":"Icon","IconName":"plain:text"}'
+                  tagName: ion-icon
+                ↓Text [mobile.components.UIText-1579530678401]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:sms
+            ↓SlidingOption1 [mobile.components.UIDynamicElement-1579530725755]: 
+              beanData: '{"ionBean":"SlidingOption","side":"plain:left"}'
+              tagName: ion-item-options
+              ↓Button [mobile.components.UIDynamicElement-1579530725758]: 
+                beanData: '{"ionBean":"Button","IonColor":"plain:danger"}'
+                tagName: button
+                ↓Icon [mobile.components.UIDynamicElement-1579530725761]: 
+                  beanData: '{"ionBean":"Icon","IconName":"plain:trash"}'
+                  tagName: ion-icon
+                ↓Text [mobile.components.UIText-1579530725764]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:delete
+↓Footer [mobile.components.UIDynamicElement-1579283174199]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1579283174202]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579283174205]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579283174208]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579283174211]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 1
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579283174214]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579283174217]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579283174220]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2
+↓PageEvent [mobile.components.UIPageEvent-1579513796412]: 
+  ↓getpeople [mobile.components.UIDynamicInvoke-1579513807408]: 
+    beanData: '{"ionBean":"InvokeAction"}'
+    stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+    ↓peopleNbr [mobile.components.UIControlVariable-1579513818508]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'25'
+    ↓groupPeople [mobile.components.UICustomAction-1579514488923]: 
+      actionValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+              		//page.c8o.log.debug(''ppl: ''+ vars.ppl.People.sort());
+              		let ppl = vars.ppl.People;
+              		let curLetter = false;
+              		let curPeople = [];
+              		
+              		ppl.forEach((value, index) => {
+              		    let lname = value.lastname;
+              		    if(lname.charAt(0) != curLetter){
+              		        curLetter = lname.charAt(0);
+              		        let newGroup = {
+              		                letter: curLetter,
+              		                contacts: []
+              		        }
+              		        curPeople = newGroup.contacts;
+              		        this.groupedPeople.push(newGroup);
+              		    }
+              		    curPeople.push(value);
+              		});
+              		
+              		resolve();
+              '
+      ↓ppl [mobile.components.UIControlVariable-1579514520443]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:stack['getpeople'].out

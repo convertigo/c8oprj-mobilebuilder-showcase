@@ -1,0 +1,205 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_style
+title: Style
+↓Header [mobile.components.UIDynamicElement-1579191468606]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579191468610]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579191468613]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579191468616]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Style
+    ↓Button [mobile.components.UIDynamicElement-1579191468619]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579191468622]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579191468634]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓ContentStyle [mobile.components.UIStyle-1579194889667]: 
+  ↓Grid [mobile.components.UIDynamicElement-1579195478866]: 
+    beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1579195506976]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579195514552]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+      ↓GridCol1 [mobile.components.UIDynamicElement-1579195516471]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+    ↓GridRow1 [mobile.components.UIDynamicElement-1579195509072]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579195518959]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+      ↓GridCol1 [mobile.components.UIDynamicElement-1579195521023]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Style [mobile.components.UIStyle-1579252827556]: 
+          styleContent: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '	border: 4px dashed #cecece;
+                  	-moz-box-shadow: 10px 10px 5px 0px #656565;
+                  	-webkit-box-shadow: 10px 10px 5px 0px #656565;
+                  	-o-box-shadow: 10px 10px 5px 0px #656565;
+                  	box-shadow: 10px 10px 5px 0px #656565;
+                  	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+                  '
+        ↓Div [mobile.components.UIDynamicElement-1579253237400]: 
+          beanData: '{"ionBean":"DivTag"}'
+          tagName: div
+          ↓Text [mobile.components.UIText-1579253243232]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:some styled text in a div
+          ↓Style [mobile.components.UIStyle-1579253258829]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	-webkit-transform: rotateX(-43deg) rotateY(4deg) rotateZ(25deg) translateX(35px) translateY(3px) translateZ(44px) skewX(-36deg) skewY(-7deg);
+                    	-moz-transform: rotateX(-43deg) rotateY(4deg) rotateZ(25deg) translateX(35px) translateY(3px) translateZ(44px) skewX(-36deg) skewY(-7deg);
+                    	-ms-transform: rotateX(-43deg) rotateY(4deg) rotateZ(25deg) translateX(35px) translateY(3px) translateZ(44px) skewX(-36deg) skewY(-7deg);
+                    	-o-transform: rotateX(-43deg) rotateY(4deg) rotateZ(25deg) translateX(35px) translateY(3px) translateZ(44px) skewX(-36deg) skewY(-7deg);
+                    	transform: rotateX(-43deg) rotateY(4deg) rotateZ(25deg) translateX(35px) translateY(3px) translateZ(44px) skewX(-36deg) skewY(-7deg);
+                        position: relative;
+                    '
+          ↓Attr [mobile.components.UIAttribute-1579256919880]: 
+            attrName: class
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:TrTxt
+      ↓Style [mobile.components.UIStyle-1579252592846]: 
+        styleContent: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '	border: 2px solid #000;
+                	margin: 15px 45px !important;
+                	padding: 15px 45px !important;
+                '
+    ↓GridRow2 [mobile.components.UIDynamicElement-1579195511903]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579195523351]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+      ↓GridCol1 [mobile.components.UIDynamicElement-1579195525278]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+↓Footer [mobile.components.UIDynamicElement-1579191468637]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1579191468640]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579191468643]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579191468646]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579191468649]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 1
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579191468652]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579191468655]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579191468658]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2
+↓PageStyle [mobile.components.UIStyle-1579194851563]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'ion-grid {
+          	border: 1px solid red;
+          }
+          
+          ion-row {
+          	border: 1px solid green;
+          	margin: 8px !important;
+          }
+          
+          ion-col {
+          	border: 1px solid blue;
+          	margin: 8px !important;
+          }
+          
+          .TrTxt { 
+                font-size: 2vw; 
+             }
+          
+          @media only screen and (min-width: 720px) {
+          
+             .TrTxt { 
+                font-size: 3vw; 
+             }
+          
+          }
+          
+          @media only screen and (min-width: 1024px) {
+          
+             .TrTxt { 
+                font-size: 3.5vw; 
+             }
+          
+          }
+          
+          @media only screen and (min-width: 1900px) {
+          
+             .TrTxt { 
+                font-size: 3.8vw; 
+             }
+          
+          }'

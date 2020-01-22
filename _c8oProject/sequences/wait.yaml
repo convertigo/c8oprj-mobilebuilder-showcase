@@ -1,0 +1,8 @@
+↓Sleep [steps.SimpleStep-1577960064333]: 
+  expression: java.lang.Thread.sleep(time);
+↓jElement [steps.ElementStep-1577961417003]: 
+  expression: time
+  nodeName: waited
+↓time [variables.RequestableVariable-1577960031997]: 
+  comment: time to wait in ms
+  value: 2000

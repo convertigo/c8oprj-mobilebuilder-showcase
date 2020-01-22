@@ -1,0 +1,217 @@
+segment: path-to-page_attribute
+title: Attributes
+↓Header [mobile.components.UIDynamicElement-1576144503189]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1576144503192]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1576144503195]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1576144503198]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Attribute
+    ↓Button [mobile.components.UIDynamicElement-1579171166590]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579171166593]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1576144503201]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓Div [mobile.components.UIDynamicElement-1576145138268]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Event [mobile.components.UIControlEvent-1576146231671]: 
+      ↓SetGlobal [mobile.components.UIDynamicAction-1576146247200]: 
+        beanData: |
+          '{
+           "ionBean": "SetGlobalAction",
+           "Property": "plain:isRed",
+           "Value": "script:(this.global.isRed === undefined) ? true : !this.global.isRed"
+          }'
+    ↓Attr1 [mobile.components.UIAttribute-1576146586989]: 
+      attrName: '[class.redAlert]'
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.isRed
+    ↓Attr2 [mobile.components.UIAttribute-1576146692287]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:initDiv
+    ↓Span [mobile.components.UIDynamicElement-1579179103669]: 
+      beanData: '{"ionBean":"SpanTag"}'
+      tagName: span
+      ↓Text [mobile.components.UIText-1579179109950]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Div (click)
+  ↓Div1 [mobile.components.UIDynamicElement-1579178846111]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Attr [mobile.components.UIAttribute-1579178846114]: 
+      attrName: '[ngClass]'
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: 'script:this.global.isRed1 ? ''redAlert'' : null'
+    ↓Event [mobile.components.UIControlEvent-1579178846117]: 
+      ↓SetGlobal [mobile.components.UIDynamicAction-1579178846120]: 
+        beanData: |
+          '{
+           "ionBean": "SetGlobalAction",
+           "Property": "plain:isRed1",
+           "Value": "script:(this.global.isRed1 === undefined) ? true : !this.global.isRed1"
+          }'
+    ↓Attr2 [mobile.components.UIAttribute-1579178846126]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:initDiv
+    ↓Span [mobile.components.UIDynamicElement-1579179353233]: 
+      beanData: '{"ionBean":"SpanTag"}'
+      tagName: span
+      ↓Text [mobile.components.UIText-1579179353236]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Div1 (click)
+  ↓Div2 [mobile.components.UIDynamicElement-1579184360501]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Attr2 [mobile.components.UIAttribute-1579184360513]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:initDiv
+    ↓Span [mobile.components.UIDynamicElement-1579184360516]: 
+      beanData: '{"ionBean":"SpanTag"}'
+      tagName: span
+      ↓Text [mobile.components.UIText-1579184360519]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Div2 (no click)
+  ↓Div3 [mobile.components.UIDynamicElement-1579184536312]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Attr2 [mobile.components.UIAttribute-1579184536324]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:initDiv
+    ↓Span [mobile.components.UIDynamicElement-1579184536327]: 
+      beanData: '{"ionBean":"SpanTag"}'
+      tagName: span
+      ↓Text [mobile.components.UIText-1579184536330]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:uppercase text attribute
+      ↓Attr [mobile.components.UIAttribute-1579185198665]: 
+        attrName: 
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:text-uppercase
+  ↓Div4 [mobile.components.UIDynamicElement-1579185353587]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Attr2 [mobile.components.UIAttribute-1579185353590]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:initDiv
+    ↓Span [mobile.components.UIDynamicElement-1579185353593]: 
+      beanData: '{"ionBean":"SpanTag"}'
+      tagName: span
+      ↓Text [mobile.components.UIText-1579185353596]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:capitalize text attribute (click)
+      ↓Attr [mobile.components.UIAttribute-1579185353599]: 
+        attrName: '[attr.text-capitalize]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:this.global.isCap ? '''' : null'
+    ↓Event [mobile.components.UIControlEvent-1579185662590]: 
+      ↓SetGlobal [mobile.components.UIDynamicAction-1579185662593]: 
+        beanData: |
+          '{
+           "ionBean": "SetGlobalAction",
+           "Property": "plain:isCap",
+           "Value": "script:(this.global.isCap === undefined) ? true : !this.global.isCap"
+          }'
+  ↓Div5 [mobile.components.UIDynamicElement-1579185816531]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Attr2 [mobile.components.UIAttribute-1579185816534]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:initDiv
+    ↓Span [mobile.components.UIDynamicElement-1579185816537]: 
+      beanData: '{"ionBean":"SpanTag"}'
+      tagName: span
+      ↓Text [mobile.components.UIText-1579185816540]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'plain:Style=''font-size: 2.1rem; color: #fff'''
+      ↓Attr [mobile.components.UIAttribute-1579185816543]: 
+        attrName: '[style.font-size]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:2.1rem
+      ↓Attr1 [mobile.components.UIAttribute-1579185904518]: 
+        attrName: '[style.color]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:#fff
+↓Style [mobile.components.UIStyle-1579166916426]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'div.initDiv {
+          	width: 100%;
+          	height: auto;
+          	border: 1px solid black;
+          	background-color: color($colors, primary);
+          	margin-top: 15px;
+          	text-align: center;
+          	
+          	span {
+          		font-size: 4rem;
+          		line-height: 150px;
+          		vertical-align: middle;
+          	}
+          }
+          
+          div.redAlert {
+          	background-color: color($colors, danger);
+          }'

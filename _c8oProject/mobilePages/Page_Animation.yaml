@@ -1,0 +1,144 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_animation
+title: Animation
+↓Header [mobile.components.UIDynamicElement-1579103295967]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579103295970]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579103295973]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579103295976]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Animation
+    ↓Button [mobile.components.UIDynamicElement-1579103295979]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579103295982]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579103295994]: 
+  beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1579109611140]: 
+    beanData: |
+      '{
+       "ionBean": "Grid",
+       "Height": "plain:height:100%",
+       "NoPadding": "plain:true"
+      }'
+    tagName: ion-grid
+    ↓GridRow1 [mobile.components.UIDynamicElement-1579109620477]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579109640638]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+        tagName: ion-col
+        ↓TextFormat [mobile.components.UIDynamicElement-1579109829178]: 
+          beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+          tagName: div
+          ↓H1 [mobile.components.UIDynamicElement-1579103622072]: 
+            beanData: '{"ionBean":"Heading1"}'
+            tagName: h1
+            ↓Text [mobile.components.UIText-1579103416294]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:ANIMATED TEXT!
+            ↓Animation [mobile.components.UIAnimation-1579103447388]: 
+              animationName: rubberBand
+    ↓GridRow2 [mobile.components.UIDynamicElement-1579166448862]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579166448867]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+        tagName: ion-col
+        ↓TextFormat [mobile.components.UIDynamicElement-1579166448870]: 
+          beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+          tagName: div
+          ↓H1 [mobile.components.UIDynamicElement-1579166448873]: 
+            beanData: '{"ionBean":"Heading1"}'
+            tagName: h1
+            ↓Text [mobile.components.UIText-1579166448876]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:ANIMATED TEXT!
+            ↓Animation [mobile.components.UIAnimation-1579166448879]: 
+              animationName: rubberBand
+            ↓Animation1 [mobile.components.UIAnimation-1579166448882]: 
+              animationName: delay-2s
+            ↓Animation2 [mobile.components.UIAnimation-1579166448885]: 
+              animationName: slow
+↓Footer [mobile.components.UIDynamicElement-1579103295997]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1579103296000]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579103296003]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579103296006]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579103296009]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Reload
+        ↓Event [mobile.components.UIControlEvent-1579112097814]: 
+          ↓RootPage [mobile.components.UIDynamicAction-1579112103783]: 
+            beanData: |
+              '{
+               "ionBean": "RootPageAction",
+               "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Animation",
+               "animate": "plain:false"
+              }'
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579103296012]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579103296015]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579103296018]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2
+↓Style [mobile.components.UIStyle-1579167116109]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'h1 {
+          	font-size: 5em;
+          }'

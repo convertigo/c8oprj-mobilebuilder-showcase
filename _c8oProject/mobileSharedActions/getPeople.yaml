@@ -1,0 +1,15 @@
+↓CallSequence_generatePeople [mobile.components.UIDynamicAction-1579266960863]: 
+  beanData: |
+    '{
+     "ionBean": "CallSequenceAction",
+     "requestable": "plain:MobileBuilderComponents.generatePeople",
+     "marker": "plain:PEOPLE"
+    }'
+  ↓nbr [mobile.components.UIControlVariable-1579513587299]: 
+    comment: new variable
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:params.peopleNbr
+↓peopleNbr [mobile.components.UIStackVariable-1579513594774]: 
+  value: '''10'''

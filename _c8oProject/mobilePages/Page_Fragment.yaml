@@ -1,0 +1,148 @@
+↑isRoot: true
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	openPageWithName(name) {
+        	    this.routerProvider.setRoot(name, null, {animate: true, duration: 250});
+            }
+        	/*End_c8o_PageFunction*/
+        '
+segment: path-to-page_fragment
+title: Fragment
+↓Header [mobile.components.UIDynamicElement-1579166568433]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579166568436]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579166568439]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579166568442]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Fragment
+    ↓Button [mobile.components.UIDynamicElement-1579166568445]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579166568448]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579166568460]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Fragment [mobile.components.UICustom-1579166859627]: 
+    htmlTemplate: |
+      <ion-list>
+      	<button ion-item (click)="this.openPageWithName('Page_Animation')">
+      		Animation page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Attribute')">
+      		Attribute page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Barcode')">
+      		Barcode page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Camera')">
+      		Camera page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Charts')">
+      		Charts page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_FileChooser')">
+      		File Chooser page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Finally')">
+      		Finally page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Fingerprint')">
+      		Fingerprint page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Fragment')">
+      		Fragment page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_IconInput')">
+      		Icon in Input page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Lists')">
+      		Lists page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_modal')">
+      		Modal page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Pause')">
+      		Pause page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Signature')">
+      		Signature page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_SpeechToText')">
+      		Speech To Text page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Style')">
+      		Style page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Tabs')">
+      		Tabs page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Tag')">
+      		Tag page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Text')">
+      		Text page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_TextToSpeech')">
+      		Text To Speech page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Tooltip')">
+      		Tooltip page
+      	</button>
+      </ion-list>
+↓Footer [mobile.components.UIDynamicElement-1579166568463]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1579166568466]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579166568469]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579166568472]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579166568475]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 1
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579166568478]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579166568481]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579166568484]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2

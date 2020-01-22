@@ -1,0 +1,26 @@
+↑convertigo: 7.7.0.m006
+↓MobileBuilderComponents [core.Project]: 
+  comment: Convertigo Mobile builder Project
+  corsOrigin: =Origin
+  version: 1.0
+  ↓mobilebuildercomponents_fullsync [connectors.FullSyncConnector]: 🗏 connectors/mobilebuildercomponents_fullsync.yaml
+  ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓generateChart [sequences.GenericSequence]: 🗏 sequences/generateChart.yaml
+  ↓generateCheckboxes [sequences.GenericSequence]: 🗏 sequences/generateCheckboxes.yaml
+  ↓generatePeople [sequences.GenericSequence]: 🗏 sequences/generatePeople.yaml
+  ↓generateRandomNumbers [sequences.GenericSequence]: 🗏 sequences/generateRandomNumbers.yaml
+  ↓generateText [sequences.GenericSequence]: 🗏 sequences/generateText.yaml
+  ↓saveSignature [sequences.GenericSequence]: 🗏 sequences/saveSignature.yaml
+  ↓SQ4Finally [sequences.GenericSequence]: 🗏 sequences/SQ4Finally.yaml
+  ↓wait [sequences.GenericSequence]: 🗏 sequences/wait.yaml
+  ↓MobileApplication [core.MobileApplication]: 
+    comment: Describes the mobile application global properties
+    endpoint: http://192.168.100.71:18080/convertigo
+    splashRemoveMode: beforeUpdate
+    ↓Android [mobileplatforms.Android]: 
+      comment: Android platform
+    ↓iOS [mobileplatforms.IOs]: 
+      comment: iOS platform
+    ↓Application [mobile.components.ApplicationComponent]: 🗏 mobileApplication.yaml
+  ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
+    urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd

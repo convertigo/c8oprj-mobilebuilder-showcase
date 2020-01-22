@@ -1,0 +1,129 @@
+segment: path-to-page_camera
+title: Camera
+↓Header [mobile.components.UIDynamicElement-1578655193432]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1578655193435]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1578655193438]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1578655193441]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Camera
+    ↓Button [mobile.components.UIDynamicElement-1579171081063]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579171081066]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1578655193444]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓Div [mobile.components.UIDynamicElement-1578655193447]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓GenericItem [mobile.components.UIDynamicElement-1578665120080]: 
+      beanData: '{"ionBean":"GenericItem"}'
+      tagName: ion-item
+      ↓Label [mobile.components.UIDynamicElement-1578665188962]: 
+        beanData: '{"ionBean":"Label"}'
+        tagName: ion-label
+        ↓Text [mobile.components.UIText-1578665208859]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Choose Camera output data
+      ↓SelectContainer [mobile.components.UIDynamicElement-1578664266044]: 
+        beanData: '{"ionBean":"Select","placeholder":"plain:SELECT CAMERA OUTPUT DATA"}'
+        identifier: destinationType
+        tagName: ion-select
+        ↓SelectOption [mobile.components.UIDynamicElement-1578664272828]: 
+          beanData: |
+            '{
+             "ionBean": "Option",
+             "value": "plain:FILE_URL",
+             "selected": "plain:true"
+            }'
+          tagName: ion-option
+          ↓Text [mobile.components.UIText-1578664363895]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:FILE_URL
+        ↓SelectOption1 [mobile.components.UIDynamicElement-1578664487054]: 
+          beanData: '{"ionBean":"Option","value":"plain:DATA_URL"}'
+          tagName: ion-option
+          ↓Text [mobile.components.UIText-1578664487057]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:DATA_URL
+      ↓Attr [mobile.components.UIAttribute-1578665152449]: 
+        attrName: 
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:no-lines
+    ↓Button [mobile.components.UIDynamicElement-1578655242505]: 
+      beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1578655256233]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:camera"}'
+        tagName: ion-icon
+      ↓Event [mobile.components.UIControlEvent-1578655264594]: 
+        ↓SetGlobal [mobile.components.UIDynamicAction-1578655822638]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:cameraData",
+             "Value": "script:undefined"
+            }'
+          ↓Camera [mobile.components.UIDynamicAction-1578655274121]: 
+            beanData: |
+              '{
+               "ionBean": "CameraAction",
+               "quality": "script:80",
+               "destinationType": "script:this.destinationType.value",
+               "targetWidth": "script:800",
+               "targetHeight": "script:800"
+              }'
+            ↓SetGlobal [mobile.components.UIDynamicAction-1578655794747]: 
+              beanData: |
+                '{
+                 "ionBean": "SetGlobalAction",
+                 "Property": "plain:cameraData",
+                 "Value": "script:out"
+                }'
+            ↓Log [mobile.components.UIDynamicAction-1578666137226]: 
+              beanData: |
+                '{
+                 "ionBean": "LogAction",
+                 "message": "script:''OUTPUT: '' + out",
+                 "level": "plain:debug"
+                }'
+  ↓Div1 [mobile.components.UIDynamicElement-1578655193453]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Image [mobile.components.UIDynamicElement-1578655295474]: 
+      beanData: '{"ionBean":"Image","url":"script:(this.global.cameraData === undefined)?'''':(this.destinationType.value == ''DATA_URL'' && this.global.cameraData.indexOf(''data'') == -1)?''data:image\/jpeg;base64,''+this.global.cameraData:this.global.cameraData"}'
+      selfClose: true
+      tagName: img
+  ↓Div2 [mobile.components.UIDynamicElement-1578656326173]: 
+    beanData: '{"ionBean":"DivTag"}'
+    isEnabled: false
+    tagName: div
+    ↓Text [mobile.components.UIText-1578655990474]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.cameraData

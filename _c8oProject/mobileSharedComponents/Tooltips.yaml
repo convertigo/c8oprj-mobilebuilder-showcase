@@ -1,0 +1,19 @@
+↓GenericItem [mobile.components.UIDynamicElement-1578319896201]: 
+  beanData: '{"ionBean":"GenericItem"}'
+  tagName: ion-item
+  ↓Tooltips [mobile.components.UIDynamicElement-1578319896204]: 
+    beanData: |
+      '{
+       "ionBean": "Tooltips",
+       "event": "script:params1578319869013.event",
+       "duration": "script:params1578319869013.duration"
+      }'
+    tagName: span
+    ↓Text [mobile.components.UIText-1578319896207]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:params1578319869013.text +  ' me!'
+↓event [mobile.components.UICompVariable-1578319933473]: 
+↓text [mobile.components.UICompVariable-1578320018238]: 
+↓duration [mobile.components.UICompVariable-1578320248892]: 

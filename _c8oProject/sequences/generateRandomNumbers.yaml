@@ -1,0 +1,13 @@
+↓jWhile [steps.WhileStep-1579625705480]: 
+  condition: qty-->0
+  ↓random [steps.SimpleStep-1579625726945]: 
+    expression: var nb = Math.floor(Math.random()*(max*1-min*1+1)) + min*1;
+  ↓jElement [steps.ElementStep-1579626169678]: 
+    expression: '''''+nb'
+    nodeName: number
+↓min [variables.RequestableVariable-1579625527923]: 
+  value: 0
+↓max [variables.RequestableVariable-1579625534367]: 
+  value: 10
+↓qty [variables.RequestableVariable-1579625535607]: 
+  value: 5

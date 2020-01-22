@@ -1,0 +1,17 @@
+↓Call_Sequence [steps.SequenceStep-1577960157668]: 
+  sourceSequence: MobileBuilderComponents.wait
+  ↓time [variables.StepVariable-1577960157670]: 
+    comment: time to wait in ms
+    value: 2000
+↓Copy [steps.XMLCopyStep-1577961448345]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1577960157668
+        - java.lang.String: 
+          - ↑value: ./document/waited
+↓time [variables.RequestableVariable-1577960185969]: 
+  comment: time to wait in ms
+  value: 2000

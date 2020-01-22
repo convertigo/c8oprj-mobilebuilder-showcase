@@ -1,0 +1,34 @@
+↓Read_XML [steps.ReadXMLStep-1579266734724]: 
+  dataFile: '".//People_100.xml"'
+↓Iterator [steps.IteratorStep-1579513330837]: 
+  condition: nbr
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1579266734724
+        - java.lang.String: 
+          - ↑value: ./root/People
+  ↓Copy [steps.XMLCopyStep-1579266767079]: 
+    output: false
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1579513330837
+          - java.lang.String: 
+            - ↑value: .
+↓Sort [steps.XMLSortStep-1579526190850]: 
+  sortXPATHDefinition: lastname
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1579266767079
+        - java.lang.String: 
+          - ↑value: ./People
+↓nbr [variables.RequestableVariable-1579513403702]: 
+  value: 10

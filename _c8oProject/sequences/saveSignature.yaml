@@ -1,0 +1,29 @@
+↓Sequence_JS [steps.SimpleStep-1574951297112]: 
+  expression: |
+    'var B64PNG = null;
+    
+    if(sig && sig != "" && sig.indexOf("png;base64") != -1){
+    	B64PNG = sig.split(",")[1];
+    }'
+↓jIf [steps.IfStep-1574951297115]: 
+  condition: B64PNG != null
+  ↓jElement [steps.ElementStep-1574951297118]: 
+    expression: B64PNG
+    nodeName: B64_element
+    output: false
+  ↓Write_binary_from_Base64 [steps.WriteBase64Step-1574951297121]: 
+    dataFile: '".//signatures/signatures.png"'
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1574951297118
+          - java.lang.String: 
+            - ↑value: ./text()
+  ↓IfFileExists [steps.IfFileExistStep-1574951297124]: 
+    condition: '".//signatures/signatures.png"'
+    ↓Element [steps.XMLElementStep-1574951297127]: 
+      nodeName: status
+      nodeText: OK
+↓sig [variables.RequestableVariable-1574951297130]: 

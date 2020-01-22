@@ -1,0 +1,6 @@
+databaseName: mobilebuildercomponents_fullsync
+↓GetServerInfo [transactions.couchdb.GetServerInfoTransaction]: 
+  ↑default: true
+↓PostDocument [transactions.couchdb.PostDocumentTransaction]: 
+  p_json_base: '{"text": "some text from Fullsync connector document"}'
+  policy: override
