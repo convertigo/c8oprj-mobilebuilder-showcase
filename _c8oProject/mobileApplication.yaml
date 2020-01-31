@@ -27,7 +27,10 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Menu [mobile.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
 ↓RightMenu [mobile.components.UIDynamicMenu-1579279159205]: 🗏 mobileMenus/RightMenu.yaml
 ↓getPeople [mobile.components.UIActionStack-1579513546604]: 🗏 mobileSharedActions/getPeople.yaml
+↓KeyPadEntry [mobile.components.UIActionStack-1580307965697]: 🗏 mobileSharedActions/KeyPadEntry.yaml
+↓SetFocused [mobile.components.UIActionStack-1580307965715]: 🗏 mobileSharedActions/SetFocused.yaml
 ↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
+↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
 ↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
 ↓Page_Animation [mobile.components.PageComponent-1579103295466]: 🗏 mobilePages/Page_Animation.yaml
 ↓Page_Attribute [mobile.components.PageComponent-1576144418242]: 🗏 mobilePages/Page_Attribute.yaml
@@ -54,6 +57,9 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Text [mobile.components.PageComponent-1579258848753]: 🗏 mobilePages/Page_Text.yaml
 ↓Page_TextToSpeech [mobile.components.PageComponent-1578662578479]: 🗏 mobilePages/Page_TextToSpeech.yaml
 ↓Page_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Tooltip.yaml
+↓Page_Bars [mobile.components.PageComponent-1579773399612]: 🗏 mobilePages/Page_Bars.yaml
+↓Page_Html [mobile.components.PageComponent-1579875601436]: 🗏 mobilePages/Page_Html.yaml
+↓Page_KeyPad [mobile.components.PageComponent-1580309028081]: 🗏 mobilePages/Page_KeyPad.yaml
 ↓Theme [mobile.components.UITheme-1491635018260]: 
   comment: Global color themes can be customized here
   styleContent: 

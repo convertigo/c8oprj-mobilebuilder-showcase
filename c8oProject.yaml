@@ -7,6 +7,7 @@
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓generateChart [sequences.GenericSequence]: 🗏 sequences/generateChart.yaml
   ↓generateCheckboxes [sequences.GenericSequence]: 🗏 sequences/generateCheckboxes.yaml
+  ↓generateImageUrl [sequences.GenericSequence]: 🗏 sequences/generateImageUrl.yaml
   ↓generatePeople [sequences.GenericSequence]: 🗏 sequences/generatePeople.yaml
   ↓generateRandomNumbers [sequences.GenericSequence]: 🗏 sequences/generateRandomNumbers.yaml
   ↓generateText [sequences.GenericSequence]: 🗏 sequences/generateText.yaml

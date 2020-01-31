@@ -5,7 +5,7 @@
     nodeText: array
   ↓Complex [steps.XMLComplexStep-1579627202106]: 
     nodeName: dataset
-    ↓Attribute [steps.XMLAttributeStep-1579627225897]: 
+    ↓jAttribute [steps.AttributeStep-1579713817694]: 
       nodeName: type
       nodeText: object
     ↓Element [steps.XMLElementStep-1579627151048]: 

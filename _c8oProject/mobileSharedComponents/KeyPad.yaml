@@ -1,0 +1,286 @@
+↓Password [mobile.components.UIDynamicElement-1580405464078]: 
+  beanData: '{"ionBean":"GenericItem"}'
+  tagName: ion-item
+  ↓Label [mobile.components.UIDynamicElement-1580405464084]: 
+    beanData: '{"ionBean":"Label","Floating":"plain:floating"}'
+    tagName: ion-label
+    ↓Text [mobile.components.UIText-1580405464087]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Password:
+  ↓TextInput [mobile.components.UIDynamicElement-1580405464090]: 
+    beanData: |
+      '{
+       "ionBean": "Input",
+       "Readonly": "plain:true",
+       "Type": "script:(this.global.showPwd === true) ? ''text''  : ''password''"
+      }'
+    identifier: password
+    tagName: ion-input
+    ↓Event [mobile.components.UIControlEvent-1580405464093]: 
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1580405464096]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.SetFocused
+        ↓inputField [mobile.components.UIControlVariable-1580405464099]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:password
+  ↓Button [mobile.components.UIDynamicElement-1580405464102]: 
+    beanData: |
+      '{
+       "ionBean": "Button",
+       "IonClear": "plain:clear",
+       "IconOnly": "plain:icon-only"
+      }'
+    tagName: button
+    ↓Icon [mobile.components.UIDynamicElement-1580405464105]: 
+      beanData: '{"ionBean":"Icon","IconName":"script:(this.global.showPwd === true) ? ''eye-off''  : ''eye''"}'
+      tagName: ion-icon
+    ↓Attr [mobile.components.UIAttribute-1580405464108]: 
+      attrName: 
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:item-end
+    ↓Style [mobile.components.UIStyle-1580405464111]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '	font-size: 1.4rem !important;
+              	position: relative !important;
+              	top: 18px !important;
+              	margin: 0 auto !important;
+              '
+    ↓Event [mobile.components.UIControlEvent-1580405464114]: 
+      ↓Log [mobile.components.UIDynamicAction-1580405464117]: 
+        beanData: |
+          '{
+           "ionBean": "LogAction",
+           "message": "script:this.global.showPwd === undefined",
+           "level": "plain:warn"
+          }'
+        ↓SetGlobal [mobile.components.UIDynamicAction-1580405464120]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:showPwd",
+             "Value": "script:(this.global.showPwd === undefined) ? true : !this.global.showPwd"
+            }'
+↓KeypadGrid [mobile.components.UIDynamicElement-1580309019434]: 
+  beanData: '{"ionBean":"Grid"}'
+  tagName: ion-grid
+  ↓Directive [mobile.components.UIControlDirective-1580470728776]: 
+    directiveIndexName: _rowsIndex
+    directiveSource: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:this.local._arows
+    ↓GridRow [mobile.components.UIDynamicElement-1580470748333]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓FirstGridCol [mobile.components.UIDynamicElement-1580492329491]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+      ↓Directive [mobile.components.UIControlDirective-1580471022173]: 
+        directiveIndexName: _colsIndex
+        directiveSource: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.local._acols
+        ↓GridCol [mobile.components.UIDynamicElement-1580470748341]: 
+          beanData: '{"ionBean":"GridCol"}'
+          tagName: ion-col
+          ↓Text [mobile.components.UIText-1580470748344]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.local.keys && this.local.keys[_rowsIndex*this.local._acols.length+_colsIndex]
+          ↓Attr [mobile.components.UIAttribute-1580470748347]: 
+            attrName: '[attr.tappable]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:this.local.keys && (this.local.keys[_rowsIndex*this.local._acols.length+_colsIndex] != this.local._blankChar) ? '''' : null'
+          ↓Event [mobile.components.UIControlEvent-1580470748350]: 
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1580470748353]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.KeyPadEntry
+              ↓keyValue [mobile.components.UIControlVariable-1580470748356]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:this.local.keys && this.local.keys[_rowsIndex*this.local._acols.length+_colsIndex]
+              ↓inputField [mobile.components.UIControlVariable-1580470748359]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:this.local.focusedInput || 'password'
+          ↓Attr1 [mobile.components.UIAttribute-1580491074538]: 
+            attrName: 
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:ripple
+          ↓Attr2 [mobile.components.UIAttribute-1580491127675]: 
+            attrName: 
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:ion-button
+      ↓LastGridCol [mobile.components.UIDynamicElement-1580492334051]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+  ↓Attr [mobile.components.UIAttribute-1580309019785]: 
+    attrName: class
+    attrValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: plain:keypad-grid
+  ↓Event [mobile.components.UIControlEvent-1580468655706]: 
+    attrName: (ionChange)
+    eventName: ionChange
+↓ButtonSet [mobile.components.UIDynamicElement-1580309019788]: 
+  beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+  tagName: ion-buttons
+  ↓Button [mobile.components.UIDynamicElement-1580309019791]: 
+    beanData: |
+      '{
+       "ionBean": "Button",
+       "IonShape": "plain:round",
+       "IonOutline": "plain:outline"
+      }'
+    tagName: button
+    ↓Text [mobile.components.UIText-1580309019794]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Effacer
+    ↓Event [mobile.components.UIControlEvent-1580309019797]: 
+      ↓DeleteInput [mobile.components.UICustomAction-1580309019800]: 
+        actionValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                		page[page.local.focusedInput].value = '''';
+                		resolve();
+                '
+  ↓Button1 [mobile.components.UIDynamicElement-1580309019803]: 
+    beanData: |
+      '{
+       "ionBean": "Button",
+       "IonColor": "plain:sickGreen",
+       "IonShape": "plain:round"
+      }'
+    tagName: button
+    ↓Text [mobile.components.UIText-1580309019806]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Valider
+    ↓Event [mobile.components.UIControlEvent-1580309019809]: 
+      ↓IfElse [mobile.components.UIDynamicIf-1580309019812]: 
+        beanData: '{"ionBean":"IfElseAction","condition":"script:this[this.local.focusedInput].value == ''040475''"}'
+        ↓Toast [mobile.components.UIDynamicAction-1580476163963]: 
+          beanData: '{"ionBean":"ToastAction"}'
+        ↓Else_Handler [mobile.components.UIActionElseEvent-1580309019818]: 
+          ↓Toast [mobile.components.UIDynamicAction-1580309019821]: 
+            beanData: |
+              '{
+               "ionBean": "ToastAction",
+               "message": "plain:Echec d''authentification",
+               "duration": "plain:1500",
+               "position": "plain:top"
+              }'
+↓PageEvent [mobile.components.UIPageEvent-1580309646668]: 
+  ↓keyPad [mobile.components.UICustomAction-1580309646676]: 
+    actionValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '		    page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+            //		    page.c8o.log.debug(''rows:'' + vars.rows);
+            //		    page.c8o.log.debug(''cols:'' + vars.cols);
+            		    
+            		    page.local._arows = new Array(vars.rows*1 > 10 ? 10 : vars.rows*1);
+            		    page.local._acols = new Array(vars.cols*1 > 10 ? 10 : vars.cols*1);
+            		    page.local._blankChar = (vars.blankChar && vars.blankChar != '' '' && vars.blankChar != '''') ? vars.blankChar : ''\xa0'';
+            		    
+            //		    let tmpar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"].concat(new Array(vars.rows*vars.cols-10));
+            		    
+            	        page.local.keys = 
+            	            ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+            	            .concat(new Array(vars.rows*vars.cols-10))
+            	            .fill(page.local._blankChar, 10, vars.rows*vars.cols);
+            	        
+            	        page.local.shuffle = function(o) {for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);return o};
+            	        page.local.keys = page.local.shuffle(page.local.keys);
+            	        delete page.local.shuffle;
+            //	        page.c8o.log.debug(''page.local.keys: '' + page.local.keys);
+            	        
+            	        setTimeout(() => {
+            	            this[vars.setFocus] && this[vars.setFocus].setFocus();
+            	            page.local.focusedInput = vars.setFocus ? vars.setFocus : '''';
+            	        }, 150);
+            	        resolve();
+            '
+    module_ng_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: NgRippleModule
+    module_ts_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: NgRippleModule
+              - java.lang.String: 
+                - ↑value: ng-ripple-module
+    package_dependencies: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: ng-ripple-module
+              - java.lang.String: 
+                - ↑value: 1.0.1
+    ↓setFocus [mobile.components.UIControlVariable-1580309646679]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'password'
+    ↓rows [mobile.components.UIControlVariable-1580465503440]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:4
+    ↓cols [mobile.components.UIControlVariable-1580465754616]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:4
+    ↓blankChar [mobile.components.UIControlVariable-1580484424008]: 
+      comment: |
+        non-breakable space is \xa0
+        Have a try on \u2661
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'\xa0'

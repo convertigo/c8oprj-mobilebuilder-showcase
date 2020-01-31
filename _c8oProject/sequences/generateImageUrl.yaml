@@ -1,0 +1,12 @@
+↓Call_Sequence [steps.SequenceStep-1579880661497]: 
+  sourceSequence: MobileBuilderComponents.wait
+  ↓time [variables.StepVariable-1579880661499]: 
+    comment: time to wait in ms
+    value: 4000
+↓Element [steps.XMLElementStep-1579880687824]: 
+  isEnabled: false
+  nodeName: url
+  nodeText: https://i.picsum.photos/id/1025/300/200.jpg
+↓Element1 [steps.XMLElementStep-1580144334065]: 
+  nodeName: url
+  nodeText: https://picsum.photos/300/200

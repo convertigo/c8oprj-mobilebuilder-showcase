@@ -1,0 +1,359 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_html
+title: HTML
+↓Header [mobile.components.UIDynamicElement-1579875601848]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579875601851]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579875601854]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579875601857]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:My First App
+    ↓Button [mobile.components.UIDynamicElement-1579875601860]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579875601863]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579875601866]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Div [mobile.components.UIDynamicElement-1579875943811]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Text [mobile.components.UIText-1579875883810]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Text
+    ↓Break [mobile.components.UIDynamicElement-1579875911664]: 
+      beanData: '{"ionBean":"Break"}'
+      selfClose: true
+      tagName: br
+    ↓Text1 [mobile.components.UIText-1579875885963]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:break in a Div element
+  ↓Heading [mobile.components.UIDynamicTag-1579876057785]: 
+    beanData: '{"ionBean":"Heading"}'
+    tagName: h1
+    ↓Text [mobile.components.UIText-1579876226024]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:One heading to rule them all
+  ↓H1 [mobile.components.UIDynamicElement-1579876040936]: 
+    beanData: '{"ionBean":"Heading1"}'
+    tagName: h1
+    ↓Text [mobile.components.UIText-1579876079741]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:some H1 text
+  ↓H2 [mobile.components.UIDynamicElement-1579876043537]: 
+    beanData: '{"ionBean":"Heading2"}'
+    tagName: h2
+    ↓Text [mobile.components.UIText-1579876129278]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:some H2 text
+  ↓H3 [mobile.components.UIDynamicElement-1579876045465]: 
+    beanData: '{"ionBean":"Heading3"}'
+    tagName: h3
+    ↓Text [mobile.components.UIText-1579876140748]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:some H3 text
+  ↓H4 [mobile.components.UIDynamicElement-1579876048240]: 
+    beanData: '{"ionBean":"Heading4"}'
+    tagName: h4
+    ↓Text [mobile.components.UIText-1579876142609]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:some H4 text
+  ↓H5 [mobile.components.UIDynamicElement-1579876051105]: 
+    beanData: '{"ionBean":"Heading5"}'
+    tagName: h5
+    ↓Text [mobile.components.UIText-1579876144668]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:some H5 text
+  ↓H6 [mobile.components.UIDynamicElement-1579876053993]: 
+    beanData: '{"ionBean":"Heading6"}'
+    tagName: h6
+    ↓Text [mobile.components.UIText-1579876146499]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:some H6 text
+  ↓Paragraph [mobile.components.UIDynamicElement-1579876064338]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    tagName: p
+    ↓Text1 [mobile.components.UIText-1579876293091]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:This is a
+    ↓Span [mobile.components.UIDynamicElement-1579876071233]: 
+      beanData: '{"ionBean":"SpanTag"}'
+      tagName: span
+      ↓Text1 [mobile.components.UIText-1579876322016]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:completly
+      ↓Style [mobile.components.UIStyle-1579876356620]: 
+        styleContent: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '	font-weight: bold;
+                	font-size: larger;
+                	padding: 4px 15px;
+                	margin: 0 4px;
+                	color: #BADA55;
+                	background-color: #CA601E;
+                	border-radius: 25px;
+                '
+    ↓Text [mobile.components.UIText-1579876290417]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:new paragraph and styled span element
+  ↓Image [mobile.components.UIDynamicElement-1579877223608]: 
+    beanData: |
+      '{
+       "ionBean": "Image",
+       "url": "script:''assets\/broken.png''",
+       "alt": "plain:Broken image"
+      }'
+    selfClose: true
+    tagName: img
+    ↓Attr [mobile.components.UIAttribute-1579879157748]: 
+      attrName: title
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Broken image
+  ↓Break [mobile.components.UIDynamicElement-1579877635919]: 
+    beanData: '{"ionBean":"Break"}'
+    selfClose: true
+    tagName: br
+  ↓Image1 [mobile.components.UIDynamicElement-1579877397224]: 
+    beanData: |
+      '{
+       "ionBean": "Image",
+       "url": "script:''assets\/icon_512x512.png''",
+       "width": "plain:128px",
+       "height": "plain:false",
+       "alt": "plain:Half size"
+      }'
+    selfClose: true
+    tagName: img
+    ↓Attr [mobile.components.UIAttribute-1579877397227]: 
+      attrName: title
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Half size
+  ↓Break1 [mobile.components.UIDynamicElement-1579877641296]: 
+    beanData: '{"ionBean":"Break"}'
+    selfClose: true
+    tagName: br
+  ↓Image2 [mobile.components.UIDynamicElement-1579877475865]: 
+    beanData: |
+      '{
+       "ionBean": "Image",
+       "url": "script:''assets\/icon_512x512.png''",
+       "alt": "plain:Original size"
+      }'
+    selfClose: true
+    tagName: img
+    ↓Attr [mobile.components.UIAttribute-1579877475868]: 
+      attrName: title
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Original size
+  ↓Break2 [mobile.components.UIDynamicElement-1579877643736]: 
+    beanData: '{"ionBean":"Break"}'
+    selfClose: true
+    tagName: br
+  ↓Image3 [mobile.components.UIDynamicElement-1579877685077]: 
+    beanData: |
+      '{
+       "ionBean": "Image",
+       "url": "script:''assets\/icon_512x512.png''",
+       "width": "plain:157px",
+       "height": "plain:110px",
+       "alt": "plain:Strange size"
+      }'
+    selfClose: true
+    tagName: img
+    ↓Attr [mobile.components.UIAttribute-1579877685080]: 
+      attrName: title
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Strange size
+  ↓Break3 [mobile.components.UIDynamicElement-1579879190932]: 
+    beanData: '{"ionBean":"Break"}'
+    selfClose: true
+    tagName: br
+  ↓Div1 [mobile.components.UIDynamicElement-1580143463323]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Image4 [mobile.components.UIDynamicElement-1579879194647]: 
+      beanData: |
+        '{
+         "ionBean": "Image",
+         "url": "source:{\"filter\":\"Sequence\",\"project\":\"MobileBuilderComponents\",\"input\":\"listen([''MobileBuilderComponents.generateImageUrl#IMG''])?.url || ''assets\\\/300x200.png''\"}",
+         "alt": "plain:Placholder"
+        }'
+      selfClose: true
+      tagName: img
+      ↓Attr [mobile.components.UIAttribute-1579879194650]: 
+        attrName: title
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:placeholder
+      ↓Attr1 [mobile.components.UIAttribute-1580143582133]: 
+        attrName: '[style.vertical-align]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:middle
+    ↓Button [mobile.components.UIDynamicElement-1580142404523]: 
+      beanData: '{"ionBean":"Button"}'
+      tagName: button
+      ↓Text [mobile.components.UIText-1580142428587]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:GET IMAGE
+      ↓Event [mobile.components.UIControlEvent-1580142438588]: 
+        ↓ClearDataSource [mobile.components.UIDynamicAction-1580142449086]: 
+          beanData: '{"ionBean":"ClearDataSourceAction","requestables":"source:{\"filter\":\"Sequence\",\"project\":\"MobileBuilderComponents\",\"input\":\"listen([''MobileBuilderComponents.generateImageUrl#IMG''])\"}"}'
+        ↓CallSequence [mobile.components.UIDynamicAction-1580142510087]: 
+          beanData: |
+            '{
+             "ionBean": "CallSequenceAction",
+             "requestable": "plain:MobileBuilderComponents.generateImageUrl",
+             "marker": "plain:IMG"
+            }'
+  ↓Break4 [mobile.components.UIDynamicElement-1580143755900]: 
+    beanData: '{"ionBean":"Break"}'
+    selfClose: true
+    tagName: br
+  ↓Div11 [mobile.components.UIDynamicElement-1580143630670]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Directive [mobile.components.UIControlDirective-1580143819120]: 
+      directiveName: If
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generateImageUrl#IMG2'])?.url"}
+      ↓Image4 [mobile.components.UIDynamicElement-1580143630673]: 
+        beanData: |
+          '{
+           "ionBean": "Image",
+           "url": "source:{\"filter\":\"Sequence\",\"project\":\"MobileBuilderComponents\",\"input\":\"listen([''MobileBuilderComponents.generateImageUrl#IMG2''])?.url || ''assets\\\/300x300.png''\"}",
+           "alt": "plain:Placholder"
+          }'
+        selfClose: true
+        tagName: img
+        ↓Attr [mobile.components.UIAttribute-1580143630676]: 
+          attrName: title
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:placeholder
+        ↓Attr1 [mobile.components.UIAttribute-1580143630679]: 
+          attrName: '[style.vertical-align]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:middle
+    ↓Button [mobile.components.UIDynamicElement-1580143630682]: 
+      beanData: '{"ionBean":"Button"}'
+      tagName: button
+      ↓Text [mobile.components.UIText-1580143630685]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:GET IMAGE
+      ↓Event [mobile.components.UIControlEvent-1580143630688]: 
+        ↓ClearDataSource [mobile.components.UIDynamicAction-1580143630691]: 
+          beanData: '{"ionBean":"ClearDataSourceAction","requestables":"source:{\"filter\":\"Sequence\",\"project\":\"MobileBuilderComponents\",\"input\":\"listen([''MobileBuilderComponents.generateImageUrl#IMG2''])\"}"}'
+        ↓CallSequence [mobile.components.UIDynamicAction-1580143630694]: 
+          beanData: |
+            '{
+             "ionBean": "CallSequenceAction",
+             "requestable": "plain:MobileBuilderComponents.generateImageUrl",
+             "marker": "plain:IMG2"
+            }'
+↓Footer [mobile.components.UIDynamicElement-1579875601869]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1579875601872]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579875601875]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579875601878]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579875601881]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 1
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579875601884]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579875601887]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579875601890]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2
