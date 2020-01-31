@@ -62,6 +62,9 @@ title: Fragment
       	<button ion-item (click)="this.openPageWithName('Page_Barcode')">
       		Barcode page
       	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Bars')">
+      		Bars page
+      	</button>
       	<button ion-item (click)="this.openPageWithName('Page_Camera')">
       		Camera page
       	</button>
@@ -80,8 +83,14 @@ title: Fragment
       	<button ion-item (click)="this.openPageWithName('Page_Fragment')">
       		Fragment page
       	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Html')">
+      		Html page
+      	</button>
       	<button ion-item (click)="this.openPageWithName('Page_IconInput')">
       		Icon in Input page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_KeyPad')">
+      		Keypad page
       	</button>
       	<button ion-item (click)="this.openPageWithName('Page_Lists')">
       		Lists page

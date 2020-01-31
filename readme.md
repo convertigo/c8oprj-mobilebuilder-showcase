@@ -9,11 +9,13 @@ Components and howtos covered so far:
 - Animation
 - Attribute
 - Barcode
+- Bars
 - Camera
 - Charts
 - FileChooser
 - Finally
 - Fragment
+- Html
 - Lists
 - Modal
 - Pause
@@ -28,10 +30,13 @@ Components and howtos covered so far:
 
 ### Howtos
 
+ - Keypad
  - IconInput
- - Fingerprint<sup>1</sup>
+ - Fingerprint
 
 
 
 ***
-<sup>1</sup>(from a customAction, not a native component yet)
+Convertigo Web site : https://www.convertigo.com
+
+Convertigo Github : https://github.com/convertigo/convertigo
