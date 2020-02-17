@@ -29,6 +29,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓getPeople [mobile.components.UIActionStack-1579513546604]: 🗏 mobileSharedActions/getPeople.yaml
 ↓KeyPadEntry [mobile.components.UIActionStack-1580307965697]: 🗏 mobileSharedActions/KeyPadEntry.yaml
 ↓SetFocused [mobile.components.UIActionStack-1580307965715]: 🗏 mobileSharedActions/SetFocused.yaml
+↓Toast [mobile.components.UIActionStack-1580983282970]: 🗏 mobileSharedActions/Toast.yaml
 ↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
 ↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
 ↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
@@ -60,6 +61,13 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Text [mobile.components.PageComponent-1579258848753]: 🗏 mobilePages/Page_Text.yaml
 ↓Page_TextToSpeech [mobile.components.PageComponent-1578662578479]: 🗏 mobilePages/Page_TextToSpeech.yaml
 ↓Page_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Tooltip.yaml
+↓Page_Chatbot [mobile.components.PageComponent-1580897615447]: 🗏 mobilePages/Page_Chatbot.yaml
+↓Page_Buttons [mobile.components.PageComponent-1580910018994]: 🗏 mobilePages/Page_Buttons.yaml
+↓Page_Menu [mobile.components.PageComponent-1580914202266]: 🗏 mobilePages/Page_Menu.yaml
+↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
+↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
+↓Page_Fabs [mobile.components.PageComponent-1580919606453]: 🗏 mobilePages/Page_Fabs.yaml
+↓Page_Forms [mobile.components.PageComponent-1581527058141]: 🗏 mobilePages/Page_Forms.yaml
 ↓Theme [mobile.components.UITheme-1491635018260]: 
   comment: Global color themes can be customized here
   styleContent: 
@@ -165,17 +173,38 @@ tplProjectName: mobilebuilder_tpl_7_7_0
           	   for example,
           	 		background-color: your color; 
           	*/
+          }'
+↓ShowGrids [mobile.components.UIStyle-1580914546742]: 
+  comment: Enable this to show grid guidelines
+  isEnabled: false
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.content {
+          	/* add some styling CSS rules here for the body of your app
+          	   for example,
+          	 		background-color: your color; 
+          	 		background-image: url(some background image);
+          	*/
           }
           
-          xion-grid {
+          .toolbar-background {
+          	/* add some styling CSS rules here for the Headers and Footers
+          	   for example,
+          	 		background-color: your color; 
+          	*/
+          }
+          
+          ion-grid {
           	border: 1px solid red;
           }
           
-          xion-row {
+          ion-row {
           	border: 1px solid blue;
           }
           
-          xion-col {
+          ion-col {
           	border: 1px solid green;
-          }
-          '
+          }'
