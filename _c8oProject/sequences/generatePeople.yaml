@@ -30,5 +30,11 @@
           - ↑value: 1579266767079
         - java.lang.String: 
           - ↑value: ./People
+↓Call_Sequence [steps.SequenceStep-1582220983621]: 
+  isEnabled: false
+  sourceSequence: MobileBuilderComponents.wait
+  ↓time [variables.StepVariable-1582220983623]: 
+    comment: time to wait in ms
+    value: 5000
 ↓nbr [variables.RequestableVariable-1579513403702]: 
   value: 10

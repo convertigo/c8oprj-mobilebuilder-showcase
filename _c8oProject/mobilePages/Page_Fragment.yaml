@@ -65,11 +65,20 @@ title: Fragment
       	<button ion-item (click)="this.openPageWithName('Page_Bars')">
       		Bars page
       	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Buttons')">
+      		Buttons page
+      	</button>
       	<button ion-item (click)="this.openPageWithName('Page_Camera')">
       		Camera page
       	</button>
       	<button ion-item (click)="this.openPageWithName('Page_Charts')">
       		Charts page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_ChatBot')">
+      		ChatBot page
+      	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Fabs')">
+      		Fabs page
       	</button>
       	<button ion-item (click)="this.openPageWithName('Page_FileChooser')">
       		File Chooser page

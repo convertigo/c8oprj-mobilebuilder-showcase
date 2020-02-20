@@ -30,6 +30,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓KeyPadEntry [mobile.components.UIActionStack-1580307965697]: 🗏 mobileSharedActions/KeyPadEntry.yaml
 ↓SetFocused [mobile.components.UIActionStack-1580307965715]: 🗏 mobileSharedActions/SetFocused.yaml
 ↓Toast [mobile.components.UIActionStack-1580983282970]: 🗏 mobileSharedActions/Toast.yaml
+↓RefresherMembers [mobile.components.UIActionStack-1582221214219]: 🗏 mobileSharedActions/RefresherMembers.yaml
 ↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
 ↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
 ↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
@@ -37,8 +38,11 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Attribute [mobile.components.PageComponent-1576144418242]: 🗏 mobilePages/Page_Attribute.yaml
 ↓Page_Barcode [mobile.components.PageComponent-1578661180634]: 🗏 mobilePages/Page_Barcode.yaml
 ↓Page_Bars [mobile.components.PageComponent-1579773399612]: 🗏 mobilePages/Page_Bars.yaml
+↓Page_Buttons [mobile.components.PageComponent-1580910018994]: 🗏 mobilePages/Page_Buttons.yaml
 ↓Page_Camera [mobile.components.PageComponent-1578655148107]: 🗏 mobilePages/Page_Camera.yaml
 ↓Page_Charts [mobile.components.PageComponent-1579620096330]: 🗏 mobilePages/Page_Charts.yaml
+↓Page_Chatbot [mobile.components.PageComponent-1580897615447]: 🗏 mobilePages/Page_Chatbot.yaml
+↓Page_Fabs [mobile.components.PageComponent-1580919606453]: 🗏 mobilePages/Page_Fabs.yaml
 ↓Page_FileChooser [mobile.components.PageComponent-1578661956046]: 🗏 mobilePages/Page_FileChooser.yaml
 ↓Page_Finally [mobile.components.PageComponent-1577959939689]: 🗏 mobilePages/Page_Finally.yaml
 ↓Page_Fingerprint [mobile.components.PageComponent-1579603139459]: 🗏 mobilePages/Page_Fingerprint.yaml
@@ -61,12 +65,9 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Text [mobile.components.PageComponent-1579258848753]: 🗏 mobilePages/Page_Text.yaml
 ↓Page_TextToSpeech [mobile.components.PageComponent-1578662578479]: 🗏 mobilePages/Page_TextToSpeech.yaml
 ↓Page_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Tooltip.yaml
-↓Page_Chatbot [mobile.components.PageComponent-1580897615447]: 🗏 mobilePages/Page_Chatbot.yaml
-↓Page_Buttons [mobile.components.PageComponent-1580910018994]: 🗏 mobilePages/Page_Buttons.yaml
 ↓Page_Menu [mobile.components.PageComponent-1580914202266]: 🗏 mobilePages/Page_Menu.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
-↓Page_Fabs [mobile.components.PageComponent-1580919606453]: 🗏 mobilePages/Page_Fabs.yaml
 ↓Page_Forms [mobile.components.PageComponent-1581527058141]: 🗏 mobilePages/Page_Forms.yaml
 ↓Theme [mobile.components.UITheme-1491635018260]: 
   comment: Global color themes can be customized here

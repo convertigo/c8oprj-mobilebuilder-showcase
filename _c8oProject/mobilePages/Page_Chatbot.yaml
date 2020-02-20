@@ -1,4 +1,3 @@
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
