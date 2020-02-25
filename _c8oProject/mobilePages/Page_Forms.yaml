@@ -75,7 +75,7 @@ title: Forms
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Pull to refresh
+            - MobileSmartSourceType: plain:Pull to refresh employees list
       ↓Attr11 [mobile.components.UIAttribute-1582216410072]: 
         attrName: refreshingSpinner
         attrValue: 
@@ -87,100 +87,98 @@ title: Forms
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Refreshing...
+            - MobileSmartSourceType: plain:Refreshing People...
     ↓Event [mobile.components.UIControlEvent-1582216563697]: 
       attrName: (ionPull)
       eventName: ionPull
-      ↓Log [mobile.components.UIDynamicAction-1582216671669]: 
-        beanData: '{"ionBean":"LogAction","message":"plain:ionPull refresh event"}'
-      ↓refresherMembers [mobile.components.UICustomAction-1582219962517]: 
-        actionValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-            - com.twinsoft.convertigo.beans.common.FormatedContent: 
-              →: |
-                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                		
-                		let Members = ["currentY", "deltaY", "progress", "startY", "state"]
-                		for(let i=0; i < Members.length; i++){
-                		    page.c8o.log.debug(Members[i]+": " + event[Members[i]]);
-                		}
-                		
-                		resolve();
-                '
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1582279309261]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        comment: Enable to see event logs. Very CPU consuming. Can slow down UI.
+        isEnabled: false
+        stack: MobileBuilderComponents.MobileApplication.Application.RefresherMembers
+        ↓event [mobile.components.UIControlVariable-1582279543888]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'ionPull'
     ↓Event1 [mobile.components.UIControlEvent-1582216610097]: 
       attrName: (ionRefresh)
       eventName: ionRefresh
-      ↓Log [mobile.components.UIDynamicAction-1582216673645]: 
-        beanData: '{"ionBean":"LogAction","message":"plain:ionRefresh refresh event"}'
-        isEnabled: false
-      ↓refresherMembers [mobile.components.UICustomAction-1582219960246]: 
-        actionValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-            - com.twinsoft.convertigo.beans.common.FormatedContent: 
-              →: |
-                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                		
-                		let Members = ["currentY", "deltaY", "progress", "startY", "state"]
-                		for(let i=0; i < Members.length; i++){
-                		    page.c8o.log.debug(Members[i]+": " + event[Members[i]]);
-                		}
-                		
-                		resolve();
-                '
-        isEnabled: false
-      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1582223044943]: 
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1582279673937]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.RefresherMembers
+        ↓event [mobile.components.UIControlVariable-1582279673940]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'ionRefresh'
+      ↓InvokeGetPeople [mobile.components.UIDynamicInvoke-1582223044943]: 
         beanData: '{"ionBean":"InvokeAction"}'
         stack: MobileBuilderComponents.MobileApplication.Application.getPeople
         ↓peopleNbr [mobile.components.UIControlVariable-1582223044946]: 
           varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:'6'
-        ↓refresherComplete [mobile.components.UICustomAction-1582223076955]: 
-          actionValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-              - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                →: |
-                  '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                  		let refresher = event;
-                  		
-                          page.c8o.log.debug("state before complete: " + refresher["state"]);
-                  		
-                  		refresher.complete();
-                  		
-                  		page.c8o.log.debug("state after complete: " + refresher["state"]);
-                  		
-                  		setTimeout(() => {
-                  		    page.c8o.log.debug("state after full complete: " + refresher["state"]);
-                  		}, 500);
-                  		
-                  		resolve();
-                  '
+              - MobileSmartSourceType: script:'9'
+        ↓PauseAction [mobile.components.UIDynamicAction-1582276893225]: 
+          beanData: '{"ionBean":"PauseAction","duration":"plain:2000"}'
+          ↓sliceArray [mobile.components.UICustomAction-1582278453950]: 
+            actionValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                    		
+                    		let ppl = vars.people;
+                    		
+                    		this.local.SEG1 = ppl.slice(0, Math.floor(ppl.length/3));
+                    		this.local.SEG2 = ppl.slice(Math.floor(ppl.length/3), Math.floor(ppl.length/3*2));
+                    		this.local.SEG3 = ppl.slice(Math.floor(ppl.length/3*2), ppl.length);
+                    		
+                    		resolve();
+                    '
+            ↓people [mobile.components.UIControlVariable-1582278453953]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:stack['InvokeGetPeople'].out?.People
+            ↓refresherComplete [mobile.components.UICustomAction-1582223076955]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '	    page.c8o.log.debug(''ionRefresh Refresher event:'');
+                      	    page.c8o.log.debug(''================================================'');
+                      	    page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		let refresher = event;
+                      		
+                              page.c8o.log.debug("Refresher state before complete: " + refresher["state"]);
+                      		
+                      		refresher.complete();
+                      		
+                      		page.c8o.log.debug("Refresher state after complete: " + refresher["state"]);
+                      		
+                      		setTimeout(() => {
+                      		    page.c8o.log.debug("Refresher state after full complete: " + refresher["state"]);
+                      		}, 1000);
+                      		
+                      		page.c8o.log.debug(''================================================'');
+                      		
+                      		resolve();
+                      '
     ↓Event11 [mobile.components.UIControlEvent-1582216628350]: 
       attrName: (ionStart)
       eventName: ionStart
-      ↓Log [mobile.components.UIDynamicAction-1582216675845]: 
-        beanData: '{"ionBean":"LogAction","message":"plain:ionStart refresh event"}'
-        isEnabled: false
-      ↓refresherMembers [mobile.components.UICustomAction-1582219360626]: 
-        actionValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-            - com.twinsoft.convertigo.beans.common.FormatedContent: 
-              →: |
-                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                		
-                		let Members = ["currentY", "deltaY", "progress", "startY", "state"]
-                		for(let i=0; i < Members.length; i++){
-                		    page.c8o.log.debug(Members[i]+": " + event[Members[i]]);
-                		}
-                		
-                		resolve();
-                '
-        isEnabled: false
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1582279627645]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.RefresherMembers
+        ↓event [mobile.components.UIControlVariable-1582279627648]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'ionStart'
   ↓SlidesContainer_Calendar [mobile.components.UIDynamicElement-1581601786684]: 
     beanData: '{"ionBean":"Slides"}'
     tagName: ion-slides
@@ -1226,7 +1224,7 @@ title: Forms
           directiveSource: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:listen(['MobileBuilderComponents.generatePeople#PEOPLE'])?.People?.slice(0,2)
+              - MobileSmartSourceType: script:this.local.SEG1
           ↓ListItem [mobile.components.UIDynamicElement-1582131784712]: 
             beanData: '{"ionBean":"ListItem"}'
             tagName: ion-item
@@ -1268,7 +1266,7 @@ title: Forms
           directiveSource: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:listen(['MobileBuilderComponents.generatePeople#PEOPLE'])?.People?.slice(2,4)
+              - MobileSmartSourceType: script:this.local.SEG2
           ↓ListItem [mobile.components.UIDynamicElement-1582193856319]: 
             beanData: '{"ionBean":"ListItem"}'
             tagName: ion-item
@@ -1310,7 +1308,7 @@ title: Forms
           directiveSource: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:listen(['MobileBuilderComponents.generatePeople#PEOPLE'])?.People?.slice(4,6)
+              - MobileSmartSourceType: script:this.local.SEG3
           ↓ListItem [mobile.components.UIDynamicElement-1582193859862]: 
             beanData: '{"ionBean":"ListItem"}'
             tagName: ion-item
@@ -1513,3 +1511,24 @@ title: Forms
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: script:'6'
+    ↓sliceArray [mobile.components.UICustomAction-1582277817617]: 
+      actionValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+              		
+              		let ppl = vars.people;
+              		
+              		this.local.SEG1 = ppl.slice(0, Math.floor(ppl.length/3));
+              		this.local.SEG2 = ppl.slice(Math.floor(ppl.length/3), Math.floor(ppl.length/3*2));
+              		this.local.SEG3 = ppl.slice(Math.floor(ppl.length/3*2), ppl.length);
+              		
+              		resolve();
+              '
+      ↓people [mobile.components.UIControlVariable-1582277841017]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:out?.People

@@ -47,6 +47,30 @@ title: Lists
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓SearchBar [mobile.components.UIDynamicElement-1582299793892]: 
+    beanData: '{"ionBean":"Searchbar","showCancelButton":"plain:true"}'
+    tagName: ion-searchbar
+    ↓Event [mobile.components.UIControlEvent-1582302138583]: 
+      attrName: (ionInput)
+      eventName: ionInput
+      ↓filterItems [mobile.components.UICustomAction-1582302202609]: 
+        actionValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                		this.groupedPeople=this.global.tmpGroupedPeople;
+                		let val = event.target.value;
+                		
+                		if (val && val.trim() !== '''') {
+                		    this.groupedPeople=this.groupedPeople.map(item => {
+                		        return {...item, contacts: item.contacts.filter((contact) => contact["lastname"].toLowerCase().includes(val.toLowerCase()))}
+                		    });
+                		}
+                		
+                		resolve();
+                '
   ↓ListContainer [mobile.components.UIDynamicElement-1579530626198]: 
     beanData: '{"ionBean":"List"}'
     tagName: ion-list
@@ -84,7 +108,7 @@ title: Lists
                 beanData: '{"ionBean":"Avatar"}'
                 tagName: ion-avatar
                 ↓Image [mobile.components.UIDynamicElement-1579528147411]: 
-                  beanData: '{"ionBean":"Image","url":"script:''assets\/avatar\/icons8-user-male.png''"}'
+                  beanData: '{"ionBean":"Image","url":"script:''assets\/avatar\/icons8-user-''+contact.gender+''.png''"}'
                   selfClose: true
                   tagName: img
               ↓H2 [mobile.components.UIDynamicElement-1579528194709]: 
@@ -207,6 +231,7 @@ title: Lists
               		        }
               		        curPeople = newGroup.contacts;
               		        this.groupedPeople.push(newGroup);
+              		        this.global.tmpGroupedPeople = this.groupedPeople.slice(0);
               		    }
               		    curPeople.push(value);
               		});

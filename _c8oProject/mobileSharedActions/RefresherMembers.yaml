@@ -1,0 +1,19 @@
+↓Log [mobile.components.UIDynamicAction-1582216671669]: 
+  beanData: '{"ionBean":"LogAction","message":"script:params.event + '' Refresher event:''"}'
+↓refresherMembers [mobile.components.UICustomAction-1582219962517]: 
+  actionValue: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '	    page.c8o.log.debug(''================================================'');
+          		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+          		
+          		let Members = ["currentY", "deltaY", "progress", "startY", "state"]
+          		for(let i=0; i < Members.length; i++){
+          		    page.c8o.log.debug(Members[i]+": " + event[Members[i]]);
+          		}
+          		page.c8o.log.debug(''================================================'');
+          		resolve();
+          '
+↓event [mobile.components.UIStackVariable-1582279424992]: 

@@ -1,3 +1,10 @@
 ↓msg [mobile.components.UIStackVariable-1580983298362]: 
 ↓Toast [mobile.components.UIDynamicAction-1580983314898]: 
-  beanData: '{"ionBean":"ToastAction","message":"script:params.msg"}'
+  beanData: |
+    '{
+     "ionBean": "ToastAction",
+     "message": "script:params.msg",
+     "duration": "script:params.duration"
+    }'
+↓duration [mobile.components.UIStackVariable-1582639310506]: 
+  value: '''3000'''

@@ -110,6 +110,9 @@ title: Fragment
       	<button ion-item (click)="this.openPageWithName('Page_Pause')">
       		Pause page
       	</button>
+      	<button ion-item (click)="this.openPageWithName('Page_Searchbar')">
+      		Searchbar page
+      	</button>
       	<button ion-item (click)="this.openPageWithName('Page_Signature')">
       		Signature page
       	</button>

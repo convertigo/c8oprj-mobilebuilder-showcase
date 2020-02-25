@@ -3,7 +3,8 @@
     '{
      "ionBean": "CallSequenceAction",
      "requestable": "plain:MobileBuilderComponents.generatePeople",
-     "marker": "plain:PEOPLE"
+     "marker": "plain:PEOPLE",
+     "noLoading": "plain:true"
     }'
   ↓nbr [mobile.components.UIControlVariable-1579513587299]: 
     comment: new variable
@@ -11,5 +12,12 @@
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
         - MobileSmartSourceType: script:params.peopleNbr
+  ↓search [mobile.components.UIControlVariable-1582636703955]: 
+    comment: new variable
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:params.queryText
 ↓peopleNbr [mobile.components.UIStackVariable-1579513594774]: 
   value: '''10'''
+↓queryText [mobile.components.UIStackVariable-1582636722801]: 

@@ -1,40 +1,62 @@
 ↓Read_XML [steps.ReadXMLStep-1579266734724]: 
   dataFile: '".//People_100.xml"'
-↓Iterator [steps.IteratorStep-1579513330837]: 
-  condition: nbr
-  sourceDefinition: 
-    - xmlizable: 
-      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
-      - com.twinsoft.convertigo.beans.common.XMLVector: 
-        - java.lang.String: 
-          - ↑value: 1579266734724
-        - java.lang.String: 
-          - ↑value: ./root/People
-  ↓Copy [steps.XMLCopyStep-1579266767079]: 
-    output: false
+↓Complex [steps.XMLComplexStep-1582626087452]: 
+  nodeName: anchorContainer
+  output: false
+  ↓Iterator [steps.IteratorStep-1579513330837]: 
+    condition: nbr
     sourceDefinition: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
         - com.twinsoft.convertigo.beans.common.XMLVector: 
           - java.lang.String: 
-            - ↑value: 1579513330837
+            - ↑value: 1579266734724
           - java.lang.String: 
-            - ↑value: .
-↓Sort [steps.XMLSortStep-1579526190850]: 
-  sortXPATHDefinition: lastname
-  sourceDefinition: 
-    - xmlizable: 
-      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
-      - com.twinsoft.convertigo.beans.common.XMLVector: 
-        - java.lang.String: 
-          - ↑value: 1579266767079
-        - java.lang.String: 
-          - ↑value: ./People
-↓Call_Sequence [steps.SequenceStep-1582220983621]: 
-  isEnabled: false
-  sourceSequence: MobileBuilderComponents.wait
-  ↓time [variables.StepVariable-1582220983623]: 
-    comment: time to wait in ms
-    value: 5000
+            - ↑value: ./root/People
+    ↓jSimpleSource [steps.SimpleSourceStep-1582636569087]: 
+      sourceDefinition: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - java.lang.String: 
+              - ↑value: 1579513330837
+            - java.lang.String: 
+              - ↑value: ./lastname/text()
+      variableName: lastname
+    ↓jIf [steps.IfStep-1582636569091]: 
+      condition: lastname.toLowerCase().startsWith(search.toLowerCase())
+      ↓Complex [steps.XMLComplexStep-1582637470369]: 
+        nodeName: People
+        output: false
+        ↓Attribute [steps.XMLAttributeStep-1582637481350]: 
+          nodeName: type
+          nodeText: object
+        ↓Copy [steps.XMLCopyStep-1579266767079]: 
+          output: false
+          sourceDefinition: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+              - com.twinsoft.convertigo.beans.common.XMLVector: 
+                - java.lang.String: 
+                  - ↑value: 1579513330837
+                - java.lang.String: 
+                  - ↑value: ./*
+↓ComplexPeople [steps.XMLComplexStep-1582637348020]: 
+  nodeName: People
+  ↓Attribute [steps.XMLAttributeStep-1582637382375]: 
+    nodeName: type
+    nodeText: array
+  ↓Sort [steps.XMLSortStep-1579526190850]: 
+    sortXPATHDefinition: lastname
+    sourceDefinition: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - java.lang.String: 
+            - ↑value: 1582626087452
+          - java.lang.String: 
+            - ↑value: ./People
 ↓nbr [variables.RequestableVariable-1579513403702]: 
   value: 10
+↓search [variables.RequestableVariable-1582636540133]: 
+  value: 

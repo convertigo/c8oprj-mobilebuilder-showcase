@@ -21,11 +21,3 @@ title: Title for Page_Tabs_Map1
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
 ↓PageEvent [mobile.components.UIPageEvent-1579539074033]: 
-  ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1579539074036]: 
-    beanData: '{"ionBean":"InvokeAction"}'
-    stack: MobileBuilderComponents.MobileApplication.Application.getPeople
-    ↓peopleNbr [mobile.components.UIControlVariable-1579539074039]: 
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:'5'
