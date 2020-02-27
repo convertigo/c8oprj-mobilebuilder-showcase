@@ -120,35 +120,6 @@ title: Text
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: source:{"filter":"Iteration","project":"MobileBuilderComponents","input":"item1579266918428?.firstname + ','"}
-↓Footer [mobile.components.UIDynamicElement-1579258849014]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [mobile.components.UIDynamicElement-1579258849017]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1579258849020]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579258849023]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579258849026]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579258849029]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579258849032]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579258849035]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
 ↓PageEvent [mobile.components.UIPageEvent-1579259498585]: 
   ↓CallSequence_generateText [mobile.components.UIDynamicAction-1579259512215]: 
     beanData: |
@@ -178,3 +149,5 @@ title: Text
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: script:'10'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819441252]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

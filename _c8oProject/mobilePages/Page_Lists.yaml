@@ -171,37 +171,8 @@ title: Lists
                     - xmlizable: 
                       - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                       - MobileSmartSourceType: plain:delete
-↓Footer [mobile.components.UIDynamicElement-1579283174199]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [mobile.components.UIDynamicElement-1579283174202]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1579283174205]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579283174208]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579283174211]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579283174214]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579283174217]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579283174220]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
 ↓PageEvent [mobile.components.UIPageEvent-1579513796412]: 
-  ↓getpeople [mobile.components.UIDynamicInvoke-1579513807408]: 
+  ↓getPeopleLists [mobile.components.UIDynamicInvoke-1579513807408]: 
     beanData: '{"ionBean":"InvokeAction"}'
     stack: MobileBuilderComponents.MobileApplication.Application.getPeople
     ↓peopleNbr [mobile.components.UIControlVariable-1579513818508]: 
@@ -242,4 +213,11 @@ title: Lists
         varValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: script:stack['getpeople'].out
+            - MobileSmartSourceType: script:stack['CallSequence_generatePeople'].out
+    ↓marker [mobile.components.UIControlVariable-1582716387018]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'LIST'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819317785]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

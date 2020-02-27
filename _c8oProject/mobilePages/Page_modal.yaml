@@ -124,3 +124,5 @@ title: Modal
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
             - MobileSmartSourceType: script:this.modalParameters?.code === undefined || this.modalParameters?.code != 0
+↓UseSharedComponent [mobile.components.UIUseShared-1582819328546]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

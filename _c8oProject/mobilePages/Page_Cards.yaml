@@ -1,0 +1,433 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_cards
+title: Cards
+↓Header [mobile.components.UIDynamicElement-1582737922353]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1582737922358]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1582737922361]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1582737922364]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Cards
+    ↓Button [mobile.components.UIDynamicElement-1582737922367]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1582737922370]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1582737922374]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓CardContainer_basic [mobile.components.UIDynamicElement-1582738430749]: 
+    beanData: '{"ionBean":"Card"}'
+    tagName: ion-card
+    ↓CardContent [mobile.components.UIDynamicElement-1582739837903]: 
+      beanData: '{"ionBean":"CardContent"}'
+      tagName: ion-card-content
+      ↓Text [mobile.components.UIText-1582739907231]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:This is just your basic card with some text to boot...
+  ↓CardContainer_header [mobile.components.UIDynamicElement-1582740121005]: 
+    beanData: '{"ionBean":"Card"}'
+    tagName: ion-card
+    ↓CardHeader [mobile.components.UIDynamicElement-1582740130016]: 
+      beanData: '{"ionBean":"CardHeader"}'
+      tagName: ion-card-header
+      ↓Text [mobile.components.UIText-1582740144981]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Convertigo Card Header
+    ↓CardContent [mobile.components.UIDynamicElement-1582740121008]: 
+      beanData: '{"ionBean":"CardContent"}'
+      tagName: ion-card-content
+      ↓Text [mobile.components.UIText-1582740121011]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:A complete open source low-code web & mobile application development platform 'knighted' by IT architects, and usable by professional & citizen developers to quickly build & run Enterprise grade multi-experience apps.
+  ↓CardContainer_list [mobile.components.UIDynamicElement-1582740309747]: 
+    beanData: '{"ionBean":"Card"}'
+    tagName: ion-card
+    ↓CardHeader [mobile.components.UIDynamicElement-1582740309750]: 
+      beanData: '{"ionBean":"CardHeader"}'
+      tagName: ion-card-header
+      ↓Text [mobile.components.UIText-1582740309753]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Employees List Card
+    ↓CardContent [mobile.components.UIDynamicElement-1582740309756]: 
+      beanData: '{"ionBean":"CardContent"}'
+      tagName: ion-card-content
+      ↓ListContainer [mobile.components.UIDynamicElement-1582794316318]: 
+        beanData: '{"ionBean":"List"}'
+        tagName: ion-list
+        ↓Directive [mobile.components.UIControlDirective-1582794316321]: 
+          directiveIndexName: index
+          directiveItemName: group
+          directiveSource: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#CARD'])?.People"}
+          ↓ListItem [mobile.components.UIDynamicElement-1582794316324]: 
+            beanData: '{"ionBean":"ListItem"}'
+            tagName: ion-item
+            ↓AvatarItem [mobile.components.UIDynamicElement-1582794316327]: 
+              beanData: '{"ionBean":"Avatar"}'
+              tagName: ion-avatar
+              ↓Image [mobile.components.UIDynamicElement-1582794316330]: 
+                beanData: '{"ionBean":"Image","url":"script:''assets\/avatar\/icons8-user-''+item1582794316321?.gender+''.png''"}'
+                selfClose: true
+                tagName: img
+            ↓H2 [mobile.components.UIDynamicElement-1582794316333]: 
+              beanData: '{"ionBean":"Heading2"}'
+              tagName: h2
+              ↓Text [mobile.components.UIText-1582794316336]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: source:{"filter":"Iteration","project":"MobileBuilderComponents","input":"item1582794316321?.lastname"}
+              ↓Text1 [mobile.components.UIText-1582794316339]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: source:{"filter":"Iteration","project":"MobileBuilderComponents","input":"item1582794316321?.firstname"}
+            ↓Paragraph [mobile.components.UIDynamicElement-1582794316342]: 
+              beanData: '{"ionBean":"Paragraph"}'
+              tagName: p
+              ↓Text1 [mobile.components.UIText-1582794316345]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: source:{"filter":"Iteration","project":"MobileBuilderComponents","input":"item1582794316321?.email"}
+  ↓CardContainer_image [mobile.components.UIDynamicElement-1582796311771]: 
+    beanData: '{"ionBean":"Card"}'
+    tagName: ion-card
+    ↓Image [mobile.components.UIDynamicElement-1582796332123]: 
+      beanData: '{"ionBean":"Image","url":"script:''assets\/Bullet-Train.jpg''"}'
+      selfClose: true
+      tagName: img
+    ↓CardContent [mobile.components.UIDynamicElement-1582796311780]: 
+      beanData: '{"ionBean":"CardContent"}'
+      tagName: ion-card-content
+      ↓Tag [mobile.components.UIElement-1582796771627]: 
+        tagName: ion-card-title
+        ↓Text [mobile.components.UIText-1582797915524]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Don't wait any longer, jump on the bandwagon 
+        ↓Attr [mobile.components.UIAttribute-1582814033022]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-center
+      ↓Paragraph [mobile.components.UIDynamicElement-1582797958451]: 
+        beanData: '{"ionBean":"Paragraph"}'
+        tagName: p
+        ↓Text [mobile.components.UIText-1582797968634]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:As many companies do, trust Convertigo Low-Code platform for your applications
+        ↓Break [mobile.components.UIDynamicElement-1582813947437]: 
+          beanData: '{"ionBean":"Break"}'
+          selfClose: true
+          tagName: br
+        ↓Text1 [mobile.components.UIText-1582813952553]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: 'plain: development and save time and money building pixel perfect apps '
+        ↓Attr [mobile.components.UIAttribute-1582814069992]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-center
+    ↓GridRow [mobile.components.UIDynamicElement-1582798138064]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓Attr [mobile.components.UIAttribute-1582798151817]: 
+        attrName: 
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:no-padding
+      ↓GridCol [mobile.components.UIDynamicElement-1582798173168]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1582798187344]: 
+          beanData: |
+            '{
+             "ionBean": "Button",
+             "IonClear": "plain:clear",
+             "IonSize": "plain:small",
+             "IconPosition": "plain:icon-start"
+            }'
+          tagName: button
+          ↓Icon [mobile.components.UIDynamicElement-1582798230618]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:cloud"}'
+            tagName: ion-icon
+          ↓Text [mobile.components.UIText-1582798275002]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Learn More...
+          ↓Style [mobile.components.UIStyle-1582799534493]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	color: #ff8874;
+                    '
+      ↓GridCol1 [mobile.components.UIDynamicElement-1582798377941]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1582798377944]: 
+          beanData: |
+            '{
+             "ionBean": "Button",
+             "IonClear": "plain:clear",
+             "IonSize": "plain:small",
+             "IconPosition": "plain:icon-start"
+            }'
+          tagName: button
+          ↓Icon [mobile.components.UIDynamicElement-1582798377947]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:download"}'
+            tagName: ion-icon
+          ↓Text [mobile.components.UIText-1582798377950]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Download
+          ↓Style [mobile.components.UIStyle-1582799581394]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	color: #ffc45e;
+                    '
+        ↓Attr [mobile.components.UIAttribute-1582799657746]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-center
+      ↓GridCol2 [mobile.components.UIDynamicElement-1582798381214]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1582798381217]: 
+          beanData: |
+            '{
+             "ionBean": "Button",
+             "IonClear": "plain:clear",
+             "IonSize": "plain:small",
+             "IconPosition": "plain:icon-start"
+            }'
+          tagName: button
+          ↓Icon [mobile.components.UIDynamicElement-1582798381220]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:share-alt"}'
+            tagName: ion-icon
+          ↓Text [mobile.components.UIText-1582798381223]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Share
+          ↓Style [mobile.components.UIStyle-1582799588191]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	color: #66dbf7;
+                    '
+        ↓Attr [mobile.components.UIAttribute-1582799681721]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+  ↓CardContainer_background [mobile.components.UIDynamicElement-1582807937835]: 
+    beanData: '{"ionBean":"Card"}'
+    tagName: ion-card
+    ↓Image [mobile.components.UIDynamicElement-1582807937845]: 
+      beanData: '{"ionBean":"Image","url":"script:''assets\/bridge-on-body-of-water-under-blue-and-white-ConvertImage.jpg''"}'
+      selfClose: true
+      tagName: img
+    ↓Style [mobile.components.UIStyle-1582810219460]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '	position: relative;
+              	text-align: center;
+              	
+              	.card-title {
+              		position: relative;
+              		font-size: 3.0em;
+              		width: 100%;
+              		font-weight: bold;
+              	}
+              	
+              	.card-subtitle {
+              		font-size: 1.5em;
+              		position: relative;
+              		width: 100%;
+              	}
+              	
+              	.card-background {
+              		color: #fff;
+              		background-color: rgba(0,0,0,0.5);
+              		position: absolute;
+              		bottom: 0;
+              		padding: 15px 0;
+              	}
+              '
+    ↓DivWrapper [mobile.components.UIDynamicElement-1582810972865]: 
+      beanData: '{"ionBean":"DivTag"}'
+      tagName: div
+      ↓Div [mobile.components.UIDynamicElement-1582810085105]: 
+        beanData: '{"ionBean":"DivTag"}'
+        tagName: div
+        ↓Text [mobile.components.UIText-1582810098735]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:What was inconceivable yesterday is now within easy reach
+        ↓Attr [mobile.components.UIAttribute-1582810115897]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:card-title
+      ↓Div1 [mobile.components.UIDynamicElement-1582810088130]: 
+        beanData: '{"ionBean":"DivTag"}'
+        tagName: div
+        ↓Text [mobile.components.UIText-1582810100809]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Divide enterprise mobile application development time and costs
+        ↓Attr [mobile.components.UIAttribute-1582810162179]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:card-subtitle
+        ↓Break [mobile.components.UIDynamicElement-1582810477457]: 
+          beanData: '{"ionBean":"Break"}'
+          selfClose: true
+          tagName: br
+        ↓Text1 [mobile.components.UIText-1582810483632]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: 'plain: By 10 to 50, and reconcile business and IT professionals! '
+      ↓Attr [mobile.components.UIAttribute-1582811024294]: 
+        attrName: class
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:card-background
+      ↓Div2 [mobile.components.UIDynamicElement-1582812171622]: 
+        beanData: '{"ionBean":"DivTag"}'
+        tagName: div
+        ↓Attr [mobile.components.UIAttribute-1582812171625]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:card-subtitle
+        ↓Tag [mobile.components.UIElement-1582812175944]: 
+          tagName: a
+          ↓Text [mobile.components.UIText-1582812171631]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:download white paper
+          ↓Attr [mobile.components.UIAttribute-1582812218834]: 
+            attrName: 
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:ion-button
+          ↓Style [mobile.components.UIStyle-1582812296604]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	color: #000;
+                    	background-color: rgb(255, 183, 58);
+                    	font-weight: bold;
+                    	margin-top: 10px;
+                    '
+          ↓Attr1 [mobile.components.UIAttribute-1582812460181]: 
+            attrName: href
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:http://www.convertigo.com/white-paper-guide-for-mobile-application-development-platform/
+          ↓Attr2 [mobile.components.UIAttribute-1582812478281]: 
+            attrName: target
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:_blank
+↓PageEvent [mobile.components.UIPageEvent-1582794225388]: 
+  ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1582794239163]: 
+    beanData: '{"ionBean":"InvokeAction"}'
+    stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+    ↓peopleNbr [mobile.components.UIControlVariable-1582794244971]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'4'
+    ↓marker [mobile.components.UIControlVariable-1582794244975]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'CARD'
+↓UseSharedComponent [mobile.components.UIUseShared-1582818868516]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+  ↓color [mobile.components.UIControlVariable-1582819106290]: 
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:''

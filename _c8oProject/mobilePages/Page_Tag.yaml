@@ -77,32 +77,5 @@ title: Tag
   ↓Tag1 [mobile.components.UIElement-1579258249632]: 
     selfClose: true
     tagName: hr
-↓Footer [mobile.components.UIDynamicElement-1579257993843]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [mobile.components.UIDynamicElement-1579257993846]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1579257993849]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579257993852]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579257993855]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579257993858]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579257993861]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579257993864]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
+↓UseSharedComponent [mobile.components.UIUseShared-1582819432140]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

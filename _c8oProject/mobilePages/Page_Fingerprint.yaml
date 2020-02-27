@@ -71,7 +71,7 @@ title: Fingerprint
     beanData: '{"ionBean":"ToolBar"}'
     tagName: ion-toolbar
     ↓ButtonSet [mobile.components.UIDynamicElement-1579603141886]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
       tagName: ion-buttons
       ↓Button [mobile.components.UIDynamicElement-1579609434406]: 
         beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
@@ -89,17 +89,6 @@ title: Fingerprint
                "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Fingerprint",
                "animate": "plain:false"
               }'
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579603141895]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579603141898]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579603141901]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
 ↓PageEvent [mobile.components.UIPageEvent-1579603196158]: 
   ↓init_Fingerprint [mobile.components.UICustomAction-1579603231191]: 
     actionValue: 

@@ -79,3 +79,5 @@ title: File Chooser
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: script:this.global.fileChooser
+↓UseSharedComponent [mobile.components.UIUseShared-1582819230967]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

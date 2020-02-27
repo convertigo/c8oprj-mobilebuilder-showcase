@@ -33,6 +33,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓RefresherMembers [mobile.components.UIActionStack-1582221214219]: 🗏 mobileSharedActions/RefresherMembers.yaml
 ↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
 ↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
+↓Footer [mobile.components.UISharedComponent-1582818189622]: 🗏 mobileSharedComponents/Footer.yaml
 ↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
 ↓Page_Animation [mobile.components.PageComponent-1579103295466]: 🗏 mobilePages/Page_Animation.yaml
 ↓Page_Attribute [mobile.components.PageComponent-1576144418242]: 🗏 mobilePages/Page_Attribute.yaml
@@ -40,12 +41,14 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Bars [mobile.components.PageComponent-1579773399612]: 🗏 mobilePages/Page_Bars.yaml
 ↓Page_Buttons [mobile.components.PageComponent-1580910018994]: 🗏 mobilePages/Page_Buttons.yaml
 ↓Page_Camera [mobile.components.PageComponent-1578655148107]: 🗏 mobilePages/Page_Camera.yaml
+↓Page_Cards [mobile.components.PageComponent-1582737918347]: 🗏 mobilePages/Page_Cards.yaml
 ↓Page_Charts [mobile.components.PageComponent-1579620096330]: 🗏 mobilePages/Page_Charts.yaml
 ↓Page_Chatbot [mobile.components.PageComponent-1580897615447]: 🗏 mobilePages/Page_Chatbot.yaml
 ↓Page_Fabs [mobile.components.PageComponent-1580919606453]: 🗏 mobilePages/Page_Fabs.yaml
 ↓Page_FileChooser [mobile.components.PageComponent-1578661956046]: 🗏 mobilePages/Page_FileChooser.yaml
 ↓Page_Finally [mobile.components.PageComponent-1577959939689]: 🗏 mobilePages/Page_Finally.yaml
 ↓Page_Fingerprint [mobile.components.PageComponent-1579603139459]: 🗏 mobilePages/Page_Fingerprint.yaml
+↓Page_Forms [mobile.components.PageComponent-1581527058141]: 🗏 mobilePages/Page_Forms.yaml
 ↓Page_Fragment [mobile.components.PageComponent-1579166567728]: 🗏 mobilePages/Page_Fragment.yaml
 ↓Page_Html [mobile.components.PageComponent-1579875601436]: 🗏 mobilePages/Page_Html.yaml
 ↓Page_IconInput [mobile.components.PageComponent-1576148711969]: 🗏 mobilePages/Page_IconInput.yaml
@@ -69,7 +72,6 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Menu [mobile.components.PageComponent-1580914202266]: 🗏 mobilePages/Page_Menu.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
-↓Page_Forms [mobile.components.PageComponent-1581527058141]: 🗏 mobilePages/Page_Forms.yaml
 ↓Theme [mobile.components.UITheme-1491635018260]: 
   comment: Global color themes can be customized here
   styleContent: 

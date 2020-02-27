@@ -53,117 +53,126 @@ title: Fragment
   ↓Fragment [mobile.components.UICustom-1579166859627]: 
     htmlTemplate: |
       <ion-list>
-      	<button ion-item (click)="this.openPageWithName('Page_Animation')">
+      	<ion-item tappable (click)="this.openPageWithName('Page_Animation')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Animation page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Attribute')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Attribute')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Attribute page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Barcode')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Barcode')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Barcode page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Bars')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Bars')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Bars page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Buttons')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Buttons')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Buttons page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Camera')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Camera')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Camera page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Charts')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Cards')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		Cards page
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Charts')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Charts page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_ChatBot')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_ChatBot')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		ChatBot page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Fabs')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Fabs')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Fabs page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_FileChooser')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_FileChooser')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		File Chooser page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Finally')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Finally')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Finally page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Fingerprint')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Fingerprint')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Fingerprint page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Fragment')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Forms')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		Forms page
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Fragment')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Fragment page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Html')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Html')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Html page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_IconInput')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_IconInput')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Icon in Input page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_KeyPad')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_KeyPad')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Keypad page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Lists')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Lists')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Lists page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_modal')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_modal')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Modal page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Pause')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Pause')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Pause page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Searchbar')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Searchbar')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Searchbar page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Signature')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Signature')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Signature page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_SpeechToText')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_SpeechToText')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Speech To Text page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Style')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Style')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Style page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Tabs')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Tabs')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Tabs page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Tag')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Tag')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Tag page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Text')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Text')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Text page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_TextToSpeech')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_TextToSpeech')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Text To Speech page
-      	</button>
-      	<button ion-item (click)="this.openPageWithName('Page_Tooltip')">
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Tooltip')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Tooltip page
-      	</button>
+      	</ion-item>
       </ion-list>
-↓Footer [mobile.components.UIDynamicElement-1579166568463]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [mobile.components.UIDynamicElement-1579166568466]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1579166568469]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579166568472]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579166568475]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579166568478]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1579166568481]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1579166568484]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
+↓UseSharedComponent [mobile.components.UIUseShared-1582819279728]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

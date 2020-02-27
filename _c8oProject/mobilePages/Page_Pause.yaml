@@ -65,3 +65,5 @@ title: Pause
        "Property": "plain:buttonText",
        "Value": "plain:Click"
       }'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819338369]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

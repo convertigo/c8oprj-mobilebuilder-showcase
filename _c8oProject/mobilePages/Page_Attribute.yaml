@@ -215,3 +215,5 @@ title: Attributes
           div.redAlert {
           	background-color: color($colors, danger);
           }'
+↓UseSharedComponent [mobile.components.UIUseShared-1582818472470]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

@@ -127,3 +127,5 @@ title: Camera
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: script:this.global.cameraData
+↓UseSharedComponent [mobile.components.UIUseShared-1582818852233]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

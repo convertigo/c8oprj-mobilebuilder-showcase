@@ -71,6 +71,11 @@ title: Searchbar
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: script:$event.target.value
+          ↓marker [mobile.components.UIControlVariable-1582716285628]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'SB'
       ↓Event11 [mobile.components.UIControlEvent-1582639023347]: 
         attrName: (ionClear)
         eventName: ionClear
@@ -116,6 +121,11 @@ title: Searchbar
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:$event.target.value
+        ↓marker [mobile.components.UIControlVariable-1582716237067]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'SB'
     ↓Event1 [mobile.components.UIControlEvent-1582639112806]: 
       attrName: (ionCancel)
       eventName: ionCancel
@@ -152,7 +162,7 @@ title: Searchbar
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#PEOPLE'])?.People"}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#SB'])?.People"}
       ↓ListItem [mobile.components.UIDynamicElement-1582623533984]: 
         beanData: '{"ionBean":"ListItem"}'
         tagName: ion-item
@@ -210,6 +220,11 @@ title: Searchbar
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: script:$event.target.value
+          ↓marker [mobile.components.UIControlVariable-1582716341318]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'SB'
       ↓Event11 [mobile.components.UIControlEvent-1582639102605]: 
         attrName: (ionClear)
         eventName: ionClear
@@ -222,7 +237,7 @@ title: Searchbar
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: script:'Search Cleared'
 ↓PageEvent [mobile.components.UIPageEvent-1582623534065]: 
-  ↓getpeople [mobile.components.UIDynamicInvoke-1582623534068]: 
+  ↓getPeopleSearchbar [mobile.components.UIDynamicInvoke-1582623534068]: 
     beanData: '{"ionBean":"InvokeAction"}'
     stack: MobileBuilderComponents.MobileApplication.Application.getPeople
     ↓peopleNbr [mobile.components.UIControlVariable-1582623534071]: 
@@ -230,3 +245,8 @@ title: Searchbar
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: script:100
+    ↓marker [mobile.components.UIControlVariable-1582716162002]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'SB'

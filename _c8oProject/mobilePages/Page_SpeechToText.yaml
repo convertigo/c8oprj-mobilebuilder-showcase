@@ -79,3 +79,5 @@ title: Speech To Text
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: script:this.global.speechTT
+↓UseSharedComponent [mobile.components.UIUseShared-1582819378173]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

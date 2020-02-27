@@ -649,3 +649,5 @@ title: Signature
           ↓Else_Handler [mobile.components.UIActionElseEvent-1574951079889]: 
             ↓Toast [mobile.components.UIDynamicAction-1574951079892]: 
               beanData: '{"ionBean":"ToastAction","message":"plain:Error while saving Signature..."}'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819373851]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

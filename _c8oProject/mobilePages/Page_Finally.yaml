@@ -81,3 +81,5 @@ title: Finally
             - MobileSmartSourceType: plain:4000
       ↓Toast [mobile.components.UIDynamicAction-1577979128667]: 
         beanData: '{"ionBean":"ToastAction","message":"plain:SQ2 Finished"}'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819239351]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

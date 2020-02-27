@@ -86,3 +86,5 @@ title: IconInput
                "Property": "plain:showPwd",
                "Value": "script:(this.global.showPwd === undefined) ? true : !this.global.showPwd"
               }'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819300810]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

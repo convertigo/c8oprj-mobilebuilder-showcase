@@ -58,3 +58,5 @@ title: Tooltip
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: script:1500
+↓UseSharedComponent [mobile.components.UIUseShared-1582819452021]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

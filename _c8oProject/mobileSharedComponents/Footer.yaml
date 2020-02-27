@@ -1,0 +1,23 @@
+↓Footer [mobile.components.UIDynamicElement-1582818349432]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1582818349435]: 
+    beanData: '{"ionBean":"ToolBar","IonColor":"script:params1582818189622.color"}'
+    tagName: ion-toolbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1582818658908]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1582818369475]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Convertigo \xAE
+    ↓Attr [mobile.components.UIAttribute-1582818685614]: 
+      attrName: 
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:text-right
+↓color [mobile.components.UICompVariable-1582818989176]: 
+  value: '''primary'''
