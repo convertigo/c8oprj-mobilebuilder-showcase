@@ -1,0 +1,40 @@
+↓active [mobile.components.UIStackVariable-1582897073751]: 
+  value: '''Menu'''
+↓enableMenu [mobile.components.UICustomAction-1582897128048]: 
+  actionValue: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+          
+          		let menuCtrl = page.getInstance(MenuController);
+          		
+          		if(!menuCtrl.isOpen(vars.active)){
+          		    let menus = menuCtrl.getMenus();
+              		for (let i = 0; i < menus.length; i++){
+              		    menuCtrl.enable(false, menus[i].id);
+              		}
+              		
+              		menuCtrl.enable(true, vars.active);
+              		menuCtrl.open(vars.active);
+          		}
+          		
+          		resolve();
+          '
+  page_ts_imports: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+          - com.twinsoft.convertigo.beans.common.XMLVector: 
+            - java.lang.String: 
+              - ↑value: MenuController
+            - java.lang.String: 
+              - ↑value: ionic-angular
+  ↓active [mobile.components.UIControlVariable-1582898070237]: 
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:params.active

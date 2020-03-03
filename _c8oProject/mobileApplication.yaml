@@ -26,11 +26,13 @@ componentScriptContent:
 tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Menu [mobile.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
 ↓RightMenu [mobile.components.UIDynamicMenu-1579279159205]: 🗏 mobileMenus/RightMenu.yaml
+↓LeftMenu [mobile.components.UIDynamicMenu-1582887546587]: 🗏 mobileMenus/LeftMenu.yaml
 ↓getPeople [mobile.components.UIActionStack-1579513546604]: 🗏 mobileSharedActions/getPeople.yaml
 ↓KeyPadEntry [mobile.components.UIActionStack-1580307965697]: 🗏 mobileSharedActions/KeyPadEntry.yaml
 ↓SetFocused [mobile.components.UIActionStack-1580307965715]: 🗏 mobileSharedActions/SetFocused.yaml
 ↓Toast [mobile.components.UIActionStack-1580983282970]: 🗏 mobileSharedActions/Toast.yaml
 ↓RefresherMembers [mobile.components.UIActionStack-1582221214219]: 🗏 mobileSharedActions/RefresherMembers.yaml
+↓openMenu [mobile.components.UIActionStack-1582897048684]: 🗏 mobileSharedActions/openMenu.yaml
 ↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
 ↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
 ↓Footer [mobile.components.UISharedComponent-1582818189622]: 🗏 mobileSharedComponents/Footer.yaml
@@ -54,6 +56,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_IconInput [mobile.components.PageComponent-1576148711969]: 🗏 mobilePages/Page_IconInput.yaml
 ↓Page_KeyPad [mobile.components.PageComponent-1580309028081]: 🗏 mobilePages/Page_KeyPad.yaml
 ↓Page_Lists [mobile.components.PageComponent-1579283173880]: 🗏 mobilePages/Page_Lists.yaml
+↓Page_Menu [mobile.components.PageComponent-1580914202266]: 🗏 mobilePages/Page_Menu.yaml
 ↓Page_modal [mobile.components.PageComponent-1576057381386]: 🗏 mobilePages/Page_modal.yaml
 ↓Page_modal1 [mobile.components.PageComponent-1576058487795]: 🗏 mobilePages/Page_modal1.yaml
 ↓Page_Pause [mobile.components.PageComponent-1575036271785]: 🗏 mobilePages/Page_Pause.yaml
@@ -69,7 +72,6 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Text [mobile.components.PageComponent-1579258848753]: 🗏 mobilePages/Page_Text.yaml
 ↓Page_TextToSpeech [mobile.components.PageComponent-1578662578479]: 🗏 mobilePages/Page_TextToSpeech.yaml
 ↓Page_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Tooltip.yaml
-↓Page_Menu [mobile.components.PageComponent-1580914202266]: 🗏 mobilePages/Page_Menu.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
 ↓Theme [mobile.components.UITheme-1491635018260]: 
@@ -211,4 +213,18 @@ tplProjectName: mobilebuilder_tpl_7_7_0
           
           ion-col {
           	border: 1px solid green;
+          }'
+↓FullWidthLeftMenu [mobile.components.UIStyle-1582901723172]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'ion-menu.show-menu#myLeftMenu ~ ion-nav {
+              transform: translate3d(100%, 0px, 0px) !important;
+              transition: transform 1000ms ease !important;
+          }
+          
+          ion-menu.show-menu#myLeftMenu .menu-inner {
+          	width: 100% !important;
           }'

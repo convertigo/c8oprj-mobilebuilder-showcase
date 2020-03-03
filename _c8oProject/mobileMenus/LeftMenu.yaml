@@ -1,79 +1,107 @@
 beanData: |
   '{
    "ionBean": "Menu",
-   "MenuType": "plain:push",
-   "MenuSide": "plain:right"
+   "MenuType": "plain:overlay",
+   "MenuSide": "plain:left"
   }'
 tagName: ion-menu
-↓Spacer [mobile.components.UIDynamicElement-1583257217742]: 
+↓Spacer [mobile.components.UIDynamicElement-1582904239865]: 
   beanData: '{"ionBean":"DivTag"}'
   tagName: div
-  ↓Grid [mobile.components.UIDynamicElement-1583257217750]: 
+  ↓Grid [mobile.components.UIDynamicElement-1583241285949]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1583257217753]: 
+    ↓GridRow [mobile.components.UIDynamicElement-1583241290789]: 
       beanData: '{"ionBean":"GridRow"}'
       tagName: ion-row
-      ↓GridCol1 [mobile.components.UIDynamicElement-1583257217768]: 
-        beanData: '{"ionBean":"GridCol"}'
+      ↓GridCol [mobile.components.UIDynamicElement-1583241295326]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
         tagName: ion-col
-        ↓GenericItem [mobile.components.UIDynamicElement-1583257217771]: 
-          beanData: '{"ionBean":"GenericItem"}'
-          tagName: ion-item
-          ↓Text [mobile.components.UIText-1583257217774]: 
+        ↓Button [mobile.components.UIDynamicElement-1583231936541]: 
+          beanData: |
+            '{
+             "ionBean": "Button",
+             "MenuMode": "plain:menuClose",
+             "IonColor": "plain:light",
+             "IonClear": "plain:clear",
+             "IconOnly": "plain:icon-only"
+            }'
+          tagName: button
+          ↓Text [mobile.components.UIText-1583231960191]: 
+            isEnabled: false
             textValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:Jane Doe
-          ↓AvatarItem [mobile.components.UIDynamicElement-1583257217777]: 
-            beanData: '{"ionBean":"Avatar"}'
+                - MobileSmartSourceType: plain:close
+          ↓Icon [mobile.components.UIDynamicElement-1583253514983]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:logo-windows"}'
+            tagName: ion-icon
+      ↓GridCol1 [mobile.components.UIDynamicElement-1583241297237]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓GenericItem [mobile.components.UIDynamicElement-1583241445611]: 
+          beanData: '{"ionBean":"GenericItem"}'
+          tagName: ion-item
+          ↓Text [mobile.components.UIText-1583241483828]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Welcome John Doe
+          ↓AvatarItem [mobile.components.UIDynamicElement-1583241452859]: 
+            beanData: '{"ionBean":"Avatar","ItemPosition":"plain:item-right"}'
             tagName: ion-avatar
-            ↓Image [mobile.components.UIDynamicElement-1583257217780]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/avatar\/icons8-user-female.png''"}'
+            ↓Image [mobile.components.UIDynamicElement-1583241460739]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/avatar\/icons8-user-male.png''"}'
               selfClose: true
               tagName: img
-          ↓Attr [mobile.components.UIAttribute-1583257217783]: 
+          ↓Attr [mobile.components.UIAttribute-1583241793012]: 
             attrName: 
             attrValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:text-left
-          ↓Attr1 [mobile.components.UIAttribute-1583257217786]: 
+                - MobileSmartSourceType: plain:text-right
+          ↓Attr1 [mobile.components.UIAttribute-1583242077921]: 
             attrName: 
             attrValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: plain:no-lines
-  ↓Style [mobile.components.UIStyle-1583257217789]: 
+  ↓Style [mobile.components.UIStyle-1583249800056]: 
     styleContent: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
         - com.twinsoft.convertigo.beans.common.FormatedContent: 
           →: |
-            '	background-color: #4a1407;
+            '	background-color: #201f89;
             	color: #fff;
             	
             	ion-item {
-            		background-color: #4a1407 !important;
+            		background-color: #201f89 !important;
             		color: #fff !important;
             	}
             '
-↓Grid [mobile.components.UIDynamicElement-1583257217792]: 
+↓Attr [mobile.components.UIAttribute-1582887961788]: 
+  attrName: id
+  attrValue: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+      - MobileSmartSourceType: plain:myLeftMenu
+↓Grid [mobile.components.UIDynamicElement-1583242206917]: 
   beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
   tagName: ion-grid
-  ↓GridRow [mobile.components.UIDynamicElement-1583257217795]: 
+  ↓GridRow [mobile.components.UIDynamicElement-1583242214373]: 
     beanData: '{"ionBean":"GridRow","Height":"plain:height: calc(25% - 19px)"}'
     tagName: ion-row
-    ↓GridCol [mobile.components.UIDynamicElement-1583257217798]: 
+    ↓GridCol [mobile.components.UIDynamicElement-1583242226133]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217801]: 
+      ↓Div [mobile.components.UIDynamicElement-1583247129172]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217804]: 
+        ↓Div [mobile.components.UIDynamicElement-1583247627413]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217807]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583242253030]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -81,30 +109,30 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-          ↓Paragraph [mobile.components.UIDynamicElement-1583257217810]: 
+          ↓Paragraph [mobile.components.UIDynamicElement-1583250634897]: 
             beanData: '{"ionBean":"Paragraph"}'
             tagName: p
-            ↓Text [mobile.components.UIText-1583257217813]: 
+            ↓Text [mobile.components.UIText-1583242259014]: 
               textValue: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                   - MobileSmartSourceType: plain:ANALYTICS
-        ↓Attr [mobile.components.UIAttribute-1583257217816]: 
+        ↓Attr [mobile.components.UIAttribute-1583247880318]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter
-    ↓GridCol1 [mobile.components.UIDynamicElement-1583257217819]: 
+    ↓GridCol1 [mobile.components.UIDynamicElement-1583242229309]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217822]: 
+      ↓Div [mobile.components.UIDynamicElement-1583247983597]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217825]: 
+        ↓Div [mobile.components.UIDynamicElement-1583247983600]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217828]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583247983606]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -112,37 +140,37 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-        ↓Attr [mobile.components.UIAttribute-1583257217831]: 
+        ↓Attr [mobile.components.UIAttribute-1583247983615]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter bg1
-      ↓Attr [mobile.components.UIAttribute-1583257217834]: 
+      ↓Attr [mobile.components.UIAttribute-1583252346961]: 
         attrName: 
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:no-padding
-    ↓Attr [mobile.components.UIAttribute-1583257217837]: 
+    ↓Attr [mobile.components.UIAttribute-1583245805688]: 
       attrName: 
       attrValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:text-center
-  ↓GridRow1 [mobile.components.UIDynamicElement-1583257217840]: 
+  ↓GridRow1 [mobile.components.UIDynamicElement-1583242215997]: 
     beanData: '{"ionBean":"GridRow","Height":"plain:height: calc(25% - 19px)"}'
     tagName: ion-row
-    ↓GridCol [mobile.components.UIDynamicElement-1583257217843]: 
+    ↓GridCol [mobile.components.UIDynamicElement-1583243668842]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217846]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248044609]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217849]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248044612]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217852]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248044618]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -150,30 +178,30 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-          ↓Paragraph [mobile.components.UIDynamicElement-1583257217855]: 
+          ↓Paragraph [mobile.components.UIDynamicElement-1583250866141]: 
             beanData: '{"ionBean":"Paragraph"}'
             tagName: p
-            ↓Text [mobile.components.UIText-1583257217858]: 
+            ↓Text [mobile.components.UIText-1583248044624]: 
               textValue: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                   - MobileSmartSourceType: plain:IMAGES
-        ↓Attr [mobile.components.UIAttribute-1583257217861]: 
+        ↓Attr [mobile.components.UIAttribute-1583248044627]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter
-    ↓GridCol1 [mobile.components.UIDynamicElement-1583257217864]: 
+    ↓GridCol1 [mobile.components.UIDynamicElement-1583243668854]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217867]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248064363]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217870]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248064366]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217873]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248064372]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -181,30 +209,30 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-          ↓Paragraph [mobile.components.UIDynamicElement-1583257217876]: 
+          ↓Paragraph [mobile.components.UIDynamicElement-1583250902754]: 
             beanData: '{"ionBean":"Paragraph"}'
             tagName: p
-            ↓Text [mobile.components.UIText-1583257217879]: 
+            ↓Text [mobile.components.UIText-1583248064378]: 
               textValue: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                   - MobileSmartSourceType: plain:TOUCH ID
-        ↓Attr [mobile.components.UIAttribute-1583257217882]: 
+        ↓Attr [mobile.components.UIAttribute-1583248064381]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter
-    ↓GridCol2 [mobile.components.UIDynamicElement-1583257217885]: 
+    ↓GridCol2 [mobile.components.UIDynamicElement-1583243673217]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217888]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248066863]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217891]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248066866]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217894]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248066872]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -212,39 +240,39 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-          ↓Paragraph [mobile.components.UIDynamicElement-1583257217897]: 
+          ↓Paragraph [mobile.components.UIDynamicElement-1583250925889]: 
             beanData: '{"ionBean":"Paragraph"}'
             tagName: p
-            ↓Text [mobile.components.UIText-1583257217900]: 
+            ↓Text [mobile.components.UIText-1583248066878]: 
               textValue: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                   - MobileSmartSourceType: plain:FLASH
-        ↓Attr [mobile.components.UIAttribute-1583257217903]: 
+        ↓Attr [mobile.components.UIAttribute-1583248066881]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter
-    ↓Attr [mobile.components.UIAttribute-1583257217906]: 
+    ↓Attr [mobile.components.UIAttribute-1583245844847]: 
       attrName: 
       attrValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:text-center
-  ↓GridRow2 [mobile.components.UIDynamicElement-1583257217909]: 
+  ↓GridRow2 [mobile.components.UIDynamicElement-1583242217725]: 
     beanData: '{"ionBean":"GridRow","Height":"plain:height: calc(25% - 19px)"}'
     tagName: ion-row
-    ↓GridCol [mobile.components.UIDynamicElement-1583257217912]: 
+    ↓GridCol [mobile.components.UIDynamicElement-1583243713840]: 
       beanData: '{"ionBean":"GridCol","Columns":"plain:6"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217915]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248111023]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217918]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248111026]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217921]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248111029]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -252,28 +280,28 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-        ↓Attr [mobile.components.UIAttribute-1583257217924]: 
+        ↓Attr [mobile.components.UIAttribute-1583248111032]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter bg3
-      ↓Attr1 [mobile.components.UIAttribute-1583257217927]: 
+      ↓Attr1 [mobile.components.UIAttribute-1583253176712]: 
         attrName: 
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:no-padding
-    ↓GridCol1 [mobile.components.UIDynamicElement-1583257217930]: 
+    ↓GridCol1 [mobile.components.UIDynamicElement-1583243713852]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217933]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248113892]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217936]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248113895]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217939]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248113898]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -281,22 +309,22 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-        ↓Attr [mobile.components.UIAttribute-1583257217942]: 
+        ↓Attr [mobile.components.UIAttribute-1583248113901]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter
-    ↓GridCol2 [mobile.components.UIDynamicElement-1583257217945]: 
+    ↓GridCol2 [mobile.components.UIDynamicElement-1583243713858]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217948]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248116526]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217951]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248116529]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217954]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248116532]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -304,31 +332,31 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-        ↓Attr [mobile.components.UIAttribute-1583257217957]: 
+        ↓Attr [mobile.components.UIAttribute-1583248116535]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter
-    ↓Attr [mobile.components.UIAttribute-1583257217960]: 
+    ↓Attr [mobile.components.UIAttribute-1583245847361]: 
       attrName: 
       attrValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:text-center
-  ↓GridRow3 [mobile.components.UIDynamicElement-1583257217963]: 
+  ↓GridRow3 [mobile.components.UIDynamicElement-1583242219190]: 
     beanData: '{"ionBean":"GridRow","Height":"plain:height: calc(25% - 19px)"}'
     tagName: ion-row
-    ↓GridCol [mobile.components.UIDynamicElement-1583257217966]: 
+    ↓GridCol [mobile.components.UIDynamicElement-1583243781741]: 
       beanData: '{"ionBean":"GridCol"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217969]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248131770]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217972]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248131773]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217975]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248131776]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -336,22 +364,22 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-        ↓Attr [mobile.components.UIAttribute-1583257217978]: 
+        ↓Attr [mobile.components.UIAttribute-1583248131779]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter
-    ↓GridCol1 [mobile.components.UIDynamicElement-1583257217981]: 
+    ↓GridCol1 [mobile.components.UIDynamicElement-1583243781753]: 
       beanData: '{"ionBean":"GridCol","Columns":"plain:8"}'
       tagName: ion-col
-      ↓Div [mobile.components.UIDynamicElement-1583257217984]: 
+      ↓Div [mobile.components.UIDynamicElement-1583248134715]: 
         beanData: '{"ionBean":"DivTag"}'
         tagName: div
-        ↓Div [mobile.components.UIDynamicElement-1583257217987]: 
+        ↓Div [mobile.components.UIDynamicElement-1583248134718]: 
           beanData: '{"ionBean":"DivTag"}'
           tagName: div
-          ↓Icon [mobile.components.UIDynamicElement-1583257217990]: 
+          ↓Icon [mobile.components.UIDynamicElement-1583248134721]: 
             beanData: |
               '{
                "ionBean": "Icon",
@@ -359,46 +387,46 @@ tagName: ion-menu
                "IonColor": "plain:light"
               }'
             tagName: ion-icon
-        ↓Attr [mobile.components.UIAttribute-1583257217993]: 
+        ↓Attr [mobile.components.UIAttribute-1583248134724]: 
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:vCenter bg2
-      ↓Attr [mobile.components.UIAttribute-1583257217996]: 
+      ↓Attr [mobile.components.UIAttribute-1583252798926]: 
         attrName: 
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:no-padding
-    ↓Attr [mobile.components.UIAttribute-1583257217999]: 
+    ↓Attr [mobile.components.UIAttribute-1583245849918]: 
       attrName: 
       attrValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:text-center
-  ↓Attr [mobile.components.UIAttribute-1583257218002]: 
+  ↓Attr [mobile.components.UIAttribute-1583243431908]: 
     attrName: class
     attrValue: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-        - MobileSmartSourceType: plain:rightMenu
-↓Style [mobile.components.UIStyle-1583257600191]: 
+        - MobileSmartSourceType: plain:leftMenu
+↓Style [mobile.components.UIStyle-1583243420548]: 
   styleContent: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          '	ion-grid.rightMenu {
-          		background-color: #522114;
+          '	ion-grid.leftMenu {
+          		background-color: #2c2c8d;
           		
           		ion-row {
           /* 			padding: 0.5rem; */
           			
           			ion-col {
           /* 				border: 1px solid #403ea1; */
-              			background-color: #e0381a;
-              			box-shadow: 0 1px 4px #441b10;
+              			background-color: #625ee1;
+              			box-shadow: 0 1px 4px #1f1f65;
           				margin: 0.7rem;
           				border-radius: 4px;
           				

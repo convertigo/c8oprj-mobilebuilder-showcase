@@ -1,6 +1,3 @@
-comment: Todo
-inAutoMenu: false
-isEnabled: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -51,68 +48,90 @@ title: Menus
     ↓ButtonSet_right [mobile.components.UIDynamicElement-1580914324097]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
       tagName: ion-buttons
-      ↓Button1 [mobile.components.UIDynamicElement-1580914258497]: 
-        beanData: |
-          '{
-           "ionBean": "Button",
-           "ButtonFormType": "plain:false",
-           "MenuMode": "plain:menuToggle"
-          }'
+      ↓Button [mobile.components.UIDynamicElement-1580914258497]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
         comment: A button to toggle the menu
         tagName: button
         ↓Icon [mobile.components.UIDynamicElement-1580914258500]: 
           beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
           tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1582885260046]: 
+          ↓do [mobile.components.UIDynamicInvoke-1582897926957]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.openMenu
+            ↓active [mobile.components.UIControlVariable-1582897926960]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'RightMenu'
+        ↓Attr [mobile.components.UIAttribute-1582885592634]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:bar-button-menutoggle bar-button-menutoggle-md
 ↓Content [mobile.components.UIDynamicElement-1580914202823]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-  ↓Grid [mobile.components.UIDynamicElement-1580914504181]: 
-    beanData: '{"ionBean":"Grid"}'
-    tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1580914509133]: 
-      beanData: '{"ionBean":"GridRow"}'
-      tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1580914516581]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓Event [mobile.components.UIControlEvent-1580914578535]: 
-          ↓openMenu [mobile.components.UICustomAction-1580914594808]: 
-            actionValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                  →: |
-                    '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                    		this.menuCtrl.open(''right'');
-                    		resolve();
-                    '
-↓Footer [mobile.components.UIDynamicElement-1580914202826]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [mobile.components.UIDynamicElement-1580914202829]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1580914202832]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1580914202835]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1580914202838]: 
-          textValue: 
+  ↓Button_ActiveMenu [mobile.components.UIDynamicElement-1582883698630]: 
+    beanData: |
+      '{
+       "ionBean": "Button",
+       "MenuMode": "plain:menuToggle",
+       "IonShape": "plain:full"
+      }'
+    tagName: button
+    ↓Text [mobile.components.UIText-1582883705570]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Toggle Active Menu
+  ↓Button_LeftMenu [mobile.components.UIDynamicElement-1582887662770]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1582887662773]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Activate / Open Left Menu
+    ↓Event [mobile.components.UIControlEvent-1582887662776]: 
+      ↓do [mobile.components.UIDynamicInvoke-1582897876170]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.openMenu
+        ↓active [mobile.components.UIControlVariable-1582897876173]: 
+          varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1580914202841]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1580914202844]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1580914202847]: 
-          textValue: 
+              - MobileSmartSourceType: script:'myLeftMenu'
+  ↓Button_RightMenu [mobile.components.UIDynamicElement-1582883767035]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1582883767038]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Activate / Open Right Menu
+    ↓Event [mobile.components.UIControlEvent-1580914578535]: 
+      ↓do [mobile.components.UIDynamicInvoke-1582897818563]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.openMenu
+        ↓active [mobile.components.UIControlVariable-1582897852914]: 
+          varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
+              - MobileSmartSourceType: script:'RightMenu'
+  ↓Button_DefaultMenu [mobile.components.UIDynamicElement-1582898249167]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1582898249170]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Activate / Open Default Menu
+    ↓Event [mobile.components.UIControlEvent-1582898249173]: 
+      ↓do [mobile.components.UIDynamicInvoke-1582898249176]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.openMenu
+↓UseSharedComponent [mobile.components.UIUseShared-1583253611365]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

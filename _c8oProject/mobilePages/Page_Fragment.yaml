@@ -129,6 +129,10 @@ title: Fragment
       		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Lists page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Menu')">
+      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		Menus page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_modal')">
       		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
       		Modal page

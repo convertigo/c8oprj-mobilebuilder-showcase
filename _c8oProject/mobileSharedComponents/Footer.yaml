@@ -12,12 +12,12 @@
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Convertigo \xAE
+            - MobileSmartSourceType: plain:Convertigo\xAE
     ↓Attr [mobile.components.UIAttribute-1582818685614]: 
       attrName: 
       attrValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:text-right
+          - MobileSmartSourceType: plain:text-center
 ↓color [mobile.components.UICompVariable-1582818989176]: 
   value: '''primary'''
