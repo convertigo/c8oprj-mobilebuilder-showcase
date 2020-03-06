@@ -121,6 +121,23 @@ title: Menus
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'RightMenu'
+  ↓Button_CustomMenu [mobile.components.UIDynamicElement-1583502892817]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1583502892820]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Activate / Open CustomMenu
+    ↓Event [mobile.components.UIControlEvent-1583502892823]: 
+      ↓do [mobile.components.UIDynamicInvoke-1583502892826]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.openMenu
+        ↓active [mobile.components.UIControlVariable-1583502892829]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'CustomMenu'
   ↓Button_DefaultMenu [mobile.components.UIDynamicElement-1582898249167]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button

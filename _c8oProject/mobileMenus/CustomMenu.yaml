@@ -1,0 +1,75 @@
+beanData: |
+  '{
+   "ionBean": "Menu",
+   "MenuType": "plain:reveal",
+   "MenuSide": "plain:right",
+   "MenuSwipeEnabled": "plain:false"
+  }'
+comment: A menu with all pages added automatically
+tagName: ion-menu
+↓Header [mobile.components.UIDynamicElement-1583502473968]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1583502473971]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1583502473974]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1583502473977]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Custom Menu
+    ↓ButtonSet [mobile.components.UIDynamicElement-1583502473980]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1583502473983]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "MenuMode": "plain:menuClose",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1583502473986]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:close"}'
+          tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1583502473989]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓List [mobile.components.UIDynamicElement-1583502473992]: 
+    beanData: |
+      '{
+       "ionBean": "List",
+       "Nolines": "plain:no-lines",
+       "Inset": "plain:inset"
+      }'
+    tagName: ion-list
+    ↓Directive [mobile.components.UIControlDirective-1583502601304]: 
+      directiveIndexName: pIndex
+      directiveItemName: page
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:getPagesIncludedInAutoMenu()
+      ↓ListItem [mobile.components.UIDynamicElement-1583502613624]: 
+        beanData: '{"ionBean":"ListItem"}'
+        tagName: ion-item
+        ↓Text [mobile.components.UIText-1583503121713]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:page.title
+        ↓Animation [mobile.components.UIAnimation-1583513903033]: 
+          animationName: fadeIn
+        ↓Animation1 [mobile.components.UIAnimation-1583513997930]: 
+          animationName: slow
+        ↓Style [mobile.components.UIStyle-1583514218208]: 
+          styleContent: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '	font-weight: bold;
+                  '

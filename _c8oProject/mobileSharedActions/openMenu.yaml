@@ -10,6 +10,12 @@
           
           		let menuCtrl = page.getInstance(MenuController);
           		
+          		let openedMenu = menuCtrl.getOpen();
+          		if(openedMenu && openedMenu.id != vars.active){
+          		    resolve();
+          		    return;
+          		}
+          		
           		if(!menuCtrl.isOpen(vars.active)){
           		    let menus = menuCtrl.getMenus();
               		for (let i = 0; i < menus.length; i++){

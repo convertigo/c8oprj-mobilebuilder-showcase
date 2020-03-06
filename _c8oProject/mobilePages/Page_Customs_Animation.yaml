@@ -13,7 +13,7 @@ scriptContent:
         /*Begin_c8o_PageFunction*/
         	/*End_c8o_PageFunction*/
         
-segment: path-to-page_animation
+segment: path-to-page_customs_animation
 title: Animation
 ↓Header [mobile.components.UIDynamicElement-1579103295967]: 
   beanData: '{"ionBean":"Header"}'
@@ -119,7 +119,7 @@ title: Animation
             beanData: |
               '{
                "ionBean": "RootPageAction",
-               "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Animation",
+               "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Customs_Animation",
                "animate": "plain:false"
               }'
 ↓Style [mobile.components.UIStyle-1579167116109]: 
