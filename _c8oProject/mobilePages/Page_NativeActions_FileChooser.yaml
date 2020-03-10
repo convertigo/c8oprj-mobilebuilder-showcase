@@ -1,0 +1,83 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	public JSON: any;
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		this.JSON = JSON;
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        '
+segment: path-to-page_nativeactions_filechooser
+title: File Chooser
+↓Header [mobile.components.UIDynamicElement-1578661956237]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1578661956240]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1578661956243]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1578661956246]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:File Chooser
+    ↓Button [mobile.components.UIDynamicElement-1579171074173]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579171074176]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1578661956249]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓Div [mobile.components.UIDynamicElement-1578661956252]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Button [mobile.components.UIDynamicElement-1578661956255]: 
+      beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1578661956258]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:folder-open"}'
+        tagName: ion-icon
+      ↓Event [mobile.components.UIControlEvent-1578661956261]: 
+        ↓SetGlobal [mobile.components.UIDynamicAction-1578661956264]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:fileChooser",
+             "Value": "script:undefined"
+            }'
+          ↓FileChooser [mobile.components.UIDynamicAction-1578662119199]: 
+            beanData: '{"ionBean":"FileChooserAction"}'
+            ↓SetGlobal [mobile.components.UIDynamicAction-1578661956270]: 
+              beanData: |
+                '{
+                 "ionBean": "SetGlobalAction",
+                 "Property": "plain:fileChooser",
+                 "Value": "script:out"
+                }'
+  ↓Div2 [mobile.components.UIDynamicElement-1578661956273]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Text [mobile.components.UIText-1578661956276]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.fileChooser
+↓UseSharedComponent [mobile.components.UIUseShared-1582819230967]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

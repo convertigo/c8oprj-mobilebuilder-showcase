@@ -1,0 +1,653 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	JsonStringify(o){
+        	    return JSON.stringify(o);
+        	}
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_forms_signature
+title: Signature
+↓Header [mobile.components.UIDynamicElement-1574951079487]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1574951079490]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1574951079493]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1574951079496]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:SIGNATURE
+    ↓Button [mobile.components.UIDynamicElement-1576683683110]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1576683683113]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1574951079499]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓SIGNATUREPAD [mobile.components.UIDynamicElement-1574951079502]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓Div [mobile.components.UIDynamicElement-1574951079505]: 
+      beanData: '{"ionBean":"DivTag"}'
+      tagName: div
+      ↓Text [mobile.components.UIText-1574951079508]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Signature:
+    ↓Signature [mobile.components.UIDynamicComponent-1574951079511]: 
+      beanData: '{"ionBean":"SignatureComponent"}'
+      identifier: Zsig
+      tagName: c8o-signature
+      ↓Attr [mobile.components.UIAttribute-1574951079514]: 
+        attrName: '[(ngModel)]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.sig
+      ↓Attr1 [mobile.components.UIAttribute-1574951079517]: 
+        attrName: '[ngModelOptions]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:{standalone: true}'
+    ↓Style [mobile.components.UIStyle-1574951079520]: 
+      isEnabled: false
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '	background-color: #ff80ff;
+              '
+  ↓BUTTONS [mobile.components.UIDynamicElement-1574951079523]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓Button_Undo [mobile.components.UIDynamicElement-1574951079526]: 
+      beanData: '{"ionBean":"Button"}'
+      tagName: button
+      ↓Text [mobile.components.UIText-1574951079529]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:UNDO
+      ↓Event [mobile.components.UIControlEvent-1574951079532]: 
+        ↓undoAction [mobile.components.UICustomAction-1574951079535]: 
+          actionValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                  		
+                  		let data = vars.sigPad.toData();
+                  		
+                  		if(data && data.length>0){
+                  		    data.pop();
+                  		    vars.sigPad.fromData(data);
+                  		}else{
+                  		    vars.sigPad.clear();
+                  		}
+                  		
+                  		if(!vars.sigPad.isEmpty()){
+                  		    this.global.sig = vars.sigPad.toDataURL();
+                  		}else{
+                  		    this.global.sig = null;
+                  		}
+                  		resolve();
+                  '
+          ↓sigPad [mobile.components.UIControlVariable-1574951079538]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.Zsig?.signaturePad
+    ↓Button_Clear [mobile.components.UIDynamicElement-1574951079541]: 
+      beanData: '{"ionBean":"Button"}'
+      tagName: button
+      ↓Text [mobile.components.UIText-1574951079544]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:CLEAR
+      ↓Event [mobile.components.UIControlEvent-1574951079547]: 
+        ↓clearAction [mobile.components.UICustomAction-1574951079550]: 
+          actionValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                  		
+                  		vars.sigPad.clear();
+                  		if(vars.sigPad.isEmpty()){
+                  		    this.global.sig = null;
+                          }
+                  		resolve();
+                  '
+          ↓sigPad [mobile.components.UIControlVariable-1574951079553]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.Zsig?.signaturePad
+    ↓Button_SavePNG [mobile.components.UIDynamicElement-1574951079556]: 
+      beanData: '{"ionBean":"Button"}'
+      isEnabled: false
+      tagName: button
+      ↓Text [mobile.components.UIText-1574951079559]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Get PNG
+      ↓Event [mobile.components.UIControlEvent-1574951079562]: 
+        ↓PNGAction [mobile.components.UICustomAction-1574951079565]: 
+          actionValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                  		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ vars.sigPad.toDataURL());
+                  		window.open(vars.sigPad.toDataURL(), "signature.png");
+                  		resolve();
+                  '
+          ↓sigPad [mobile.components.UIControlVariable-1574951079568]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.Zsig?.signaturePad
+    ↓Button_Submit [mobile.components.UIDynamicElement-1574951079571]: 
+      beanData: '{"ionBean":"Button"}'
+      tagName: button
+      ↓Text [mobile.components.UIText-1574951079574]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:SUBMIT
+      ↓Event [mobile.components.UIControlEvent-1574951079577]: 
+        ↓CallSequence [mobile.components.UIDynamicAction-1574951079580]: 
+          beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:MobileBuilderComponents.saveSignature"}'
+          ↓sig [mobile.components.UIControlVariable-1574951079583]: 
+            comment: new variable
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.global.sig
+          ↓IfElse [mobile.components.UIDynamicIf-1574951079586]: 
+            beanData: '{"ionBean":"IfElseAction","condition":"script:parent.out.status && parent.out.status == ''OK''"}'
+            ↓Toast [mobile.components.UIDynamicAction-1574951079589]: 
+              beanData: '{"ionBean":"ToastAction","message":"plain:Signature saved!"}'
+            ↓Else_Handler [mobile.components.UIActionElseEvent-1574951079592]: 
+              ↓Toast [mobile.components.UIDynamicAction-1574951079595]: 
+                beanData: '{"ionBean":"ToastAction","message":"plain:Error while saving Signature..."}'
+  ↓B64 [mobile.components.UIDynamicElement-1574951079598]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓Label [mobile.components.UIDynamicElement-1574951079601]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1574951079604]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:B64
+    ↓TextArea [mobile.components.UIDynamicElement-1574951079607]: 
+      beanData: '{"ionBean":"TextArea","AreaRows":"plain:10"}'
+      tagName: ion-textarea
+      ↓Attr [mobile.components.UIAttribute-1574951079610]: 
+        attrName: '[(ngModel)]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.sig
+  ↓IMAGE [mobile.components.UIDynamicElement-1574951079613]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓Div [mobile.components.UIDynamicElement-1574951079616]: 
+      beanData: '{"ionBean":"DivTag"}'
+      tagName: div
+      ↓Text [mobile.components.UIText-1574951079619]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:PNG Image
+    ↓Image [mobile.components.UIDynamicElement-1574951079622]: 
+      beanData: |
+        '{
+         "ionBean": "Image",
+         "url": "script:(this.global.sig === undefined)?null:this.global.sig",
+         "width": "plain:false",
+         "height": "plain:false"
+        }'
+      selfClose: true
+      tagName: img
+  ↓CardContainer [mobile.components.UIDynamicElement-1574951079625]: 
+    beanData: '{"ionBean":"Card"}'
+    tagName: ion-card
+    ↓CardHeader [mobile.components.UIDynamicElement-1574951079628]: 
+      beanData: '{"ionBean":"CardHeader"}'
+      tagName: ion-card-header
+      ↓Text [mobile.components.UIText-1574951079631]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:OPTIONS
+    ↓CardContent [mobile.components.UIDynamicElement-1574951079634]: 
+      beanData: '{"ionBean":"CardContent"}'
+      tagName: ion-card-content
+      ↓Pen [mobile.components.UIDynamicElement-1574951079637]: 
+        beanData: '{"ionBean":"GenericItem"}'
+        tagName: ion-item
+        ↓Label [mobile.components.UIDynamicElement-1574951079640]: 
+          beanData: '{"ionBean":"Label"}'
+          tagName: ion-label
+          ↓Text [mobile.components.UIText-1574951079643]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Pen color:
+        ↓SelectContainer [mobile.components.UIDynamicElement-1574951079646]: 
+          beanData: |
+            '{
+             "ionBean": "Select",
+             "interface": "plain:action-sheet",
+             "placeholder": "plain:Select a Pen color"
+            }'
+          tagName: ion-select
+          ↓OptionBlack [mobile.components.UIDynamicElement-1574951079649]: 
+            beanData: '{"ionBean":"Option","value":"plain:black"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079652]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Default (Black)
+          ↓OptionWhite [mobile.components.UIDynamicElement-1574951079655]: 
+            beanData: '{"ionBean":"Option","value":"plain:white"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079658]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:White
+          ↓OptionRed [mobile.components.UIDynamicElement-1574951079661]: 
+            beanData: '{"ionBean":"Option","value":"plain:red"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079664]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Red
+          ↓OptionGreen [mobile.components.UIDynamicElement-1574951079667]: 
+            beanData: '{"ionBean":"Option","value":"plain:green"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079670]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Green
+          ↓OptionBlue [mobile.components.UIDynamicElement-1574951079673]: 
+            beanData: '{"ionBean":"Option","value":"plain:blue"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079676]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Blue
+          ↓Event [mobile.components.UIControlEvent-1574951079679]: 
+            attrName: (ionChange)
+            eventName: ionChange
+            ↓changePen [mobile.components.UICustomAction-1574951079682]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		vars.sigPad.set(''penColor'', this.global.selectPen);
+                      		resolve();
+                      '
+              ↓sigPad [mobile.components.UIControlVariable-1574951079685]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:this.Zsig?.signaturePad
+          ↓Attr [mobile.components.UIAttribute-1574951079688]: 
+            attrName: '[(ngModel)]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.global.selectPen
+        ↓Attr [mobile.components.UIAttribute-1574951079691]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:no-lines
+      ↓Background [mobile.components.UIDynamicElement-1574951079694]: 
+        beanData: '{"ionBean":"GenericItem"}'
+        tagName: ion-item
+        ↓Label [mobile.components.UIDynamicElement-1574951079697]: 
+          beanData: '{"ionBean":"Label"}'
+          tagName: ion-label
+          ↓Text [mobile.components.UIText-1574951079700]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Background color:
+        ↓SelectContainer [mobile.components.UIDynamicElement-1574951079703]: 
+          beanData: |
+            '{
+             "ionBean": "Select",
+             "interface": "plain:action-sheet",
+             "placeholder": "plain:Select a Background color"
+            }'
+          tagName: ion-select
+          ↓OptionBlack [mobile.components.UIDynamicElement-1574951079706]: 
+            beanData: '{"ionBean":"Option","value":"plain:black"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079709]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Black
+          ↓OptionWhite [mobile.components.UIDynamicElement-1574951079712]: 
+            beanData: '{"ionBean":"Option","value":"plain:white"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079715]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:White
+          ↓OptionRed [mobile.components.UIDynamicElement-1574951079718]: 
+            beanData: '{"ionBean":"Option","value":"plain:red"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079721]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Red
+          ↓OptionGreen [mobile.components.UIDynamicElement-1574951079724]: 
+            beanData: '{"ionBean":"Option","value":"plain:green"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079727]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Green
+          ↓OptionBlue [mobile.components.UIDynamicElement-1574951079730]: 
+            beanData: '{"ionBean":"Option","value":"plain:blue"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079733]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Blue
+          ↓Event [mobile.components.UIControlEvent-1574951079736]: 
+            attrName: (ionChange)
+            eventName: ionChange
+            ↓changeBg [mobile.components.UICustomAction-1574951079739]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		vars.sigPad.set(''backgroundColor'', this.global.selectBg);
+                      		vars.sigPad.clear();
+                      		this.global.sig = null;
+                      		resolve();
+                      '
+              ↓sigPad [mobile.components.UIControlVariable-1574951079742]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:this.Zsig?.signaturePad
+          ↓Attr [mobile.components.UIAttribute-1574951079745]: 
+            attrName: '[(ngModel)]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.global.selectBg
+          ↓OptionTransparent [mobile.components.UIDynamicElement-1574951079748]: 
+            beanData: '{"ionBean":"Option","value":"plain:rgba(0,0,0,0)"}'
+            tagName: ion-option
+            ↓Text [mobile.components.UIText-1574951079751]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Transparent
+        ↓Attr [mobile.components.UIAttribute-1574951079754]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:no-lines
+      ↓DotSizeLabel [mobile.components.UIDynamicElement-1574951079757]: 
+        beanData: '{"ionBean":"GenericItem"}'
+        tagName: ion-item
+        ↓Label [mobile.components.UIDynamicElement-1574951079760]: 
+          beanData: '{"ionBean":"Label"}'
+          tagName: ion-label
+          ↓Text [mobile.components.UIText-1574951079763]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Dot size:
+          ↓Attr [mobile.components.UIAttribute-1574951079766]: 
+            attrName: color
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:label
+        ↓Attr [mobile.components.UIAttribute-1574951079769]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:no-lines
+      ↓DotSizeRange [mobile.components.UIDynamicElement-1574951079772]: 
+        beanData: '{"ionBean":"GenericItem"}'
+        tagName: ion-item
+        ↓Attr [mobile.components.UIAttribute-1574951079775]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:no-lines
+        ↓RangeSlider [mobile.components.UIDynamicElement-1574951079778]: 
+          beanData: |
+            '{
+             "ionBean": "Range",
+             "Min": "plain:100",
+             "Max": "plain:500",
+             "Step": "plain:50",
+             "Snaps": "plain:true"
+            }'
+          tagName: ion-range
+          ↓Label [mobile.components.UIDynamicElement-1574951079781]: 
+            beanData: '{"ionBean":"Label","RangeLeft":"plain:range-left"}'
+            tagName: ion-label
+            ↓Text [mobile.components.UIText-1574951079784]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:1
+          ↓Label1 [mobile.components.UIDynamicElement-1574951079787]: 
+            beanData: '{"ionBean":"Label","RangeRight":"plain:range-right"}'
+            tagName: ion-label
+            ↓Text [mobile.components.UIText-1574951079790]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:5
+          ↓Attr [mobile.components.UIAttribute-1574951079793]: 
+            attrName: '[(ngModel)]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.global.rangeDot
+          ↓Event [mobile.components.UIControlEvent-1574951079796]: 
+            attrName: (ionChange)
+            eventName: ionChange
+            ↓changeDotSize [mobile.components.UICustomAction-1574951079799]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		vars.sigPad.set(''dotSize'', this.global.rangeDot/100);
+                      		resolve();
+                      '
+              ↓sigPad [mobile.components.UIControlVariable-1574951079802]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:this.Zsig?.signaturePad
+      ↓LineWidthLabel [mobile.components.UIDynamicElement-1574951079805]: 
+        beanData: '{"ionBean":"GenericItem"}'
+        tagName: ion-item
+        ↓Label [mobile.components.UIDynamicElement-1574951079808]: 
+          beanData: '{"ionBean":"Label"}'
+          tagName: ion-label
+          ↓Text [mobile.components.UIText-1574951079811]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Line width:
+          ↓Attr [mobile.components.UIAttribute-1574951079814]: 
+            attrName: color
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:label
+        ↓Attr [mobile.components.UIAttribute-1574951079817]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:no-lines
+      ↓LineWidthRange [mobile.components.UIDynamicElement-1574951079820]: 
+        beanData: '{"ionBean":"GenericItem"}'
+        tagName: ion-item
+        ↓Attr [mobile.components.UIAttribute-1574951079823]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:no-lines
+        ↓RangeSlider [mobile.components.UIDynamicElement-1574951079826]: 
+          beanData: |
+            '{
+             "ionBean": "Range",
+             "Min": "plain:50",
+             "Max": "plain:500",
+             "Step": "plain:50",
+             "Snaps": "plain:true",
+             "DualKnobs": "plain:true"
+            }'
+          tagName: ion-range
+          ↓Label [mobile.components.UIDynamicElement-1574951079829]: 
+            beanData: '{"ionBean":"Label","RangeLeft":"plain:range-left"}'
+            tagName: ion-label
+            ↓Text [mobile.components.UIText-1574951079832]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:0.5
+          ↓Label1 [mobile.components.UIDynamicElement-1574951079835]: 
+            beanData: '{"ionBean":"Label","RangeRight":"plain:range-right"}'
+            tagName: ion-label
+            ↓Text [mobile.components.UIText-1574951079838]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:5
+          ↓Attr [mobile.components.UIAttribute-1574951079841]: 
+            attrName: '[(ngModel)]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:(this.global.rangeLine === undefined)?{lower: 50, upper: 250}:this.global.rangeLine'
+          ↓Event [mobile.components.UIControlEvent-1574951079844]: 
+            attrName: (ionChange)
+            eventName: ionChange
+            ↓changeLineWidth [mobile.components.UICustomAction-1574951079847]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		this.global.rangeLine = (this.global.rangeLine === undefined)?{lower: 50, upper: 250}:this.global.rangeLine;
+                      		vars.sigPad.set(''minWidth'', this.global.rangeLine.lower/100);
+                      		vars.sigPad.set(''maxWidth'', this.global.rangeLine.upper/100);
+                      		resolve();
+                      '
+              ↓sigPad [mobile.components.UIControlVariable-1574951079850]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:this.Zsig?.signaturePad
+  ↓Form [mobile.components.UIForm-1574951079853]: 
+    ↓SIGNATUREPAD [mobile.components.UIDynamicElement-1574951079856]: 
+      beanData: '{"ionBean":"GenericItem"}'
+      tagName: ion-item
+      ↓Div [mobile.components.UIDynamicElement-1574951079859]: 
+        beanData: '{"ionBean":"DivTag"}'
+        tagName: div
+        ↓Text [mobile.components.UIText-1574951079862]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Signature in a Form:
+      ↓Signature [mobile.components.UIDynamicComponent-1574951079865]: 
+        beanData: '{"ionBean":"SignatureComponent","FormControlName":"plain:var1574951079865"}'
+        tagName: c8o-signature
+    ↓BUTTONS [mobile.components.UIDynamicElement-1574951079868]: 
+      beanData: '{"ionBean":"GenericItem"}'
+      tagName: ion-item
+      ↓SubmitButton [mobile.components.UIDynamicElement-1574951079871]: 
+        beanData: '{"ionBean":"SubmitButton"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1574951079874]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:submit
+    ↓Event [mobile.components.UIControlEvent-1574951079877]: 
+      attrName: (ngSubmit)
+      eventName: onSubmit
+      ↓CallSequence [mobile.components.UIDynamicAction-1574951079880]: 
+        beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:MobileBuilderComponents.saveSignature"}'
+        ↓IfElse [mobile.components.UIDynamicIf-1574951079883]: 
+          beanData: '{"ionBean":"IfElseAction","condition":"script:parent.out.status && parent.out.status == ''OK''"}'
+          ↓Toast [mobile.components.UIDynamicAction-1574951079886]: 
+            beanData: '{"ionBean":"ToastAction","message":"plain:Signature saved!"}'
+          ↓Else_Handler [mobile.components.UIActionElseEvent-1574951079889]: 
+            ↓Toast [mobile.components.UIDynamicAction-1574951079892]: 
+              beanData: '{"ionBean":"ToastAction","message":"plain:Error while saving Signature..."}'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819373851]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

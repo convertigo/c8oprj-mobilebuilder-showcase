@@ -1,0 +1,153 @@
+menu: MobileBuilderComponents.MobileApplication.Application.TOTO
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_customs_text
+title: Text
+↓Header [mobile.components.UIDynamicElement-1579258848993]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579258848996]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579258848999]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579258849002]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Text
+    ↓Button [mobile.components.UIDynamicElement-1579258849005]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579258849008]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579258849011]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1579259163384]: 
+    beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1579259175455]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579259207496]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1579259184471]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:some static text
+    ↓GridRow1 [mobile.components.UIDynamicElement-1579259382101]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579259382104]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text1 [mobile.components.UIText-1579260287607]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:some typescript text. Today:
+        ↓Text [mobile.components.UIText-1579259382107]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:Date() | date:'medium'
+    ↓GridRow2 [mobile.components.UIDynamicElement-1579259673206]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579259673209]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1579259673212]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generateText#TEXT_PAGE'])?.TEXT"}
+    ↓GridRow3 [mobile.components.UIDynamicElement-1579266523622]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579266523625]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1579266523628]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Global","project":"MobileBuilderComponents","input":"router.sharedObject?.globalText"}
+    ↓GridRow4 [mobile.components.UIDynamicElement-1579266909538]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1579266909541]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text1 [mobile.components.UIText-1579268184040]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: 'plain:some text from Iterator Source: '
+        ↓Directive [mobile.components.UIControlDirective-1579266918428]: 
+          directiveSource: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#PEOPLE'])?.People"}
+          ↓Text [mobile.components.UIText-1579266909544]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: source:{"filter":"Iteration","project":"MobileBuilderComponents","input":"item1579266918428?.firstname + ','"}
+↓PageEvent [mobile.components.UIPageEvent-1579259498585]: 
+  ↓CallSequence_generateText [mobile.components.UIDynamicAction-1579259512215]: 
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:MobileBuilderComponents.generateText",
+       "marker": "plain:TEXT_PAGE"
+      }'
+    ↓text [mobile.components.UIControlVariable-1579259542452]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:some text from sequence response
+  ↓SetGlobal [mobile.components.UIDynamicAction-1579266480955]: 
+    beanData: |
+      '{
+       "ionBean": "SetGlobalAction",
+       "Property": "plain:globalText",
+       "Value": "plain:some text from a Global Component"
+      }'
+  ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1579513717631]: 
+    beanData: '{"ionBean":"InvokeAction"}'
+    stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+    ↓peopleNbr [mobile.components.UIControlVariable-1579513725073]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'10'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819441252]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

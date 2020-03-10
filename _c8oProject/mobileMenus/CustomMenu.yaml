@@ -39,12 +39,7 @@ tagName: ion-menu
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
   ↓List [mobile.components.UIDynamicElement-1583502473992]: 
-    beanData: |
-      '{
-       "ionBean": "List",
-       "Nolines": "plain:no-lines",
-       "Inset": "plain:inset"
-      }'
+    beanData: '{"ionBean":"List","Nolines":"plain:no-lines"}'
     tagName: ion-list
     ↓Directive [mobile.components.UIControlDirective-1583502601304]: 
       directiveIndexName: pIndex
@@ -52,24 +47,160 @@ tagName: ion-menu
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:getPagesIncludedInAutoMenu()
-      ↓ListItem [mobile.components.UIDynamicElement-1583502613624]: 
-        beanData: '{"ionBean":"ListItem"}'
-        tagName: ion-item
-        ↓Text [mobile.components.UIText-1583503121713]: 
-          textValue: 
+          - MobileSmartSourceType: script:this.global.groupedPages
+      ↓ListHeader [mobile.components.UIDynamicElement-1583760531915]: 
+        beanData: '{"ionBean":"Listheader"}'
+        tagName: ion-list-header
+        ↓Attr [mobile.components.UIAttribute-1583760728590]: 
+          attrName: 
+          attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:page.title
-        ↓Animation [mobile.components.UIAnimation-1583513903033]: 
-          animationName: fadeIn
-        ↓Animation1 [mobile.components.UIAnimation-1583513997930]: 
-          animationName: slow
-        ↓Style [mobile.components.UIStyle-1583514218208]: 
-          styleContent: 
+              - MobileSmartSourceType: plain:no-lines
+        ↓Attr1 [mobile.components.UIAttribute-1583760730599]: 
+          attrName: 
+          attrValue: 
             - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-              - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                →: |
-                  '	font-weight: bold;
-                  '
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:no-padding
+        ↓Button [mobile.components.UIDynamicElement-1583760872633]: 
+          beanData: '{"ionBean":"Button","ButtonType":"plain:ion-item"}'
+          tagName: button
+          ↓Icon [mobile.components.UIDynamicElement-1583760922809]: 
+            beanData: |
+              '{
+               "ionBean": "Icon",
+               "IconName": "script:page?.open ? ''arrow-dropdown'' : ''arrow-dropright''",
+               "ItemPosition": "plain:item-start"
+              }'
+            tagName: ion-icon
+          ↓Text [mobile.components.UIText-1583760637388]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:page.category
+          ↓Event [mobile.components.UIControlEvent-1583761411391]: 
+            ↓toggleSection [mobile.components.UICustomAction-1583761436408]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		this.global.groupedPages[vars.i].open = !this.global.groupedPages[vars.i].open; 
+                      		resolve();
+                      '
+              ↓i [mobile.components.UIControlVariable-1583761462756]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:pIndex
+          ↓Attr [mobile.components.UIAttribute-1583761930448]: 
+            attrName: '[ngClass]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:{''section-active'': page?.open}'
+      ↓Directive1 [mobile.components.UIControlDirective-1583762659889]: 
+        directiveName: If
+        directiveSource: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:page?.open
+        ↓Div [mobile.components.UIDynamicElement-1583767108158]: 
+          beanData: '{"ionBean":"DivTag"}'
+          tagName: div
+          ↓Directive [mobile.components.UIControlDirective-1583762290603]: 
+            directiveIndexName: ppIdx
+            directiveItemName: ppItem
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:page.pages
+            ↓ListItem [mobile.components.UIDynamicElement-1583502613624]: 
+              beanData: '{"ionBean":"ListItem"}'
+              tagName: ion-item
+              ↓Text [mobile.components.UIText-1583503121713]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:ppItem.title
+              ↓Style [mobile.components.UIStyle-1583514218208]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '/* 	font-weight: bold; */
+                        	padding-left: 32px;
+                        	margin: 5px 0px 5px 5px;
+                        	min-height: 3.5rem !important;
+                        	background: color($colors, light);
+                        '
+              ↓Attr [mobile.components.UIAttribute-1583832076001]: 
+                attrName: 
+                attrValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:tappable
+              ↓Event [mobile.components.UIControlEvent-1583832096554]: 
+                ↓rootPage [mobile.components.UICustomAction-1583833115891]: 
+                  actionValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                          		this.openPageWithName(vars.name);
+                          		this.getInstance(MenuController).close();
+                          		resolve();
+                          '
+                  page_ts_imports: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+                      - com.twinsoft.convertigo.beans.common.XMLVector: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+                          - com.twinsoft.convertigo.beans.common.XMLVector: 
+                            - java.lang.String: 
+                              - ↑value: MenuController
+                            - java.lang.String: 
+                              - ↑value: ionic-angular
+                  ↓name [mobile.components.UIControlVariable-1583833141668]: 
+                    varValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                        - MobileSmartSourceType: script:ppItem.name
+          ↓Style [mobile.components.UIStyle-1583767116064]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	border: 1px solid color($colors, primary);
+                    	padding-right: 10px;
+                    '
+          ↓Animation [mobile.components.UIAnimation-1583513903033]: 
+            animationName: fadeIn
+          ↓Animation1 [mobile.components.UIAnimation-1583513997930]: 
+            animationName: slow
+            isEnabled: false
+    ↓Style [mobile.components.UIStyle-1583763153498]: 
+      styleContent: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+            →: |
+              '	ion-list-header, ion-label, div.item-inner, ion-icon[item-start] {
+              		margin: 0px !important;
+              	}
+              		
+              	button {
+              		padding: 0px !important;
+              	}
+              		
+              	.section-active {
+              		background-color: color($colors, primary);
+              		color: #fff;
+              	}
+              '

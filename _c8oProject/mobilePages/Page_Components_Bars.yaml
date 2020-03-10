@@ -1,0 +1,144 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_components_bars
+title: Bars
+↓Header [mobile.components.UIDynamicElement-1579773400296]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1579773400299]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579773400302]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579773400305]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Bars
+    ↓Button [mobile.components.UIDynamicElement-1579773400308]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle",
+         "IonColor": "plain:secondary",
+         "IconOnly": "plain:icon-only"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579773400311]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579773568142]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579773568145]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:danger",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1579773568148]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:more"}'
+          tagName: ion-icon
+      ↓Button1 [mobile.components.UIDynamicElement-1579773602333]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1579773602336]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:search"}'
+          tagName: ion-icon
+      ↓Button11 [mobile.components.UIDynamicElement-1579773694499]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1579773694502]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:search*"}'
+          tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1579773400314]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Div [mobile.components.UIDynamicElement-1579875538071]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Text [mobile.components.UIText-1579875486064]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Tap button to go to Bars page and see automatic back button
+  ↓Button [mobile.components.UIDynamicElement-1579875391422]: 
+    beanData: '{"ionBean":"Button"}'
+    tagName: button
+    ↓Event [mobile.components.UIControlEvent-1579875399161]: 
+      ↓PushPage [mobile.components.UIDynamicAction-1579875407762]: 
+        beanData: '{"ionBean":"PushPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Components_Bars"}'
+    ↓Text [mobile.components.UIText-1579875450236]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:PUSH TO BARS PAGE
+↓Footer [mobile.components.UIDynamicElement-1579773400317]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [mobile.components.UIDynamicElement-1579773400320]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1579874462472]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1579874462475]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Toolbar
+    ↓ButtonSet [mobile.components.UIDynamicElement-1579773400323]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579773400326]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579773400329]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Button 1
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1579773400332]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1579773400335]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1579773400338]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Button 2

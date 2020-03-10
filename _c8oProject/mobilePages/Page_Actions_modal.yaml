@@ -1,0 +1,128 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	public modalParameters: any = {};
+        	public JSON: any = JSON;
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		//this.modalParameters = {code: -1, choices: null};
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        '
+segment: path-to-page_actions_modal
+title: Modal
+↓Header [mobile.components.UIDynamicElement-1576057405943]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1576057405946]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1576057405949]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1576057405952]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:MODAL
+    ↓Button [mobile.components.UIDynamicElement-1579171175907]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579171175910]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1576057405955]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓GenericItem [mobile.components.UIDynamicElement-1576057405958]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓Button [mobile.components.UIDynamicElement-1576057405961]: 
+      beanData: '{"ionBean":"Button"}'
+      tagName: button
+      ↓Event [mobile.components.UIControlEvent-1576057405967]: 
+        ↓resetModalParams [mobile.components.UICustomAction-1576089507603]: 
+          actionValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '//		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                  //	    this.modalParameters = {code: -1, choices: null};
+                  	    this.modalParameters = {};
+                  		resolve();
+                  '
+          ↓ModalPage [mobile.components.UIDynamicAction-1576058454624]: 
+            beanData: |
+              '{
+               "ionBean": "ModalAction",
+               "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Actions_modal1",
+               "data": "script:this.modalParameters",
+               "blockWhileDisplayed": "plain:true"
+              }'
+            ↓CustomAction_onDismissed [mobile.components.UICustomAction-1576062276565]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '//		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		page.c8o.log.warn(''>>>>code:'' + this.modalParameters[''code'']);
+                      		page.c8o.log.warn(''>>>>choices:'' + JSON.stringify(this.modalParameters[''choices'']));
+                      		resolve();
+                      '
+      ↓Text [mobile.components.UIText-1576058829379]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:open modal
+  ↓GenericItem1 [mobile.components.UIDynamicElement-1576059747250]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓Div [mobile.components.UIDynamicElement-1576059821967]: 
+      beanData: '{"ionBean":"DivTag"}'
+      tagName: div
+      ↓Text [mobile.components.UIText-1576059836073]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'plain:VALID clicked. Data: '
+      ↓Attr [mobile.components.UIAttribute-1576059855265]: 
+        attrName: '[hidden]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.modalParameters?.code === undefined || this.modalParameters?.code != 1
+      ↓Text1 [mobile.components.UIText-1576069980707]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:JSON.stringify(this.modalParameters?.choices)
+    ↓Div1 [mobile.components.UIDynamicElement-1576060954426]: 
+      beanData: '{"ionBean":"DivTag"}'
+      tagName: div
+      ↓Text [mobile.components.UIText-1576060954429]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:CANCEL clicked. No data...
+      ↓Attr [mobile.components.UIAttribute-1576060954432]: 
+        attrName: '[hidden]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.modalParameters?.code === undefined || this.modalParameters?.code != 0
+↓UseSharedComponent [mobile.components.UIUseShared-1582819328546]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

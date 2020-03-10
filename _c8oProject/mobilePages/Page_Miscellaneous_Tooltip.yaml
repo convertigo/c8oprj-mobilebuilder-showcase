@@ -1,0 +1,62 @@
+segment: path-to-page_miscellaneous_tooltip
+title: Tooltip
+↓Header [mobile.components.UIDynamicElement-1576254819519]: 
+  beanData: '{"ionBean":"Header"}'
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1576254819522]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1576254819525]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1576254819528]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Tooltip
+    ↓Button [mobile.components.UIDynamicElement-1579171151073]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1579171151076]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1576254819531]: 
+  beanData: '{"ionBean":"Content"}'
+  tagName: ion-content
+  ↓UseSharedComponent [mobile.components.UIUseShared-1578319914826]: 
+    sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Tooltips
+    ↓event [mobile.components.UIControlVariable-1578320038676]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'hover'
+    ↓text [mobile.components.UIControlVariable-1578320038678]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'Hover'
+  ↓UseSharedComponent1 [mobile.components.UIUseShared-1578320177519]: 
+    sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Tooltips
+    ↓event [mobile.components.UIControlVariable-1578320177522]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'click'
+    ↓text [mobile.components.UIControlVariable-1578320177525]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'Click'
+    ↓duration [mobile.components.UIControlVariable-1578320265378]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:1500
+↓UseSharedComponent [mobile.components.UIUseShared-1582819452021]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

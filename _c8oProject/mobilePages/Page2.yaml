@@ -60,11 +60,11 @@ title: Title for Page2
         beanData: '{"ionBean":"CloseModalAction"}'
         isEnabled: false
         ↓RootPage [mobile.components.UIDynamicAction-1580917004306]: 
-          beanData: '{"ionBean":"RootPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Menu"}'
+          beanData: '{"ionBean":"RootPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Menus_Menu"}'
       ↓CloseModal1 [mobile.components.UIDynamicAction-1580917201945]: 
         beanData: '{"ionBean":"CloseModalAction"}'
         ↓PushPage [mobile.components.UIDynamicAction-1580915382920]: 
-          beanData: '{"ionBean":"PushPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Menu"}'
+          beanData: '{"ionBean":"PushPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Menus_Menu"}'
 ↓Footer [mobile.components.UIDynamicElement-1580915361561]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer

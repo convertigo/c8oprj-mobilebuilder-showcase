@@ -1,0 +1,161 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_zhowtos_chatbot
+title: ChatBot
+↓Header [mobile.components.UIDynamicElement-1580897616766]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1580897616769]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1580897616772]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1580897616775]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:My First App
+    ↓Button [mobile.components.UIDynamicElement-1580897616778]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1580897616781]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1580897616784]: 
+  beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
+  comment: Page content
+  tagName: ion-content
+  ↓UseSharedComponent [mobile.components.UIUseShared-1580897652815]: 
+    sharedcomponent: lib_AmazonLEX.Mobile_application.Application.ChatBot
+    ↓AmazonLEXBotName [mobile.components.UIControlVariable-1580897658706]: 
+      comment: The Lex Bot Name as defined in https://us-east-1.console.aws.amazon.com/lex/home
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'ALexBot'
+    ↓AmazonLEXBotAlias [mobile.components.UIControlVariable-1580897658708]: 
+      comment: The Amazon Lex Bot alias
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'ALexBot'
+    ↓class [mobile.components.UIControlVariable-1580897658710]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'chatarea chatbox'
+    ↓toUser [mobile.components.UIControlVariable-1580897658714]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'Convertigo'
+↓ChatArea [mobile.components.UIStyle-1580918650967]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.chatarea {
+          	background: rgb(28,53,99);
+          	background: linear-gradient(0deg, rgba(28,53,99,1) 0%, rgba(17,34,66,1) 72%);
+          }'
+↓ChatBox [mobile.components.UIStyle-1580918650970]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.chatbox {
+          	.message {
+          		padding: 10px !important;
+          		margin-bottom: 4px !important;
+          		
+          		.fromUser {
+          			text-align: right;
+          			padding-bottom: 12px;
+          			color: color($colors, light);
+          		}
+          		
+          		.toUser {
+          			text-align: left;
+          			padding-left: 0px;
+          			padding-bottom: 12px;
+          			margin-left: -4px;
+          			color: color($colors, light);
+          		}
+          		
+          		.toMsg {
+          			position: relative;
+          			border-radius: 0 8px 8px 8px !important;
+          			background-color: color($colors, secondary);
+          			padding: 10px 20px;
+          			color: color($colors, dark);
+          			display: inline-block;
+          			white-space: normal;
+          		}
+          		
+          	 	.toMsg::after {
+          			position: absolute;
+          			bottom: 100%;
+          			left: 0;
+          			content: " ";
+          			height: 0;
+          			width: 0;
+          			border-style: solid;
+          		}
+          	
+          		.toMsg::after {
+          			border-color: transparent transparent color($colors, secondary) color($colors, secondary);
+          			border-width: 6px;
+          		}
+          			
+          		.fromMsg {
+          			position: relative;
+          			border-radius: 8px 0 8px 8px !important;
+          			background-color: rgba(255, 255, 255, 1);
+          			padding: 10px 20px;
+          			color: color($colors, dark);
+          			display: inline-block;
+          			white-space: normal;
+          		}
+          		
+          		.fromMsg::after {
+          			position: absolute;
+          			bottom: 100%;
+          			right: 0;
+          			content: " ";
+          			height: 0;
+          			width: 0;
+          			border-style: solid;
+          		}
+          	
+          		.fromMsg::after {
+          			border-color: transparent rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) transparent;
+          			border-width: 6px;
+          		}
+          	
+          	}
+          }'
+↓UseSharedComponent [mobile.components.UIUseShared-1582819195599]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

@@ -1,0 +1,70 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_zhowtos_keypad
+title: Keypad
+↓Header [mobile.components.UIDynamicElement-1580309028591]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1580309028594]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1580309028597]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1580309028600]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Key Pad
+    ↓Button [mobile.components.UIDynamicElement-1580309028603]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1580309028606]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1580309028609]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓UseSharedComponent [mobile.components.UIUseShared-1580309111427]: 
+    sharedcomponent: MobileBuilderComponents.MobileApplication.Application.KeyPad
+  ↓KeypadGrid [mobile.components.UIStyle-1580377318736]: 
+    styleContent: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '	.keypad-grid {
+            		ion-col:not(:first-child):not(:last-child) {
+            			margin: 4px;
+            			border: 1px solid color($colors, dark);
+            			background-color: color($colors, primary);
+            			color : #fff;
+            			text-align: center;
+            			padding: 2.5rem 1rem;
+            			font-size: 2rem;
+            		}
+            	}
+            '
+↓UseSharedComponent [mobile.components.UIUseShared-1582819308447]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
