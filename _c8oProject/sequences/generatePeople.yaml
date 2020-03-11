@@ -1,5 +1,16 @@
 ↓Read_XML [steps.ReadXMLStep-1579266734724]: 
   dataFile: '".//People_100.xml"'
+↓Sort [steps.XMLSortStep-1579526190850]: 
+  output: false
+  sortXPATHDefinition: lastname
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1579266734724
+        - java.lang.String: 
+          - ↑value: ./root/People
 ↓Complex [steps.XMLComplexStep-1582626087452]: 
   nodeName: anchorContainer
   output: false
@@ -10,9 +21,10 @@
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
         - com.twinsoft.convertigo.beans.common.XMLVector: 
           - java.lang.String: 
-            - ↑value: 1579266734724
+            - ↑value: 1579526190850
           - java.lang.String: 
-            - ↑value: ./root/People
+            - ↑value: ./People
+    startIndex: start
     ↓jSimpleSource [steps.SimpleSourceStep-1582636569087]: 
       sourceDefinition: 
         - xmlizable: 
@@ -46,8 +58,7 @@
   ↓Attribute [steps.XMLAttributeStep-1582637382375]: 
     nodeName: type
     nodeText: array
-  ↓Sort [steps.XMLSortStep-1579526190850]: 
-    sortXPATHDefinition: lastname
+  ↓Copy [steps.XMLCopyStep-1583924071874]: 
     sourceDefinition: 
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
@@ -56,7 +67,19 @@
             - ↑value: 1582626087452
           - java.lang.String: 
             - ↑value: ./People
+↓start [variables.RequestableVariable-1583852687870]: 
+  value: 0
 ↓nbr [variables.RequestableVariable-1579513403702]: 
   value: 10
-↓search [variables.RequestableVariable-1582636540133]: 
+↓search [variables.RequestableVariable-1583924174814]: 
   value: 
+↓Test_Case_0_15 [core.TestCase]: 
+  ↓start [variables.TestCaseVariable-1583923850919]: 
+    value: 0
+  ↓nbr [variables.TestCaseVariable-1583923850915]: 
+    value: 15
+↓Test_Case_16_15 [core.TestCase]: 
+  ↓start [variables.TestCaseVariable-1583924122427]: 
+    value: 16
+  ↓nbr [variables.TestCaseVariable-1583924122424]: 
+    value: 31

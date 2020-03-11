@@ -20,5 +20,13 @@
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
         - MobileSmartSourceType: script:params.queryText
+  ↓start [mobile.components.UIControlVariable-1583852725066]: 
+    comment: new variable
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:params.startIndex
 ↓marker [mobile.components.UIStackVariable-1582716042838]: 
   value: '''PEOPLE'''
+↓startIndex [mobile.components.UIStackVariable-1583852800240]: 
+  value: '''0'''
