@@ -67,19 +67,55 @@
             - ↑value: 1582626087452
           - java.lang.String: 
             - ↑value: ./People
+↓Count [steps.XMLCountStep-1584021835577]: 
+  nodeName: count
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1579266734724
+        - java.lang.String: 
+          - ↑value: ./root/People
+  ↓Attribute [steps.XMLAttributeStep-1584024316812]: 
+    nodeName: from
+    nodeText: XML File
+↓Count1 [steps.XMLCountStep-1584021871671]: 
+  nodeName: count
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1582637348020
+        - java.lang.String: 
+          - ↑value: ./People
+  ↓Attribute [steps.XMLAttributeStep-1584024335704]: 
+    nodeName: from
+    nodeText: Iteration Step
 ↓start [variables.RequestableVariable-1583852687870]: 
   value: 0
 ↓nbr [variables.RequestableVariable-1579513403702]: 
   value: 10
 ↓search [variables.RequestableVariable-1583924174814]: 
   value: 
+↓Test_Case_0_111 [core.TestCase]: 
+  ↓start [variables.TestCaseVariable-1584022168640]: 
+    value: 0
+  ↓nbr [variables.TestCaseVariable-1584022168643]: 
+    value: 111
 ↓Test_Case_0_15 [core.TestCase]: 
   ↓start [variables.TestCaseVariable-1583923850919]: 
     value: 0
   ↓nbr [variables.TestCaseVariable-1583923850915]: 
     value: 15
-↓Test_Case_16_15 [core.TestCase]: 
+↓Test_Case_15_30 [core.TestCase]: 
   ↓start [variables.TestCaseVariable-1583924122427]: 
-    value: 16
+    value: 15
   ↓nbr [variables.TestCaseVariable-1583924122424]: 
-    value: 31
+    value: 30
+↓Test_Case_90_105 [core.TestCase]: 
+  ↓start [variables.TestCaseVariable-1584021760579]: 
+    value: 90
+  ↓nbr [variables.TestCaseVariable-1584021760582]: 
+    value: 105

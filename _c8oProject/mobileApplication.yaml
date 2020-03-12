@@ -55,6 +55,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Customs_Fragment [mobile.components.PageComponent-1579166567728]: 🗏 mobilePages/Page_Customs_Fragment.yaml
 ↓Page_Html_Html [mobile.components.PageComponent-1579875601436]: 🗏 mobilePages/Page_Html_Html.yaml
 ↓Page_zHowTos_IconInput [mobile.components.PageComponent-1576148711969]: 🗏 mobilePages/Page_zHowTos_IconInput.yaml
+↓Page_Lists_InfiniteScroll [mobile.components.PageComponent-1583850056857]: 🗏 mobilePages/Page_Lists_InfiniteScroll.yaml
 ↓Page_zHowTos_KeyPad [mobile.components.PageComponent-1580309028081]: 🗏 mobilePages/Page_zHowTos_KeyPad.yaml
 ↓Page_Lists_Lists [mobile.components.PageComponent-1579283173880]: 🗏 mobilePages/Page_Lists_Lists.yaml
 ↓Page_Menus_Menu [mobile.components.PageComponent-1580914202266]: 🗏 mobilePages/Page_Menus_Menu.yaml
@@ -75,9 +76,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
-↓Page_Lists_InfiniteScroll [mobile.components.PageComponent-1583850056857]: 🗏 mobilePages/Page_Lists_InfiniteScroll.yaml
-↓Theme [mobile.components.UITheme-1491635018260]: 
-  comment: Global color themes can be customized here
+↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent

@@ -1,5 +1,3 @@
-comment: In progress
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -32,6 +30,31 @@ title: Infinite Scroll
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
             - MobileSmartSourceType: plain:Infinite Scroll
+      ↓Text21 [mobile.components.UIText-1584025159357]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:(
+      ↓Text1 [mobile.components.UIText-1584020908623]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.scrollStart
+      ↓Text12 [mobile.components.UIText-1584021509620]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.scrollStart*1 + this.global.scrollNbr
+      ↓Text11 [mobile.components.UIText-1584021241161]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.scrollPeople?.length
+      ↓Text2 [mobile.components.UIText-1584025149028]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:)
     ↓Button [mobile.components.UIDynamicElement-1583850058031]: 
       beanData: |
         '{
@@ -45,7 +68,7 @@ title: Infinite Scroll
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
 ↓Content [mobile.components.UIDynamicElement-1583850058037]: 
-  beanData: '{"ionBean":"Content"}'
+  beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content
   tagName: ion-content
   ↓ListContainer [mobile.components.UIDynamicElement-1583854481802]: 
@@ -71,79 +94,125 @@ title: Infinite Scroll
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:p.lastname
+    ↓Attr [mobile.components.UIAttribute-1584026883930]: 
+      attrName: 
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:no-margin
   ↓InfiniteScroll [mobile.components.UIDynamicElement-1583850689148]: 
     beanData: '{"ionBean":"InfiniteScroll"}'
     tagName: ion-infinite-scroll
-    ↓InfiniteScrollContent [mobile.components.UIDynamicElement-1583850694466]: 
-      beanData: '{"ionBean":"InfiniteScrollContent"}'
-      tagName: ion-infinite-scroll-content
     ↓Event [mobile.components.UIControlEvent-1583850718781]: 
       attrName: (ionInfinite)
       eventName: ionInfinite
-      ↓SetGlobal1 [mobile.components.UIDynamicAction-1583923201145]: 
-        beanData: |
-          '{
-           "ionBean": "SetGlobalAction",
-           "Property": "plain:scrollStart",
-           "Value": "script:this.global.scrollStart*1+16"
-          }'
-        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1583923501085]: 
-          beanData: '{"ionBean":"InvokeAction"}'
-          stack: MobileBuilderComponents.MobileApplication.Application.getPeople
-          ↓peopleNbr [mobile.components.UIControlVariable-1583923510247]: 
-            varValue: 
+      ↓IfElse [mobile.components.UIDynamicIf-1584019488184]: 
+        beanData: '{"ionBean":"IfElseAction","condition":"script:this.global.scrollPeople?.length < 100"}'
+        ↓SetGlobal1 [mobile.components.UIDynamicAction-1583923201145]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:scrollStart",
+             "Value": "script:this.global.scrollStart*1+this.global.scrollNbr"
+            }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1583923501085]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+            ↓peopleNbr [mobile.components.UIControlVariable-1583923510247]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:this.global.scrollStart*1 + this.global.scrollNbr
+            ↓marker [mobile.components.UIControlVariable-1583923510251]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'SCROLL'
+            ↓startIndex [mobile.components.UIControlVariable-1583923510253]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:this.global.scrollStart
+            ↓PauseAction [mobile.components.UIDynamicAction-1584019627241]: 
+              beanData: '{"ionBean":"PauseAction"}'
+              comment: Delay data display to see InfiniteScrollContent loader
+              ↓SetGlobal [mobile.components.UIDynamicAction-1583923612679]: 
+                beanData: |
+                  '{
+                   "ionBean": "SetGlobalAction",
+                   "Property": "plain:scrollPeople",
+                   "Value": "script:this.global.scrollPeople.concat(this.listen([''MobileBuilderComponents.generatePeople#SCROLL''])?.People)"
+                  }'
+                ↓completeInfiniteScroll [mobile.components.UICustomAction-1584025826588]: 
+                  actionValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                          		event.complete();
+                          		resolve();
+                          '
+        ↓Else_Handler [mobile.components.UIActionElseEvent-1584019492606]: 
+          ↓disableInfiniteScroll [mobile.components.UICustomAction-1584025339135]: 
+            actionValue: 
               - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: script:this.global.scrollStart*1 + 15
-          ↓marker [mobile.components.UIControlVariable-1583923510251]: 
-            varValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: script:'SCROLL'
-          ↓startIndex [mobile.components.UIControlVariable-1583923510253]: 
-            varValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: script:this.global.scrollStart
-          ↓SetGlobal [mobile.components.UIDynamicAction-1583923612679]: 
-            beanData: |
-              '{
-               "ionBean": "SetGlobalAction",
-               "Property": "plain:scrollPeople",
-               "Value": "script:this.global.scrollPeople.concat(this.listen([''MobileBuilderComponents.generatePeople#SCROLL''])?.People)"
-              }'
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                    		event.enable(false);
+                    		resolve();
+                    '
+            ↓Toast [mobile.components.UIDynamicAction-1584027778232]: 
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:No more data!",
+                 "position": "plain:middle"
+                }'
+    ↓InfiniteScrollContent [mobile.components.UIDynamicElement-1584026249840]: 
+      beanData: '{"ionBean":"InfiniteScrollContent"}'
+      tagName: ion-infinite-scroll-content
 ↓UseSharedComponent [mobile.components.UIUseShared-1583850339026]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
 ↓PageEvent [mobile.components.UIPageEvent-1583852245028]: 
-  ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1583852245031]: 
-    beanData: '{"ionBean":"InvokeAction"}'
-    stack: MobileBuilderComponents.MobileApplication.Application.getPeople
-    ↓peopleNbr [mobile.components.UIControlVariable-1583852245034]: 
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:'15'
-    ↓marker [mobile.components.UIControlVariable-1583852947576]: 
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:'SCROLL'
-    ↓startIndex [mobile.components.UIControlVariable-1583852947578]: 
-      varValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:'0'
-    ↓SetGlobal [mobile.components.UIDynamicAction-1583852978098]: 
+  ↓SetGlobal1 [mobile.components.UIDynamicAction-1583856751579]: 
+    beanData: |
+      '{
+       "ionBean": "SetGlobalAction",
+       "Property": "plain:scrollStart",
+       "Value": "script:0"
+      }'
+    ↓SetGlobal11 [mobile.components.UIDynamicAction-1584023747551]: 
       beanData: |
         '{
          "ionBean": "SetGlobalAction",
-         "Property": "plain:scrollPeople",
-         "Value": "script:this.listen([''MobileBuilderComponents.generatePeople#SCROLL''])?.People"
+         "Property": "plain:scrollNbr",
+         "Value": "script:15"
         }'
-    ↓SetGlobal1 [mobile.components.UIDynamicAction-1583856751579]: 
-      beanData: |
-        '{
-         "ionBean": "SetGlobalAction",
-         "Property": "plain:scrollStart",
-         "Value": "script:0"
-        }'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1583852245031]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+        ↓peopleNbr [mobile.components.UIControlVariable-1583852245034]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:this.global.scrollNbr
+        ↓marker [mobile.components.UIControlVariable-1583852947576]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'SCROLL'
+        ↓startIndex [mobile.components.UIControlVariable-1583852947578]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:this.global.scrollStart
+        ↓SetGlobal [mobile.components.UIDynamicAction-1583852978098]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:scrollPeople",
+             "Value": "script:this.listen([''MobileBuilderComponents.generatePeople#SCROLL''])?.People"
+            }'
