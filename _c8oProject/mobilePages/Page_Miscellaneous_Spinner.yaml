@@ -1,0 +1,272 @@
+comment: In progress
+inAutoMenu: false
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_miscellaneous_spinner
+title: Title for Page3
+↓Header [mobile.components.UIDynamicElement-1584106040190]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1584106040195]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1584106040198]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1584106040201]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Spinner
+    ↓Button [mobile.components.UIDynamicElement-1584106040204]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1584106040207]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1584106040210]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1584106604372]: 
+    beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
+    tagName: ion-grid
+    ↓Row_Spinner_default [mobile.components.UIDynamicElement-1584106614751]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584106609183]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584106274332]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Default Spinner
+        ↓Attr [mobile.components.UIAttribute-1584117580853]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol1 [mobile.components.UIDynamicElement-1584106626510]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Spinner [mobile.components.UIDynamicElement-1584106238491]: 
+          beanData: '{"ionBean":"Spinner"}'
+          tagName: ion-spinner
+    ↓Row_Spinner_duration [mobile.components.UIDynamicElement-1584106647478]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584106647481]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584106395168]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: 'plain:Spinner duration: '
+        ↓Attr [mobile.components.UIAttribute-1584117609946]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol1 [mobile.components.UIDynamicElement-1584106647487]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Tooltips_2500 [mobile.components.UIDynamicElement-1584117825330]: 
+          beanData: |
+            '{
+             "ionBean": "Tooltips",
+             "tooltip": "plain:2500ms",
+             "positionH": "plain:left",
+             "topOffset": "plain:-15",
+             "leftOffset": "plain:100"
+            }'
+          tagName: span
+          ↓Spinner_2500 [mobile.components.UIDynamicElement-1584106395171]: 
+            beanData: '{"ionBean":"Spinner","duration":"plain:2500"}'
+            tagName: ion-spinner
+        ↓Tooltips_500 [mobile.components.UIDynamicElement-1584117834059]: 
+          beanData: |
+            '{
+             "ionBean": "Tooltips",
+             "tooltip": "plain:500ms",
+             "positionH": "plain:left",
+             "topOffset": "plain:-15",
+             "leftOffset": "plain:90"
+            }'
+          tagName: span
+          ↓Spinner_500 [mobile.components.UIDynamicElement-1584106957499]: 
+            beanData: '{"ionBean":"Spinner","duration":"plain:500"}'
+            tagName: ion-spinner
+    ↓Row_Spinner_paused [mobile.components.UIDynamicElement-1584106673994]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584106673997]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584106506952]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Spinner paused
+        ↓Attr [mobile.components.UIAttribute-1584117613939]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol1 [mobile.components.UIDynamicElement-1584106674003]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Spinner [mobile.components.UIDynamicElement-1584106506955]: 
+          beanData: '{"ionBean":"Spinner","paused":"plain:true"}'
+          tagName: ion-spinner
+    ↓Row_Spinner_name [mobile.components.UIDynamicElement-1584106881699]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584106881702]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584106881705]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Spinner types 
+        ↓Attr [mobile.components.UIAttribute-1584117618125]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol1 [mobile.components.UIDynamicElement-1584106881708]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Spinner_default_ios [mobile.components.UIDynamicElement-1584106881711]: 
+          beanData: '{"ionBean":"Spinner"}'
+          tagName: ion-spinner
+        ↓Spinner_ios_small [mobile.components.UIDynamicElement-1584106999595]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:ios-small"}'
+          tagName: ion-spinner
+        ↓Spinner_bubbles [mobile.components.UIDynamicElement-1584107002822]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:bubbles"}'
+          tagName: ion-spinner
+        ↓Spinner_circles [mobile.components.UIDynamicElement-1584107006532]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:circles"}'
+          tagName: ion-spinner
+        ↓Spinner_crescent [mobile.components.UIDynamicElement-1584107006535]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:crescent"}'
+          tagName: ion-spinner
+        ↓Spinner_dots [mobile.components.UIDynamicElement-1584107006538]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:dots"}'
+          tagName: ion-spinner
+    ↓Row_Spinner_name1 [mobile.components.UIDynamicElement-1584114663246]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584114663249]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584114663252]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Spinner colors
+        ↓Attr [mobile.components.UIAttribute-1584117622943]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol1 [mobile.components.UIDynamicElement-1584114663255]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Spinner_default_ios [mobile.components.UIDynamicElement-1584114663258]: 
+          beanData: '{"ionBean":"Spinner"}'
+          tagName: ion-spinner
+          ↓Attr [mobile.components.UIAttribute-1584116057700]: 
+            attrName: color
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:primary
+        ↓Spinner_ios_small [mobile.components.UIDynamicElement-1584114663261]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:ios-small"}'
+          tagName: ion-spinner
+          ↓Attr [mobile.components.UIAttribute-1584117049469]: 
+            attrName: color
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:secondary
+        ↓Spinner_bubbles [mobile.components.UIDynamicElement-1584114663264]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:bubbles"}'
+          tagName: ion-spinner
+          ↓Attr [mobile.components.UIAttribute-1584117062591]: 
+            attrName: color
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:danger
+        ↓Spinner_circles [mobile.components.UIDynamicElement-1584114663267]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:circles"}'
+          tagName: ion-spinner
+          ↓Attr [mobile.components.UIAttribute-1584117092490]: 
+            attrName: color
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:dark
+        ↓Spinner_crescent [mobile.components.UIDynamicElement-1584114663270]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:crescent"}'
+          tagName: ion-spinner
+          ↓Style [mobile.components.UIStyle-1584117182288]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	* {
+                    		width: 28px;
+                    		height: 28px;
+                    		stroke: #7044ff;
+                    /* 		fill: #222; */
+                    	}
+                    '
+        ↓Spinner_dots [mobile.components.UIDynamicElement-1584114663273]: 
+          beanData: '{"ionBean":"Spinner","name":"plain:dots"}'
+          tagName: ion-spinner
+          ↓Style [mobile.components.UIStyle-1584117446896]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	* {
+                    		width: 28px;
+                    		height: 28px;
+                    		fill: #e0b500;
+                    	}
+                    '
+↓UseSharedComponent [mobile.components.UIUseShared-1584106185771]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
