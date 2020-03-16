@@ -54,7 +54,7 @@ title: Tabs
         '{
          "ionBean": "Tab",
          "TabTitle": "plain:Contacts",
-         "TabBadge": "plain:5",
+         "TabBadge": "plain:6",
          "TabIcon": "plain:contacts"
         }'
       tabpage: MobileBuilderComponents.MobileApplication.Application.Page_Components_Tabs_Contacts

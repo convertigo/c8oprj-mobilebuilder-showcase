@@ -28,7 +28,7 @@ title: Title for Page1
       directiveSource: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#PEOPLE'])?.People"}
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#CONTACTS'])?.People"}
       ↓Button [mobile.components.UIDynamicElement-1579531754316]: 
         beanData: '{"ionBean":"Button","ButtonType":"plain:ion-item"}'
         tagName: button
@@ -55,4 +55,19 @@ title: Title for Page1
       varValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:'5'
+          - MobileSmartSourceType: script:'94'
+    ↓queryText [mobile.components.UIControlVariable-1584384815632]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:''
+    ↓marker [mobile.components.UIControlVariable-1584384815634]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'CONTACTS'
+    ↓startIndex [mobile.components.UIControlVariable-1584384815636]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'88'

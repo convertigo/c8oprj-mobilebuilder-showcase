@@ -388,7 +388,8 @@ title: Title for Page3
                       - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                       - MobileSmartSourceType: plain:4
                 ↓PauseAction [mobile.components.UIDynamicAction-1584355680345]: 
-                  beanData: '{"ionBean":"PauseAction"}'
+                  beanData: '{"ionBean":"PauseAction","duration":"plain:3000"}'
+                  comment: Force delay to see animation
                   ↓pauseSpinner [mobile.components.UICustomAction-1584355680348]: 
                     actionValue: 
                       - xmlizable: 

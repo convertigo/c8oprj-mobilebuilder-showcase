@@ -1,4 +1,3 @@
-comment: Todo
 inAutoMenu: false
 preloadPriority: high
 scriptContent: 
@@ -18,6 +17,123 @@ scriptContent:
 segment: path-to-page_components_tabs_map
 title: Title for Page_Tabs_Contacts1
 ↓Content [mobile.components.UIDynamicElement-1579539015034]: 
-  beanData: '{"ionBean":"Content"}'
+  beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   tagName: ion-content
+  ↓GoogleMap [mobile.components.UIDynamicElement-1584362505712]: 
+    beanData: '{"ionBean":"GoogleMap"}'
+    identifier: gm
+    tagName: agm-map
+    ↓MapCircle [mobile.components.UIDynamicElement-1584367567691]: 
+      beanData: '{"ionBean":"MapCircle"}'
+      tagName: agm-circle
+      ↓Event [mobile.components.UIControlEvent-1584379728004]: 
+        attrName: (circleClick)
+        eventName: onCircleClick
+        ↓getCircleCoords [mobile.components.UICustomAction-1584379736019]: 
+          actionValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                  		page.c8o.log.debug(event.coords.lat);
+                  		page.c8o.log.debug(event.coords.lng);
+                  		resolve();
+                  '
+    ↓Directive [mobile.components.UIControlDirective-1584367760147]: 
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#MAPS'])?.People"}
+      ↓MapMarker [mobile.components.UIDynamicElement-1584367793473]: 
+        beanData: |
+          '{
+           "ionBean": "MapMarker",
+           "IconUrl": "script:item1584367760147?.lastname == ''VORBE'' ? '''' : ''.\/assets\/avatar\/user48x48.png''",
+           "Latitude": "source:{\"filter\":\"Iteration\",\"project\":\"MobileBuilderComponents\",\"input\":\"item1584367760147?.latitude\"}",
+           "Longitude": "source:{\"filter\":\"Iteration\",\"project\":\"MobileBuilderComponents\",\"input\":\"item1584367760147?.longitude\"}",
+           "Title": "source:{\"filter\":\"Iteration\",\"project\":\"MobileBuilderComponents\",\"input\":\"item1584367760147?.company\"}"
+          }'
+        tagName: agm-marker
+        ↓MapInfoWindow [mobile.components.UIDynamicElement-1584381076379]: 
+          beanData: '{"ionBean":"MapInfoWindow"}'
+          identifier: infoWindow
+          tagName: agm-info-window
+          ↓ListItem [mobile.components.UIDynamicElement-1584381171639]: 
+            beanData: '{"ionBean":"ListItem"}'
+            tagName: ion-item
+            ↓AvatarItem [mobile.components.UIDynamicElement-1584381171642]: 
+              beanData: '{"ionBean":"Avatar"}'
+              tagName: ion-avatar
+              ↓Image [mobile.components.UIDynamicElement-1584381171645]: 
+                beanData: '{"ionBean":"Image","url":"script:''assets\/avatar\/icons8-user-''+item1584367760147?.gender+''.png''"}'
+                selfClose: true
+                tagName: img
+            ↓H2 [mobile.components.UIDynamicElement-1584381171648]: 
+              beanData: '{"ionBean":"Heading2"}'
+              tagName: h2
+              ↓Text1 [mobile.components.UIText-1584384547043]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:item1584367760147?.company
+            ↓H3 [mobile.components.UIDynamicElement-1584384564941]: 
+              beanData: '{"ionBean":"Heading3"}'
+              tagName: h3
+              ↓Text [mobile.components.UIText-1584384609913]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:item1584367760147?.firstname
+              ↓Text11 [mobile.components.UIText-1584384609916]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:item1584367760147?.lastname
+            ↓Paragraph [mobile.components.UIDynamicElement-1584381171657]: 
+              beanData: '{"ionBean":"Paragraph"}'
+              tagName: p
+              ↓Text1 [mobile.components.UIText-1584381171660]: 
+                textValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:item1584367760147?.email
+        ↓Attr [mobile.components.UIAttribute-1584382336145]: 
+          attrName: (markerClick)
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:gm.lastOpen?.close();gm.lastOpen=infoWindow;
+    ↓Event [mobile.components.UIControlEvent-1584380881923]: 
+      attrName: (mapClick)
+      eventName: onMapClick
+      ↓getMapCoords [mobile.components.UICustomAction-1584380881926]: 
+        actionValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                		page.c8o.log.debug(event.coords.lat);
+                		page.c8o.log.debug(event.coords.lng);
+                		resolve();
+                '
 ↓PageEvent [mobile.components.UIPageEvent-1579539015055]: 
+  ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1584367710953]: 
+    beanData: '{"ionBean":"InvokeAction"}'
+    stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+    ↓peopleNbr [mobile.components.UIControlVariable-1584367715614]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'94'
+    ↓marker [mobile.components.UIControlVariable-1584367715618]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'MAPS'
+    ↓startIndex [mobile.components.UIControlVariable-1584367715620]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'88'

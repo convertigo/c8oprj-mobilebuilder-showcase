@@ -7,6 +7,8 @@
 		<email>En.WOODWA7724@mail2web.com</email>
 		<company>Eli Lilly And Company</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>2</id>
@@ -15,6 +17,8 @@
 		<email>gregoryv@convertigo.com</email>
 		<company>Convertigo</company>
 		<gender>male</gender>
+		<latitude type="float">48.6969459</latitude>
+		<longitude type="float">2.1775981</longitude>
 	</People>
 	<People>
 		<id>3</id>
@@ -23,6 +27,8 @@
 		<email>Dama.BL8838@live.com</email>
 		<company>Boyd Gaming Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>4</id>
@@ -31,6 +37,8 @@
 		<email>Ry.JIMEN9766@live.com</email>
 		<company>First Data Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>5</id>
@@ -39,6 +47,8 @@
 		<email>Anna.FO7027@hushmail.com</email>
 		<company>Icahn Enterprises</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>6</id>
@@ -47,6 +57,8 @@
 		<email>Karl.MICHAE8852@yahoo.com</email>
 		<company>Hasbro</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>7</id>
@@ -55,6 +67,8 @@
 		<email>Tha.KEL3739@live.com</email>
 		<company>Dyncorp International</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>8</id>
@@ -63,6 +77,8 @@
 		<email>Sophi.CERVA2021@yahoo.com</email>
 		<company>Omnicare</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>9</id>
@@ -71,6 +87,8 @@
 		<email>Shania.CAM3752@hushmail.com</email>
 		<company>Ferrellgas Partners</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>10</id>
@@ -79,6 +97,8 @@
 		<email>Rayn.BERG5974@mail2web.com</email>
 		<company>General Electric Capital Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>11</id>
@@ -87,6 +107,8 @@
 		<email>Ka.SMI4668@mail2web.com</email>
 		<company>Constellation Energy Resources</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>12</id>
@@ -95,6 +117,8 @@
 		<email>Kason.HOP3349@live.com</email>
 		<company>Flowserve Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>13</id>
@@ -103,6 +127,8 @@
 		<email>Arielle.STEP2608@live.com</email>
 		<company>Lpl Financial</company>
 		<gender>female</gender>
+		<latitude type="float">48.6873395</latitude>
+		<longitude type="float">2.1990523</longitude>
 	</People>
 	<People>
 		<id>14</id>
@@ -111,6 +137,8 @@
 		<email>Marg.HENSLE7671@yahoo.com</email>
 		<company>Johnson And Johnson</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>15</id>
@@ -119,6 +147,8 @@
 		<email>Ashl.SHIEL5684@live.com</email>
 		<company>R.j. Reynolds Tobacco Company</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>16</id>
@@ -127,6 +157,8 @@
 		<email>Die.HOOV6691@mail2web.com</email>
 		<company>Amphenol Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>17</id>
@@ -135,6 +167,8 @@
 		<email>Dyl.LOVE5677@hushmail.com</email>
 		<company>Eaton Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>18</id>
@@ -143,6 +177,8 @@
 		<email>Emile.SERR3697@gmail.com</email>
 		<company>Ugi Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>19</id>
@@ -151,6 +187,8 @@
 		<email>Audria.JONES9257@mail2web.com</email>
 		<company>Greif</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>20</id>
@@ -159,6 +197,8 @@
 		<email>Kaylyn.SELLE7977@mail2web.com</email>
 		<company>Dresser-rand Company</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>21</id>
@@ -167,6 +207,8 @@
 		<email>Emil.HA1044@gmail.com</email>
 		<company>Campbell Soup Company</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>22</id>
@@ -175,6 +217,8 @@
 		<email>Evely.OWEN8448@gmail.com</email>
 		<company>Huntington National Bank</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>23</id>
@@ -183,6 +227,8 @@
 		<email>Ken.BE5094@gmail.com</email>
 		<company>Dell</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>24</id>
@@ -191,6 +237,8 @@
 		<email>Hayden.FINCH8219@gmail.com</email>
 		<company>Allstate</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>25</id>
@@ -199,6 +247,8 @@
 		<email>August.PATTERSO2455@yahoo.com</email>
 		<company>Ambac Financial Group</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>26</id>
@@ -207,6 +257,8 @@
 		<email>Be.TYSO3099@gmail.com</email>
 		<company>Branch Banking &amp; Trust / Bb&amp;t</company>
 		<gender>female</gender>
+		<latitude type="float">48.679494110890374</latitude>
+		<longitude type="float">2.189356904321289</longitude>
 	</People>
 	<People>
 		<id>27</id>
@@ -215,6 +267,8 @@
 		<email>Merc.BRIDGES5669@gmail.com</email>
 		<company>Constellation Brands</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>28</id>
@@ -223,6 +277,8 @@
 		<email>Emery.BURR2788@hushmail.com</email>
 		<company>Cliffs Natural Resources</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>29</id>
@@ -231,6 +287,8 @@
 		<email>Deange.PARK5799@mail2web.com</email>
 		<company>Johnson Controls</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>30</id>
@@ -239,6 +297,8 @@
 		<email>Phil.LEBLAN8361@yahoo.com</email>
 		<company>The Hershey Company</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>31</id>
@@ -247,6 +307,8 @@
 		<email>Anthon.MEND9841@yahoo.com</email>
 		<company>Caesars Entertainment Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>32</id>
@@ -255,6 +317,8 @@
 		<email>Crist.ACO7531@hushmail.com</email>
 		<company>R.r. Donnelley &amp; Sons Co</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>33</id>
@@ -263,6 +327,8 @@
 		<email>Wyatt.MERCE3805@yahoo.com</email>
 		<company>Lennox International</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>34</id>
@@ -271,6 +337,8 @@
 		<email>Sa.ELLI7580@hushmail.com</email>
 		<company>Rpm International</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>35</id>
@@ -279,6 +347,8 @@
 		<email>Brady.WILK7666@gmail.com</email>
 		<company>Calpine Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>36</id>
@@ -287,6 +357,8 @@
 		<email>Charleigh.DOTS2658@gmail.com</email>
 		<company>Allergan</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>37</id>
@@ -295,6 +367,8 @@
 		<email>Hamza.SUMMER4016@gmail.com</email>
 		<company>Lexmark International</company>
 		<gender>male</gender>
+		<latitude type="float">48.721413543772705</latitude>
+		<longitude type="float">2.179915528588867</longitude>
 	</People>
 	<People>
 		<id>38</id>
@@ -303,6 +377,8 @@
 		<email>Eli.JACKS6597@mail2web.com</email>
 		<company>Tenet Healthcare Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>39</id>
@@ -311,6 +387,8 @@
 		<email>Gideon.HEND1755@mail2web.com</email>
 		<company>Genesco</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>40</id>
@@ -319,6 +397,8 @@
 		<email>Ash.HATF2700@gmail.com</email>
 		<company>We Energies</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>41</id>
@@ -327,6 +407,8 @@
 		<email>Heath.WAGNER1493@mail2web.com</email>
 		<company>Nordstrom</company>
 		<gender>female</gender>
+		<latitude type="float">48.705669526546345</latitude>
+		<longitude type="float">2.1872969677978515</longitude>
 	</People>
 	<People>
 		<id>42</id>
@@ -335,6 +417,8 @@
 		<email>Cor.CANTU7397@hushmail.com</email>
 		<company>Sealed Air</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>43</id>
@@ -343,6 +427,8 @@
 		<email>Quinto.MATHIS7935@live.com</email>
 		<company>Sirius Xm Radio</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>44</id>
@@ -351,6 +437,8 @@
 		<email>Cas.PAU8289@mail2web.com</email>
 		<company>Nustar Energy</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>45</id>
@@ -359,6 +447,8 @@
 		<email>Hug.VELA2296@hushmail.com</email>
 		<company>Time Warner Cable</company>
 		<gender>male</gender>
+		<latitude type="float">48.698872025526995</latitude>
+		<longitude type="float">2.208411317163086</longitude>
 	</People>
 	<People>
 		<id>46</id>
@@ -367,6 +457,8 @@
 		<email>Vera.BUTL1707@mail2web.com</email>
 		<company>Vanguard Health Systems</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>47</id>
@@ -375,6 +467,8 @@
 		<email>Nixo.TATE1105@gmail.com</email>
 		<company>On Semiconductor Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.70736875835966</latitude>
+		<longitude type="float">2.2037764599853515</longitude>
 	</People>
 	<People>
 		<id>48</id>
@@ -383,6 +477,8 @@
 		<email>Brady.LAWSO6403@mail2web.com</email>
 		<company>Graybar Services</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>49</id>
@@ -391,6 +487,8 @@
 		<email>Kyle.VALD1106@yahoo.com</email>
 		<company>Southern Company</company>
 		<gender>female</gender>
+		<latitude type="float">48.6944531575634</latitude>
+		<longitude type="float">2.1498747876220703</longitude>
 	</People>
 	<People>
 		<id>50</id>
@@ -399,6 +497,8 @@
 		<email>Britta.STEPHENSO6150@live.com</email>
 		<company>Thermo Fisher Scientific</company>
 		<gender>female</gender>
+		<latitude type="float">48.6795825</latitude>
+		<longitude type="float">2.1694093</longitude>
 	</People>
 	<People>
 		<id>51</id>
@@ -407,6 +507,8 @@
 		<email>Isai.JARVI4321@yahoo.com</email>
 		<company>Oge Energy Corp</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>52</id>
@@ -415,6 +517,8 @@
 		<email>Hamza.MCLAUG4573@hushmail.com</email>
 		<company>Delphi Financial Group</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>53</id>
@@ -423,6 +527,8 @@
 		<email>Derek.HY3661@hushmail.com</email>
 		<company>Cinemark Usa</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>54</id>
@@ -431,6 +537,8 @@
 		<email>Brende.GUZ8239@hushmail.com</email>
 		<company>Scripps Networks Interactive</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>55</id>
@@ -439,6 +547,8 @@
 		<email>Yu.STEW8888@mail2web.com</email>
 		<company>Stanley Black &amp; Decker</company>
 		<gender>male</gender>
+		<latitude type="float">48.6953915</latitude>
+		<longitude type="float">2.1619073</longitude>
 	</People>
 	<People>
 		<id>56</id>
@@ -447,6 +557,8 @@
 		<email>Pa.HAYD6873@gmail.com</email>
 		<company>Jones Lang Lasalleorporated</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>57</id>
@@ -455,6 +567,8 @@
 		<email>Haz.CONLE2244@live.com</email>
 		<company>Graphic Packaging Holding Company</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>58</id>
@@ -463,6 +577,8 @@
 		<email>Sani.LANE7582@yahoo.com</email>
 		<company>Varian Medical Systems</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>59</id>
@@ -471,6 +587,8 @@
 		<email>Kai.BLANCHA1087@yahoo.com</email>
 		<company>Newmont Mining Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>60</id>
@@ -479,6 +597,8 @@
 		<email>Ra.GUERRA5803@gmail.com</email>
 		<company>J. C. Penney Company</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>61</id>
@@ -487,6 +607,8 @@
 		<email>Fly.WO1002@hushmail.com</email>
 		<company>Lowe's Companies</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>62</id>
@@ -495,6 +617,8 @@
 		<email>Osval.KLE4351@gmail.com</email>
 		<company>Hawaiian Electric Industries</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>63</id>
@@ -503,6 +627,8 @@
 		<email>Jay.MCKE3481@mail2web.com</email>
 		<company>Seacor Holdings</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>64</id>
@@ -511,6 +637,8 @@
 		<email>Dar.ZAMORA4397@hushmail.com</email>
 		<company>Armstrong World Industries</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>65</id>
@@ -519,6 +647,8 @@
 		<email>Veronic.SAVAG1075@hushmail.com</email>
 		<company>Synnex Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>66</id>
@@ -527,6 +657,8 @@
 		<email>Ama.GRAH4443@mail2web.com</email>
 		<company>Momentive Specialty Chemicals</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>67</id>
@@ -535,6 +667,8 @@
 		<email>Lily.INC2418@gmail.com</email>
 		<company>Suntrust Banks</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>68</id>
@@ -543,6 +677,8 @@
 		<email>Carissa.RE1806@hushmail.com</email>
 		<company>Urban Outfitters</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>69</id>
@@ -551,6 +687,8 @@
 		<email>Junip.GRANT1114@hushmail.com</email>
 		<company>C. R. Bardorporated</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>70</id>
@@ -559,6 +697,8 @@
 		<email>Atticu.BYR3043@yahoo.com</email>
 		<company>Raytheon Company</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>71</id>
@@ -567,6 +707,8 @@
 		<email>Heid.DALT3204@gmail.com</email>
 		<company>Caesars Entertainment Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>72</id>
@@ -575,6 +717,8 @@
 		<email>Jaely.LAM8638@mail2web.com</email>
 		<company>Time Warner Business Class</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>73</id>
@@ -583,6 +727,8 @@
 		<email>Bray.SISL6299@yahoo.com</email>
 		<company>Eog Resources</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>74</id>
@@ -591,6 +737,8 @@
 		<email>Kamren.G2778@gmail.com</email>
 		<company>Fossil</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>75</id>
@@ -599,6 +747,8 @@
 		<email>Carl.SAW5974@gmail.com</email>
 		<company>Vornado Realty Trust</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>76</id>
@@ -607,6 +757,8 @@
 		<email>Eliana.DAN3097@yahoo.com</email>
 		<company>Westar Energy</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>77</id>
@@ -615,6 +767,8 @@
 		<email>Seth.SUARE2092@live.com</email>
 		<company>Henry Schein</company>
 		<gender>male</gender>
+		<latitude type="float">48.681987593920645</latitude>
+		<longitude type="float">2.1500464489990234</longitude>
 	</People>
 	<People>
 		<id>78</id>
@@ -623,6 +777,8 @@
 		<email>Fio.GILL3983@live.com</email>
 		<company>Delphi Financial Group</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>79</id>
@@ -631,6 +787,8 @@
 		<email>Ter.BRAD6961@yahoo.com</email>
 		<company>Advance Auto Parts</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>80</id>
@@ -639,6 +797,8 @@
 		<email>Rayd.KI3079@gmail.com</email>
 		<company>Prudential Financialorporated</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>81</id>
@@ -647,6 +807,8 @@
 		<email>Bent.MA2561@mail2web.com</email>
 		<company>The Walt Disney Company</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>82</id>
@@ -655,6 +817,8 @@
 		<email>Ari.CHAN9367@hushmail.com</email>
 		<company>Allstate</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>83</id>
@@ -663,6 +827,8 @@
 		<email>Joshua.WAL7825@yahoo.com</email>
 		<company>Tsys Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>84</id>
@@ -671,6 +837,8 @@
 		<email>Cam.MOR8198@hushmail.com</email>
 		<company>Erie Insurance Group</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>85</id>
@@ -679,6 +847,8 @@
 		<email>Kenned.MOONEY4020@mail2web.com</email>
 		<company>Raymond James Financial</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>86</id>
@@ -687,6 +857,8 @@
 		<email>Dann.DORSE1595@live.com</email>
 		<company>Solutia</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>87</id>
@@ -695,6 +867,8 @@
 		<email>Ce.OLI6880@live.com</email>
 		<company>H. J. Heinz Company</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>88</id>
@@ -703,6 +877,8 @@
 		<email>Bra.WILKER2440@hushmail.com</email>
 		<company>Alaska Air Group</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>89</id>
@@ -711,6 +887,8 @@
 		<email>Amari.ALS5173@mail2web.com</email>
 		<company>Modine Manufacturing Company</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>90</id>
@@ -719,6 +897,8 @@
 		<email>Daphne.HAN6069@live.com</email>
 		<company>Hewlett-packard Company</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>91</id>
@@ -727,6 +907,8 @@
 		<email>Nolan.HOFFM3479@hushmail.com</email>
 		<company>Constellation Brands</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>92</id>
@@ -735,6 +917,8 @@
 		<email>Ab.BURC6216@mail2web.com</email>
 		<company>Gaf Materials Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>93</id>
@@ -743,6 +927,8 @@
 		<email>Jonathon.KENNEDY9454@live.com</email>
 		<company>Inergy</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>94</id>
@@ -751,6 +937,8 @@
 		<email>Tatu.MAXWE8311@hushmail.com</email>
 		<company>The Bank Of New York Mellon Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>95</id>
@@ -759,6 +947,8 @@
 		<email>Julie.WINTERS7091@yahoo.com</email>
 		<company>The Dun &amp; Bradstreet Corp</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>96</id>
@@ -767,6 +957,8 @@
 		<email>Des.DUN4469@hushmail.com</email>
 		<company>Sysco Corporation</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>97</id>
@@ -775,6 +967,8 @@
 		<email>Kyla.FRANK1852@yahoo.com</email>
 		<company>State Farm Insurance</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>98</id>
@@ -783,6 +977,8 @@
 		<email>Sienn.ESTE6255@gmail.com</email>
 		<company>Dollar General Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>99</id>
@@ -791,6 +987,8 @@
 		<email>Haide.RO3189@yahoo.com</email>
 		<company>Wgl Holdings</company>
 		<gender>male</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 	<People>
 		<id>100</id>
@@ -799,5 +997,7 @@
 		<email>Lei.FREDER8546@mail2web.com</email>
 		<company>State Street Corporation</company>
 		<gender>female</gender>
+		<latitude type="float">48.7078357</latitude>
+		<longitude type="float">2.1669527</longitude>
 	</People>
 </root>
