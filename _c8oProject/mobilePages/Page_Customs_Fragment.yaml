@@ -54,131 +54,135 @@ title: Fragment
     htmlTemplate: |
       <ion-list>
       	<ion-item tappable (click)="this.openPageWithName('Page_Customs_Animation')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Animation page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Customs_Attribute')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Attribute page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_NativeActions_Barcode')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Barcode page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Components_Bars')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Bars page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Buttons_Buttons')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Buttons page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_NativeActions_Camera')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Camera page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Cards_Cards')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Cards page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Components_Charts')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Charts page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_ChatBot')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		ChatBot page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Buttons_Fabs')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Fabs page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_NativeActions_FileChooser')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		File Chooser page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Controls_Finally')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Finally page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_Fingerprint')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Fingerprint page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Forms_Forms')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Forms page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Customs_Fragment')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Fragment page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Html_Html')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Html page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_IconInput')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Icon in Input page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Lists_InfiniteScroll')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Infinite Scroll page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_KeyPad')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Keypad page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Lists_Lists')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Lists page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Menus_Menu')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Menus page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Actions_modal')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Modal page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Actions_Pause')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Pause page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_Searchbar')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Searchbar page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Forms_Signature')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Signature page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_NativeActions_SpeechToText')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Speech To Text page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Miscellaneous_Spinner')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Spinner page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Customs_Style')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Style page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Components_Tabs')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Tabs page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Customs_Tag')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Tag page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Customs_Text')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Text page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_NativeActions_TextToSpeech')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Text To Speech page
       	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Miscellaneous_Tooltip')">
-      		<ion-icon name="ionic" item-start large color="primary"></ion-icon>
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Tooltip page
       	</ion-item>
       </ion-list>

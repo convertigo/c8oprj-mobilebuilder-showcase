@@ -1,5 +1,3 @@
-comment: In progress
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -181,7 +179,7 @@ title: Title for Page3
         ↓Spinner_dots [mobile.components.UIDynamicElement-1584107006538]: 
           beanData: '{"ionBean":"Spinner","name":"plain:dots"}'
           tagName: ion-spinner
-    ↓Row_Spinner_name1 [mobile.components.UIDynamicElement-1584114663246]: 
+    ↓Row_Spinner_colors [mobile.components.UIDynamicElement-1584114663246]: 
       beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
       tagName: ion-row
       ↓GridCol [mobile.components.UIDynamicElement-1584114663249]: 
@@ -268,5 +266,188 @@ title: Title for Page3
                     		fill: #e0b500;
                     	}
                     '
+    ↓Row_Spinner_binding [mobile.components.UIDynamicElement-1584352840024]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584352840027]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584352840030]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Spinner binding
+        ↓Attr [mobile.components.UIAttribute-1584352840033]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol1 [mobile.components.UIDynamicElement-1584352840036]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584352876434]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Text [mobile.components.UIText-1584353787543]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:this.global.spinStarted ? ''STOP'' : ''START'''
+          ↓Event [mobile.components.UIControlEvent-1584353047536]: 
+            ↓togglePauseSpinner [mobile.components.UICustomAction-1584353111653]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		this.global.spinStarted = !this.global.spinStarted;
+                      		resolve();
+                      '
+          ↓Spinner_crescent [mobile.components.UIDynamicElement-1584352840063]: 
+            beanData: |
+              '{
+               "ionBean": "Spinner",
+               "name": "plain:crescent",
+               "paused": "script:!this.global.spinStarted"
+              }'
+            tagName: ion-spinner
+            ↓Attr [mobile.components.UIAttribute-1584353013609]: 
+              attrName: color
+              attrValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:light
+            ↓Style [mobile.components.UIStyle-1584355824138]: 
+              styleContent: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '	margin-left: 10px;
+                          top: -5px;
+                      '
+    ↓Row_Spinner_binding1 [mobile.components.UIDynamicElement-1584355680309]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584355680312]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584355680315]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Spinner binding
+        ↓Attr [mobile.components.UIAttribute-1584355680318]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol1 [mobile.components.UIDynamicElement-1584355680321]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584355680324]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Text [mobile.components.UIText-1584355680327]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:load people
+          ↓Event [mobile.components.UIControlEvent-1584355680330]: 
+            ↓unpauseSpinner [mobile.components.UICustomAction-1584355680333]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		this.global.loaded = false;
+                      		this.global.started = true;
+                      		resolve();
+                      '
+              ↓CallSequence [mobile.components.UIDynamicAction-1584355680336]: 
+                beanData: |
+                  '{
+                   "ionBean": "CallSequenceAction",
+                   "requestable": "plain:MobileBuilderComponents.generatePeople",
+                   "marker": "plain:SPINNER",
+                   "noLoading": "plain:true"
+                  }'
+                ↓start [mobile.components.UIControlVariable-1584355680339]: 
+                  comment: new variable
+                  varValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:0
+                ↓nbr [mobile.components.UIControlVariable-1584355680342]: 
+                  comment: new variable
+                  varValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:4
+                ↓PauseAction [mobile.components.UIDynamicAction-1584355680345]: 
+                  beanData: '{"ionBean":"PauseAction"}'
+                  ↓pauseSpinner [mobile.components.UICustomAction-1584355680348]: 
+                    actionValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                          →: |
+                            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                            		this.global.loaded = true;
+                            		this.global.started = false;
+                            		resolve();
+                            '
+                  ↓Toast [mobile.components.UIDynamicAction-1584355680351]: 
+                    beanData: '{"ionBean":"ToastAction","message":"script:this.listen([''MobileBuilderComponents.generatePeople#SPINNER'']).People?.length + '' People loaded!''"}'
+          ↓Directive [mobile.components.UIControlDirective-1584355680354]: 
+            directiveName: If
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.global.started
+            ↓Spinner_crescent [mobile.components.UIDynamicElement-1584355680357]: 
+              beanData: |
+                '{
+                 "ionBean": "Spinner",
+                 "name": "plain:crescent",
+                 "paused": "script:this.global.loaded"
+                }'
+              tagName: ion-spinner
+              ↓Attr [mobile.components.UIAttribute-1584355680360]: 
+                attrName: color
+                attrValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:light
+              ↓Attr1 [mobile.components.UIAttribute-1584355680363]: 
+                attrName: 
+                attrValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:margin-left
+          ↓Directive1 [mobile.components.UIControlDirective-1584355680366]: 
+            directiveName: If
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:!this.global.started
+            ↓Icon [mobile.components.UIDynamicElement-1584355680369]: 
+              beanData: '{"ionBean":"Icon","IconName":"plain:refresh"}'
+              tagName: ion-icon
+              ↓Style [mobile.components.UIStyle-1584355680372]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '    padding: 0 0.5em;
+                            font-size: 1.8em;
+                            line-height: .67;
+                            pointer-events: none;
+                        '
 ↓UseSharedComponent [mobile.components.UIUseShared-1584106185771]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

@@ -65,6 +65,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_zHowTos_Searchbar [mobile.components.PageComponent-1582623530545]: 🗏 mobilePages/Page_zHowTos_Searchbar.yaml
 ↓Page_Forms_Signature [mobile.components.PageComponent-1574951079411]: 🗏 mobilePages/Page_Forms_Signature.yaml
 ↓Page_NativeActions_SpeechToText [mobile.components.PageComponent-1578662209808]: 🗏 mobilePages/Page_NativeActions_SpeechToText.yaml
+↓Page_Miscellaneous_Spinner [mobile.components.PageComponent-1584106038102]: 🗏 mobilePages/Page_Miscellaneous_Spinner.yaml
 ↓Page_Customs_Style [mobile.components.PageComponent-1579191468247]: 🗏 mobilePages/Page_Customs_Style.yaml
 ↓Page_Components_Tabs [mobile.components.PageComponent-1579531139518]: 🗏 mobilePages/Page_Components_Tabs.yaml
 ↓Page_Components_Tabs_Contacts [mobile.components.PageComponent-1579531610323]: 🗏 mobilePages/Page_Components_Tabs_Contacts.yaml
@@ -76,7 +77,6 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
-↓Page_Miscellaneous_Spinner [mobile.components.PageComponent-1584106038102]: 🗏 mobilePages/Page_Miscellaneous_Spinner.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
