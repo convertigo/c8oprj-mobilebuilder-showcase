@@ -20,7 +20,7 @@ title: Title for Page_Tabs_Contacts1
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   tagName: ion-content
   ↓GoogleMap [mobile.components.UIDynamicElement-1584362505712]: 
-    beanData: '{"ionBean":"GoogleMap"}'
+    beanData: '{"ionBean":"GoogleMap","Zoom":"script:13"}'
     identifier: gm
     tagName: agm-map
     ↓MapCircle [mobile.components.UIDynamicElement-1584367567691]: 
@@ -104,6 +104,29 @@ title: Title for Page_Tabs_Contacts1
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:gm.lastOpen?.close();gm.lastOpen=infoWindow;
+          comment: Works only in a standalone page, not in Tabs page.
+          isEnabled: false
+        ↓Event [mobile.components.UIControlEvent-1584476566493]: 
+          attrName: (markerClick)
+          eventName: onMarkerClick
+          ↓closePreviousInfoWindow [mobile.components.UICustomAction-1584476583118]: 
+            actionValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                    		
+                    		if(this.infoWindow.lastOpen)
+                    		    this.infoWindow.lastOpen.close();
+                    		this.infoWindow.lastOpen=vars.iw;
+                    		resolve();
+                    '
+            ↓iw [mobile.components.UIControlVariable-1584479515509]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:this.infoWindow
     ↓Event [mobile.components.UIControlEvent-1584380881923]: 
       attrName: (mapClick)
       eventName: onMapClick
