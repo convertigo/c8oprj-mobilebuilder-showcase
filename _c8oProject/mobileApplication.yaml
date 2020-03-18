@@ -78,6 +78,8 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
+↓Page_Actions_Log [mobile.components.PageComponent-1584553887504]: 🗏 mobilePages/Page_Actions_Log.yaml
+↓Page_Actions_ShowCloseLoading [mobile.components.PageComponent-1584554470657]: 🗏 mobilePages/Page_Actions_ShowCloseLoading.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
@@ -237,20 +239,16 @@ tplProjectName: mobilebuilder_tpl_7_7_0
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          '/* ion-toast.closeIcon { */
-          /*     background-color: rgba(56, 137, 250, 0.59); */
-          /* } */
-          
-          ion-toast.customToast {
+          'ion-toast.customToast {
           	background-color: rgba(56, 137, 250, 0.59);
           	.toast-wrapper {
-          		max-width: 90%;
+          		max-width: 60%;
           		max-height: 90%;
           		text-align: left;
           		border-radius: 20px;
           		box-shadow: 0px 0px 15px 4px #6e6e6e;
           /* 		margin: 5%; */
-          		opacity: 0.8;
+          /* 		opacity: 0.8; */
           		background-color: #232323;
           	}
           	.toast-message {
@@ -273,6 +271,29 @@ tplProjectName: mobilebuilder_tpl_7_7_0
           				transform: rotate(180deg);
           	}
           	.button-clear-md:hover:not(.disable-hover) {
-              	background-color: none;
+              	background-color: transparent;
           	}
           }'
+↓AppEvent [mobile.components.UIAppEvent-1584554695870]: 
+  ↓Log [mobile.components.UIDynamicAction-1584554801565]: 
+    beanData: '{"ionBean":"LogAction","message":"plain:>>>> Goodbye my friend!"}'
+↓AppEvent1 [mobile.components.UIAppEvent-1584554903532]: 
+  appEvent: onAppResume
+  ↓Log [mobile.components.UIDynamicAction-1584554903535]: 
+    beanData: '{"ionBean":"LogAction","message":"plain:>>>> Hello my friend! Stay a while and listen..."}'
+↓AppEvent2 [mobile.components.UIAppEvent-1584554966673]: 
+  appEvent: onAppResize
+  ↓Log [mobile.components.UIDynamicAction-1584554966676]: 
+    beanData: '{"ionBean":"LogAction","message":"plain:>>>> Size doesn''t matter..."}'
+↓AppEvent21 [mobile.components.UIAppEvent-1584555019490]: 
+  appEvent: onNetworkReachable
+  ↓Log [mobile.components.UIDynamicAction-1584555019493]: 
+    beanData: '{"ionBean":"LogAction","message":"plain:>>>> Online and Reachable"}'
+↓AppEvent211 [mobile.components.UIAppEvent-1584555164243]: 
+  appEvent: onNetworkUnreachable
+  ↓Log [mobile.components.UIDynamicAction-1584555164246]: 
+    beanData: '{"ionBean":"LogAction","message":"plain:>>>> Online but can not reach endpoint"}'
+↓AppEvent2111 [mobile.components.UIAppEvent-1584555779196]: 
+  appEvent: onNetworkOffline
+  ↓Log [mobile.components.UIDynamicAction-1584555779199]: 
+    beanData: '{"ionBean":"LogAction","message":"plain:>>>> Offline!  See me in device but not in server..."}'

@@ -29,17 +29,20 @@ title: Page_Tabs_Map
       ↓Event [mobile.components.UIControlEvent-1584379728004]: 
         attrName: (circleClick)
         eventName: onCircleClick
-        ↓getCircleCoords [mobile.components.UICustomAction-1584379736019]: 
-          actionValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-              - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                →: |
-                  '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                  		page.c8o.log.debug(event.coords.lat);
-                  		page.c8o.log.debug(event.coords.lng);
-                  		resolve();
-                  '
+        ↓LogLat [mobile.components.UIDynamicAction-1584553569251]: 
+          beanData: |
+            '{
+             "ionBean": "LogAction",
+             "message": "script:''lat: ''+$event.coords.lat",
+             "level": "plain:warn"
+            }'
+        ↓LogLng [mobile.components.UIDynamicAction-1584553569254]: 
+          beanData: |
+            '{
+             "ionBean": "LogAction",
+             "message": "script:''lng: ''+$event.coords.lng",
+             "level": "plain:warn"
+            }'
     ↓Directive [mobile.components.UIControlDirective-1584367760147]: 
       directiveSource: 
         - xmlizable: 
@@ -130,17 +133,10 @@ title: Page_Tabs_Map
     ↓Event [mobile.components.UIControlEvent-1584380881923]: 
       attrName: (mapClick)
       eventName: onMapClick
-      ↓getMapCoords [mobile.components.UICustomAction-1584380881926]: 
-        actionValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-            - com.twinsoft.convertigo.beans.common.FormatedContent: 
-              →: |
-                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-                		page.c8o.log.debug(event.coords.lat);
-                		page.c8o.log.debug(event.coords.lng);
-                		resolve();
-                '
+      ↓LogLat [mobile.components.UIDynamicAction-1584553387343]: 
+        beanData: '{"ionBean":"LogAction","message":"script:''lat: ''+$event.coords.lat"}'
+      ↓LogLng [mobile.components.UIDynamicAction-1584553503614]: 
+        beanData: '{"ionBean":"LogAction","message":"script:''lng: ''+$event.coords.lng"}'
 ↓PageEvent [mobile.components.UIPageEvent-1579539015055]: 
   ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1584367710953]: 
     beanData: '{"ionBean":"InvokeAction"}'
