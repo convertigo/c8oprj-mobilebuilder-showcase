@@ -15,7 +15,7 @@ scriptContent:
         	/*End_c8o_PageFunction*/
         
 segment: path-to-page_components_tabs_map
-title: Title for Page_Tabs_Contacts1
+title: Page_Tabs_Map
 ↓Content [mobile.components.UIDynamicElement-1579539015034]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   tagName: ion-content

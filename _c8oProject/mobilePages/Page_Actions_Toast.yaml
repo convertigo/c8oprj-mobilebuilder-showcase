@@ -1,0 +1,309 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_actions_toast
+title: Toasts
+↓Header [mobile.components.UIDynamicElement-1584522278541]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1584522278544]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1584522278547]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1584522278550]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Toasts
+    ↓Button [mobile.components.UIDynamicElement-1584522278553]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1584522278556]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1584522278559]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1584524543100]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow_Toast_Position_Top [mobile.components.UIDynamicElement-1584524546058]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584524665754]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584524563570]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:TOP TOAST ===>
+        ↓Attr [mobile.components.UIAttribute-1584524953985]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584524549241]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584524557321]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584524631610]: 
+            ↓Toast [mobile.components.UIDynamicAction-1584524640749]: 
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:THIS IS A TOP TOAST!",
+                 "position": "plain:top"
+                }'
+          ↓Text [mobile.components.UIText-1584538671986]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:🚀
+    ↓GridRow_Toast_Position_Middle [mobile.components.UIDynamicElement-1584537957968]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584537957971]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584538724470]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:MIDDLE TOAST ===>
+        ↓Attr [mobile.components.UIAttribute-1584539011376]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584537957986]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584537957989]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584537957995]: 
+            ↓Toast [mobile.components.UIDynamicAction-1584537957998]: 
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:THIS IS A MIDDLE TOAST!",
+                 "position": "plain:middle"
+                }'
+          ↓Text1 [mobile.components.UIText-1584538732109]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\uD83D\uDE80
+    ↓GridRow_Toast_Position_Bottom [mobile.components.UIDynamicElement-1584537961603]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584537961621]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584537961642]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:BOTTOM TOAST ===>
+        ↓Attr [mobile.components.UIAttribute-1584539016641]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584537961636]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584537961639]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584537961645]: 
+            ↓Toast [mobile.components.UIDynamicAction-1584537961648]: 
+              beanData: '{"ionBean":"ToastAction","message":"plain:THIS IS A BOTTOM TOAST!"}'
+          ↓Text1 [mobile.components.UIText-1584538795457]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\uD83D\uDE80
+    ↓GridRow_Toast_Close_Default [mobile.components.UIDynamicElement-1584537961714]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584537961747]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584537961771]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:DEFAULT CLOSE BUTTON TEXT ===>
+        ↓Attr [mobile.components.UIAttribute-1584539019539]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584537961765]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584537961768]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584537961774]: 
+            ↓Toast [mobile.components.UIDynamicAction-1584537961777]: 
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:THIS IS A MIDDLE TOAST WITH CLOSE BUTTON",
+                 "position": "plain:middle",
+                 "showCloseButton": "plain:true"
+                }'
+          ↓Text1 [mobile.components.UIText-1584538799027]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\uD83D\uDE80
+    ↓GridRow_Toast_Close_Custom [mobile.components.UIDynamicElement-1584537970789]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584537970840]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584537970861]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:CUSTOM CLOSE BUTTON TEXT ===>
+        ↓Attr [mobile.components.UIAttribute-1584539022163]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584537970855]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584537970858]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584537970864]: 
+            ↓Toast [mobile.components.UIDynamicAction-1584537970867]: 
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:CUSTOM CLOSE BUTTON TEXT",
+                 "position": "plain:middle",
+                 "showCloseButton": "plain:true",
+                 "closeButtonText": "plain:X"
+                }'
+          ↓Text1 [mobile.components.UIText-1584538801691]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\uD83D\uDE80
+    ↓GridRow_Toast_Duration [mobile.components.UIDynamicElement-1584537970900]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584537970966]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584537970987]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:TOAST DURATION ===>
+        ↓Attr [mobile.components.UIAttribute-1584539025777]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584537970981]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584537970984]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584537970990]: 
+            ↓Toast [mobile.components.UIDynamicAction-1584537970993]: 
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:LOTS OF TIME TO READ THIS TEXT UNTIL THE END. YOU CAN CLOSE ME IF YOU ALREADY FINISHED",
+                 "duration": "plain:10000",
+                 "position": "plain:middle",
+                 "showCloseButton": "plain:true"
+                }'
+          ↓Text1 [mobile.components.UIText-1584538806753]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\uD83D\uDE80
+    ↓GridRow_Toast_CSS [mobile.components.UIDynamicElement-1584537971011]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584537971092]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584537971113]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:CUSTOM CSS TOAST ===>
+        ↓Attr [mobile.components.UIAttribute-1584538971186]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584537971107]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584537971110]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584537971116]: 
+            ↓Toast [mobile.components.UIDynamicAction-1584537971119]: 
+              beanData: |
+                '{
+                 "ionBean": "ToastAction",
+                 "message": "plain:COMPLETLY REWORKED TOAST CSS. ADD A VALUE TO THE CSS CLASS PROPERTY AND ADD YOUR CSS IN A NEW APPPLICATION STYLE COMPONENT",
+                 "duration": "plain:30000",
+                 "position": "plain:middle",
+                 "cssClass": "plain:customToast",
+                 "showCloseButton": "plain:true",
+                 "closeButtonText": "plain: "
+                }'
+          ↓Text1 [mobile.components.UIText-1584538811527]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\uD83D\uDE80
+↓UseSharedComponent [mobile.components.UIUseShared-1584524442748]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

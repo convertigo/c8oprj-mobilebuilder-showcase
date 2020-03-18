@@ -16,7 +16,7 @@ scriptContent:
         	/*End_c8o_PageFunction*/
         
 segment: path-to-page_components_tabs_chat
-title: Title for Page_Tabs_Map1
+title: Page_Tabs_Chat
 ↓Content [mobile.components.UIDynamicElement-1579539074030]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
