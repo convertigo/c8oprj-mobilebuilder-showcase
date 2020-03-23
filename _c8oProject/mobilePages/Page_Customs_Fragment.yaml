@@ -133,6 +133,14 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Lists page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Actions_LoadingShowClose')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Show / Close Loading page
+      	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Actions_Log')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Logs page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Menus_Menu')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Menus page

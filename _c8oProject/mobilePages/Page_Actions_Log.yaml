@@ -1,5 +1,3 @@
-comment: In progress
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -48,5 +46,299 @@ title: Logs
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1584698473822]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow_Log_doc [mobile.components.UIDynamicElement-1584698939401]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584698939404]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698939407]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:You can use logs actions to display some information in the device logs. These logs will also be automatically sent to the Convertigo Server and will be threaded within the backend sequence execution so that you can follow a full client interaction thread.
+        ↓Attr [mobile.components.UIAttribute-1584698939410]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+    ↓GridRow_Log_doc1 [mobile.components.UIDynamicElement-1584708199506]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584708199509]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1584708199515]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1584711083517]: 
+          htmlTemplate: |
+            Logs vizualisation depends on the level set for the <b>Log4J devices output logger</b>.<br>
+            A level can <b>only</b> see levels <b>below</b> it.<br>
+            For example, if you set the Log4J devices output logger to "info" you will only see logs set to info, warn, error and fatal.<br>
+            <br>Here is the levels order:<br>
+            <b>trace > debug > info > warn > error > fatal</b>
+    ↓GridRow_Log_fatal [mobile.components.UIDynamicElement-1584698473825]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584698473828]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698473831]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:FATAL LOG LEVEL ===>
+        ↓Attr [mobile.components.UIAttribute-1584698473834]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584698473837]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584698473840]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584698473843]: 
+            ↓Log [mobile.components.UIDynamicAction-1584698529760]: 
+              beanData: |
+                '{
+                 "ionBean": "LogAction",
+                 "message": "plain:FATAL log level is the lowest level all can see.",
+                 "level": "plain:fatal"
+                }'
+          ↓Text [mobile.components.UIText-1584698473849]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:✍
+    ↓GridRow_Log_error [mobile.components.UIDynamicElement-1584698473852]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584698473855]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698473858]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:ERROR LOG LEVEL ===>
+        ↓Attr [mobile.components.UIAttribute-1584698473861]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584698473864]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584698473867]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584698473870]: 
+            ↓Log [mobile.components.UIDynamicAction-1584698644217]: 
+              beanData: |
+                '{
+                 "ionBean": "LogAction",
+                 "message": "plain:ERROR log level.",
+                 "level": "plain:error"
+                }'
+          ↓Text1 [mobile.components.UIText-1584698473876]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\u270D
+    ↓GridRow_Log_warn [mobile.components.UIDynamicElement-1584698473879]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584698473882]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698473885]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:WARN LOG LEVEL ===>
+        ↓Attr [mobile.components.UIAttribute-1584698473888]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584698473891]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584698473894]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584698473897]: 
+            ↓Log [mobile.components.UIDynamicAction-1584699143423]: 
+              beanData: |
+                '{
+                 "ionBean": "LogAction",
+                 "message": "plain:WARN log level.",
+                 "level": "plain:warn"
+                }'
+          ↓Text1 [mobile.components.UIText-1584698473903]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\u270D
+    ↓GridRow_Log_info [mobile.components.UIDynamicElement-1584698473906]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584698473909]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698473912]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:INFO LOG LEVEL ===>
+        ↓Attr [mobile.components.UIAttribute-1584698473915]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584698473918]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584698473921]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584698473924]: 
+            ↓Log [mobile.components.UIDynamicAction-1584699699130]: 
+              beanData: '{"ionBean":"LogAction","message":"plain:INFO log level."}'
+          ↓Text1 [mobile.components.UIText-1584698473930]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\u270D
+    ↓GridRow_Log_debug [mobile.components.UIDynamicElement-1584698473933]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584698473936]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698473939]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:DEBUG LOG LEVEL ===>
+        ↓Attr [mobile.components.UIAttribute-1584698473942]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584698473945]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584698473948]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584698473951]: 
+            ↓Log [mobile.components.UIDynamicAction-1584699744515]: 
+              beanData: |
+                '{
+                 "ionBean": "LogAction",
+                 "message": "plain:DEBUG log level.",
+                 "level": "plain:debug"
+                }'
+          ↓Text1 [mobile.components.UIText-1584698473957]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\u270D
+    ↓GridRow_Log_trace [mobile.components.UIDynamicElement-1584698473960]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584698473963]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698473966]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:TRACE LOG LEVEL ===>
+        ↓Attr [mobile.components.UIAttribute-1584698473969]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584698473972]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584698473975]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584698473978]: 
+            ↓Log [mobile.components.UIDynamicAction-1584699886324]: 
+              beanData: |
+                '{
+                 "ionBean": "LogAction",
+                 "message": "plain:TRACE log level.",
+                 "level": "plain:trace"
+                }'
+          ↓Text1 [mobile.components.UIText-1584698473984]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\u270D
+    ↓GridRow_Log_AllInOne [mobile.components.UIDynamicElement-1584698473987]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584698473990]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584698473993]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:ALL IN ONE ===>
+        ↓Attr [mobile.components.UIAttribute-1584698473996]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584698473999]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584698474002]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584698474005]: 
+            ↓allLevelLogs [mobile.components.UICustomAction-1584699992185]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		page.c8o.log.fatal(''FATAL LEVEL'');
+                      		page.c8o.log.error(''ERROR LEVEL'');
+                      		page.c8o.log.warn(''WARN LEVEL'');
+                      		page.c8o.log.info(''INFO LEVEL'');
+                      		page.c8o.log.debug(''DEBUG LEVEL'');
+                      		page.c8o.log.trace(''TRACE LEVEL'');
+                      		resolve();
+                      '
+          ↓Text1 [mobile.components.UIText-1584698474011]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:\u270D
 ↓UseSharedComponent [mobile.components.UIUseShared-1584553959093]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

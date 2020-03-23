@@ -58,6 +58,8 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Lists_InfiniteScroll [mobile.components.PageComponent-1583850056857]: 🗏 mobilePages/Page_Lists_InfiniteScroll.yaml
 ↓Page_zHowTos_KeyPad [mobile.components.PageComponent-1580309028081]: 🗏 mobilePages/Page_zHowTos_KeyPad.yaml
 ↓Page_Lists_Lists [mobile.components.PageComponent-1579283173880]: 🗏 mobilePages/Page_Lists_Lists.yaml
+↓Page_Actions_LoadingShowClose [mobile.components.PageComponent-1584554470657]: 🗏 mobilePages/Page_Actions_LoadingShowClose.yaml
+↓Page_Actions_Log [mobile.components.PageComponent-1584553887504]: 🗏 mobilePages/Page_Actions_Log.yaml
 ↓Page_Menus_Menu [mobile.components.PageComponent-1580914202266]: 🗏 mobilePages/Page_Menus_Menu.yaml
 ↓Page_Actions_modal [mobile.components.PageComponent-1576057381386]: 🗏 mobilePages/Page_Actions_modal.yaml
 ↓Page_Actions_modal1 [mobile.components.PageComponent-1576058487795]: 🗏 mobilePages/Page_Actions_modal1.yaml
@@ -78,8 +80,6 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
-↓Page_Actions_Log [mobile.components.PageComponent-1584553887504]: 🗏 mobilePages/Page_Actions_Log.yaml
-↓Page_Actions_ShowCloseLoading [mobile.components.PageComponent-1584554470657]: 🗏 mobilePages/Page_Actions_ShowCloseLoading.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 

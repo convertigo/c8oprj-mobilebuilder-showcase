@@ -1,0 +1,138 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_actions_loadingshowclose
+title: Loading (Show / Close )
+↓Header [mobile.components.UIDynamicElement-1584554471268]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1584554471271]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1584554471274]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1584554471277]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Show / Close Loading
+    ↓Button [mobile.components.UIDynamicElement-1584554471280]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1584554471283]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1584554471286]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓GridCol [mobile.components.UIDynamicElement-1584974656463]: 
+    beanData: '{"ionBean":"GridCol"}'
+    tagName: ion-col
+    ↓Attr [mobile.components.UIAttribute-1584974656466]: 
+      attrName: 
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:text-justify
+    ↓Fragment [mobile.components.UICustom-1584974656469]: 
+      htmlTemplate: |
+        <h1>Show Loading</h1>
+        <div>
+        	Shows the page loader. Place this action component before calling a Convertigo requestable (sequence, fullsync) and actions that may take.
+        </div>
+        
+        <h1>Close Loading</h1>
+        <div>
+        	Hides the page loader. Place this action component after a chain of actions.
+        </div>
+        <br>
+  ↓Button [mobile.components.UIDynamicElement-1584973424599]: 
+    beanData: '{"ionBean":"Button"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1584973431719]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:LOAD DATA
+    ↓Event [mobile.components.UIControlEvent-1584973441972]: 
+      ↓Show_Loading [mobile.components.UIDynamicAction-1584974363115]: 
+        beanData: '{"ionBean":"ShowLoadingAction"}'
+        ↓peopleLoading [mobile.components.UIDynamicInvoke-1584973504502]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+          ↓peopleNbr [mobile.components.UIControlVariable-1584973508091]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'5'
+          ↓marker [mobile.components.UIControlVariable-1584973508095]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'LOADER'
+          ↓startIndex [mobile.components.UIControlVariable-1584973508097]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'0'
+          ↓SetGlobal [mobile.components.UIDynamicAction-1584973556945]: 
+            beanData: |
+              '{
+               "ionBean": "SetGlobalAction",
+               "Property": "plain:ppl_load",
+               "Value": "script:[]"
+              }'
+            ↓IterateAction [mobile.components.UIDynamicIterate-1584973802666]: 
+              beanData: '{"ionBean":"IterateAction","items":"script:stack[''peopleLoading''].out?.People"}'
+              ↓Loop_Handler [mobile.components.UIActionLoopEvent-1584973848521]: 
+                ↓PauseAction [mobile.components.UIDynamicAction-1584973860920]: 
+                  beanData: '{"ionBean":"PauseAction","duration":"plain:2000"}'
+                  ↓Log [mobile.components.UIDynamicAction-1584974085733]: 
+                    beanData: |
+                      '{
+                       "ionBean": "LogAction",
+                       "message": "script:this.global.ppl_load.push(item)",
+                       "level": "plain:warn"
+                      }'
+              ↓Close_Loading [mobile.components.UIDynamicAction-1584974432511]: 
+                beanData: '{"ionBean":"CloseLoadingAction"}'
+  ↓ListContainer [mobile.components.UIDynamicElement-1584973661226]: 
+    beanData: '{"ionBean":"List"}'
+    tagName: ion-list
+    ↓Directive [mobile.components.UIControlDirective-1584973669856]: 
+      directiveItemName: ppl
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.ppl_load
+      ↓ListItem [mobile.components.UIDynamicElement-1584973679559]: 
+        beanData: '{"ionBean":"ListItem"}'
+        tagName: ion-item
+        ↓Text [mobile.components.UIText-1584973695565]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:ppl.firstname
+↓UseSharedComponent [mobile.components.UIUseShared-1584554471289]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
