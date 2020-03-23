@@ -51,11 +51,37 @@ title: Animation
       '{
        "ionBean": "Grid",
        "Height": "plain:height:100%",
-       "NoPadding": "plain:true"
+       "NoPadding": "plain:false"
       }'
     tagName: ion-grid
+    ↓GridRow12 [mobile.components.UIDynamicElement-1584978313852]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584978313855]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1584978522122]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:margin
+        ↓Div [mobile.components.UIDynamicElement-1584978579363]: 
+          beanData: '{"ionBean":"DivTag"}'
+          tagName: div
+          ↓Text [mobile.components.UIText-1584978313864]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Adding an animation to a component will have this component animated automatically as soon as the component appears on the page. You can choose the animation name, and some other properties to control the animation. If you want the animation to be triggered by an event such as (tap) (click) or PageEvents, use instead the Animate action
+          ↓Attr [mobile.components.UIAttribute-1584978598940]: 
+            attrName: class
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:doc
     ↓GridRow1 [mobile.components.UIDynamicElement-1579109620477]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
       tagName: ion-row
       ↓GridCol [mobile.components.UIDynamicElement-1579109640638]: 
         beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
@@ -74,7 +100,7 @@ title: Animation
             ↓Animation [mobile.components.UIAnimation-1579103447388]: 
               animationName: rubberBand
     ↓GridRow2 [mobile.components.UIDynamicElement-1579166448862]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
       tagName: ion-row
       ↓GridCol [mobile.components.UIDynamicElement-1579166448867]: 
         beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
@@ -96,6 +122,24 @@ title: Animation
               animationName: delay-2s
             ↓Animation2 [mobile.components.UIAnimation-1579166448885]: 
               animationName: slow
+    ↓GridRow11 [mobile.components.UIDynamicElement-1584977279678]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584977279681]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+        tagName: ion-col
+        ↓TextFormat [mobile.components.UIDynamicElement-1584977279684]: 
+          beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+          tagName: div
+          ↓H1 [mobile.components.UIDynamicElement-1584977279687]: 
+            beanData: '{"ionBean":"Heading1"}'
+            identifier: AnimateMe
+            tagName: h1
+            ↓Text [mobile.components.UIText-1584977279690]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:CLICK ANIMATE BUTTON!
 ↓Footer [mobile.components.UIDynamicElement-1579103295997]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer
@@ -104,7 +148,7 @@ title: Animation
     beanData: '{"ionBean":"ToolBar"}'
     tagName: ion-toolbar
     ↓ButtonSet [mobile.components.UIDynamicElement-1579103296003]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
       tagName: ion-buttons
       ↓Button [mobile.components.UIDynamicElement-1579103296006]: 
         beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
@@ -113,9 +157,30 @@ title: Animation
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Reload
+              - MobileSmartSourceType: plain:Animate
         ↓Event [mobile.components.UIControlEvent-1579112097814]: 
-          ↓RootPage [mobile.components.UIDynamicAction-1579112103783]: 
+          ↓Animate [mobile.components.UIDynamicAnimate-1584977367409]: 
+            beanData: |
+              '{
+               "ionBean": "AnimateAction",
+               "type": "plain:flipInX",
+               "fillMode": "plain:forwards",
+               "duration": "plain:1000"
+              }'
+            identifiable: MobileBuilderComponents.MobileApplication.Application.Page_Customs_Animation.Content.Grid.GridRow11.GridCol.TextFormat.H1
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1584977313232]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1584977313235]: 
+        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1584977313238]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Reload
+        ↓Event [mobile.components.UIControlEvent-1584977313241]: 
+          ↓RootPage [mobile.components.UIDynamicAction-1584977313244]: 
             beanData: |
               '{
                "ionBean": "RootPageAction",
@@ -129,5 +194,10 @@ title: Animation
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
           'h1 {
-          	font-size: 5em;
+          	font-size: 5vw;
+          }
+          
+          div.doc {
+          	font-size: 2.2vw;
+          	font-weight: 500;
           }'
