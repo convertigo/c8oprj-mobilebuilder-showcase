@@ -1,0 +1,243 @@
+comment: In progress
+inAutoMenu: false
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_actions_alert
+title: Title for Page3
+↓Header [mobile.components.UIDynamicElement-1584979679530]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1584979679533]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1584979679536]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1584979679539]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Alert
+    ↓Button [mobile.components.UIDynamicElement-1584979679542]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1584979679545]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+↓Content [mobile.components.UIDynamicElement-1584979679548]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1584979780661]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow_Alert_doc [mobile.components.UIDynamicElement-1584979780664]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584979780667]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584979780670]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:The Alerts are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision.
+        ↓Attr [mobile.components.UIAttribute-1584979780673]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Text1 [mobile.components.UIText-1584979831509]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:The return value can be accessed by the navigation stack, using parent.out for example.
+    ↓GridRow_Alert_basic [mobile.components.UIDynamicElement-1584980012211]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584980012214]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584980012217]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:SHOW BASIC ALERT ===>
+        ↓Attr [mobile.components.UIAttribute-1584980012220]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584980012223]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584980012226]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584980012229]: 
+            ↓Alert [mobile.components.UIDynamicAction-1584980037795]: 
+              beanData: |
+                '{
+                 "ionBean": "AlertAction",
+                 "title": "plain:THIS IS THE TITLE BOX",
+                 "subTitle": "plain:THIS IS THE SUBTITLE BOX",
+                 "message": "plain:THIS IS THE MESSAGE BOX",
+                 "button1": "plain:CANCEL",
+                 "button2": "plain:OK",
+                 "value1": "script:1",
+                 "value2": "script:2",
+                 "cancel1": "plain:cancel"
+                }'
+              ↓Toast [mobile.components.UIDynamicAction-1584982029386]: 
+                beanData: '{"ionBean":"ToastAction","message":"script:''output: '' + out"}'
+          ↓Icon [mobile.components.UIDynamicElement-1584980982598]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
+            tagName: ion-icon
+    ↓GridRow_Alert_css [mobile.components.UIDynamicElement-1584982836934]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584982836937]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584982836940]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:SHOW CSS ALERT ===>
+        ↓Attr [mobile.components.UIAttribute-1584982836943]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584982836946]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584982836949]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584982836952]: 
+            ↓Alert [mobile.components.UIDynamicAction-1584982836955]: 
+              beanData: |
+                '{
+                 "ionBean": "AlertAction",
+                 "title": "plain:THIS IS THE TITLE BOX",
+                 "subTitle": "plain:THIS IS THE SUBTITLE BOX",
+                 "message": "plain:THIS IS THE MESSAGE BOX",
+                 "button1": "plain:CANCEL",
+                 "button2": "plain:OK",
+                 "value1": "script:1",
+                 "value2": "script:2",
+                 "cancel1": "plain:cancel"
+                }'
+              ↓Toast [mobile.components.UIDynamicAction-1584982836958]: 
+                beanData: '{"ionBean":"ToastAction","message":"script:''output: '' + out"}'
+          ↓Icon [mobile.components.UIDynamicElement-1584982836961]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
+            tagName: ion-icon
+    ↓GridRow_Alert_custom [mobile.components.UIDynamicElement-1584983519235]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1584983519238]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1584983519241]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:SHOW DYNAMIC ALERT ===>
+        ↓Attr [mobile.components.UIAttribute-1584983519244]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1584983519247]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1584983519250]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1584983519253]: 
+            ↓getPeopleAlert [mobile.components.UIDynamicInvoke-1584983545832]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+              ↓peopleNbr [mobile.components.UIControlVariable-1584983554706]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'4'
+              ↓marker [mobile.components.UIControlVariable-1584983554710]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'ALERT'
+              ↓startIndex [mobile.components.UIControlVariable-1584983554712]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'0'
+              ↓CustomAction [mobile.components.UICustomAction-1584983595089]: 
+                actionValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                        		let alertCtrl = this.getInstance(AlertController);
+                        		let alert = alertCtrl.create();
+                        		let ppl =  vars.ppl;
+                        		
+                        		for(let i=0; i <  ppl.length; i++){
+                        		    alert.addInput({
+                        		        type: ''checkbox'',
+                        		        label: ppl[i].firstname + '' '' + ppl[i].lastname,
+                        		        value: ppl[i].id
+                        		    })
+                        		}
+                        		
+                        		alert.setTitle(''Choose People'');
+                        		alert.addButton(''Cancel'');
+                        	    alert.addButton({
+                        	      text: ''Ok'',
+                        	      handler: (data: any) => {
+                        	          page.c8o.log.info(''data:'', data);
+                        	      }
+                        	    });
+                        	    
+                        	    alert.present();
+                        	    
+                        		resolve();
+                        '
+                ↓ppl [mobile.components.UIControlVariable-1584983604864]: 
+                  varValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#ALERT'])?.People"}
+          ↓Icon [mobile.components.UIDynamicElement-1584983519262]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
+            tagName: ion-icon
+↓UseSharedComponent [mobile.components.UIUseShared-1584980168194]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
