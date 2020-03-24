@@ -146,14 +146,20 @@ title: Title for Page3
                  "title": "plain:THIS IS THE TITLE BOX",
                  "subTitle": "plain:THIS IS THE SUBTITLE BOX",
                  "message": "plain:THIS IS THE MESSAGE BOX",
+                 "cssClass": "plain:alertMain",
                  "button1": "plain:CANCEL",
-                 "button2": "plain:OK",
+                 "button2": "plain:NO!",
+                 "button3": "plain:YES!",
                  "value1": "script:1",
                  "value2": "script:2",
-                 "cancel1": "plain:cancel"
+                 "value3": "plain:3",
+                 "cancel1": "plain:cancel",
+                 "css1": "plain:alertBtn1",
+                 "css2": "plain:alertBtn2",
+                 "css3": "plain:alertBtn3"
                 }'
               ↓Toast [mobile.components.UIDynamicAction-1584982836958]: 
-                beanData: '{"ionBean":"ToastAction","message":"script:''output: '' + out"}'
+                beanData: '{"ionBean":"ToastAction","message":"script:''return value: '' + out"}'
           ↓Icon [mobile.components.UIDynamicElement-1584982836961]: 
             beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
             tagName: ion-icon
@@ -167,7 +173,7 @@ title: Title for Page3
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:SHOW DYNAMIC ALERT ===>
+              - MobileSmartSourceType: plain:SHOW DYNAMIC CHECKBOX ALERT ===>
         ↓Attr [mobile.components.UIAttribute-1584983519244]: 
           attrName: 
           attrValue: 
@@ -199,7 +205,7 @@ title: Title for Page3
                   - xmlizable: 
                     - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                     - MobileSmartSourceType: script:'0'
-              ↓CustomAction [mobile.components.UICustomAction-1584983595089]: 
+              ↓createAlert [mobile.components.UICustomAction-1584983595089]: 
                 actionValue: 
                   - xmlizable: 
                     - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
@@ -213,30 +219,217 @@ title: Title for Page3
                         		for(let i=0; i <  ppl.length; i++){
                         		    alert.addInput({
                         		        type: ''checkbox'',
-                        		        label: ppl[i].firstname + '' '' + ppl[i].lastname,
-                        		        value: ppl[i].id
+                        		        label: ppl[i].firstname + '' '' + ppl[i].lastname + '' (id: '' + ppl[i].id + '')'',
+                        		        value: ppl[i].lastname
                         		    })
                         		}
                         		
                         		alert.setTitle(''Choose People'');
-                        		alert.addButton(''Cancel'');
+                        		alert.addButton({
+                        		    text: ''Cancel'',
+                        		    handler: () => {
+                                      resolve(-1);
+                                  }
+                                });
                         	    alert.addButton({
                         	      text: ''Ok'',
                         	      handler: (data: any) => {
                         	          page.c8o.log.info(''data:'', data);
+                        	          page.local.data = data;
+                        	          resolve(data);
                         	      }
                         	    });
                         	    
                         	    alert.present();
-                        	    
-                        		resolve();
                         '
                 ↓ppl [mobile.components.UIControlVariable-1584983604864]: 
                   varValue: 
                     - xmlizable: 
                       - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                       - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#ALERT'])?.People"}
+                ↓Toast [mobile.components.UIDynamicAction-1585041148592]: 
+                  beanData: '{"ionBean":"ToastAction","message":"script:''data: '' + parent.out"}'
           ↓Icon [mobile.components.UIDynamicElement-1584983519262]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
+            tagName: ion-icon
+    ↓GridRow_Alert_custom1 [mobile.components.UIDynamicElement-1585055053568]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1585055053571]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1585055053574]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:SHOW DYNAMIC RADIO ALERT ===>
+        ↓Attr [mobile.components.UIAttribute-1585055053577]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1585055053580]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1585055053583]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1585055053586]: 
+            ↓getPeopleAlert [mobile.components.UIDynamicInvoke-1585055053589]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.getPeople
+              ↓peopleNbr [mobile.components.UIControlVariable-1585055053592]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'8'
+              ↓marker [mobile.components.UIControlVariable-1585055053595]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'ALERT1'
+              ↓startIndex [mobile.components.UIControlVariable-1585055053598]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'4'
+              ↓createAlert [mobile.components.UICustomAction-1585055053601]: 
+                actionValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                        		
+                        		let alertCtrl = this.getInstance(AlertController);
+                        		let alert = alertCtrl.create({
+                        		    enableBackdropDismiss: false,
+                        		    title: ''Select one person''
+                        		    
+                        		});
+                        		
+                        		let ppl =  vars.ppl;
+                        		for(let i=0; i <  ppl.length; i++){
+                        		    alert.addInput({
+                        		        type: ''radio'',
+                        		        label: ppl[i].firstname + '' '' + ppl[i].lastname,
+                        		        value: ppl[i].email,
+                        		        handler: (data: any) => {
+                        		            page.c8o.log.info(''radio:'', data);
+                        		            document.querySelectorAll(''button[ion-button=alert-button]'')[1].removeAttribute(''disabled'');
+                        		        }
+                        		    })
+                        		}
+                        		
+                        		alert.addButton({
+                        		    text: ''Cancel'',
+                        		    handler: () => {
+                                      resolve(-1);
+                                  }
+                                });
+                        		
+                        	    alert.addButton({
+                        	      text: ''Ok'',
+                        	      handler: (data: any) => {
+                        	          page.c8o.log.info(''data:'', data);
+                        	          page.local.data = data;
+                        	          resolve(data);
+                        	      }
+                        	    });
+                        	    
+                        	    alert.present().then(() => {
+                        	        page.c8o.log.info(''>>>> Disabling OK button...'');
+                        	        document.querySelectorAll(''button[ion-button=alert-button]'')[1].setAttribute(''disabled'', ''true'');
+                        	    });
+                        '
+                ↓ppl [mobile.components.UIControlVariable-1585055053604]: 
+                  varValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#ALERT1'])?.People"}
+                ↓Toast [mobile.components.UIDynamicAction-1585055053607]: 
+                  beanData: '{"ionBean":"ToastAction","message":"script:''data: '' + parent.out"}'
+          ↓Icon [mobile.components.UIDynamicElement-1585055053610]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
+            tagName: ion-icon
+    ↓GridRow_Alert_custom2 [mobile.components.UIDynamicElement-1585055059109]: 
+      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
+      tagName: ion-row
+      ↓GridCol_left [mobile.components.UIDynamicElement-1585055059112]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1585055059115]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:SHOW DYNAMIC PROMPT ALERT ===>
+        ↓Attr [mobile.components.UIAttribute-1585055059118]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+      ↓GridCol_right [mobile.components.UIDynamicElement-1585055059121]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1585055059124]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Event [mobile.components.UIControlEvent-1585055059127]: 
+            ↓createAlert [mobile.components.UICustomAction-1585055059142]: 
+              actionValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                  - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                    →: |
+                      '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                      		let alertCtrl = this.getInstance(AlertController);
+                      		let alert = alertCtrl.create({
+                      		    enableBackdropDismiss: false,
+                      		    cssClass: ''inputAlertMsg'' 
+                      		});
+                      		
+                      		alert.addInput({
+                      		    type: ''text'',
+                      		    name: ''username'',
+                      		    placeholder: ''User name'',
+                      		});
+                      		
+                      		alert.addInput({
+                                  type: ''password'',
+                                  name: ''password'',
+                                  placeholder: ''Password'',
+                              });
+                      		
+                      		alert.setTitle(''Authentication'');
+                      		alert.setSubTitle(''Enter your credentials to sign in.'');
+                      		alert.addButton({
+                      		    text: ''Cancel'',
+                      		    handler: () => {
+                                    resolve(-1);
+                                }
+                              });
+                      	    alert.addButton({
+                      	      text: ''Sign in'',
+                      	      handler: (data: any) => {
+                      	          page.c8o.log.info(''data:'', data);
+                      	          if(data.username != "" && data.password != ""){
+                      	              alert.setMessage('''');
+                      	              page.local.data = data;
+                      	              resolve(JSON.stringify(data));
+                      	          }else{
+                      	              alert.setMessage(''User name and password are required'');
+                      	              return false;
+                      	          }
+                      	      }
+                      	    });
+                      	    
+                      	    alert.present();
+                      '
+              ↓Toast [mobile.components.UIDynamicAction-1585055059148]: 
+                beanData: '{"ionBean":"ToastAction","message":"script:''data: '' + parent.out"}'
+          ↓Icon [mobile.components.UIDynamicElement-1585055059151]: 
             beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
             tagName: ion-icon
 ↓UseSharedComponent [mobile.components.UIUseShared-1584980168194]: 

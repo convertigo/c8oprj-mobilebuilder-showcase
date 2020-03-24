@@ -16,7 +16,7 @@
   ↓wait [sequences.GenericSequence]: 🗏 sequences/wait.yaml
   ↓MobileApplication [core.MobileApplication]: 
     comment: Describes the mobile application global properties
-    endpoint: http://192.168.100.71:18080/convertigo
+    endpoint: http://192.168.0.17:18080/convertigo
     splashRemoveMode: beforeUpdate
     ↓Android [mobileplatforms.Android]: 
       comment: Android platform

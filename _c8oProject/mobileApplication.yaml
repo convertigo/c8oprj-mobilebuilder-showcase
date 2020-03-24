@@ -298,3 +298,24 @@ tplProjectName: mobilebuilder_tpl_7_7_0
   appEvent: onNetworkOffline
   ↓Log [mobile.components.UIDynamicAction-1584555779199]: 
     beanData: '{"ionBean":"LogAction","message":"plain:>>>> Offline!  See me in device but not in server..."}'
+↓Alerts [mobile.components.UIStyle-1585041719092]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.alertBtn1 {
+          	color: color($colors, danger) !important;
+          }
+          
+          .alertBtn2 {
+          	color: color($colors, primary) !important;
+          }
+          
+          .alertBtn3 {
+          	color: color($colors, secondary) !important;
+          }
+          
+          .inputAlertMsg {
+          	.alert-message { color: color($colors, danger) !important;}
+          }'
