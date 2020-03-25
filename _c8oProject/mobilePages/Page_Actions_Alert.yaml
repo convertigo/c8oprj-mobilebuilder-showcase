@@ -1,5 +1,3 @@
-comment: In progress
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -16,7 +14,7 @@ scriptContent:
         	/*End_c8o_PageFunction*/
         
 segment: path-to-page_actions_alert
-title: Title for Page3
+title: Alerts
 ↓Header [mobile.components.UIDynamicElement-1584979679530]: 
   beanData: '{"ionBean":"Header"}'
   comment: Page header
@@ -31,7 +29,7 @@ title: Title for Page3
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Alert
+            - MobileSmartSourceType: plain:Alerts
     ↓Button [mobile.components.UIDynamicElement-1584979679542]: 
       beanData: |
         '{

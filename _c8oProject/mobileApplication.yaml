@@ -38,6 +38,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
 ↓Footer [mobile.components.UISharedComponent-1582818189622]: 🗏 mobileSharedComponents/Footer.yaml
 ↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
+↓Page_Actions_Alert [mobile.components.PageComponent-1584979678909]: 🗏 mobilePages/Page_Actions_Alert.yaml
 ↓Page_Customs_Animation [mobile.components.PageComponent-1579103295466]: 🗏 mobilePages/Page_Customs_Animation.yaml
 ↓Page_Customs_Attribute [mobile.components.PageComponent-1576144418242]: 🗏 mobilePages/Page_Customs_Attribute.yaml
 ↓Page_NativeActions_Barcode [mobile.components.PageComponent-1578661180634]: 🗏 mobilePages/Page_NativeActions_Barcode.yaml
@@ -80,7 +81,6 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
-↓Page_Actions_Alert [mobile.components.PageComponent-1584979678909]: 🗏 mobilePages/Page_Actions_Alert.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
@@ -304,12 +304,30 @@ tplProjectName: mobilebuilder_tpl_7_7_0
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          '.alertBtn1 {
+          '.alertMain {
+          	
+          	color: #fff !important;
+          	
+          	.alert-wrapper {
+          		border-radius: 15%;
+          		background-color: #1664d8;
+          	}
+          	
+          	.alert-message {
+          		color: #f59b6f;
+          	}
+          	
+          	ion-backdrop {
+          		background-color: color($colors, primary);
+          	}
+          }
+          
+          .alertBtn1 {
           	color: color($colors, danger) !important;
           }
           
           .alertBtn2 {
-          	color: color($colors, primary) !important;
+          	color: color($colors, dark) !important;
           }
           
           .alertBtn3 {

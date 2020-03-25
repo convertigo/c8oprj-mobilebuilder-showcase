@@ -53,6 +53,10 @@ title: Fragment
   ↓Fragment [mobile.components.UICustom-1579166859627]: 
     htmlTemplate: |
       <ion-list>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Actions_Alert')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Alert page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Customs_Animation')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Animation page
