@@ -1,0 +1,436 @@
+comment: In progress
+inAutoMenu: false
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	XXXXngOnInit(){
+        	    if(this.navParams.data){
+                    this.local.contentEle = this.navParams.data.contentEle;
+                    this.local.textEle = this.navParams.data.textEle;
+                }
+                
+                this.c8o.log.debug('>>>>' + this.local.contentEle);
+                this.c8o.log.debug('>>>>' + this.local.textEle);
+        	}
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_actions_popover_template
+title: Title for Page_Actions_Popover1
+↓ListContainer [mobile.components.UIDynamicElement-1585239310416]: 
+  beanData: '{"ionBean":"List"}'
+  tagName: ion-list
+  ↓GridRow [mobile.components.UIDynamicElement-1585239456946]: 
+    beanData: '{"ionBean":"GridRow"}'
+    tagName: ion-row
+    ↓GridCol [mobile.components.UIDynamicElement-1585239475105]: 
+      beanData: '{"ionBean":"GridCol"}'
+      tagName: ion-col
+      ↓Button [mobile.components.UIDynamicElement-1585239551027]: 
+        beanData: '{"ionBean":"Button","ButtonType":"plain:ion-item"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1585239575121]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:A
+        ↓Attr1 [mobile.components.UIAttribute-1585239728972]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-text-button popover-text-smaller
+        ↓Attr [mobile.components.UIAttribute-1585239598027]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:detail-none
+    ↓GridCol1 [mobile.components.UIDynamicElement-1585239479185]: 
+      beanData: '{"ionBean":"GridCol"}'
+      tagName: ion-col
+      ↓Button [mobile.components.UIDynamicElement-1585239837146]: 
+        beanData: '{"ionBean":"Button","ButtonType":"plain:ion-item"}'
+        tagName: button
+        ↓Text [mobile.components.UIText-1585239837149]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:A
+        ↓Attr1 [mobile.components.UIAttribute-1585239837152]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-text-button popover-text-larger
+        ↓Attr [mobile.components.UIAttribute-1585239837155]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:detail-none
+  ↓Attr [mobile.components.UIAttribute-1585239872563]: 
+    attrName: 
+    attrValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: plain:radio-group
+  ↓GridRow1 [mobile.components.UIDynamicElement-1585240841357]: 
+    beanData: '{"ionBean":"GridRow"}'
+    tagName: ion-row
+    ↓Attr1 [mobile.components.UIAttribute-1585240865494]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-row-dots
+    ↓GridCol [mobile.components.UIDynamicElement-1585240896491]: 
+      beanData: '{"ionBean":"GridCol"}'
+      tagName: ion-col
+      ↓Button [mobile.components.UIDynamicElement-1585240896494]: 
+        beanData: '{"ionBean":"Button","ButtonType":"plain:false"}'
+        tagName: button
+        ↓Attr1 [mobile.components.UIAttribute-1585240896500]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot-white
+        ↓Attr [mobile.components.UIAttribute-1585240896503]: 
+          attrName: ion-button
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot
+        ↓Attr11 [mobile.components.UIAttribute-1585240956824]: 
+          attrName: '[class.selected]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-row-dots
+    ↓GridCol1 [mobile.components.UIDynamicElement-1585240899508]: 
+      beanData: '{"ionBean":"GridCol"}'
+      tagName: ion-col
+      ↓Button [mobile.components.UIDynamicElement-1585240899511]: 
+        beanData: '{"ionBean":"Button","ButtonType":"plain:false"}'
+        tagName: button
+        ↓Attr1 [mobile.components.UIAttribute-1585240899517]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot-tan
+        ↓Attr11 [mobile.components.UIAttribute-1585241015906]: 
+          attrName: '[class.selected]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-row-dots
+        ↓Attr [mobile.components.UIAttribute-1585241072065]: 
+          attrName: ion-button
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot
+    ↓GridCol2 [mobile.components.UIDynamicElement-1585240902623]: 
+      beanData: '{"ionBean":"GridCol"}'
+      tagName: ion-col
+      ↓Button [mobile.components.UIDynamicElement-1585240902626]: 
+        beanData: '{"ionBean":"Button","ButtonType":"plain:false"}'
+        tagName: button
+        ↓Attr1 [mobile.components.UIAttribute-1585240902632]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot-grey
+        ↓Attr11 [mobile.components.UIAttribute-1585241008351]: 
+          attrName: '[class.selected]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-row-dots
+        ↓Attr [mobile.components.UIAttribute-1585241074443]: 
+          attrName: ion-button
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot
+    ↓GridCol3 [mobile.components.UIDynamicElement-1585240924954]: 
+      beanData: '{"ionBean":"GridCol"}'
+      tagName: ion-col
+      ↓Button [mobile.components.UIDynamicElement-1585240924957]: 
+        beanData: '{"ionBean":"Button","ButtonType":"plain:false"}'
+        tagName: button
+        ↓Attr1 [mobile.components.UIAttribute-1585240924963]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot-black
+        ↓Attr11 [mobile.components.UIAttribute-1585241019284]: 
+          attrName: '[class.selected]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-row-dots
+        ↓Attr [mobile.components.UIAttribute-1585241076481]: 
+          attrName: ion-button
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:popover-dot
+  ↓ListItem1 [mobile.components.UIDynamicElement-1585241812038]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓Attr1 [mobile.components.UIAttribute-1585241812041]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-text-athelas
+    ↓Label [mobile.components.UIDynamicElement-1585241812044]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1585241812047]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Athelas
+    ↓RadioButton [mobile.components.UIDynamicElement-1585241812050]: 
+      beanData: '{"ionBean":"RadioButton","Value":"plain:Athelas"}'
+      tagName: ion-radio
+  ↓ListItem [mobile.components.UIDynamicElement-1585241192697]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓Attr1 [mobile.components.UIAttribute-1585241226361]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-text-charter
+    ↓Label [mobile.components.UIDynamicElement-1585241247357]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1585241252736]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Charter
+    ↓RadioButton [mobile.components.UIDynamicElement-1585241260440]: 
+      beanData: '{"ionBean":"RadioButton","Value":"plain:Charter"}'
+      tagName: ion-radio
+  ↓ListItem2 [mobile.components.UIDynamicElement-1585241866856]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓Attr1 [mobile.components.UIAttribute-1585241866859]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-text-iowan
+    ↓Label [mobile.components.UIDynamicElement-1585241866862]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1585241866865]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Iowan
+    ↓RadioButton [mobile.components.UIDynamicElement-1585241866868]: 
+      beanData: '{"ionBean":"RadioButton","Value":"plain:Iowan"}'
+      tagName: ion-radio
+  ↓ListItem3 [mobile.components.UIDynamicElement-1585241874549]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓Attr1 [mobile.components.UIAttribute-1585241874552]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-text-palatino
+    ↓Label [mobile.components.UIDynamicElement-1585241874555]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1585241874558]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Palatino
+    ↓RadioButton [mobile.components.UIDynamicElement-1585241874561]: 
+      beanData: '{"ionBean":"RadioButton","Value":"plain:Palatino"}'
+      tagName: ion-radio
+  ↓ListItem4 [mobile.components.UIDynamicElement-1585241881254]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓Attr1 [mobile.components.UIAttribute-1585241881257]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-text-san-francisco
+    ↓Label [mobile.components.UIDynamicElement-1585241881260]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1585241881263]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:San Francisco
+    ↓RadioButton [mobile.components.UIDynamicElement-1585241881266]: 
+      beanData: '{"ionBean":"RadioButton","Value":"plain:San Francisco"}'
+      tagName: ion-radio
+  ↓ListItem5 [mobile.components.UIDynamicElement-1585241885679]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓Attr1 [mobile.components.UIAttribute-1585241885682]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-text-seravek
+    ↓Label [mobile.components.UIDynamicElement-1585241885685]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1585241885688]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Seravek
+    ↓RadioButton [mobile.components.UIDynamicElement-1585241885691]: 
+      beanData: '{"ionBean":"RadioButton","Value":"plain:Seravek"}'
+      tagName: ion-radio
+  ↓ListItem6 [mobile.components.UIDynamicElement-1585241906244]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓Attr1 [mobile.components.UIAttribute-1585241906247]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:popover-text-times-new-roman
+    ↓Label [mobile.components.UIDynamicElement-1585241906250]: 
+      beanData: '{"ionBean":"Label"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1585241906253]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Times New Roman
+    ↓RadioButton [mobile.components.UIDynamicElement-1585241906256]: 
+      beanData: '{"ionBean":"RadioButton","Value":"plain:Times New Roman"}'
+      tagName: ion-radio
+↓Style [mobile.components.UIStyle-1585242168207]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.popover-text-button {
+              padding-left: 0;
+              text-align: center;
+              min-height: 20px;
+              line-height: 18px;
+          }
+          
+          .popover-text-smaller {
+              font-size: 12px;
+          }
+          
+          .popover-text-larger {
+              font-size: 16px;
+          }
+          
+          .popover-row-dots {
+              border-bottom: 1px solid #dedede;
+              text-align: center;
+          }
+          
+          .popover-dot {
+              border: 1px solid #dedede;
+          }
+          
+          .popover-dot {
+              height: 30px;
+              width: 30px;
+              border-radius: 50%;
+              margin: 10px auto;
+              position: relative;
+          }
+          
+          .popover-dot-white {
+              background-color: rgb(255,255,255);
+          }
+          
+          .popover-dot-tan {
+              background-color: rgb(249,241,228);
+          }
+          
+          .popover-dot-grey {
+              background-color: rgb(76,75,80);
+          }
+          
+          .popover-dot-black {
+              background-color: rgb(0,0,0);
+          }
+          
+          .popover-dot.selected {
+              border-width: 2px;
+              border-color: #327eff;
+          }
+          
+          .popover-text-athelas {
+              font-family: "Athelas";
+          }
+          
+          .popover-text-charter {
+              font-family: "Charter";
+          }
+          
+          .popover-text-iowan {
+              font-family: "Iowan";
+          }
+          
+          .popover-text-palatino {
+              font-family: "Palatino";
+          }
+          
+          .popover-text-san-francisco {
+              font-family: "San Francisco";
+          }
+          
+          .popover-text-seravek {
+              font-family: "Seravek";
+          }
+          
+          .popover-text-times-new-roman {
+              font-family: "Times New Roman";
+          }'
+↓PageEvent [mobile.components.UIPageEvent-1585243065215]: 
+  viewEvent: onDidLoad
+  ↓CustomAction [mobile.components.UICustomAction-1585243126002]: 
+    actionValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+            		if(this.navParams.data){
+            		    page.local.contentEle = this.navParams.data.contentEle;
+            		    page.local.textEle = this.navParams.data.textEle;
+            		}
+            		
+            		page.c8o.log.debug(''>>>>'' + page.local.contentEle);
+            		page.c8o.log.debug(''>>>>'' + page.local.textEle);
+            		
+            		resolve();
+            '

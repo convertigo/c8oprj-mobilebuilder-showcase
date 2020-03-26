@@ -81,6 +81,8 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
+↓Page_Actions_Popover [mobile.components.PageComponent-1585215457952]: 🗏 mobilePages/Page_Actions_Popover.yaml
+↓Page_Actions_Popover_template [mobile.components.PageComponent-1585232375855]: 🗏 mobilePages/Page_Actions_Popover_template.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
