@@ -55,22 +55,19 @@ title: Alerts
       ↓GridCol [mobile.components.UIDynamicElement-1584979780667]: 
         beanData: '{"ionBean":"GridCol"}'
         tagName: ion-col
-        ↓Text [mobile.components.UIText-1584979780670]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:The Alerts are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision.
         ↓Attr [mobile.components.UIAttribute-1584979780673]: 
           attrName: 
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:text-justify
-        ↓Text1 [mobile.components.UIText-1584979831509]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:The return value can be accessed by the navigation stack, using parent.out for example.
+        ↓Fragment [mobile.components.UICustom-1585677040282]: 
+          htmlTemplate: |
+            <div>
+            	<p><i>Defines an Alert component.</i></p>
+            	<p>The Alerts are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision.</p>
+            	<p>The return value can be accessed by the navigation stack, using <i>parent.out</i> for example.</p>
+            </div>
     ↓GridRow_Alert_basic [mobile.components.UIDynamicElement-1584980012211]: 
       beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
       tagName: ion-row

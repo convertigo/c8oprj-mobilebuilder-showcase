@@ -47,39 +47,27 @@ title: Animation
   comment: Page content
   tagName: ion-content
   ↓Grid [mobile.components.UIDynamicElement-1579109611140]: 
-    beanData: |
-      '{
-       "ionBean": "Grid",
-       "Height": "plain:height:100%",
-       "NoPadding": "plain:false"
-      }'
+    beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
     tagName: ion-grid
     ↓GridRow12 [mobile.components.UIDynamicElement-1584978313852]: 
       beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
       tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1584978313855]: 
-        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+      ↓GridCol1 [mobile.components.UIDynamicElement-1585677538932]: 
+        beanData: '{"ionBean":"GridCol"}'
         tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1584978522122]: 
+        ↓Attr [mobile.components.UIAttribute-1585677538935]: 
           attrName: 
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:margin
-        ↓Div [mobile.components.UIDynamicElement-1584978579363]: 
-          beanData: '{"ionBean":"DivTag"}'
-          tagName: div
-          ↓Text [mobile.components.UIText-1584978313864]: 
-            textValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:Adding an animation to a component will have this component animated automatically as soon as the component appears on the page. You can choose the animation name, and some other properties to control the animation. If you want the animation to be triggered by an event such as (tap) (click) or PageEvents, use instead the Animate action
-          ↓Attr [mobile.components.UIAttribute-1584978598940]: 
-            attrName: class
-            attrValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:doc
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585677538938]: 
+          htmlTemplate: |
+            <div>
+            	<p><i>Defines an Animation class for a component.</i></p>
+            	<p>Adding an animation to a component will have this component animated automatically as soon as the component appears on the page. You can choose the animation name, and some other properties to control the animation.</p>
+            	<p>If you want the animation to be triggered by an event such as (tap) (click) or PageEvents, use instead the <strong>Animate action</strong></p>
+            </div>
     ↓GridRow1 [mobile.components.UIDynamicElement-1579109620477]: 
       beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
       tagName: ion-row

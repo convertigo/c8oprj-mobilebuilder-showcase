@@ -29,6 +29,35 @@ title: Attributes
 ↓Content [mobile.components.UIDynamicElement-1576144503201]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1585678208458]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow12 [mobile.components.UIDynamicElement-1585678208461]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol1 [mobile.components.UIDynamicElement-1585678208464]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585678208467]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585678208470]: 
+          htmlTemplate: |
+            '<div>
+            	<p><i>Defines a Attr component.</i></p>
+            	<p>This component acts as a standard HTML attribute.</p>
+            	<p><i>Attr</i> components can be added to any component.
+            You can add your custom attributes to customize a component behavior. For example you can add a <i>class</i> attribute to set a custom CSS class name to this component. When you set explicitly a class name attribute on a component, the class will be merged with any Style component positioned for this component
+            	</p>
+            	<i>Attr</i> components have two properties : 
+            	<ul>
+            		<li>name : the name of the attribute such as class, width, src, ...</li>
+            		<li>value : the value of the attribute</li>
+            	</ul>
+            </div>'
   ↓Div [mobile.components.UIDynamicElement-1576145138268]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -59,7 +88,7 @@ title: Attributes
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Div (click)
+            - MobileSmartSourceType: plain:Div (click me)
   ↓Div1 [mobile.components.UIDynamicElement-1579178846111]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -90,7 +119,7 @@ title: Attributes
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Div1 (click)
+            - MobileSmartSourceType: plain:Div1 (click me)
   ↓Div2 [mobile.components.UIDynamicElement-1579184360501]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -147,7 +176,7 @@ title: Attributes
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:capitalize text attribute (click)
+            - MobileSmartSourceType: plain:capitalize text attribute (click me)
       ↓Attr [mobile.components.UIAttribute-1579185353599]: 
         attrName: '[attr.text-capitalize]'
         attrValue: 
