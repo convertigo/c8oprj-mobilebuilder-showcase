@@ -1,5 +1,3 @@
-comment: In progress
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -16,7 +14,7 @@ scriptContent:
         	/*End_c8o_PageFunction*/
         
 segment: path-to-page_actions_popover
-title: Title for Page3
+title: Popover
 ↓Header [mobile.components.UIDynamicElement-1585215458966]: 
   beanData: '{"ionBean":"Header"}'
   comment: Page header
@@ -66,7 +64,8 @@ title: Title for Page3
                 '{
                  "ionBean": "PopoverAction",
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Actions_Popover_template",
-                 "data": "script:{ contentEle: this.popoverContent._elementRef.nativeElement, textEle: this.popoverText.nativeElement, test: true }"
+                 "data": "script:{''contentEl'': this.popoverContent._elementRef.nativeElement, ''textEl'': this.popoverText.nativeElement, ''key'': ''value''}",
+                 "enableBackdropDismiss": "plain:false"
                 }'
 ↓Content [mobile.components.UIDynamicElement-1585215458984]: 
   beanData: '{"ionBean":"Content"}'
@@ -84,10 +83,6 @@ title: Title for Page3
         <div>Mauris ac ligula elit. Nulla pulvinar eget leo ut aliquet. Praesent sit amet luctus quam. Nam fringilla iaculis mi, ut maximus mauris molestie feugiat. Curabitur nec scelerisque elit. Nunc eu odio facilisis, tempor enim eget, venenatis sem. Sed vitae lorem vehicula, auctor orci ultrices, finibus mauris. Donec vitae pulvinar diam. Nulla luctus congue quam, sed lacinia arcu dictum a.</div>
         
         <div>Morbi laoreet magna elit, id dapibus massa varius consequat. Praesent rhoncus nunc quam, eu mollis velit commodo ut. Etiam euismod elit mi, non auctor velit blandit ut. Aenean vitae pulvinar mi, ac pretium tellus. Morbi eu auctor sem, sollicitudin cursus felis. Praesent vestibulum velit sed eros iaculis ornare. Praesent diam diam, pellentesque eget scelerisque sed, bibendum ut risus. Sed sed fermentum sem. Integer vel justo felis. Proin eget quam est. In sit amet ipsum sagittis, convallis ipsum fringilla, interdum ante. Etiam vel tincidunt mauris. Nunc feugiat eros nunc, et vestibulum metus mollis et. Nullam eu viverra velit, id ultrices nisl. Donec non enim elementum, laoreet sapien id, feugiat tellus.</div>
-        
-        <div>Sed pellentesque ipsum eget ante hendrerit maximus. Aliquam id venenatis nulla. Nullam in nibh at enim vestibulum ullamcorper. Nam felis dolor, lobortis vel est non, condimentum malesuada nisl. In metus sapien, malesuada at nulla in, pretium aliquam turpis. Quisque elementum purus mi, sed tristique turpis ultricies in. Donec feugiat dolor non ultricies ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ut purus et diam porta cursus vitae semper mi. Donec fringilla tellus orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc vitae commodo sem. Duis vehicula quam sit amet imperdiet facilisis. Pellentesque eget dignissim neque, et scelerisque libero. Maecenas molestie metus sed orci cursus, in venenatis justo dapibus.</div>
-        
-        <div>Aenean rhoncus urna at interdum blandit. Donec ac massa nec libero vehicula tincidunt. Sed sit amet hendrerit risus. Aliquam vitae vestibulum ipsum, non feugiat orci. Vivamus eu rutrum elit. Nulla dapibus tortor non dignissim pretium. Nulla in luctus turpis. Etiam non mattis tortor, at aliquet ex. Nunc ut ante varius, auctor dui vel, volutpat elit. Nunc laoreet augue sit amet ultrices porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum pellentesque lobortis est, ut tincidunt ligula mollis sit amet. In porta risus arcu, quis pellentesque dolor mattis non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</div>
     ↓Attr [mobile.components.UIAttribute-1585232815006]: 
       attrName: 
       attrValue: 
@@ -102,3 +97,58 @@ title: Title for Page3
           - MobileSmartSourceType: plain:margin-bottom
 ↓UseSharedComponent [mobile.components.UIUseShared-1585215738870]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+↓PageEvent [mobile.components.UIPageEvent-1585324018964]: 
+  ↓initPopoverOptions [mobile.components.UICustomAction-1585324027767]: 
+    actionValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+            		
+            		page.global.popover = {};
+            		
+            		page.global.popover.background = ''white'';
+            		page.global.popover.fontSize = ''initial'';
+            		
+            		page.global.popover.colors = {
+                        ''white'': {
+                            ''bg'': ''rgb(255, 255, 255)'',
+                            ''fg'': ''rgb(0, 0, 0)''
+                        },
+                        ''tan'': {
+                            ''bg'': ''rgb(249, 241, 228)'',
+                            ''fg'': ''rgb(0, 0, 0)''
+                        },
+                        ''grey'': {
+                            ''bg'': ''rgb(76, 75, 80)'',
+                            ''fg'': ''rgb(255, 255, 255)''
+                        },
+                        ''black'': {
+                            ''bg'': ''rgb(0, 0, 0)'',
+                            ''fg'': ''rgb(255, 255, 255)''
+                        },
+                    };
+            		
+                    page.global.popover.changeFontSize = (direction: string) => {
+                        let textEle = this.popoverText.nativeElement;
+                        textEle.style.fontSize = page.global.popover.fontSize = direction;
+                        
+                        page.c8o.log.debug(''>>>> fontSize: ''+ page.global.popover.fontSize);
+                    }
+                    
+                    page.global.popover.changeBackground = (color: any) => {
+                        let textEle = this.popoverText.nativeElement;
+                        let contentEle = this.popoverContent._elementRef.nativeElement;
+                        page.global.popover.background = color;
+                        contentEle.style.backgroundColor = page.global.popover.colors[color].bg;
+                        textEle.style.color = page.global.popover.colors[color].fg;
+                    }
+                    
+                    page.global.popover.changeFontFamily = () => {
+                        let textEle = this.popoverText.nativeElement;
+                        if (page.global.popover.fontFamily) textEle.style.fontFamily = page.global.popover.fontFamily;
+                    }
+            		 
+            		resolve();
+            '

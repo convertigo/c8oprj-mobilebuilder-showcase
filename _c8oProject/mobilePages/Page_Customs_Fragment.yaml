@@ -157,6 +157,10 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Pause page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Actions_Popover')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Popover page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_Searchbar')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Searchbar page
