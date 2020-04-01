@@ -29,6 +29,32 @@ title: Camera
 ↓Content [mobile.components.UIDynamicElement-1578655193444]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1585730864683]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585730864686]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585730864689]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585730864692]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585730864695]: 
+          htmlTemplate: |
+            '<div>
+            	<p>This component helps taking a photo or capturing a video.</p>
+            	<p>It uses the native Cordova camera plugin which provides an API for taking pictures and for choosing images from the system''s image library.</p>
+            	<p>If running in browser always return a base64-encoded string, else contains the format specified in the options.</p>
+            	<p>You can access data from the next action in the chain in (TS) mode with:</p>
+            	<ul>
+            		<li><b>out</b>: the picture taken</li>
+            	</ul>
+            </div>'
   ↓Div [mobile.components.UIDynamicElement-1578655193447]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -120,6 +146,7 @@ title: Camera
       tagName: img
   ↓Div2 [mobile.components.UIDynamicElement-1578656326173]: 
     beanData: '{"ionBean":"DivTag"}'
+    comment: Displays B64 string
     isEnabled: false
     tagName: div
     ↓Text [mobile.components.UIText-1578655990474]: 

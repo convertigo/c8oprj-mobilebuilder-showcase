@@ -140,9 +140,6 @@
       - xmlizable: 
         - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
         - MobileSmartSourceType: plain:keypad-grid
-  ↓Event [mobile.components.UIControlEvent-1580468655706]: 
-    attrName: (ionChange)
-    eventName: ionChange
 ↓ButtonSet [mobile.components.UIDynamicElement-1580309019788]: 
   beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
   tagName: ion-buttons
@@ -185,16 +182,16 @@
           - MobileSmartSourceType: plain:Valider
     ↓Event [mobile.components.UIControlEvent-1580309019809]: 
       ↓IfElse [mobile.components.UIDynamicIf-1580309019812]: 
-        beanData: '{"ionBean":"IfElseAction","condition":"script:this[this.local.focusedInput].value == ''040475''"}'
+        beanData: '{"ionBean":"IfElseAction","condition":"script:c8oPage[c8oPage.local.focusedInput].value == ''040475''"}'
         ↓Toast [mobile.components.UIDynamicAction-1580476163963]: 
-          beanData: '{"ionBean":"ToastAction"}'
+          beanData: '{"ionBean":"ToastAction","message":"plain:Correct password!"}'
         ↓Else_Handler [mobile.components.UIActionElseEvent-1580309019818]: 
           ↓Toast [mobile.components.UIDynamicAction-1580309019821]: 
             beanData: |
               '{
                "ionBean": "ToastAction",
-               "message": "plain:Echec d''authentification",
-               "duration": "plain:1500",
+               "message": "plain:Authentication failed! Password is 040475",
+               "duration": "plain:3500",
                "position": "plain:top"
               }'
 ↓PageEvent [mobile.components.UIPageEvent-1580309646668]: 

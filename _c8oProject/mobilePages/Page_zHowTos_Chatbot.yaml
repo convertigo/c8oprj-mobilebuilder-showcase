@@ -29,7 +29,7 @@ title: ChatBot
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:My First App
+            - MobileSmartSourceType: plain:Chat bot
     ↓Button [mobile.components.UIDynamicElement-1580897616778]: 
       beanData: |
         '{
@@ -159,3 +159,8 @@ title: ChatBot
           }'
 ↓UseSharedComponent [mobile.components.UIUseShared-1582819195599]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+  ↓color [mobile.components.UIControlVariable-1585740331861]: 
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:'light'

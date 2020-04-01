@@ -32,7 +32,7 @@ title: Attributes
   ↓Grid [mobile.components.UIDynamicElement-1585678208458]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
-    ↓GridRow12 [mobile.components.UIDynamicElement-1585678208461]: 
+    ↓GridRow [mobile.components.UIDynamicElement-1585678208461]: 
       beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
       tagName: ion-row
       ↓GridCol1 [mobile.components.UIDynamicElement-1585678208464]: 
@@ -246,3 +246,8 @@ title: Attributes
           }'
 ↓UseSharedComponent [mobile.components.UIUseShared-1582818472470]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+  ↓color [mobile.components.UIControlVariable-1585729094580]: 
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:'light'

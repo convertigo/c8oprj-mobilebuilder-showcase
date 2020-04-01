@@ -29,6 +29,31 @@ title: IconInput
 ↓Content [mobile.components.UIDynamicElement-1576148760704]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1585778821586]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585778821589]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585778821592]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585778821595]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585778821598]: 
+          htmlTemplate: |
+            <div>
+            	<p>Page demonstration of:</p>
+            	<ul>
+            		<li>Adding a button next to an Input text </li>
+            		<li>Dynamically changing an icon name</li>
+            		<li>Dynamically changing type of an Input</li>
+            	</ul>
+            </div>
   ↓GenericItem [mobile.components.UIDynamicElement-1576150103344]: 
     beanData: '{"ionBean":"GenericItem"}'
     tagName: ion-item

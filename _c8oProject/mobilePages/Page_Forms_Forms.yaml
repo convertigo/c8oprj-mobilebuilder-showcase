@@ -49,6 +49,11 @@ title: Forms
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓Div [mobile.components.UIDynamicElement-1585778115609]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Fragment [mobile.components.UICustom-1585778197651]: 
+      htmlTemplate: <h3>Components of the Forms category from the Mobile Palette:</h3>
   ↓Refresher [mobile.components.UIDynamicElement-1582129302072]: 
     beanData: '{"ionBean":"Refresher"}'
     identifier: myRefresher

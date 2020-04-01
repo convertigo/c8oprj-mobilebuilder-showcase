@@ -29,7 +29,7 @@ title: Barcode
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Barcode
+            - MobileSmartSourceType: plain:Barcode Scanner
     ↓Button [mobile.components.UIDynamicElement-1579171077696]: 
       beanData: |
         '{
@@ -45,6 +45,34 @@ title: Barcode
 ↓Content [mobile.components.UIDynamicElement-1578661180821]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1585729149222]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585729149225]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585729149228]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585729149231]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585729149234]: 
+          htmlTemplate: |
+            '<div>
+            	<p><i>Defines a BarcodeScanner action component.</i></p>
+            	<p>This component acts as a standard HTML attribute.</p>
+            	<p>The Barcode Scanner Plugin opens a camera view and automatically scans a barcode, returning the data back to you.</p>
+            	You can access scanned data from the next action in the chain in (TS) mode with: 
+            	<ul>
+            		<li><b>out.format</b>: The scanned format code</li>
+            		<li><b>out.cancelled</b>: true if the user cancelled the scan</li>
+            		<li><b>out.text</b>: the scanned result</li>
+            	</ul>
+            </div>'
   ↓Div [mobile.components.UIDynamicElement-1578661180824]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div

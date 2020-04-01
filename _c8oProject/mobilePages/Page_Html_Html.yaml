@@ -46,6 +46,14 @@ title: HTML
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓H3_doc [mobile.components.UIDynamicElement-1585778631815]: 
+    beanData: '{"ionBean":"Heading3"}'
+    tagName: h3
+    ↓Text [mobile.components.UIText-1585778631818]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:HTML category components:
   ↓Div [mobile.components.UIDynamicElement-1579875943811]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div

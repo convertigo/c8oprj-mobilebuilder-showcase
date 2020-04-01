@@ -2,7 +2,7 @@
   sourceSequence: MobileBuilderComponents.wait
   ↓time [variables.StepVariable-1579880661499]: 
     comment: time to wait in ms
-    value: 4000
+    value: 2000
 ↓Element [steps.XMLElementStep-1579880687824]: 
   isEnabled: false
   nodeName: url

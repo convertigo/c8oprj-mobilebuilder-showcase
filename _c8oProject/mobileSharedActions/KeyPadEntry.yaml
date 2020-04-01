@@ -5,8 +5,8 @@
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
           '		    page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
-          	        page.c8o.log.debug(''key value: '' + vars.value);
-          	        page.c8o.log.debug(''input: '' + vars.input);
+          	        page.c8o.log.debug(''>>>> key value: '' + vars.value);
+          	        page.c8o.log.debug(''>>>> input id: '' + vars.input);
           	        if(vars.input  && vars.input !== ''''  && page[vars.input] && vars.value && vars.value !== page.local._blankChar)
           	            page[vars.input].value += vars.value;
           	        

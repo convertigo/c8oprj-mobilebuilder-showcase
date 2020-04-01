@@ -71,6 +71,37 @@ title: Infinite Scroll
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1585779477493]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585779477496]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585779477499]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585779477502]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585779477505]: 
+          htmlTemplate: |
+            <h2>InfiniteScroll</h2>
+            <div>
+            	<p><i>ion-infinite-scroll</i></p>
+            	<p>The InfiniteScroll component holds an infinite scroll logic and requires a child InfiniteScrollContent component in order to display its content.</p>
+            	<p>It allows you to perform a given task when the user scrolls a specified distance from the bottom or top of the page.</p>
+            	<p></p>
+            </div>
+            
+            <h2>InfiniteScrollContent</h2>
+            <div>
+            	<p><i>ion-infinite-scroll-content</i></p>
+            	<p>The InfiniteScrollContent component displays its parent infinite scroll.</p>
+            	<p>You may add it under a InfiniteScroll component.</p>
+            </div>
   ↓ListContainer [mobile.components.UIDynamicElement-1583854481802]: 
     beanData: '{"ionBean":"List"}'
     tagName: ion-list
