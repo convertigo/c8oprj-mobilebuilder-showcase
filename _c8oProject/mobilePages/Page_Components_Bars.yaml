@@ -82,6 +82,30 @@ title: Bars
         ↓Icon [mobile.components.UIDynamicElement-1579773694502]: 
           beanData: '{"ionBean":"Icon","IconName":"plain:search"}'
           tagName: ion-icon
+    ↓ButtonSet1 [mobile.components.UIDynamicElement-1585844094213]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585844094216]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585844094219]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585844094222]: 
+          ↓wrapper [mobile.components.UICustomAction-1585844094225]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585844094228]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"ToolBar\",\"shortDesc\":\"ion-toolbar\",\"longDesc\":[\"A ToolBar is a generic bar that can be used in an application as a header, sub-header, footer, or even sub-footer.\"]},{\"title\":\"NavBar\",\"shortDesc\":\"ion-navbar\",\"longDesc\":[\"The NavBar acts as the navigational toolbar, which also comes with a back button.\"]},{\"title\":\"Bar Title\",\"shortDesc\":\"ion-title\",\"longDesc\":[\"Bar Title is a component that sets the title of a ToolBar or NavBar component.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1579773400314]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -103,31 +127,9 @@ title: Bars
               - MobileSmartSourceType: plain:text-justify
         ↓Fragment [mobile.components.UICustom-1585729703431]: 
           htmlTemplate: |
-            <h2>ToolBar</h2>
             <div>
-            	<p><i>ion-toolbar</i></p>
-            	<p>A ToolBar is a generic bar that can be used in an application as a header, sub-header, footer, or even sub-footer.</p>
+            	<p>Tap button to go to Bars page and see automatic an back button in Navbar component</p>
             </div>
-            
-            <h2>NavBar</h2>
-            <div>
-            	<p><i>ion-navbar</i></p>
-            	<p>The NavBar acts as the navigational toolbar, which also comes with a back button.</p>
-            </div>
-            
-            <h2>Bar Title</h2>
-            <div>
-            	<p><i>ion-title</i></p>
-            	<p>Bar Title is a component that sets the title of a ToolBar or NavBar component.</p>
-            </div>
-  ↓Div [mobile.components.UIDynamicElement-1579875538071]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Text [mobile.components.UIText-1579875486064]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Tap button to go to Bars page and see automatic back button
   ↓Button [mobile.components.UIDynamicElement-1579875391422]: 
     beanData: '{"ionBean":"Button"}'
     tagName: button
@@ -138,7 +140,7 @@ title: Bars
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:PUSH TO BARS PAGE
+          - MobileSmartSourceType: plain:GO TO BARS PAGE
 ↓Footer [mobile.components.UIDynamicElement-1579773400317]: 
   beanData: '{"ionBean":"Footer"}'
   comment: Page footer

@@ -42,6 +42,30 @@ title: Animation
       ↓Icon [mobile.components.UIDynamicElement-1579103295982]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585835374851]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585835374854]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585835374857]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585835374860]: 
+          ↓wrapper [mobile.components.UICustomAction-1585835374863]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585835374866]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Animation\",\"shortDesc\":\"Defines an Animation class for a component.\",\"longDesc\":[\"Adding an animation to a component will have this component animated automatically as soon as the component appears on the page. You can choose the animation name, and some other properties to control the animation.\",\"If you want the animation to be triggered by an event such as (tap) (click) or PageEvents, use instead the Animate action.\"]},{\"title\":\"Animate\",\"shortDesc\":\"Defines an Animate action component.\",\"longDesc\":[\"You can use the Animate action to animate a component when an event occurs. To do this, just place the action under the event. It can be a (click) or (tap) event or even a Page didEnter event. The animation will take place when the event is triggered. \"],\"list\":[\"Animatable View the elements with an Identifier property set. Select here one element Identifier to animate.\",\"Apply mode Animate only the selected element (single) or all elements (all) with the same Identifier value. You can also chain animations to animate in parrallel (Sibling Animate actions) or serial (Child Animate actions).\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1579103295994]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content
@@ -49,25 +73,6 @@ title: Animation
   ↓Grid [mobile.components.UIDynamicElement-1579109611140]: 
     beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
     tagName: ion-grid
-    ↓GridRow12 [mobile.components.UIDynamicElement-1584978313852]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
-      tagName: ion-row
-      ↓GridCol1 [mobile.components.UIDynamicElement-1585677538932]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1585677538935]: 
-          attrName: 
-          attrValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-justify
-        ↓Fragment [mobile.components.UICustom-1585677538938]: 
-          htmlTemplate: |
-            <div>
-            	<p><i>Defines an Animation class for a component.</i></p>
-            	<p>Adding an animation to a component will have this component animated automatically as soon as the component appears on the page. You can choose the animation name, and some other properties to control the animation.</p>
-            	<p>If you want the animation to be triggered by an event such as (tap) (click) or PageEvents, use instead the <strong>Animate action</strong></p>
-            </div>
     ↓GridRow1 [mobile.components.UIDynamicElement-1579109620477]: 
       beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
       tagName: ion-row

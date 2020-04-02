@@ -42,6 +42,30 @@ title: Barcode
       ↓Icon [mobile.components.UIDynamicElement-1579171077699]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585843556760]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585843556763]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585843556766]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585843556769]: 
+          ↓wrapper [mobile.components.UICustomAction-1585843556772]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585843556775]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Barcode Scanner\",\"shortDesc\":\"Defines a BarcodeScanner action component.\",\"longDesc\":[\"The Barcode Scanner Plugin opens a camera view and automatically scans a barcode, returning the data back to you..\",\"You can access scanned data from the next action in the chain in (TS) mode with:\"],\"list\":[\"out.format: The scanned format code\",\"out.cancelled: true if the user cancelled the scan\",\"out.text: the scanned result\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1578661180821]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -62,50 +86,48 @@ title: Barcode
               - MobileSmartSourceType: plain:text-justify
         ↓Fragment [mobile.components.UICustom-1585729149234]: 
           htmlTemplate: |
-            '<div>
-            	<p><i>Defines a BarcodeScanner action component.</i></p>
-            	<p>This component acts as a standard HTML attribute.</p>
-            	<p>The Barcode Scanner Plugin opens a camera view and automatically scans a barcode, returning the data back to you.</p>
-            	You can access scanned data from the next action in the chain in (TS) mode with: 
-            	<ul>
-            		<li><b>out.format</b>: The scanned format code</li>
-            		<li><b>out.cancelled</b>: true if the user cancelled the scan</li>
-            		<li><b>out.text</b>: the scanned result</li>
-            	</ul>
-            </div>'
-  ↓Div [mobile.components.UIDynamicElement-1578661180824]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Button [mobile.components.UIDynamicElement-1578661180827]: 
-      beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
-      tagName: button
-      ↓Icon [mobile.components.UIDynamicElement-1578661180830]: 
-        beanData: '{"ionBean":"Icon","IconName":"plain:barcode"}'
-        tagName: ion-icon
-      ↓Event [mobile.components.UIControlEvent-1578661180833]: 
-        ↓SetGlobal [mobile.components.UIDynamicAction-1578661180836]: 
-          beanData: |
-            '{
-             "ionBean": "SetGlobalAction",
-             "Property": "plain:barcodeData",
-             "Value": "script:undefined"
-            }'
-          ↓BarcodeScanner [mobile.components.UIDynamicAction-1578661286700]: 
-            beanData: '{"ionBean":"BarcodeAction","prompt":"plain:CONVERTIGO"}'
-            ↓SetGlobal [mobile.components.UIDynamicAction-1578661180842]: 
+            <div>
+            	<p>In browser mode will use mocked properties responses</p>
+            </div>
+    ↓GridRow1 [mobile.components.UIDynamicElement-1585843943542]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585843946212]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1578661180827]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Icon [mobile.components.UIDynamicElement-1578661180830]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:barcode"}'
+            tagName: ion-icon
+          ↓Event [mobile.components.UIControlEvent-1578661180833]: 
+            ↓SetGlobal [mobile.components.UIDynamicAction-1578661180836]: 
               beanData: |
                 '{
                  "ionBean": "SetGlobalAction",
                  "Property": "plain:barcodeData",
-                 "Value": "script:out"
+                 "Value": "script:undefined"
                 }'
-  ↓Div2 [mobile.components.UIDynamicElement-1578661180851]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Text [mobile.components.UIText-1578661180854]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:JSON.stringify(this.global.barcodeData)
+              ↓BarcodeScanner [mobile.components.UIDynamicAction-1578661286700]: 
+                beanData: '{"ionBean":"BarcodeAction","prompt":"plain:CONVERTIGO"}'
+                ↓SetGlobal [mobile.components.UIDynamicAction-1578661180842]: 
+                  beanData: |
+                    '{
+                     "ionBean": "SetGlobalAction",
+                     "Property": "plain:barcodeData",
+                     "Value": "script:out"
+                    }'
+    ↓GridRow2 [mobile.components.UIDynamicElement-1585843955216]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585843962203]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1578661180854]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:JSON.stringify(this.global.barcodeData)
 ↓UseSharedComponent [mobile.components.UIUseShared-1582818832497]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

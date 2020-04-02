@@ -42,38 +42,33 @@ title: Buttons
       ↓Icon [mobile.components.UIDynamicElement-1580910019493]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585844890988]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585844890991]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585844890994]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585844890997]: 
+          ↓wrapper [mobile.components.UICustomAction-1585844891000]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585844891003]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Button\",\"shortDesc\":\"button\",\"longDesc\":[\"Buttons are an essential way to interact with and navigate through a mobile application, and should clearly communicate what action will occur after the user taps them.\",\"Button can consist of Text and\/or Icon, and can be enhanced with a wide variety of properties\/attributes\",\"You can add Event component with chained Actions to a Button to handle button click\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1580910019496]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-  ↓Grid [mobile.components.UIDynamicElement-1585730080749]: 
-    beanData: '{"ionBean":"Grid"}'
-    tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1585730080752]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
-      tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1585730080755]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1585730080758]: 
-          attrName: 
-          attrValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-justify
-        ↓Fragment [mobile.components.UICustom-1585730080761]: 
-          htmlTemplate: |
-            <h2>Button</h2>
-            <div>
-            	<p><i>button</i></p>
-            	<p>Buttons are an essential way to interact with and navigate through a mobile application, and should clearly communicate what action will occur after the user taps them.</p>
-            	<p>Button can consist of Text and/or Icon, and can be enhanced with a wide variety of properties/attributes</p>
-            	<p>You can add Event component with chained Actions to a Button to handle button click</p>
-            </div>
-  ↓Break [mobile.components.UIDynamicElement-1580910581319]: 
-    beanData: '{"ionBean":"Break"}'
-    selfClose: true
-    tagName: br
   ↓Heading [mobile.components.UIDynamicTag-1580910829388]: 
     beanData: '{"ionBean":"Heading"}'
     tagName: h1

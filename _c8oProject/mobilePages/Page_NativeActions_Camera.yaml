@@ -26,6 +26,29 @@ title: Camera
       ↓Icon [mobile.components.UIDynamicElement-1579171081066]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585847162965]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585847162968]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585847162971]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585847162974]: 
+          ↓wrapper [mobile.components.UICustomAction-1585847162977]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585847162980]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Camera\",\"shortDesc\":\"This component helps taking a photo or capturing a video.\",\"longDesc\":[\"It uses the native Cordova camera plugin which provides an API for taking pictures and for choosing images from the system''s image library.\",\"If running in browser always return a base64-encoded string, else contains the format specified in the options.\",\"You can access data from the next action in the chain in (TS) mode with:\"],\"list\":[\"out: the picture taken\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1578655193444]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -46,15 +69,11 @@ title: Camera
               - MobileSmartSourceType: plain:text-justify
         ↓Fragment [mobile.components.UICustom-1585730864695]: 
           htmlTemplate: |
-            '<div>
-            	<p>This component helps taking a photo or capturing a video.</p>
-            	<p>It uses the native Cordova camera plugin which provides an API for taking pictures and for choosing images from the system''s image library.</p>
-            	<p>If running in browser always return a base64-encoded string, else contains the format specified in the options.</p>
-            	<p>You can access data from the next action in the chain in (TS) mode with:</p>
-            	<ul>
-            		<li><b>out</b>: the picture taken</li>
-            	</ul>
-            </div>'
+            <div>
+            	<p>Works in both browser and device</p>
+            	<p>In browser, uses webcam if exists and authorized, else uses file system.</p>
+            	<p>You may enable <b>Div2</b> object in tree view to see image as B64 string.</p>
+            </div>
   ↓Div [mobile.components.UIDynamicElement-1578655193447]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div

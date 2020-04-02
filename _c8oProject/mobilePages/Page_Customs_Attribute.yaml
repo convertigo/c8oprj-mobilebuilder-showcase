@@ -26,38 +26,33 @@ title: Attributes
       ↓Icon [mobile.components.UIDynamicElement-1579171166593]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585842628423]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585842628426]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585842628429]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585842628432]: 
+          ↓wrapper [mobile.components.UICustomAction-1585842628435]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585842628438]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Attr\",\"shortDesc\":\"Defines a Attr component.\",\"longDesc\":[\"This component acts as a standard HTML attribute.\",\"Attr components can be added to any component. You can add your custom attributes to customize a component behavior. For example you can add a class attribute to set a custom CSS class name to this component. When you set explicitly a class name attribute on a component, the class will be merged with any Style component positioned for this component\",\"Attr components have two properties:\"],\"list\":[\"name: the name of the attribute such as class, width, src, ...\",\"value: the value of the attribute\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1576144503201]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
-  ↓Grid [mobile.components.UIDynamicElement-1585678208458]: 
-    beanData: '{"ionBean":"Grid"}'
-    tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1585678208461]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
-      tagName: ion-row
-      ↓GridCol1 [mobile.components.UIDynamicElement-1585678208464]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1585678208467]: 
-          attrName: 
-          attrValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-justify
-        ↓Fragment [mobile.components.UICustom-1585678208470]: 
-          htmlTemplate: |
-            '<div>
-            	<p><i>Defines a Attr component.</i></p>
-            	<p>This component acts as a standard HTML attribute.</p>
-            	<p><i>Attr</i> components can be added to any component.
-            You can add your custom attributes to customize a component behavior. For example you can add a <i>class</i> attribute to set a custom CSS class name to this component. When you set explicitly a class name attribute on a component, the class will be merged with any Style component positioned for this component
-            	</p>
-            	<i>Attr</i> components have two properties : 
-            	<ul>
-            		<li>name : the name of the attribute such as class, width, src, ...</li>
-            		<li>value : the value of the attribute</li>
-            	</ul>
-            </div>'
   ↓Div [mobile.components.UIDynamicElement-1576145138268]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -88,7 +83,7 @@ title: Attributes
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Div (click me)
+            - MobileSmartSourceType: plain:toggle background color (click me)
   ↓Div1 [mobile.components.UIDynamicElement-1579178846111]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -97,14 +92,14 @@ title: Attributes
       attrValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: 'script:this.global.isRed1 ? ''redAlert'' : null'
+          - MobileSmartSourceType: 'script:this.global.isGreen ? ''greenAlert'' : null'
     ↓Event [mobile.components.UIControlEvent-1579178846117]: 
       ↓SetGlobal [mobile.components.UIDynamicAction-1579178846120]: 
         beanData: |
           '{
            "ionBean": "SetGlobalAction",
-           "Property": "plain:isRed1",
-           "Value": "script:(this.global.isRed1 === undefined) ? true : !this.global.isRed1"
+           "Property": "plain:isGreen",
+           "Value": "script:(this.global.isGreen === undefined) ? true : !this.global.isGreen"
           }'
     ↓Attr2 [mobile.components.UIAttribute-1579178846126]: 
       attrName: class
@@ -119,7 +114,7 @@ title: Attributes
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Div1 (click me)
+            - MobileSmartSourceType: plain:toggle background color 2 (click me)
   ↓Div2 [mobile.components.UIDynamicElement-1579184360501]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -136,7 +131,7 @@ title: Attributes
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:Div2 (no click)
+            - MobileSmartSourceType: plain:Fixed class attribute (no click)
   ↓Div3 [mobile.components.UIDynamicElement-1579184536312]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -213,7 +208,7 @@ title: Attributes
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:2.1rem
+            - MobileSmartSourceType: plain:4vw
       ↓Attr1 [mobile.components.UIAttribute-1579185904518]: 
         attrName: '[style.color]'
         attrValue: 
@@ -235,7 +230,7 @@ title: Attributes
           	text-align: center;
           	
           	span {
-          		font-size: 4rem;
+          		font-size: 4vw;
           		line-height: 150px;
           		vertical-align: middle;
           	}
@@ -243,6 +238,10 @@ title: Attributes
           
           div.redAlert {
           	background-color: color($colors, danger);
+          }
+          
+          div.greenAlert {
+          	background-color: color($colors, secondary);
           }'
 ↓UseSharedComponent [mobile.components.UIUseShared-1582818472470]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

@@ -1,0 +1,23 @@
+↓popObject [mobile.components.UICompVariable-1585845389755]: 
+↓Button [mobile.components.UIDynamicElement-1585845367413]: 
+  beanData: |
+    '{
+     "ionBean": "Button",
+     "ButtonFormType": "plain:false",
+     "IonColor": "plain:primary",
+     "IonClear": "plain:clear",
+     "IconOnly": "plain:icon-only"
+    }'
+  tagName: button
+  ↓Icon [mobile.components.UIDynamicElement-1585845367416]: 
+    beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+    tagName: ion-icon
+  ↓Event [mobile.components.UIControlEvent-1585845367419]: 
+    ↓wrapper [mobile.components.UICustomAction-1585845367422]: 
+      ↓Popover [mobile.components.UIDynamicAction-1585845367425]: 
+        beanData: |
+          '{
+           "ionBean": "PopoverAction",
+           "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+           "data": "script:params1585845338383.popObject"
+          }'

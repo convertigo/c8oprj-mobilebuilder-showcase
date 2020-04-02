@@ -44,44 +44,54 @@ title: Title for Page3
       ↓Icon [mobile.components.UIDynamicElement-1585676030409]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585817163373]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585817163376]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585817163379]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585817163382]: 
+          ↓wrapper [mobile.components.UICustomAction-1585817163385]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585817163388]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"IterateAction\",\"shortDesc\":\"Defines an IterateAction component.\",\"longDesc\":[\"This component helps iterating any objects array.\",\"To work properly the IterateAction needs a Loop Handler in which you may add any kind of action to be executed at each loop.\",\"The Loop Handler exposes the loop''scurrentitemandindexyoucanuseinactions.\"]},{\"title\":\"Loop Handler\",\"shortDesc\":\"Defines a Loop Handler\",\"longDesc\":[\"A Loop Handler must be added inside an IterateAction.\",\"It helps defining actions to be executed for each loop.\",\"Each action can access the current loop index and item through the index and item parameters in TS mode. You can change the parameter names for more appropriate ones or to differentiate them in nested loops.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1585676030412]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-  ↓GridCol [mobile.components.UIDynamicElement-1585676157560]: 
-    beanData: '{"ionBean":"GridCol"}'
-    tagName: ion-col
-    ↓Attr [mobile.components.UIAttribute-1585676157563]: 
-      attrName: 
-      attrValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:text-justify
-    ↓Fragment [mobile.components.UICustom-1585676157566]: 
-      htmlTemplate: |
-        <h1>IterateAction</h1>
-        <div>
-        	<i>Defines an IterateAction component.</i><br>
-        	<p>This component helps iterating any objects array.</p>
-        	<p>To work properly the IterateAction needs a Loop Handler in which you may add any kind of action to be executed at each loop.</p>
-        	<p>The Loop Handler exposes the loop's current item and index you can use in actions.</p>
-        </div>
-        
-        <h1>Loop Handler</h1>
-        <div>
-        	<i>Defines a Loop Handler.</i>
-        	<p>A Loop Handler must be added inside an IterateAction.</p>
-        	<p>It helps defining actions to be executed for each loop.</p>
-        	<p>Each action can access the current loop index and item through the index and item parameters in TS mode. You can change the parameter names for more appropriate ones or to differentiate them in nested loops.</p>
-        </div>
-  ↓Div [mobile.components.UIDynamicElement-1585676558052]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Text [mobile.components.UIText-1585676565191]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Page_Actions_LoadingShowClose has some use case:
+  ↓Grid [mobile.components.UIDynamicElement-1585817643843]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585817643846]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585676157560]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585676157563]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585676157566]: 
+          htmlTemplate: |
+            <div>
+            	<p>Come and visit <b>Page_Actions_LoadingShowClose</b> page to see some <b>IterateAction</b> use case:</p>
+            </div>
   ↓Button [mobile.components.UIDynamicElement-1585676515964]: 
     beanData: '{"ionBean":"Button"}'
     tagName: button

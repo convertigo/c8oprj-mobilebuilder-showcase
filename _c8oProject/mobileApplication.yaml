@@ -37,6 +37,8 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
 ↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
 ↓Footer [mobile.components.UISharedComponent-1582818189622]: 🗏 mobileSharedComponents/Footer.yaml
+↓PopoverDoc [mobile.components.UISharedComponent-1585824425527]: 🗏 mobileSharedComponents/PopoverDoc.yaml
+↓HelpButton [mobile.components.UISharedComponent-1585845338383]: 🗏 mobileSharedComponents/HelpButton.yaml
 ↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
 ↓Page_Actions_Alert [mobile.components.PageComponent-1584979678909]: 🗏 mobilePages/Page_Actions_Alert.yaml
 ↓Page_Customs_Animation [mobile.components.PageComponent-1579103295466]: 🗏 mobilePages/Page_Customs_Animation.yaml
@@ -84,6 +86,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
 ↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
 ↓Page_Actions_IterateAction [mobile.components.PageComponent-1585676029436]: 🗏 mobilePages/Page_Actions_IterateAction.yaml
+↓Page_Docs_documentation [mobile.components.PageComponent-1585817337154]: 🗏 mobilePages/Page_Docs_documentation.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
@@ -339,4 +342,16 @@ tplProjectName: mobilebuilder_tpl_7_7_0
           
           .inputAlertMsg {
           	.alert-message { color: color($colors, danger) !important;}
+          }'
+↓SelectableText [mobile.components.UIStyle-1585835471572]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          'body {
+          	-webkit-user-select: text;
+          	-moz-user-select: text;
+          	-ms-user-select: text;
+          	user-select: text;
           }'

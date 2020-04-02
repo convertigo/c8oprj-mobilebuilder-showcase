@@ -107,7 +107,7 @@ title: Loading (Show / Close )
               beanData: '{"ionBean":"IterateAction","items":"script:stack[''peopleLoading''].out?.People"}'
               ↓Loop_Handler [mobile.components.UIActionLoopEvent-1584973848521]: 
                 ↓PauseAction [mobile.components.UIDynamicAction-1584973860920]: 
-                  beanData: '{"ionBean":"PauseAction","duration":"plain:2000"}'
+                  beanData: '{"ionBean":"PauseAction"}'
                   ↓Log [mobile.components.UIDynamicAction-1584974085733]: 
                     beanData: |
                       '{
