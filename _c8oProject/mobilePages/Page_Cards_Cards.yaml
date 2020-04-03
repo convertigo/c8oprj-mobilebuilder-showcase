@@ -42,44 +42,34 @@ title: Cards
       ↓Icon [mobile.components.UIDynamicElement-1582737922370]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585902296722]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585902296725]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585902296728]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585902296731]: 
+          ↓wrapper [mobile.components.UICustomAction-1585902296734]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585902296737]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Card Container\",\"shortDesc\":\"ion-card\",\"longDesc\":[\"Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for application.\"]},{\"title\":\"Card Header\",\"shortDesc\":\"ion-card-header\",\"longDesc\":[\"Just like a page, cards can be customized to include headers. Use a Card Header component inside of a Card container.\"]},{\"title\":\"Card Content\",\"shortDesc\":\"ion-card-content\",\"longDesc\":[\"This component is the content part of the card. Use a Card Content component inside of a Card container.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1582737922374]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-  ↓Grid [mobile.components.UIDynamicElement-1585731757848]: 
-    beanData: '{"ionBean":"Grid"}'
-    tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1585731757851]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
-      tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1585731757854]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1585731757857]: 
-          attrName: 
-          attrValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-justify
-        ↓Fragment [mobile.components.UICustom-1585731757860]: 
-          htmlTemplate: |
-            <h2>Card Container</h2>
-            <div>
-            	<p><i>ion-card</i></p>
-            	<p>Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for application.</p>
-            </div>
-            
-            <h2>Card Header</h2>
-            <div>
-            	<p><i>ion-card-header</i></p>
-            	<p>Just like a page, cards can be customized to include headers. Use a Card Header component inside of a Card container.</p>
-            </div>
-            
-            <h2>Card Content</h2>
-            <div>
-            	<p><i>ion-card-content</i></p>
-            	<p>This component is the content part of the card. Use a Card Content component inside of a Card container.</p>
-            </div>
   ↓CardContainer_basic [mobile.components.UIDynamicElement-1582738430749]: 
     beanData: '{"ionBean":"Card"}'
     tagName: ion-card

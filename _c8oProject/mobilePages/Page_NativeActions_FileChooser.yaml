@@ -42,66 +42,91 @@ title: File Chooser
       ↓Icon [mobile.components.UIDynamicElement-1579171074176]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585903790051]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585903790054]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585903790057]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585903790060]: 
+          ↓wrapper [mobile.components.UICustomAction-1585903790063]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585903790066]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"File Chooser\",\"shortDesc\":\"Defines a File Chooser action component.\",\"longDesc\":[\"This component helps selecting a file.\",\"Whenever cordova platform is not available, the value defined in mocking option is returned.\",\"You can access data from the next action in the chain in (TS) mode with: \"],\"list\":[\"out: The file URI\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1578661956249]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
-  ↓Grid [mobile.components.UIDynamicElement-1585746479924]: 
+  ↓Grid [mobile.components.UIDynamicElement-1585904107960]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1585746479927]: 
+    ↓GridRow [mobile.components.UIDynamicElement-1585904107963]: 
       beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
       tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1585746479930]: 
+      ↓GridCol [mobile.components.UIDynamicElement-1585904107966]: 
         beanData: '{"ionBean":"GridCol"}'
         tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1585746479933]: 
+        ↓Attr [mobile.components.UIAttribute-1585904107969]: 
           attrName: 
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:text-justify
-        ↓Fragment [mobile.components.UICustom-1585746479936]: 
+        ↓Fragment [mobile.components.UICustom-1585904107972]: 
           htmlTemplate: |
-            '<div>
-            	<p>This component helps selecting a file.</p>
-            	<p>You can access data from the next action in the chain in (TS) mode with: </p>
-            	<ul>
-            		<li><b>out</b>: The file URI</li>
-            	</ul>
-            </div>'
-  ↓Div [mobile.components.UIDynamicElement-1578661956252]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Button [mobile.components.UIDynamicElement-1578661956255]: 
-      beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
-      tagName: button
-      ↓Icon [mobile.components.UIDynamicElement-1578661956258]: 
-        beanData: '{"ionBean":"Icon","IconName":"plain:folder-open"}'
-        tagName: ion-icon
-      ↓Event [mobile.components.UIControlEvent-1578661956261]: 
-        ↓SetGlobal [mobile.components.UIDynamicAction-1578661956264]: 
-          beanData: |
-            '{
-             "ionBean": "SetGlobalAction",
-             "Property": "plain:fileChooser",
-             "Value": "script:undefined"
-            }'
-          ↓FileChooser [mobile.components.UIDynamicAction-1578662119199]: 
-            beanData: '{"ionBean":"FileChooserAction"}'
-            ↓SetGlobal [mobile.components.UIDynamicAction-1578661956270]: 
+            <div>
+            	<p>In browser mode will use mocked properties responses</p>
+            </div>
+    ↓GridRow1 [mobile.components.UIDynamicElement-1585904107975]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585904107978]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1578661956255]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Icon [mobile.components.UIDynamicElement-1578661956258]: 
+            beanData: '{"ionBean":"Icon","IconName":"plain:folder-open"}'
+            tagName: ion-icon
+          ↓Event [mobile.components.UIControlEvent-1578661956261]: 
+            ↓SetGlobal [mobile.components.UIDynamicAction-1578661956264]: 
               beanData: |
                 '{
                  "ionBean": "SetGlobalAction",
                  "Property": "plain:fileChooser",
-                 "Value": "script:out"
+                 "Value": "script:undefined"
                 }'
-  ↓Div2 [mobile.components.UIDynamicElement-1578661956273]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Text [mobile.components.UIText-1578661956276]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:this.global.fileChooser
+              ↓FileChooser [mobile.components.UIDynamicAction-1578662119199]: 
+                beanData: '{"ionBean":"FileChooserAction"}'
+                ↓SetGlobal [mobile.components.UIDynamicAction-1578661956270]: 
+                  beanData: |
+                    '{
+                     "ionBean": "SetGlobalAction",
+                     "Property": "plain:fileChooser",
+                     "Value": "script:out"
+                    }'
+    ↓GridRow2 [mobile.components.UIDynamicElement-1585904107999]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585904108002]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1578661956276]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:this.global.fileChooser
 ↓UseSharedComponent [mobile.components.UIUseShared-1582819230967]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

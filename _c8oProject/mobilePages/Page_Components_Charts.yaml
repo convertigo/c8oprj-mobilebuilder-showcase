@@ -48,33 +48,34 @@ title: Charts
       ↓Icon [mobile.components.UIDynamicElement-1579620096876]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585902570664]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585902570667]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585902570670]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585902570673]: 
+          ↓wrapper [mobile.components.UICustomAction-1585902570676]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585902570679]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Charts\",\"shortDesc\":\"canvas\",\"longDesc\":[\"Charts can be line, bar, radar, pie, polarArea or doughnut according to the chartType property.\",\"Chart data are bound to properties provided by some TypeScript data or directly from a Source.\",\"Please refer to chart.js documentation for each property and data formats.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1579620096879]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-  ↓Grid1 [mobile.components.UIDynamicElement-1585732366366]: 
-    beanData: '{"ionBean":"Grid"}'
-    tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1585732366369]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
-      tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1585732366372]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1585732366375]: 
-          attrName: 
-          attrValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-justify
-        ↓Fragment [mobile.components.UICustom-1585732366378]: 
-          htmlTemplate: |
-            <div>
-            	<p><i>canvas</i></p>
-            	<p>Charts can be line, bar, radar, pie, polarArea or doughnut according to the chartType property.</p>
-            	<p>Chart data are bound to properties provided by some TypeScript data or directly from a Source.</p>
-            	<p>Please refer to chart.js documentation for each property and data formats.</p>
-            </div>
   ↓Grid [mobile.components.UIDynamicElement-1579622940248]: 
     beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
     tagName: ion-grid

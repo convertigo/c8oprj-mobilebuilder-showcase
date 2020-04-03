@@ -42,6 +42,30 @@ title: ChatBot
       ↓Icon [mobile.components.UIDynamicElement-1580897616781]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585902803975]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585902803978]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585902803981]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585902803984]: 
+          ↓wrapper [mobile.components.UICustomAction-1585902803987]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585902803990]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Chat bot\",\"shortDesc\":\"Demo of the Amazon LEX Chat bot\",\"longDesc\":[\"The lib_AmazonLEX project is needed for this demo to work properly.\",\"You also need to provide AWSKey and AWSSecretKey symbols to connect to your Amazon LEX bot.\",\"There are also parameters in the ChatBot sharedComponent to choose Bot name and some CSS styles.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1580897616784]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content
