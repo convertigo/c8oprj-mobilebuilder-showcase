@@ -42,6 +42,30 @@ title: Logs
       ↓Icon [mobile.components.UIDynamicElement-1584553888139]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585930575874]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585930575877]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585930575880]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585930575883]: 
+          ↓wrapper [mobile.components.UICustomAction-1585930575886]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585930575889]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Log\",\"shortDesc\":\"Defines an Log action component.\",\"longDesc\":[\"You can use logs actions to display some information in the device logs. These logs will also be automatically sent to the Convertigo Server and will be threaded within the backend sequence execution so that you can follow a full client interaction thread.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1584553888142]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -49,23 +73,6 @@ title: Logs
   ↓Grid [mobile.components.UIDynamicElement-1584698473822]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
-    ↓GridRow_Log_doc [mobile.components.UIDynamicElement-1584698939401]: 
-      beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
-      tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1584698939404]: 
-        beanData: '{"ionBean":"GridCol"}'
-        tagName: ion-col
-        ↓Text [mobile.components.UIText-1584698939407]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:You can use logs actions to display some information in the device logs. These logs will also be automatically sent to the Convertigo Server and will be threaded within the backend sequence execution so that you can follow a full client interaction thread.
-        ↓Attr [mobile.components.UIAttribute-1584698939410]: 
-          attrName: 
-          attrValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-justify
     ↓GridRow_Log_doc1 [mobile.components.UIDynamicElement-1584708199506]: 
       beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
       tagName: ion-row

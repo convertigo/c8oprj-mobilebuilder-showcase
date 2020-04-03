@@ -70,6 +70,30 @@ title: Menus
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:bar-button-menutoggle bar-button-menutoggle-md
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585930839614]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585930839617]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585930839620]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585930839623]: 
+          ↓wrapper [mobile.components.UICustomAction-1585930839626]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585930839629]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Menu\",\"shortDesc\":\"ion-menu\",\"longDesc\":[\"Defines a Menu component.\",\"Note: different menus may be added to an application but only the first one is used by default.\",\"If you''d like to use a specific menu for a given page, simply specify it in the Menu id property of your Page component.\",\"A menu helps to navigate through pages. It may contains, or\/and:\"],\"list\":[\"a MenuAutoItems component to automatically add all your pages\",\"several MenuItem components to add specific pages.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1580914202823]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

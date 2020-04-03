@@ -26,9 +26,53 @@ title: Pause
       ↓Icon [mobile.components.UIDynamicElement-1579171181219]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585931534015]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585931534018]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585931534021]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585931534024]: 
+          ↓wrapper [mobile.components.UICustomAction-1585931534027]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585931534030]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"PauseAction\",\"shortDesc\":\"Defines an PauseAction component.\",\"longDesc\":[\"This component helps waiting for a given time to be elapsed.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1575036313309]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1585932081914]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585932081917]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585932081920]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585932081923]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585932081926]: 
+          htmlTemplate: |
+            <div>
+            	<p>Click the <b>CLICK</b> button to see different button text delayed by the <b>Pause</b> component</p>
+            </div>
   ↓GenericItem [mobile.components.UIDynamicElement-1575036322356]: 
     beanData: '{"ionBean":"GenericItem"}'
     tagName: ion-item
@@ -49,14 +93,41 @@ title: Pause
              "Value": "plain:Pause..."
             }'
           ↓PauseAction [mobile.components.UIDynamicAction-1575040263570]: 
-            beanData: '{"ionBean":"PauseAction","duration":"plain:4000"}'
+            beanData: '{"ionBean":"PauseAction","duration":"plain:2000"}'
             ↓SetGlobal [mobile.components.UIDynamicAction-1575040288082]: 
               beanData: |
                 '{
                  "ionBean": "SetGlobalAction",
                  "Property": "plain:buttonText",
-                 "Value": "plain:Done!"
+                 "Value": "plain:A few moments later..."
                 }'
+              ↓PauseAction [mobile.components.UIDynamicAction-1585931775012]: 
+                beanData: '{"ionBean":"PauseAction","duration":"plain:2000"}'
+                ↓SetGlobal [mobile.components.UIDynamicAction-1585931775015]: 
+                  beanData: |
+                    '{
+                     "ionBean": "SetGlobalAction",
+                     "Property": "plain:buttonText",
+                     "Value": "plain:Still running!"
+                    }'
+                  ↓PauseAction [mobile.components.UIDynamicAction-1585932780097]: 
+                    beanData: '{"ionBean":"PauseAction","duration":"plain:2000"}'
+                    ↓SetGlobal [mobile.components.UIDynamicAction-1585932780100]: 
+                      beanData: |
+                        '{
+                         "ionBean": "SetGlobalAction",
+                         "Property": "plain:buttonText",
+                         "Value": "plain:Back to original text..."
+                        }'
+                      ↓PauseAction [mobile.components.UIDynamicAction-1585932830227]: 
+                        beanData: '{"ionBean":"PauseAction","duration":"plain:2000"}'
+                        ↓SetGlobal [mobile.components.UIDynamicAction-1585932830230]: 
+                          beanData: |
+                            '{
+                             "ionBean": "SetGlobalAction",
+                             "Property": "plain:buttonText",
+                             "Value": "plain:click"
+                            }'
 ↓PageEvent [mobile.components.UIPageEvent-1575036454153]: 
   ↓SetGlobal [mobile.components.UIDynamicAction-1575036467385]: 
     beanData: |

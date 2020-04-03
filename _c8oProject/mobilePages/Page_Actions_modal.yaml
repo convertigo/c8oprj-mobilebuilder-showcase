@@ -43,9 +43,54 @@ title: Modal
       ↓Icon [mobile.components.UIDynamicElement-1579171175910]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585931166207]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585931166210]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585931166213]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585931166216]: 
+          ↓wrapper [mobile.components.UICustomAction-1585931166219]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585931166222]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Modal Page\",\"shortDesc\":\"Displays a Modal Page.\",\"longDesc\":[\"A Modal is a content pane that goes over the user''s current page. Usually it is used for making a choice or editing an item.\",\"You can use the Close Modal action to dismiss a Modal Page.\",\"You can also pass data to the page, the passed data will be available in the NavParams Object.\",\"By default, Modal pages will be displayed as full screen on small devices (SmartPhones) or as an Popup overlays on larget Devices (Tablets). If you want to change this behavior, you can customize the following parameters for your app in the Theme Component.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1576057405955]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1585932071885]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585932071888]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1585932071891]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1585932071894]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1585932071897]: 
+          htmlTemplate: |
+            <div>
+            	<p>Click the <b>OPEN MODAL</b> button to open a new page as modal.</p>
+            	<p>In the modal page, select (or not) data, click <b>CANCEL</b> or <b>VALID</b> buttons to see result in main page.</p>
+            </div>
   ↓GenericItem [mobile.components.UIDynamicElement-1576057405958]: 
     beanData: '{"ionBean":"GenericItem"}'
     tagName: ion-item
@@ -124,5 +169,11 @@ title: Modal
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
             - MobileSmartSourceType: script:this.modalParameters?.code === undefined || this.modalParameters?.code != 0
+    ↓Attr [mobile.components.UIAttribute-1585932538181]: 
+      attrName: 
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:text-wrap
 ↓UseSharedComponent [mobile.components.UIUseShared-1582819328546]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

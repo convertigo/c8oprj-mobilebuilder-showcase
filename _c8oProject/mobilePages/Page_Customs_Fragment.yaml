@@ -46,6 +46,30 @@ title: Fragment
       ↓Icon [mobile.components.UIDynamicElement-1579166568448]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585913750537]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585913750540]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585913750543]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585913750546]: 
+          ↓wrapper [mobile.components.UICustomAction-1585913750549]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585913750552]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Fragment\",\"shortDesc\":\"Defines a Fragment component. \",\"longDesc\":[\"This component acts as a standard HTML fragment inside the HTML document.\",\"You can use Fragment to write your own custom HTML code in a page. The code you write will be inserted in the page at the level the Fragment is defined.\",\"To write the code, double-click on the Fragment component in your project to open the HTML editor.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1579166568460]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

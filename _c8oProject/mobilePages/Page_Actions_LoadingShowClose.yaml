@@ -42,31 +42,57 @@ title: Loading (Show / Close )
       ↓Icon [mobile.components.UIDynamicElement-1584554471283]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1585929900923]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1585929900926]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1585929900929]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1585929900932]: 
+          ↓wrapper [mobile.components.UICustomAction-1585929900935]: 
+            ↓Popover [mobile.components.UIDynamicAction-1585929900938]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Show Loading\",\"shortDesc\":\"\",\"longDesc\":[\"Shows the page loader. Place this action component before calling a Convertigo requestable (sequence, fullsync) and actions that may take.\"]},{\"title\":\"Close Loading\",\"shortDesc\":\"\",\"longDesc\":[\"Hides the page loader. Place this action component after a chain of actions.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1584554471286]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-  ↓GridCol [mobile.components.UIDynamicElement-1584974656463]: 
-    beanData: '{"ionBean":"GridCol"}'
-    tagName: ion-col
-    ↓Attr [mobile.components.UIAttribute-1584974656466]: 
-      attrName: 
-      attrValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:text-justify
-    ↓Fragment [mobile.components.UICustom-1584974656469]: 
-      htmlTemplate: |
-        <h1>Show Loading</h1>
-        <div>
-        	Shows the page loader. Place this action component before calling a Convertigo requestable (sequence, fullsync) and actions that may take.
-        </div>
-        
-        <h1>Close Loading</h1>
-        <div>
-        	Hides the page loader. Place this action component after a chain of actions.
-        </div>
-        <br>
+  ↓Grid [mobile.components.UIDynamicElement-1585930386299]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1585930386302]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1584974656463]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1584974656466]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1584974656469]: 
+          htmlTemplate: |
+            <div>
+            	<p>Click "<b>LOAD DATA</b>" button to execute a Convertigo Sequence.</p>
+            	<p>The loader is manually triggered before sequence execution.</p>
+            	<p>The loader is manually closed after all actions are finished</p>
+            </div>
+            
   ↓Button [mobile.components.UIDynamicElement-1584973424599]: 
     beanData: '{"ionBean":"Button"}'
     tagName: button
