@@ -23,7 +23,7 @@ componentScriptContent:
         /*Begin_c8o_AppFunction*/
         	/*End_c8o_AppFunction*/
         
-tplProjectName: mobilebuilder_tpl_7_8_0
+tplProjectName: mobilebuilder_tpl_7_6_0
 ↓Menu [mobile.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
 ↓CustomMenu [mobile.components.UIDynamicMenu-1583502473965]: 🗏 mobileMenus/CustomMenu.yaml
 ↓RightMenu [mobile.components.UIDynamicMenu-1579279159205]: 🗏 mobileMenus/RightMenu.yaml
