@@ -42,42 +42,123 @@ title: Speech To Text
       ↓Icon [mobile.components.UIDynamicElement-1579171069598]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586166388734]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586166388737]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586166388740]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586166388743]: 
+          ↓wrapper [mobile.components.UICustomAction-1586166388746]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586166388749]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"SpeechToText\",\"shortDesc\":\"Defines a SpeechToText action component.\",\"longDesc\":[\"Listen a speech.\",\"This component retrieves speech recognition''s data.\",\"Note that more languages are avaible in an external browser, or device than in Convertigo viewer.\",\"You can access data from the next action in the chain in (TS) mode with: \"],\"list\":[\"out: A concatenation of spoken string(s) if the action succeed\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1578662210011]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
-  ↓Div [mobile.components.UIDynamicElement-1578662210014]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Button [mobile.components.UIDynamicElement-1578662210017]: 
-      beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
-      tagName: button
-      ↓Icon [mobile.components.UIDynamicElement-1578662210020]: 
-        beanData: '{"ionBean":"Icon","IconName":"plain:volume-up"}'
-        tagName: ion-icon
-      ↓Event [mobile.components.UIControlEvent-1578662210023]: 
-        ↓SetGlobal [mobile.components.UIDynamicAction-1578662210026]: 
-          beanData: |
-            '{
-             "ionBean": "SetGlobalAction",
-             "Property": "plain:speechTT",
-             "Value": "script:undefined"
-            }'
-          ↓SpeechToText [mobile.components.UIDynamicAction-1578662257105]: 
-            beanData: '{"ionBean":"SpeechToTextAction","matches":"plain:1"}'
-            ↓SetGlobal [mobile.components.UIDynamicAction-1578662210032]: 
+  ↓Grid [mobile.components.UIDynamicElement-1586166728786]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1586166728789]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1586166728792]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1586166728795]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1586166728798]: 
+          htmlTemplate: |
+            <div>
+            	<p>This demo works both in an external browser (with microphone) and device.</p>
+            	<p>Start clicking the <b>Microphone</b> button and speak (preferably in English).</p>
+            	<p>This will write down what you said.</p>
+            </div>
+    ↓GridRow1 [mobile.components.UIDynamicElement-1586166728801]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1586166728804]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Button [mobile.components.UIDynamicElement-1578662210017]: 
+          beanData: '{"ionBean":"Button","IconOnly":"plain:icon-only"}'
+          tagName: button
+          ↓Icon [mobile.components.UIDynamicElement-1578662210020]: 
+            beanData: '{"ionBean":"Icon","IconName":"script:this.global.micName || ''mic-off''"}'
+            tagName: ion-icon
+          ↓Event [mobile.components.UIControlEvent-1578662210023]: 
+            ↓Error_Handler [mobile.components.UIActionErrorEvent-1586167805208]: 
+              ↓SetGlobal1 [mobile.components.UIDynamicAction-1586167817444]: 
+                beanData: |
+                  '{
+                   "ionBean": "SetGlobalAction",
+                   "Property": "plain:micName",
+                   "Value": "script:''mic-off''"
+                  }'
+              ↓SetGlobal [mobile.components.UIDynamicAction-1586167841923]: 
+                beanData: |
+                  '{
+                   "ionBean": "SetGlobalAction",
+                   "Property": "plain:speechTT",
+                   "Value": "script:out"
+                  }'
+            ↓SetGlobal1 [mobile.components.UIDynamicAction-1586167408793]: 
               beanData: |
                 '{
                  "ionBean": "SetGlobalAction",
-                 "Property": "plain:speechTT",
-                 "Value": "script:out"
+                 "Property": "plain:micName",
+                 "Value": "script:''mic''"
                 }'
-  ↓Div2 [mobile.components.UIDynamicElement-1578662210035]: 
-    beanData: '{"ionBean":"DivTag"}'
-    tagName: div
-    ↓Text [mobile.components.UIText-1578662210038]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: script:this.global.speechTT
+              ↓SetGlobal [mobile.components.UIDynamicAction-1578662210026]: 
+                beanData: |
+                  '{
+                   "ionBean": "SetGlobalAction",
+                   "Property": "plain:speechTT",
+                   "Value": "script:undefined"
+                  }'
+                ↓SpeechToText [mobile.components.UIDynamicAction-1578662257105]: 
+                  beanData: '{"ionBean":"SpeechToTextAction","matches":"plain:1"}'
+                  ↓SetGlobal1 [mobile.components.UIDynamicAction-1586167461288]: 
+                    beanData: |
+                      '{
+                       "ionBean": "SetGlobalAction",
+                       "Property": "plain:micName",
+                       "Value": "script:''mic-off''"
+                      }'
+                  ↓SetGlobal [mobile.components.UIDynamicAction-1578662210032]: 
+                    beanData: |
+                      '{
+                       "ionBean": "SetGlobalAction",
+                       "Property": "plain:speechTT",
+                       "Value": "script:out"
+                      }'
+    ↓GridRow2 [mobile.components.UIDynamicElement-1586166728825]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1586166728828]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1578662210038]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:this.global.speechTT
 ↓UseSharedComponent [mobile.components.UIUseShared-1582819378173]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

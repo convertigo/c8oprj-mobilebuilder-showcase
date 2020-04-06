@@ -18,6 +18,116 @@ scriptContent:
 segment: path-to-page_components_tabs_chat
 title: Page_Tabs_Chat
 ↓Content [mobile.components.UIDynamicElement-1579539074030]: 
-  beanData: '{"ionBean":"Content"}'
+  beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   tagName: ion-content
-↓PageEvent [mobile.components.UIPageEvent-1579539074033]: 
+  ↓UseSharedComponent [mobile.components.UIUseShared-1586168844582]: 
+    sharedcomponent: lib_AmazonLEX.Mobile_application.Application.ChatBot
+    ↓AmazonLEXBotName [mobile.components.UIControlVariable-1586168844585]: 
+      comment: The Lex Bot Name as defined in https://us-east-1.console.aws.amazon.com/lex/home
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'ALexBot'
+    ↓AmazonLEXBotAlias [mobile.components.UIControlVariable-1586168844588]: 
+      comment: The Amazon Lex Bot alias
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'ALexBot'
+    ↓class [mobile.components.UIControlVariable-1586168844591]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'chatarea chatbox'
+    ↓toUser [mobile.components.UIControlVariable-1586168844594]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:'Convertigo'
+↓ChatArea [mobile.components.UIStyle-1586172312183]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.chatarea {
+          	background: #909090;
+          }'
+↓ChatBox [mobile.components.UIStyle-1586172312186]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.chatbox {
+          	.message {
+          		padding: 10px !important;
+          		margin-bottom: 4px !important;
+          		
+          		.fromUser {
+          			text-align: right;
+          			padding-bottom: 12px;
+          			color: color($colors, light);
+          		}
+          		
+          		.toUser {
+          			text-align: left;
+          			padding-left: 0px;
+          			padding-bottom: 12px;
+          			margin-left: -4px;
+          			color: color($colors, dark);
+          			font-weight: bold;
+          		}
+          		
+          		.toMsg {
+          			position: relative;
+          			border-radius: 0 8px 8px 8px !important;
+          			background-color: color($colors, primary);
+          			padding: 10px 20px;
+          			color: color($colors, light);
+          			display: inline-block;
+          			white-space: normal;
+          		}
+          		
+          	 	.toMsg::after {
+          			position: absolute;
+          			bottom: 100%;
+          			left: 0;
+          			content: " ";
+          			height: 0;
+          			width: 0;
+          			border-style: solid;
+          		}
+          	
+          		.toMsg::after {
+          			border-color: transparent transparent color($colors, primary) color($colors, primary);
+          			border-width: 6px;
+          		}
+          			
+          		.fromMsg {
+          			position: relative;
+          			border-radius: 8px 0 8px 8px !important;
+          			background-color: rgba(255, 255, 255, 1);
+          			padding: 10px 20px;
+          			color: color($colors, dark);
+          			display: inline-block;
+          			white-space: normal;
+          		}
+          		
+          		.fromMsg::after {
+          			position: absolute;
+          			bottom: 100%;
+          			right: 0;
+          			content: " ";
+          			height: 0;
+          			width: 0;
+          			border-style: solid;
+          		}
+          	
+          		.fromMsg::after {
+          			border-color: transparent rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) transparent;
+          			border-width: 6px;
+          		}
+          	
+          	}
+          }'

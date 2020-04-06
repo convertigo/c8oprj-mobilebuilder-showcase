@@ -43,6 +43,30 @@ title: Text
       ↓Icon [mobile.components.UIDynamicElement-1579258849008]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586174419294]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586174419297]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586174419307]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586174419310]: 
+          ↓wrapper [mobile.components.UICustomAction-1586174419313]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586174419316]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Text\",\"shortDesc\":\"Defines a Text component.\",\"longDesc\":[\"This component acts as a standard HTML Text node which is mostly the inner content of an HTML element.\",\"The Text component is the base component to display text.\",\"You can add a Text component to any other component, for example to a Button or an HTML component such as P or H1. If you add several Text to the same component, they will be concatenated.\",\"Text components have a Text value property. As any other property, its value can be set from:\"],\"list\":[\"A Static expression: click the TX button in the property editor, and enter a static expression: Welcome!, 2018, true\",\"A TypeScript expression: click the TS button in the property editor, and enter a typescript expression: ''some text'', this.options.titleText\",\"A Source expression: click the SC button in the property editor, and select the source by clicking the [...] button\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1579258849011]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

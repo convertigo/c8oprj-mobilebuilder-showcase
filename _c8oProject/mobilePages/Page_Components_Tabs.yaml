@@ -42,6 +42,30 @@ title: Tabs
       ↓Icon [mobile.components.UIDynamicElement-1579531139948]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586168562517]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586168562520]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586168562523]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586168562526]: 
+          ↓wrapper [mobile.components.UICustomAction-1586168562529]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586168562532]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Tabs Container\",\"shortDesc\":\"ion-tabs\",\"longDesc\":[\"Defines a Tabs Container component.\",\"A Tabs Container component is a container of individual Tab Item which make it easy to navigate between different pages.\"]},{\"title\":\"Tab Item\",\"shortDesc\":\"ion-tab\",\"longDesc\":[\"Defines a Tab Item component.\",\"A tab has to be inserted in a Tabs Container component.\",\"A tab is associated to a page you can specify through its properties.\",\"Note: Make sure the page you associate contains a Content or <ion-content> to make it work properly in tab.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1579531139951]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content

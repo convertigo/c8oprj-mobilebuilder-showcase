@@ -1,3 +1,4 @@
+comment: 'Todo: need more example. Add mor eproperties to sharedAction.'
 segment: path-to-page_miscellaneous_tooltip
 title: Tooltip
 ↓Header [mobile.components.UIDynamicElement-1576254819519]: 
@@ -26,9 +27,53 @@ title: Tooltip
       ↓Icon [mobile.components.UIDynamicElement-1579171151076]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586187929856]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586187929859]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586187929862]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586187929865]: 
+          ↓wrapper [mobile.components.UICustomAction-1586187929868]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586187929871]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Tooltips\",\"shortDesc\":\"ionic-tooltips\",\"longDesc\":[\"Defines a Tooltip component. This component displays a tooltip that can be positioned around any item giving the position properties. You can set as many tooltips in a page.\",\"To use it, you have to place the tooltip as a parent of the item. \"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1576254819531]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1586188242137]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1586188242140]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1586188242143]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1586188242146]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1586188242149]: 
+          htmlTemplate: |
+            <div>
+            	<p>On device, "hover" is like a "tap" event.</p>
+            </div>
   ↓UseSharedComponent [mobile.components.UIUseShared-1578319914826]: 
     sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Tooltips
     ↓event [mobile.components.UIControlVariable-1578320038676]: 

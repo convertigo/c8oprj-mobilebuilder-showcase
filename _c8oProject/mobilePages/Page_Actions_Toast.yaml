@@ -42,6 +42,30 @@ title: Toasts
       ↓Icon [mobile.components.UIDynamicElement-1584522278556]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586184819006]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586184819009]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586184819012]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586184819015]: 
+          ↓wrapper [mobile.components.UICustomAction-1586184819018]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586184819021]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Toast\",\"shortDesc\":\"Defines a ToastAction action component.\",\"longDesc\":[\"This component helps displaying some informations.\",\"A Toast is a subtle notification commonly used in modern applications. It can be used to provide feedback about an operation or to display a system message. The toast appears on top of the applications content, and can be dismissed to resume user interaction with the application.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1584522278559]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -49,6 +73,23 @@ title: Toasts
   ↓Grid [mobile.components.UIDynamicElement-1584524543100]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
+    ↓GridRow_Doc [mobile.components.UIDynamicElement-1586187701600]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1586187701603]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1586187701606]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1586187701609]: 
+          htmlTemplate: |
+            <div>
+            	<p>Click the "<b>Rocket</b>" buttons to see different kinds of Toasts</p>
+            </div>
     ↓GridRow_Toast_Position_Top [mobile.components.UIDynamicElement-1584524546058]: 
       beanData: '{"ionBean":"GridRow","AlignItemsCenter":"plain:align-items-center"}'
       tagName: ion-row

@@ -49,6 +49,30 @@ title: Searchbar
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:no-border-bottom
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586166060424]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586166060427]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586166060430]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586166060433]: 
+          ↓wrapper [mobile.components.UICustomAction-1586166060436]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586166060439]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Search Bar\",\"shortDesc\":\"ion-searchbar\",\"longDesc\":[\"Defines a Search Bar component.\",\"This component manages the display of a searchbar which can be used to search or filter items.\"]}]}"
+                }'
   ↓ToolBar [mobile.components.UIDynamicElement-1582623730331]: 
     beanData: '{"ionBean":"ToolBar","IonColor":"plain:primary"}'
     tagName: ion-toolbar

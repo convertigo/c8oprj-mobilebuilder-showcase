@@ -43,6 +43,30 @@ title: Signature
       ↓Icon [mobile.components.UIDynamicElement-1576683683113]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586166244755]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586166244758]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586166244761]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586166244764]: 
+          ↓wrapper [mobile.components.UICustomAction-1586166244767]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586166244770]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Signature\",\"shortDesc\":\"c8o-signature\",\"longDesc\":[\"Displays a Signature pad. This component uses an Angular2 component based on the Signature Pad JavaScript library.\",\"Note: Make sure to add your component under a Generic Item or <ion-item> to make it work properly in form.\",\"If you''d like to have some label, add a Text under a Div. Do not use Label component.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1574951079499]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content

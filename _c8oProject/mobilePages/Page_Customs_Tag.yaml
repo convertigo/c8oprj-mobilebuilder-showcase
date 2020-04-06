@@ -1,3 +1,4 @@
+comment: 'Todo : Add more examples'
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -42,6 +43,30 @@ title: Tag
       ↓Icon [mobile.components.UIDynamicElement-1579257993837]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1586173518522]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1586173518525]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1586173518528]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1586173518531]: 
+          ↓wrapper [mobile.components.UICustomAction-1586173518534]: 
+            ↓Popover [mobile.components.UIDynamicAction-1586173518537]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Tag\",\"shortDesc\":\"Defines a Tag component.\",\"longDesc\":[\"This component acts as a standard HTML element defined with a starting and an ending tag.\",\"All mobile components in the palette are already defined with a tag name. You can create your own mobile elements by using the Tag component specifying its Tag name property.\",\"You can also add Attr components to a Tag component to create custom attributes to this element.\",\"For example, you could create your own <ion-tab> element and add a title attribute to it.\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1579257993840]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
