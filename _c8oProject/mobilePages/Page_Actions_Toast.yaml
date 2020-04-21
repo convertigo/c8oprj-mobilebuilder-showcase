@@ -66,6 +66,33 @@ title: Toasts
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Toast\",\"shortDesc\":\"Defines a ToastAction action component.\",\"longDesc\":[\"This component helps displaying some informations.\",\"A Toast is a subtle notification commonly used in modern applications. It can be used to provide feedback about an operation or to display a system message. The toast appears on top of the applications content, and can be dismissed to resume user interaction with the application.\"]}]}"
                 }'
+  ↓Div [mobile.components.UIDynamicElement-1586262359185]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Attr [mobile.components.UIAttribute-1586262387281]: 
+      attrName: class
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:toast-timer
+    ↓Attr1 [mobile.components.UIAttribute-1586263833110]: 
+      attrName: '[class.progress]'
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.isProgress || this.global.isProgress10
+    ↓Attr11 [mobile.components.UIAttribute-1586264891158]: 
+      attrName: '[class.progress-delay-3s]'
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.isProgress
+    ↓Attr111 [mobile.components.UIAttribute-1586265176258]: 
+      attrName: '[class.progress-delay-10s]'
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.isProgress10
 ↓Content [mobile.components.UIDynamicElement-1584522278559]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -114,13 +141,27 @@ title: Toasts
           beanData: '{"ionBean":"Button"}'
           tagName: button
           ↓Event [mobile.components.UIControlEvent-1584524631610]: 
-            ↓Toast [mobile.components.UIDynamicAction-1584524640749]: 
+            ↓SetGlobal [mobile.components.UIDynamicAction-1586264569373]: 
               beanData: |
                 '{
-                 "ionBean": "ToastAction",
-                 "message": "plain:THIS IS A TOP TOAST!",
-                 "position": "plain:top"
+                 "ionBean": "SetGlobalAction",
+                 "Property": "plain:isProgress",
+                 "Value": "script:true"
                 }'
+              ↓Toast [mobile.components.UIDynamicAction-1584524640749]: 
+                beanData: |
+                  '{
+                   "ionBean": "ToastAction",
+                   "message": "plain:THIS IS A TOP TOAST!",
+                   "position": "plain:top"
+                  }'
+                ↓SetGlobal [mobile.components.UIDynamicAction-1586264579994]: 
+                  beanData: |
+                    '{
+                     "ionBean": "SetGlobalAction",
+                     "Property": "plain:isProgress",
+                     "Value": "script:false"
+                    }'
           ↓Text [mobile.components.UIText-1584538671986]: 
             textValue: 
               - xmlizable: 
@@ -292,15 +333,29 @@ title: Toasts
           beanData: '{"ionBean":"Button"}'
           tagName: button
           ↓Event [mobile.components.UIControlEvent-1584537970990]: 
-            ↓Toast [mobile.components.UIDynamicAction-1584537970993]: 
+            ↓SetGlobal [mobile.components.UIDynamicAction-1586265259731]: 
               beanData: |
                 '{
-                 "ionBean": "ToastAction",
-                 "message": "plain:LOTS OF TIME TO READ THIS TEXT UNTIL THE END. YOU CAN CLOSE ME IF YOU ALREADY FINISHED",
-                 "duration": "plain:10000",
-                 "position": "plain:middle",
-                 "showCloseButton": "plain:true"
+                 "ionBean": "SetGlobalAction",
+                 "Property": "plain:isProgress10",
+                 "Value": "script:true"
                 }'
+              ↓Toast [mobile.components.UIDynamicAction-1584537970993]: 
+                beanData: |
+                  '{
+                   "ionBean": "ToastAction",
+                   "message": "plain:LOTS OF TIME TO READ THIS TEXT UNTIL THE END. YOU CAN CLOSE ME IF YOU ALREADY FINISHED",
+                   "duration": "plain:10000",
+                   "position": "plain:middle",
+                   "showCloseButton": "plain:true"
+                  }'
+                ↓SetGlobal [mobile.components.UIDynamicAction-1586265244327]: 
+                  beanData: |
+                    '{
+                     "ionBean": "SetGlobalAction",
+                     "Property": "plain:isProgress10",
+                     "Value": "script:false"
+                    }'
           ↓Text1 [mobile.components.UIText-1584538806753]: 
             textValue: 
               - xmlizable: 
@@ -348,3 +403,42 @@ title: Toasts
                 - MobileSmartSourceType: plain:\uD83D\uDE80
 ↓UseSharedComponent [mobile.components.UIUseShared-1584524442748]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+↓Style [mobile.components.UIStyle-1586262321333]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.toast-timer {
+          	height: 4px;
+          	width: 100%;
+          	background-color:#f8f8f8;;
+          }
+          
+          .toast-timer::after {
+          	content:''\A'';
+              position: absolute;
+              background: #333;
+              width: 0;
+              height: 4px;
+          }
+          
+          .progress::after {
+          	animation-name: progressBar;
+          	animation-iteration-count: 1;
+          	animation-timing-function: linear;
+          }
+          
+          .progress-delay-3s::after {
+          	animation-duration: 3s;
+          }
+          
+          .progress-delay-10s::after {
+          	animation-duration: 10s;
+          	background: color($colors, secondary) !important;
+          }
+          
+          @keyframes progressBar {
+            0% { width: 0; }
+            100% { width: 100%; }
+          }'

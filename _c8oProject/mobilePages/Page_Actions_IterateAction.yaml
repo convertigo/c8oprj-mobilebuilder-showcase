@@ -1,5 +1,3 @@
-comment: In progress
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -16,7 +14,7 @@ scriptContent:
         	/*End_c8o_PageFunction*/
         
 segment: path-to-page_actions_iterateaction
-title: Title for Page3
+title: Iterate/Loop
 ↓Header [mobile.components.UIDynamicElement-1585676030394]: 
   beanData: '{"ionBean":"Header"}'
   comment: Page header
@@ -92,43 +90,161 @@ title: Title for Page3
             <div>
             	<p>Come and visit <b>Page_Actions_LoadingShowClose</b> page to see some <b>IterateAction</b> use case:</p>
             </div>
-  ↓Button [mobile.components.UIDynamicElement-1585676515964]: 
-    beanData: '{"ionBean":"Button"}'
-    tagName: button
-    ↓Text [mobile.components.UIText-1585676540382]: 
-      textValue: 
-        - xmlizable: 
-          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:go
-    ↓Event [mobile.components.UIControlEvent-1585676662132]: 
-      ↓PushPage [mobile.components.UIDynamicAction-1585676670659]: 
-        beanData: '{"ionBean":"PushPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Actions_LoadingShowClose"}'
-↓Footer [mobile.components.UIDynamicElement-1585676030415]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [mobile.components.UIDynamicElement-1585676030418]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1585676030421]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1585676030424]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1585676030427]: 
+    ↓GridRow1 [mobile.components.UIDynamicElement-1587473058433]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587473058436]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1587473058439]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+        ↓Button [mobile.components.UIDynamicElement-1585676515964]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Text [mobile.components.UIText-1585676540382]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:go
+          ↓Event [mobile.components.UIControlEvent-1585676662132]: 
+            ↓PushPage [mobile.components.UIDynamicAction-1585676670659]: 
+              beanData: '{"ionBean":"PushPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Actions_LoadingShowClose"}'
+  ↓Grid1 [mobile.components.UIDynamicElement-1587464007504]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1587464007507]: 
+      beanData: |
+        '{
+         "ionBean": "GridRow",
+         "Height": "plain:height: 100%",
+         "AlignItemsCenter": "plain:align-items-center"
+        }'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587464007510]: 
+        beanData: '{"ionBean":"GridCol","Columns":"plain:9"}'
+        tagName: ion-col
+        ↓Fragment [mobile.components.UICustom-1587464007516]: 
+          htmlTemplate: |
+            <div>
+            	<p>Iterate through an array of Strings:</p>
+            </div>
+      ↓GridCol1 [mobile.components.UIDynamicElement-1587472214599]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1587472214608]: 
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1585676030430]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1585676030433]: 
-        beanData: '{"ionBean":"Button","ButtonFormType":"plain:false"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1585676030436]: 
+              - MobileSmartSourceType: script:this.global.ascii
+    ↓GridRow1 [mobile.components.UIDynamicElement-1587473113415]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587473113418]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1587473113421]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+        ↓Button1 [mobile.components.UIDynamicElement-1587464007519]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Text [mobile.components.UIText-1587464007522]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:go
+          ↓Event [mobile.components.UIControlEvent-1587464007525]: 
+            ↓Log [mobile.components.UIDynamicAction-1587465976811]: 
+              beanData: '{"ionBean":"LogAction","message":"plain:ASCII ANIMATION"}'
+              ↓IterateAction1 [mobile.components.UIDynamicIterate-1587465709854]: 
+                beanData: '{"ionBean":"IterateAction","items":"script:new Array(10)"}'
+                ↓Loop_Handler [mobile.components.UIActionLoopEvent-1587465718192]: 
+                  ↓IterateAction [mobile.components.UIDynamicIterate-1587464029689]: 
+                    beanData: '{"ionBean":"IterateAction","items":"script:[''.(^-^)°'', ''-(^-^)-'', ''°(^-^).'', ''-(^o^)-'', ''.(^-^)°'', ''-(^-^)-'', ''°(^-^).'', ''-(^-^)-'']"}'
+                    ↓Loop_Handler [mobile.components.UIActionLoopEvent-1587464109021]: 
+                      ↓SetGlobal [mobile.components.UIDynamicAction-1587465189575]: 
+                        beanData: |
+                          '{
+                           "ionBean": "SetGlobalAction",
+                           "Property": "plain:ascii",
+                           "Value": "script:item"
+                          }'
+                      ↓PauseAction [mobile.components.UIDynamicAction-1587465333523]: 
+                        beanData: '{"ionBean":"PauseAction","duration":"plain:125"}'
+  ↓Grid2 [mobile.components.UIDynamicElement-1587471998460]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1587471998463]: 
+      beanData: |
+        '{
+         "ionBean": "GridRow",
+         "Height": "plain:height: 100%",
+         "AlignItemsCenter": "plain:align-items-center"
+        }'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587471998466]: 
+        beanData: '{"ionBean":"GridCol","Columns":"plain:9"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1587471998469]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1587471998472]: 
+          htmlTemplate: |
+            <div>
+            	<p>Defines an empty array of size 50 and counting indexes:</p>
+            </div>
+      ↓GridCol1 [mobile.components.UIDynamicElement-1587472389517]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Text [mobile.components.UIText-1587472389520]: 
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
+              - MobileSmartSourceType: script:this.global.countItem
+    ↓GridRow1 [mobile.components.UIDynamicElement-1587473139326]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587473139329]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1587473139332]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-right
+        ↓Button1 [mobile.components.UIDynamicElement-1587472003116]: 
+          beanData: '{"ionBean":"Button"}'
+          tagName: button
+          ↓Text [mobile.components.UIText-1587472003119]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:go
+          ↓Event [mobile.components.UIControlEvent-1587472003122]: 
+            ↓Log [mobile.components.UIDynamicAction-1587472003137]: 
+              beanData: '{"ionBean":"LogAction","message":"plain:COUNTING ITEMS"}'
+              ↓IterateAction1 [mobile.components.UIDynamicIterate-1587472003140]: 
+                beanData: '{"ionBean":"IterateAction","items":"script:new Array(50)"}'
+                ↓Loop_Handler [mobile.components.UIActionLoopEvent-1587472003143]: 
+                  ↓SetGlobal [mobile.components.UIDynamicAction-1587472003146]: 
+                    beanData: |
+                      '{
+                       "ionBean": "SetGlobalAction",
+                       "Property": "plain:countItem",
+                       "Value": "script:index"
+                      }'
+                  ↓PauseAction [mobile.components.UIDynamicAction-1587472003149]: 
+                    beanData: '{"ionBean":"PauseAction","duration":"plain:125"}'
+↓UseSharedComponent [mobile.components.UIUseShared-1586262122163]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

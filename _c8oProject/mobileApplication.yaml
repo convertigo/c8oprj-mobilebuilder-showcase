@@ -59,6 +59,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Html_Html [mobile.components.PageComponent-1579875601436]: 🗏 mobilePages/Page_Html_Html.yaml
 ↓Page_zHowTos_IconInput [mobile.components.PageComponent-1576148711969]: 🗏 mobilePages/Page_zHowTos_IconInput.yaml
 ↓Page_Lists_InfiniteScroll [mobile.components.PageComponent-1583850056857]: 🗏 mobilePages/Page_Lists_InfiniteScroll.yaml
+↓Page_Actions_IterateAction [mobile.components.PageComponent-1585676029436]: 🗏 mobilePages/Page_Actions_IterateAction.yaml
 ↓Page_zHowTos_KeyPad [mobile.components.PageComponent-1580309028081]: 🗏 mobilePages/Page_zHowTos_KeyPad.yaml
 ↓Page_Lists_Lists [mobile.components.PageComponent-1579283173880]: 🗏 mobilePages/Page_Lists_Lists.yaml
 ↓Page_Actions_LoadingShowClose [mobile.components.PageComponent-1584554470657]: 🗏 mobilePages/Page_Actions_LoadingShowClose.yaml
@@ -83,9 +84,6 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_NativeActions_TextToSpeech [mobile.components.PageComponent-1578662578479]: 🗏 mobilePages/Page_NativeActions_TextToSpeech.yaml
 ↓Page_Actions_Toast [mobile.components.PageComponent-1584522277732]: 🗏 mobilePages/Page_Actions_Toast.yaml
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
-↓Page1 [mobile.components.PageComponent-1580915186349]: 🗏 mobilePages/Page1.yaml
-↓Page2 [mobile.components.PageComponent-1580915361059]: 🗏 mobilePages/Page2.yaml
-↓Page_Actions_IterateAction [mobile.components.PageComponent-1585676029436]: 🗏 mobilePages/Page_Actions_IterateAction.yaml
 ↓Page_Docs_documentation [mobile.components.PageComponent-1585817337154]: 🗏 mobilePages/Page_Docs_documentation.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 

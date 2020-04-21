@@ -153,6 +153,10 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Infinite Scroll page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Actions_IterateAction')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		IterateAction / Loop Handler
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_KeyPad')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Keypad page
