@@ -85,6 +85,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Actions_Toast [mobile.components.PageComponent-1584522277732]: 🗏 mobilePages/Page_Actions_Toast.yaml
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page_Docs_documentation [mobile.components.PageComponent-1585817337154]: 🗏 mobilePages/Page_Docs_documentation.yaml
+↓Page_Controls_SubscribeHandler [mobile.components.PageComponent-1587476633505]: 🗏 mobilePages/Page_Controls_SubscribeHandler.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
@@ -353,3 +354,9 @@ tplProjectName: mobilebuilder_tpl_7_7_0
           	-ms-user-select: text;
           	user-select: text;
           }'
+↓Subscribe_Handler1 [mobile.components.UIEventSubscriber-1587480272003]: 
+  topic: topic:C
+  ↓Toast [mobile.components.UIDynamicAction-1587483115434]: 
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC C''"}'
+  ↓Log [mobile.components.UIDynamicAction-1587483115437]: 
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS TOPIC C''"}'

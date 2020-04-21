@@ -1,0 +1,143 @@
+comment: In progress
+inAutoMenu: false
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_controls_subscribehandler
+title: Subscribe Handler
+↓Header [mobile.components.UIDynamicElement-1587476634236]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1587476634239]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1587476634242]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1587476634245]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Subscribe Handler
+    ↓Button [mobile.components.UIDynamicElement-1587476634248]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1587476634251]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1587476802821]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1587476802824]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1587476802827]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1587476802830]: 
+          ↓wrapper [mobile.components.UICustomAction-1587476802833]: 
+            ↓Popover [mobile.components.UIDynamicAction-1587476802836]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Subscribe Handler\",\"shortDesc\":\"Defines a Subscribe Handler component.\",\"longDesc\":[\"This component helps you subscribing to an event giving its topic and defining actions to execute when the event is triggered through a PublishEvent action.\",\"You may add a Subscribe Handler under the Application or a Page, then add to it any type of action such as CallSequence, CallFullSync or CustomAction component.\"]}]}"
+                }'
+↓Content [mobile.components.UIDynamicElement-1587476634254]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1587477404708]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1587477404711]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587477404714]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1587477404717]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1587477404720]: 
+          htmlTemplate: |
+            <div>
+            	<p>3 <b>Subscribe Handler</b> components are registered.</p>
+            	<p>2 in this page (topic:A and topic:B).</p>
+            	<p>1 in the Application root (topic:C)</p>
+            </div>
+  ↓Button [mobile.components.UIDynamicElement-1587482699716]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1587482731044]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Fire Topic:A event
+    ↓Event [mobile.components.UIControlEvent-1587482764636]: 
+      ↓PublishEvent [mobile.components.UIDynamicAction-1587482777662]: 
+        beanData: '{"ionBean":"PublishEventAction","topic":"plain:topic:A"}'
+  ↓Button1 [mobile.components.UIDynamicElement-1587482881516]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1587482881519]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Fire Topic:B event
+    ↓Event [mobile.components.UIControlEvent-1587482881522]: 
+      ↓PublishEvent [mobile.components.UIDynamicAction-1587482881525]: 
+        beanData: '{"ionBean":"PublishEventAction","topic":"plain:topic:B"}'
+  ↓Button2 [mobile.components.UIDynamicElement-1587482904492]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1587482904495]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Fire Topic:C event
+    ↓Event [mobile.components.UIControlEvent-1587482904498]: 
+      ↓PublishEvent [mobile.components.UIDynamicAction-1587482904501]: 
+        beanData: '{"ionBean":"PublishEventAction","topic":"plain:topic:C"}'
+↓UseSharedComponent [mobile.components.UIUseShared-1587476748559]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+↓Subscribe_Handler [mobile.components.UIEventSubscriber-1587477142654]: 
+  topic: topic:A
+  ↓Toast [mobile.components.UIDynamicAction-1587483047001]: 
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC A''"}'
+  ↓Log [mobile.components.UIDynamicAction-1587483055287]: 
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS TOPIC A''"}'
+↓Subscribe_Handler1 [mobile.components.UIEventSubscriber-1587477205581]: 
+  topic: topic:B
+  ↓Toast [mobile.components.UIDynamicAction-1587483110549]: 
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC B''"}'
+  ↓Log [mobile.components.UIDynamicAction-1587483110552]: 
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS TOPIC B''"}'
