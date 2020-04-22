@@ -34,11 +34,14 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Toast [mobile.components.UIActionStack-1580983282970]: 🗏 mobileSharedActions/Toast.yaml
 ↓RefresherMembers [mobile.components.UIActionStack-1582221214219]: 🗏 mobileSharedActions/RefresherMembers.yaml
 ↓openMenu [mobile.components.UIActionStack-1582897048684]: 🗏 mobileSharedActions/openMenu.yaml
+↓publishTopic [mobile.components.UIActionStack-1587547544911]: 🗏 mobileSharedActions/publishTopic.yaml
+↓higlightObject [mobile.components.UIActionStack-1587564394604]: 🗏 mobileSharedActions/higlightObject.yaml
 ↓Tooltips [mobile.components.UISharedComponent-1578319869013]: 🗏 mobileSharedComponents/Tooltips.yaml
 ↓KeyPad [mobile.components.UISharedComponent-1580307897891]: 🗏 mobileSharedComponents/KeyPad.yaml
 ↓Footer [mobile.components.UISharedComponent-1582818189622]: 🗏 mobileSharedComponents/Footer.yaml
 ↓PopoverDoc [mobile.components.UISharedComponent-1585824425527]: 🗏 mobileSharedComponents/PopoverDoc.yaml
 ↓HelpButton [mobile.components.UISharedComponent-1585845338383]: 🗏 mobileSharedComponents/HelpButton.yaml
+↓subscribeTopic [mobile.components.UISharedComponent-1587547326580]: 🗏 mobileSharedComponents/subscribeTopic.yaml
 ↓Page [mobile.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
 ↓Page_Actions_Alert [mobile.components.PageComponent-1584979678909]: 🗏 mobilePages/Page_Actions_Alert.yaml
 ↓Page_Customs_Animation [mobile.components.PageComponent-1579103295466]: 🗏 mobilePages/Page_Customs_Animation.yaml
@@ -75,6 +78,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_NativeActions_SpeechToText [mobile.components.PageComponent-1578662209808]: 🗏 mobilePages/Page_NativeActions_SpeechToText.yaml
 ↓Page_Miscellaneous_Spinner [mobile.components.PageComponent-1584106038102]: 🗏 mobilePages/Page_Miscellaneous_Spinner.yaml
 ↓Page_Customs_Style [mobile.components.PageComponent-1579191468247]: 🗏 mobilePages/Page_Customs_Style.yaml
+↓Page_Controls_SubscribeHandler [mobile.components.PageComponent-1587476633505]: 🗏 mobilePages/Page_Controls_SubscribeHandler.yaml
 ↓Page_Components_Tabs [mobile.components.PageComponent-1579531139518]: 🗏 mobilePages/Page_Components_Tabs.yaml
 ↓Page_Components_Tabs_Contacts [mobile.components.PageComponent-1579531610323]: 🗏 mobilePages/Page_Components_Tabs_Contacts.yaml
 ↓Page_Components_Tabs_Map [mobile.components.PageComponent-1579539014048]: 🗏 mobilePages/Page_Components_Tabs_Map.yaml
@@ -85,7 +89,6 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Actions_Toast [mobile.components.PageComponent-1584522277732]: 🗏 mobilePages/Page_Actions_Toast.yaml
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page_Docs_documentation [mobile.components.PageComponent-1585817337154]: 🗏 mobilePages/Page_Docs_documentation.yaml
-↓Page_Controls_SubscribeHandler [mobile.components.PageComponent-1587476633505]: 🗏 mobilePages/Page_Controls_SubscribeHandler.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 
@@ -355,8 +358,8 @@ tplProjectName: mobilebuilder_tpl_7_7_0
           	user-select: text;
           }'
 ↓Subscribe_Handler1 [mobile.components.UIEventSubscriber-1587480272003]: 
-  topic: topic:C
+  topic: application:root
   ↓Toast [mobile.components.UIDynamicAction-1587483115434]: 
-    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC C''"}'
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS APPLICATION ROOT - data: '' + JSON.stringify(out)"}'
   ↓Log [mobile.components.UIDynamicAction-1587483115437]: 
-    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS TOPIC C''"}'
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS APPLICATION ROOT''"}'

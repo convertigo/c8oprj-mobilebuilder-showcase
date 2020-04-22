@@ -1,0 +1,24 @@
+↓CallSequence [mobile.components.UIDynamicAction-1587564435467]: 
+  beanData: |
+    '{
+     "ionBean": "CallSequenceAction",
+     "requestable": "plain:MobileBuilderComponents.highlightObject",
+     "noLoading": "plain:true"
+    }'
+  ↓qname [mobile.components.UIControlVariable-1587564551028]: 
+    comment: new variable
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:params.qname
+  ↓Log [mobile.components.UIDynamicAction-1587564774788]: 
+    beanData: '{"ionBean":"LogAction","message":"source:{\"filter\":\"Sequence\",\"project\":\"MobileBuilderComponents\",\"input\":\"listen([''MobileBuilderComponents.highlightObject''])?.success\"}"}'
+  ↓base [mobile.components.UIControlVariable-1587572484067]: 
+    comment: new variable
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:params.base
+↓qname [mobile.components.UIStackVariable-1587564448692]: 
+↓base [mobile.components.UIStackVariable-1587572521174]: 
+  value: '''MobileBuilderComponents.MobileApplication.Application.'''

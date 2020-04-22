@@ -76,6 +76,7 @@ title: Fragment
   tagName: ion-content
   ↓Fragment [mobile.components.UICustom-1579166859627]: 
     htmlTemplate: |
+      <!-- Edit page class to see openPageWithName function definition -->
       <ion-list>
       	<ion-item tappable (click)="this.openPageWithName('Page_Actions_Alert')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
@@ -209,6 +210,10 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Style page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Controls_SubscribeHandler')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Subscribe Handler / Publish page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Components_Tabs')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Tabs page
@@ -236,3 +241,10 @@ title: Fragment
       </ion-list>
 ↓UseSharedComponent [mobile.components.UIUseShared-1582819279728]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+↓Subscribe_Handler1 [mobile.components.UIEventSubscriber-1587560522296]: 
+  isEnabled: false
+  topic: topic:E
+  ↓Toast [mobile.components.UIDynamicAction-1587560522299]: 
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC E - data: '' + out"}'
+  ↓Log [mobile.components.UIDynamicAction-1587560522302]: 
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS TOPIC E''"}'

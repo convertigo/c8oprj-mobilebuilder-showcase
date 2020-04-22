@@ -1,0 +1,7 @@
+↓PublishEvent [mobile.components.UIDynamicAction-1587547568222]: 
+  beanData: |
+    '{
+     "ionBean": "PublishEventAction",
+     "topic": "plain:sharedComponent_publishTopic",
+     "data": "script:''test''"
+    }'

@@ -1,0 +1,37 @@
+↓setFHLObject [steps.SimpleStep-1587567611679]: 
+  expression: |
+    'if (qname != null && qname != "" ) {
+    	try {
+    		qname = base + qname;
+    		//var hl =  com.twinsoft.convertigo.eclipse.ConvertigoPlugin.getHighlightDetectedObject();
+    		var dbo = com.twinsoft.convertigo.engine.Engine.theApp.databaseObjectsManager.getDatabaseObjectByQName(qname);
+    		if (dbo == null) {
+    			context.addTextNodeUnderRoot("success", false);
+    		} else {
+    			//com.twinsoft.convertigo.eclipse.ConvertigoPlugin.setHighlightDetectedObject(true);
+    			org.eclipse.swt.widgets.Display.getDefault().syncExec(new java.lang.Runnable({
+    				run: function() {
+    					var event = new com.twinsoft.convertigo.eclipse.editors.CompositeEvent(dbo);
+    					var pev = com.twinsoft.convertigo.eclipse.ConvertigoPlugin.getDefault().getProjectExplorerView();
+    					pev.objectSelected(event);
+    					//event = new com.twinsoft.convertigo.engine.EngineEvent(dbo);
+    					//pev.objectDetected(event);
+    				}
+    			}));
+    			//java.lang.Thread.sleep(500);
+    			//com.twinsoft.convertigo.eclipse.ConvertigoPlugin.setHighlightDetectedObject(hl);
+    			context.addTextNodeUnderRoot("success", true);
+    		}
+    	} catch (e) {
+    		context.addTextNodeUnderRoot("success", false);
+    	}
+    } else {
+    	context.addTextNodeUnderRoot("success", false);
+    }'
+↓qname [variables.RequestableVariable-1587563502188]: 
+  value: 
+↓base [variables.RequestableVariable-1587568882831]: 
+  value: MobileBuilderComponents.MobileApplication.Application.
+↓Test_Case_focus [core.TestCase]: 
+  ↓qname [variables.TestCaseVariable-1587563832171]: 
+    value: Page_Controls_SubscribeHandler.Subscribe_Handler

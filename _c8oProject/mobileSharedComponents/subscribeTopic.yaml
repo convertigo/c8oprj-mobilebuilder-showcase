@@ -1,0 +1,8 @@
+↓Subscribe_Handler [mobile.components.UIEventSubscriber-1587547336738]: 
+  topic: sharedComponent_publishTopic
+  ↓Toast [mobile.components.UIDynamicAction-1587547336741]: 
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS SHAREDCOMPONENT TOPIC - data: '' + parent.out"}'
+  ↓Log [mobile.components.UIDynamicAction-1587547336744]: 
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS SHAREDCOMPONENT TOPIC''"}'
+↓topic [mobile.components.UICompVariable-1587549367036]: 
+  value: '''topic:D'''

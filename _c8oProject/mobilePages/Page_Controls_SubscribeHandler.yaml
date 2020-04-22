@@ -1,5 +1,3 @@
-comment: In progress
-inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -66,12 +64,14 @@ title: Subscribe Handler
                 '{
                  "ionBean": "PopoverAction",
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
-                 "data": "script:{\"components\":[{\"title\":\"Subscribe Handler\",\"shortDesc\":\"Defines a Subscribe Handler component.\",\"longDesc\":[\"This component helps you subscribing to an event giving its topic and defining actions to execute when the event is triggered through a PublishEvent action.\",\"You may add a Subscribe Handler under the Application or a Page, then add to it any type of action such as CallSequence, CallFullSync or CustomAction component.\"]}]}"
+                 "data": "script:{\"components\":[{\"title\":\"Subscribe Handler\",\"shortDesc\":\"Defines a Subscribe Handler component.\",\"longDesc\":[\"This component helps you subscribing to an event giving its topic and defining actions to execute when the event is triggered through a PublishEvent action.\",\"You may add a Subscribe Handler under the Application or a Page, then add to it any type of action such as CallSequence, CallFullSync or CustomAction component.\"]},{\"title\":\"PublishEvent\",\"shortDesc\":\"Defines a PublishEvent action component.\",\"longDesc\":[\"This component helps publishing an event giving its topic and optional data. The event may be handled by an existing Subscribe Handler component in any available page..\"]}]}"
                 }'
 ↓Content [mobile.components.UIDynamicElement-1587476634254]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
+  ↓UseSharedComponent [mobile.components.UIUseShared-1587547438819]: 
+    sharedcomponent: MobileBuilderComponents.MobileApplication.Application.subscribeTopic
   ↓Grid [mobile.components.UIDynamicElement-1587477404708]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
@@ -90,9 +90,11 @@ title: Subscribe Handler
         ↓Fragment [mobile.components.UICustom-1587477404720]: 
           htmlTemplate: |
             <div>
-            	<p>3 <b>Subscribe Handler</b> components are registered.</p>
+            	<p>4 <b>Subscribe Handler</b> components are registered:</p>
             	<p>2 in this page (topic:A and topic:B).</p>
-            	<p>1 in the Application root (topic:C)</p>
+            	<p>1 in the Application root (topic:C).</p>
+            	<p>1 in from a Shared Component (topic:D).</p>
+            	<p>1 in another page  (topic:E).</p>
             </div>
   ↓Button [mobile.components.UIDynamicElement-1587482699716]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
@@ -101,10 +103,24 @@ title: Subscribe Handler
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Fire Topic:A event
+          - MobileSmartSourceType: plain:Fire page_Topic:A event
     ↓Event [mobile.components.UIControlEvent-1587482764636]: 
-      ↓PublishEvent [mobile.components.UIDynamicAction-1587482777662]: 
-        beanData: '{"ionBean":"PublishEventAction","topic":"plain:topic:A"}'
+      ↓PublishEvent_topicA [mobile.components.UIDynamicAction-1587482777662]: 
+        beanData: |
+          '{
+           "ionBean": "PublishEventAction",
+           "topic": "plain:page_Topic:A",
+           "data": "script:''String''"
+          }'
+        comment: publish 'topic:A' topic with a String data
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587564643102]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.higlightObject
+        ↓qname [mobile.components.UIControlVariable-1587564646882]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Controls_SubscribeHandler.Subscribe_Handler'
   ↓Button1 [mobile.components.UIDynamicElement-1587482881516]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -112,10 +128,24 @@ title: Subscribe Handler
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Fire Topic:B event
+          - MobileSmartSourceType: plain:Fire page_Topic:B event
     ↓Event [mobile.components.UIControlEvent-1587482881522]: 
-      ↓PublishEvent [mobile.components.UIDynamicAction-1587482881525]: 
-        beanData: '{"ionBean":"PublishEventAction","topic":"plain:topic:B"}'
+      ↓PublishEvent_topicB [mobile.components.UIDynamicAction-1587482881525]: 
+        beanData: |
+          '{
+           "ionBean": "PublishEventAction",
+           "topic": "plain:page_Topic:B",
+           "data": "script:{''object'': ''literal''}"
+          }'
+        comment: publish 'myTopic:B' topic with an Object literal data
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587569613827]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.higlightObject
+        ↓qname [mobile.components.UIControlVariable-1587569613830]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Controls_SubscribeHandler.Subscribe_Handler1'
   ↓Button2 [mobile.components.UIDynamicElement-1587482904492]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -123,21 +153,68 @@ title: Subscribe Handler
       textValue: 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-          - MobileSmartSourceType: plain:Fire Topic:C event
+          - MobileSmartSourceType: plain:Fire Application:root event
     ↓Event [mobile.components.UIControlEvent-1587482904498]: 
-      ↓PublishEvent [mobile.components.UIDynamicAction-1587482904501]: 
-        beanData: '{"ionBean":"PublishEventAction","topic":"plain:topic:C"}'
+      ↓PublishEvent_topicRoot [mobile.components.UIDynamicAction-1587482904501]: 
+        beanData: '{"ionBean":"PublishEventAction","topic":"plain:application:root"}'
+        comment: publish 'topic:C' topic without data set. By default, this will set an empty object literal => {}
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587569714985]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.higlightObject
+        ↓qname [mobile.components.UIControlVariable-1587569714988]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Subscribe_Handler1'
+  ↓Button3 [mobile.components.UIDynamicElement-1587547464205]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1587547464208]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Fire SharedComponent_Topic event
+    ↓Event [mobile.components.UIControlEvent-1587547464211]: 
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587547590090]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.publishTopic
+      ↓InvokeSharedAction1 [mobile.components.UIDynamicInvoke-1587569813869]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.higlightObject
+        ↓qname [mobile.components.UIControlVariable-1587569813872]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'publishTopic.PublishEvent'
+  ↓Button4 [mobile.components.UIDynamicElement-1587560117293]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    isEnabled: false
+    tagName: button
+    ↓Text [mobile.components.UIText-1587560117296]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Fire Topic:E event
+    ↓Event [mobile.components.UIControlEvent-1587560117299]: 
+      ↓PublishEvent_topicE [mobile.components.UIDynamicAction-1587560117302]: 
+        beanData: |
+          '{
+           "ionBean": "PublishEventAction",
+           "topic": "plain:topic:E",
+           "data": "script:''String E''"
+          }'
+        comment: publish 'topic:E' topic from another page with a String data
 ↓UseSharedComponent [mobile.components.UIUseShared-1587476748559]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
 ↓Subscribe_Handler [mobile.components.UIEventSubscriber-1587477142654]: 
-  topic: topic:A
+  topic: page_Topic:A
   ↓Toast [mobile.components.UIDynamicAction-1587483047001]: 
-    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC A''"}'
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS PAGE TOPIC A - data: '' + parent.out"}'
   ↓Log [mobile.components.UIDynamicAction-1587483055287]: 
-    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS TOPIC A''"}'
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS PAGE TOPIC A''"}'
 ↓Subscribe_Handler1 [mobile.components.UIEventSubscriber-1587477205581]: 
-  topic: topic:B
+  topic: page_Topic:B
   ↓Toast [mobile.components.UIDynamicAction-1587483110549]: 
-    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC B''"}'
+    beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS PAGE TOPIC B - data: '' + stack[''root''].out"}'
   ↓Log [mobile.components.UIDynamicAction-1587483110552]: 
-    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS TOPIC B''"}'
+    beanData: '{"ionBean":"LogAction","message":"script:''THIS IS PAGE TOPIC B''"}'

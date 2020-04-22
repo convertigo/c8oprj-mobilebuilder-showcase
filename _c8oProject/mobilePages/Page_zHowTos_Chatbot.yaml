@@ -66,6 +66,19 @@ title: ChatBot
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Chat bot\",\"shortDesc\":\"Demo of the Amazon LEX Chat bot\",\"longDesc\":[\"The lib_AmazonLEX project is needed for this demo to work properly.\",\"You also need to provide AWSKey and AWSSecretKey symbols to connect to your Amazon LEX bot.\",\"There are also parameters in the ChatBot sharedComponent to choose Bot name and some CSS styles.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587572096306]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.higlightObject
+            ↓qname [mobile.components.UIControlVariable-1587572096309]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'ChatBot'
+            ↓base [mobile.components.UIControlVariable-1587572639970]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'lib_AmazonLEX.Mobile_application.Application.'
 ↓Content [mobile.components.UIDynamicElement-1580897616784]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content
