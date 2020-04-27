@@ -1,0 +1,145 @@
+comment: Not intented to be directly accessed. Use 'Page_Actions_PushPage'
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_actions_poppage
+title: Title for Page_Actions_PushPage1
+↓Header [mobile.components.UIDynamicElement-1587977857212]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1587977857215]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1587977857218]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1587977857221]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:PopPage
+    ↓Button [mobile.components.UIDynamicElement-1587977857224]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1587977857227]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1587977857230]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1587977857233]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1587977857236]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1587977857239]: 
+          ↓wrapper [mobile.components.UICustomAction-1587977857242]: 
+            ↓Popover [mobile.components.UIDynamicAction-1587977857245]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"PopPage\",\"shortDesc\":\"Defines a PopPage action component.\",\"longDesc\":[\"This component helps navigating back to last page. Popping a page will return to the previous page in the stack, as if the user had clicked on the back button.\"]}]}"
+                }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587989206105]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓qname [mobile.components.UIControlVariable-1587989206108]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Actions_PopPage.Content.Button.Event.PopPage'
+            ↓clabel [mobile.components.UIControlVariable-1587989206111]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'PopPage'
+↓Content [mobile.components.UIDynamicElement-1587977857248]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Button [mobile.components.UIDynamicElement-1587978542980]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1587978542983]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Navigate back (pop) to previous page
+    ↓Event [mobile.components.UIControlEvent-1587978542986]: 
+      ↓Error_Handler [mobile.components.UIActionErrorEvent-1587979170730]: 
+        ↓Toast [mobile.components.UIDynamicAction-1587979204794]: 
+          beanData: '{"ionBean":"ToastAction","message":"script:parent.out"}'
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587979351362]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓qname [mobile.components.UIControlVariable-1587979351365]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_Actions_PopPage.Content.Button.Event.Error_Handler'
+      ↓PopPage [mobile.components.UIDynamicAction-1587978602518]: 
+        beanData: '{"ionBean":"PopPageAction"}'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587978542992]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1587978542995]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Actions_PopPage.Content.Button.Event.PopPage'
+        ↓clabel [mobile.components.UIControlVariable-1587978542998]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'PopPage'
+  ↓Grid [mobile.components.UIDynamicElement-1587979484965]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1587979484968]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587979484971]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1587979484974]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1587979484977]: 
+          htmlTemplate: |
+            '<div>
+            	<p><b>Note: </b> To pop a page, the previous page must be in the Navigation stack (from a <b>Push page action</b>) or else it will throw an error.</p>
+            	<p>To simulate this case, refresh this page or use <b>ROOT</b> button from previous page.</p>
+            	<p>The error is catched with an <b>Error Handler</b> component</p>
+            </div>'
+↓UseSharedComponent [mobile.components.UIUseShared-1587977857251]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

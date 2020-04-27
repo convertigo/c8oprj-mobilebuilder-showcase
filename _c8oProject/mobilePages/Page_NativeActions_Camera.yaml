@@ -49,6 +49,14 @@ title: Camera
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Camera\",\"shortDesc\":\"This component helps taking a photo or capturing a video.\",\"longDesc\":[\"It uses the native Cordova camera plugin which provides an API for taking pictures and for choosing images from the system''s image library.\",\"If running in browser always return a base64-encoded string, else contains the format specified in the options.\",\"You can access data from the next action in the chain in (TS) mode with:\"],\"list\":[\"out: the picture taken\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588001669658]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588001669661]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Camera'
 ↓Content [mobile.components.UIDynamicElement-1578655193444]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -156,6 +164,19 @@ title: Camera
                  "message": "script:''OUTPUT: '' + out",
                  "level": "plain:debug"
                 }'
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588001727693]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588001727696]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Camera'
+          ↓qname [mobile.components.UIControlVariable-1588001727699]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_NativeActions_Camera.Content.Div.Button.Event.SetGlobal.Camera'
   ↓Div1 [mobile.components.UIDynamicElement-1578655193453]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div

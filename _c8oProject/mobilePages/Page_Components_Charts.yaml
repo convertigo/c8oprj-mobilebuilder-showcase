@@ -72,6 +72,14 @@ title: Charts
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Charts\",\"shortDesc\":\"canvas\",\"longDesc\":[\"Charts can be line, bar, radar, pie, polarArea or doughnut according to the chartType property.\",\"Chart data are bound to properties provided by some TypeScript data or directly from a Source.\",\"Please refer to chart.js documentation for each property and data formats.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588002788034]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588002788037]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Chart'
 ↓Content [mobile.components.UIDynamicElement-1579620096879]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -105,6 +113,33 @@ title: Charts
                    "Height": "plain:100%"
                   }'
                 tagName: canvas
+                ↓Event [mobile.components.UIControlEvent-1588003324816]: 
+                  attrName: (chartClick)
+                  eventName: (chartClick)
+                  ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588003342994]: 
+                    beanData: '{"ionBean":"InvokeAction"}'
+                    stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+                    ↓clabel [mobile.components.UIControlVariable-1588003342997]: 
+                      varValue: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                          - MobileSmartSourceType: script:'Chart'
+                    ↓qname [mobile.components.UIControlVariable-1588003343000]: 
+                      varValue: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                          - MobileSmartSourceType: script:'Page_Components_Charts.Content.Grid.GridRow.GridCol.SlidesContainer.SlideItem.Directive.Chart'
+                  ↓getData [mobile.components.UICustomAction-1588003893344]: 
+                    actionValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                          →: |
+                            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                            		let e = event;
+                            		let data = e.active[0]._chart.config.data.datasets[0].data[e.active[0]._index];
+                            		resolve();
+                            '
           ↓SlideItem1 [mobile.components.UIDynamicElement-1579691458264]: 
             beanData: '{"ionBean":"Slide"}'
             tagName: ion-slide
@@ -123,6 +158,22 @@ title: Charts
                    "ChartType": "plain:line"
                   }'
                 tagName: canvas
+                ↓Event [mobile.components.UIControlEvent-1588003460716]: 
+                  attrName: (chartClick)
+                  eventName: (chartClick)
+                  ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588003460719]: 
+                    beanData: '{"ionBean":"InvokeAction"}'
+                    stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+                    ↓clabel [mobile.components.UIControlVariable-1588003460722]: 
+                      varValue: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                          - MobileSmartSourceType: script:'Chart'
+                    ↓qname [mobile.components.UIControlVariable-1588003460725]: 
+                      varValue: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                          - MobileSmartSourceType: script:'Page_Components_Charts.Content.Grid.GridRow.GridCol.SlidesContainer.SlideItem1.Directive.Chart'
 ↓PageEvent [mobile.components.UIPageEvent-1579632133454]: 
   ↓CallSequence_generateChart [mobile.components.UIDynamicAction-1579632156804]: 
     beanData: |

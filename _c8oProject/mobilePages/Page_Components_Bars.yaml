@@ -128,7 +128,7 @@ title: Bars
         ↓Fragment [mobile.components.UICustom-1585729703431]: 
           htmlTemplate: |
             <div>
-            	<p>Tap button to go to Bars page and see automatic an back button in Navbar component</p>
+            	<p>Tap button to go to Bars page and see an automatic back button in Navbar component</p>
             </div>
   ↓Button [mobile.components.UIDynamicElement-1579875391422]: 
     beanData: '{"ionBean":"Button"}'

@@ -66,6 +66,14 @@ title: Fabs
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"FAB Container\",\"shortDesc\":\"ion-fab\",\"longDesc\":[\"Place your FAB Button components in this container to make them non scrollable with Content.\"]},{\"title\":\"Fab List\",\"shortDesc\":\"ion-fab-list\",\"longDesc\":[\"This component is a container for multiple FAB button. They are components of FAB Container and allow you to specify the buttons position: left, right, top, bottom.\"]},{\"title\":\"FAB Button\",\"shortDesc\":\"button\",\"longDesc\":[\"They are shaped as a circle that represents a promoted action. When pressed, it may contain more related actions. FABs as its name suggests are floating over the content in a fixed position. You can add Icon in the FAB Button to represent a given function.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588006828275]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588006828278]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Fab Button'
 ↓Content [mobile.components.UIDynamicElement-1580919607044]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

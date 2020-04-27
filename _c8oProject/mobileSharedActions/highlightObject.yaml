@@ -1,0 +1,40 @@
+↓qname [mobile.components.UIStackVariable-1587564448692]: 
+↓base [mobile.components.UIStackVariable-1587572521174]: 
+  value: '''MobileBuilderComponents.MobileApplication.Application.'''
+↓clabel [mobile.components.UIStackVariable-1587738760058]: 
+↓If_clabel [mobile.components.UIDynamicAction-1587990486538]: 
+  beanData: '{"ionBean":"IfAction","condition":"script:params.clabel != ''''"}'
+  ↓CallSequenceShowDoc [mobile.components.UIDynamicAction-1587990486541]: 
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:MobileBuilderComponents.showDoc",
+       "noLoading": "plain:true"
+      }'
+    ↓clabel [mobile.components.UIControlVariable-1587990486544]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:params.clabel
+↓If_qname [mobile.components.UIDynamicAction-1587739261135]: 
+  beanData: '{"ionBean":"IfAction","condition":"script:params.qname != ''''"}'
+  ↓CallSequenceHighlight [mobile.components.UIDynamicAction-1587564435467]: 
+    beanData: |
+      '{
+       "ionBean": "CallSequenceAction",
+       "requestable": "plain:MobileBuilderComponents.highlightObject",
+       "noLoading": "plain:true"
+      }'
+    ↓qname [mobile.components.UIControlVariable-1587564551028]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:params.qname
+    ↓base [mobile.components.UIControlVariable-1587572484067]: 
+      comment: new variable
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:params.base

@@ -66,6 +66,19 @@ title: Animation
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Animation\",\"shortDesc\":\"Defines an Animation class for a component.\",\"longDesc\":[\"Adding an animation to a component will have this component animated automatically as soon as the component appears on the page. You can choose the animation name, and some other properties to control the animation.\",\"If you want the animation to be triggered by an event such as (tap) (click) or PageEvents, use instead the Animate action.\"]},{\"title\":\"Animate\",\"shortDesc\":\"Defines an Animate action component.\",\"longDesc\":[\"You can use the Animate action to animate a component when an event occurs. To do this, just place the action under the event. It can be a (click) or (tap) event or even a Page didEnter event. The animation will take place when the event is triggered. \"],\"list\":[\"Animatable View the elements with an Identifier property set. Select here one element Identifier to animate.\",\"Apply mode Animate only the selected element (single) or all elements (all) with the same Identifier value. You can also chain animations to animate in parrallel (Sibling Animate actions) or serial (Child Animate actions).\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587997983046]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1587997983049]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Animation'
+            ↓qname [mobile.components.UIControlVariable-1587998106343]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Customs_Animation.Content.Grid.GridRow1.GridCol.TextFormat.H1.Animation'
 ↓Content [mobile.components.UIDynamicElement-1579103295994]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content
@@ -161,6 +174,19 @@ title: Animation
                "duration": "plain:1000"
               }'
             identifiable: MobileBuilderComponents.MobileApplication.Application.Page_Customs_Animation.Content.Grid.GridRow11.GridCol.TextFormat.H1
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587998185882]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1587998185885]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Animate'
+            ↓qname [mobile.components.UIControlVariable-1587998185888]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Customs_Animation.Footer.ToolBar.ButtonSet.Button.Event.Animate'
     ↓ButtonSet1 [mobile.components.UIDynamicElement-1584977313232]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
       tagName: ion-buttons

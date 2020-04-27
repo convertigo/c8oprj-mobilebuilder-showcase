@@ -13,6 +13,7 @@
   ↓generateText [sequences.GenericSequence]: 🗏 sequences/generateText.yaml
   ↓highlightObject [sequences.GenericSequence]: 🗏 sequences/highlightObject.yaml
   ↓saveSignature [sequences.GenericSequence]: 🗏 sequences/saveSignature.yaml
+  ↓showDoc [sequences.GenericSequence]: 🗏 sequences/showDoc.yaml
   ↓SQ4Finally [sequences.GenericSequence]: 🗏 sequences/SQ4Finally.yaml
   ↓wait [sequences.GenericSequence]: 🗏 sequences/wait.yaml
   ↓MobileApplication [core.MobileApplication]: 

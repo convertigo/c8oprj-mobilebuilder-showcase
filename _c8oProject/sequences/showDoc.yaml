@@ -1,0 +1,65 @@
+↓getAndClickComponent [steps.SimpleStep-1587657136349]: 
+  expression: |
+    'org.eclipse.swt.widgets.Display.getDefault().syncExec(new java.lang.Runnable({
+    	run: function() {
+    		var wb = org.eclipse.ui.PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+    		var page = wb.getActivePage();
+    		var view = page.findView("com.twinsoft.convertigo.eclipse.views.mobile.MobilePaletteView");
+    		//log.message("view: " + view);
+    		var field = view.getClass().getDeclaredField("explorerComposite");
+    		field.setAccessible(true);
+    		var comp = field.get(view);
+    		//log.message("comp: " + comp);
+    		//log.message("cls: " + java.lang.String);
+    		//var me = comp.getClass().getDeclaredMethod("search", java.lang.String);
+    		//log.message("me: " + me);
+    		//me.setAccessible(true);
+    		//me.invoke(comp, "TextToSpeech");
+    		
+    		var om = comp.getClass().getDeclaredField("objectsMap");
+    		om.setAccessible(true);
+    		var oMap = om.get(comp);
+    		//log.message("oMap: " + oMap.size());
+    		
+    		var setHm = oMap.entrySet();
+    	    var it = setHm.iterator();
+    	    var e = null;
+    	    while(it.hasNext()){
+    	       e = it.next();
+    	       log.message(e.getKey().getText() + " : " + e.getValue().getName());
+    	       if(e.getKey().getText().equalsIgnoreCase(clabel)){
+    	    	   break;
+    	       }
+    	    }
+    	    log.message("found: "+e.getKey().getText());
+    	    
+    	    var e1 = new org.eclipse.swt.widgets.Event();
+    	    //log.message("e1: " + e1);
+    	    e1.widget = e.getKey();
+    	    //log.message("e1 widget: " + e1.widget);
+    	    var e2 = new org.eclipse.swt.events.MouseEvent(e1);
+    	    //log.message("e2: " + e2);
+    	    e1.widget.getListeners(org.eclipse.swt.SWT.MouseUp)[0].getEventListener().mouseUp(e2);
+    	    comp.scrolledComposite.setOrigin(0, e.getKey().getParent().getBounds().y);
+    	    
+    		//var co = com.twinsoft.convertigo.beans.mobile.components.dynamic.ComponentManager.getComponentByName(e.getValue().getName());
+    		//log.message("co: " + co);
+    		
+    		//var me = comp.getClass().getDeclaredMethod("updateHelpText", com.twinsoft.convertigo.beans.mobile.components.dynamic.Component);
+    		//log.message("me: " + me);
+    		//me.setAccessible(true);
+    		//me.invoke(comp, co);
+    	}
+    }));
+    context.addTextNodeUnderRoot("success", true);'
+↓clabel [variables.RequestableVariable-1587722838280]: 
+  value: 
+↓Test_Case_Animation [core.TestCase]: 
+  ↓clabel [variables.TestCaseVariable-1587724246127]: 
+    value: Animation
+↓Test_Case_TextToSpeech [core.TestCase]: 
+  ↓clabel [variables.TestCaseVariable-1587722861634]: 
+    value: TextToSpeech
+↓Test_Case_Toast [core.TestCase]: 
+  ↓clabel [variables.TestCaseVariable-1587735396580]: 
+    value: Toast

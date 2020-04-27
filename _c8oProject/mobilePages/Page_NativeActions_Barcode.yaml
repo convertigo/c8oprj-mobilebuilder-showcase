@@ -66,6 +66,14 @@ title: Barcode
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Barcode Scanner\",\"shortDesc\":\"Defines a BarcodeScanner action component.\",\"longDesc\":[\"The Barcode Scanner Plugin opens a camera view and automatically scans a barcode, returning the data back to you..\",\"You can access scanned data from the next action in the chain in (TS) mode with:\"],\"list\":[\"out.format: The scanned format code\",\"out.cancelled: true if the user cancelled the scan\",\"out.text: the scanned result\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588000979472]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588000979475]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Barcode Scanner'
 ↓Content [mobile.components.UIDynamicElement-1578661180821]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -118,6 +126,19 @@ title: Barcode
                      "Property": "plain:barcodeData",
                      "Value": "script:out"
                     }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588001252170]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588001252173]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Barcode Scanner'
+              ↓qname [mobile.components.UIControlVariable-1588001256696]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_NativeActions_Barcode.Content.Grid.GridRow1.GridCol.Button.Event.SetGlobal.BarcodeScanner'
     ↓GridRow2 [mobile.components.UIDynamicElement-1585843955216]: 
       beanData: '{"ionBean":"GridRow"}'
       tagName: ion-row

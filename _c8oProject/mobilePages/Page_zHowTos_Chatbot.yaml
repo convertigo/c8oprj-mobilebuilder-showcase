@@ -68,7 +68,7 @@ title: ChatBot
                 }'
           ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587572096306]: 
             beanData: '{"ionBean":"InvokeAction"}'
-            stack: MobileBuilderComponents.MobileApplication.Application.higlightObject
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
             ↓qname [mobile.components.UIControlVariable-1587572096309]: 
               varValue: 
                 - xmlizable: 

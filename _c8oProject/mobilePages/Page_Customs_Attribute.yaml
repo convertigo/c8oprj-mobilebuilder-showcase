@@ -50,6 +50,14 @@ title: Attributes
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Attr\",\"shortDesc\":\"Defines a Attr component.\",\"longDesc\":[\"This component acts as a standard HTML attribute.\",\"Attr components can be added to any component. You can add your custom attributes to customize a component behavior. For example you can add a class attribute to set a custom CSS class name to this component. When you set explicitly a class name attribute on a component, the class will be merged with any Style component positioned for this component\",\"Attr components have two properties:\"],\"list\":[\"name: the name of the attribute such as class, width, src, ...\",\"value: the value of the attribute\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587998326073]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1587998326076]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Attr'
 ↓Content [mobile.components.UIDynamicElement-1576144503201]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -64,6 +72,19 @@ title: Attributes
            "Property": "plain:isRed",
            "Value": "script:(this.global.isRed === undefined) ? true : !this.global.isRed"
           }'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587998702198]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓clabel [mobile.components.UIControlVariable-1587998702201]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Attr'
+        ↓qname [mobile.components.UIControlVariable-1587998708455]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Customs_Attribute.Content.Div.Attr1'
     ↓Attr1 [mobile.components.UIAttribute-1576146586989]: 
       attrName: '[class.redAlert]'
       attrValue: 
@@ -101,6 +122,19 @@ title: Attributes
            "Property": "plain:isGreen",
            "Value": "script:(this.global.isGreen === undefined) ? true : !this.global.isGreen"
           }'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587998760834]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓clabel [mobile.components.UIControlVariable-1587998760837]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Attr'
+        ↓qname [mobile.components.UIControlVariable-1587998760840]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Customs_Attribute.Content.Div1.Attr'
     ↓Attr2 [mobile.components.UIAttribute-1579178846126]: 
       attrName: class
       attrValue: 
@@ -186,6 +220,19 @@ title: Attributes
            "Property": "plain:isCap",
            "Value": "script:(this.global.isCap === undefined) ? true : !this.global.isCap"
           }'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587998856751]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓clabel [mobile.components.UIControlVariable-1587998856754]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Attr'
+        ↓qname [mobile.components.UIControlVariable-1587998856757]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Customs_Attribute.Content.Div4.Span.Attr'
   ↓Div5 [mobile.components.UIDynamicElement-1579185816531]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div

@@ -1,0 +1,159 @@
+inAutoMenu: false
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_actions_pushpage
+title: Title for Page1
+↓Header [mobile.components.UIDynamicElement-1587977557883]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1587977557886]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1587977557889]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1587977557892]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:PushPage
+    ↓Button [mobile.components.UIDynamicElement-1587977557895]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1587977557898]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1587977664511]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1587977664514]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1587977664517]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1587977664520]: 
+          ↓wrapper [mobile.components.UICustomAction-1587977664523]: 
+            ↓Popover [mobile.components.UIDynamicAction-1587977664526]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"PushPage\",\"shortDesc\":\"Defines a PushPage action component.\",\"longDesc\":[\"This component helps to display a given page. Pushing a new page onto the top of the navigation stack causes the new page to be animated in.\"]}]}"
+                }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587989414738]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓qname [mobile.components.UIControlVariable-1587989414741]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Actions_PushPage.Content.Button.Event.PushPage'
+            ↓clabel [mobile.components.UIControlVariable-1587989414744]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'PushPage'
+↓Content [mobile.components.UIDynamicElement-1587977557901]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Button [mobile.components.UIDynamicElement-1587978009706]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1587978009709]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Navigate (push) to a new page
+    ↓Event [mobile.components.UIControlEvent-1587978009712]: 
+      ↓PushPage [mobile.components.UIDynamicAction-1587978058423]: 
+        beanData: '{"ionBean":"PushPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Actions_PopPage"}'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587978009718]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1587978009721]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Actions_PushPage.Content.Button.Event.PushPage'
+        ↓clabel [mobile.components.UIControlVariable-1587978199565]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'PushPage'
+  ↓Grid [mobile.components.UIDynamicElement-1587979973494]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1587979973497]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1587979973500]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1587979973503]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1587979973506]: 
+          htmlTemplate: |
+            '<div>
+            	<p><b>Note: </b> The <b>Push page action</b> adds the current page to the Navigation stack and navigate to the target page.</p>
+            	<p>It will be possible then to navigate back to this page using a <b>Pop page action</b> in the target page</p>
+            	<p>The <b>Root page action</b> sets the target page as the first page in Navigation stack and can not be "popped" to return to this page.</p>
+            	<p>Click the <b>PUSH</b> and the <b>ROOT</b> buttons to see the difference.</p>
+            </div>'
+  ↓Button1 [mobile.components.UIDynamicElement-1587979981571]: 
+    beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1587979981574]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:Navigate (root) to a new page
+    ↓Event [mobile.components.UIControlEvent-1587979981577]: 
+      ↓RootPage [mobile.components.UIDynamicAction-1587980038862]: 
+        beanData: '{"ionBean":"RootPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Actions_PopPage"}'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587979981583]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1587979981586]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Actions_PushPage.Content.Button1.Event.RootPage'
+        ↓clabel [mobile.components.UIControlVariable-1587979981589]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'RootPage'
+↓UseSharedComponent [mobile.components.UIUseShared-1587977634488]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

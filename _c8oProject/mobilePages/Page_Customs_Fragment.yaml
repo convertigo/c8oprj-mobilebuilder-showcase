@@ -15,6 +15,13 @@ scriptContent:
         	openPageWithName(name) {
         	    this.routerProvider.setRoot(name, null, {animate: true, duration: 250});
             }
+        	
+        	pushPageWithName(name) {
+                this.routerProvider.push(name, null, {animate: true, duration: 250});
+                //setRoot(view, data, options)
+                //push(view, data, options);
+                //setRoot(name, null, {animate: true, duration: 250});
+            }
         	/*End_c8o_PageFunction*/
         '
 segment: path-to-page_customs_fragment
@@ -190,6 +197,10 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Popover page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Actions_PushPage')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		PushPage page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_Searchbar')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Searchbar page
@@ -210,7 +221,7 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Style page
       	</ion-item>
-      	<ion-item tappable (click)="this.openPageWithName('Page_Controls_SubscribeHandler')">
+      	<ion-item tappable (click)="this.pushPageWithName('Page_Controls_SubscribeHandler')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Subscribe Handler / Publish page
       	</ion-item>
@@ -241,9 +252,8 @@ title: Fragment
       </ion-list>
 ↓UseSharedComponent [mobile.components.UIUseShared-1582819279728]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
-↓Subscribe_Handler1 [mobile.components.UIEventSubscriber-1587560522296]: 
-  isEnabled: false
-  topic: topic:E
+↓Subscribe_Handler [mobile.components.UIEventSubscriber-1587560522296]: 
+  topic: topicE
   ↓Toast [mobile.components.UIDynamicAction-1587560522299]: 
     beanData: '{"ionBean":"ToastAction","message":"script:''THIS IS TOPIC E - data: '' + out"}'
   ↓Log [mobile.components.UIDynamicAction-1587560522302]: 

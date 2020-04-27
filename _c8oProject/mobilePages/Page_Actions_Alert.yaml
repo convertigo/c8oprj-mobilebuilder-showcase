@@ -66,6 +66,14 @@ title: Alerts
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Alert\",\"shortDesc\":\"Defines an Alert component.\",\"longDesc\":[\"The Alerts are a great way to offer the user the ability to choose a specific action or list of actions. They also can provide the user with important information, or require them to make a decision.\",\"The return value can be accessed by the navigation stack, using parent.out for example.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587990289083]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1587990289089]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Alert'
 ↓Content [mobile.components.UIDynamicElement-1584979679548]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -112,6 +120,19 @@ title: Alerts
                 }'
               ↓Toast [mobile.components.UIDynamicAction-1584982029386]: 
                 beanData: '{"ionBean":"ToastAction","message":"script:''output: '' + out"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587997129408]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1587997129411]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Alert'
+              ↓qname [mobile.components.UIControlVariable-1587997134102]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Alert.Content.Grid.GridRow_Alert_basic.GridCol_right.Button.Event.Alert'
           ↓Icon [mobile.components.UIDynamicElement-1584980982598]: 
             beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
             tagName: ion-icon
@@ -160,6 +181,19 @@ title: Alerts
                 }'
               ↓Toast [mobile.components.UIDynamicAction-1584982836958]: 
                 beanData: '{"ionBean":"ToastAction","message":"script:''return value: '' + out"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587997297620]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1587997297623]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Alert'
+              ↓qname [mobile.components.UIControlVariable-1587997297626]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Alert.Content.Grid.GridRow_Alert_css.GridCol_right.Button.Event.Alert'
           ↓Icon [mobile.components.UIDynamicElement-1584982836961]: 
             beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
             tagName: ion-icon
@@ -249,6 +283,19 @@ title: Alerts
                       - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#ALERT'])?.People"}
                 ↓Toast [mobile.components.UIDynamicAction-1585041148592]: 
                   beanData: '{"ionBean":"ToastAction","message":"script:''data: '' + parent.out"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587997367854]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1587997367857]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Alert'
+              ↓qname [mobile.components.UIControlVariable-1587997367860]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Alert.Content.Grid.GridRow_Alert_custom.GridCol_right.Button.Event.getPeopleAlert.createAlert'
           ↓Icon [mobile.components.UIDynamicElement-1584983519262]: 
             beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
             tagName: ion-icon
@@ -350,6 +397,19 @@ title: Alerts
                       - MobileSmartSourceType: source:{"filter":"Sequence","project":"MobileBuilderComponents","input":"listen(['MobileBuilderComponents.generatePeople#ALERT1'])?.People"}
                 ↓Toast [mobile.components.UIDynamicAction-1585055053607]: 
                   beanData: '{"ionBean":"ToastAction","message":"script:''data: '' + parent.out"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587997476701]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1587997476704]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Alert'
+              ↓qname [mobile.components.UIControlVariable-1587997476707]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Alert.Content.Grid.GridRow_Alert_custom1.GridCol_right.Button.Event.getPeopleAlert.createAlert'
           ↓Icon [mobile.components.UIDynamicElement-1585055053610]: 
             beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
             tagName: ion-icon
@@ -429,6 +489,19 @@ title: Alerts
                       '
               ↓Toast [mobile.components.UIDynamicAction-1585055059148]: 
                 beanData: '{"ionBean":"ToastAction","message":"script:''data: '' + parent.out"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1587997626963]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1587997626966]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Alert'
+              ↓qname [mobile.components.UIControlVariable-1587997626969]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Alert.Content.Grid.GridRow_Alert_custom2.GridCol_right.Button.Event.createAlert'
           ↓Icon [mobile.components.UIDynamicElement-1585055059151]: 
             beanData: '{"ionBean":"Icon","IconName":"plain:warning"}'
             tagName: ion-icon

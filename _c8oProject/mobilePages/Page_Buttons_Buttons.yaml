@@ -65,6 +65,14 @@ title: Buttons
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Button\",\"shortDesc\":\"button\",\"longDesc\":[\"Buttons are an essential way to interact with and navigate through a mobile application, and should clearly communicate what action will occur after the user taps them.\",\"Button can consist of Text and\/or Icon, and can be enhanced with a wide variety of properties\/attributes\",\"You can add Event component with chained Actions to a Button to handle button click\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588001511165]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588001511168]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Button'
 ↓Content [mobile.components.UIDynamicElement-1580910019496]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

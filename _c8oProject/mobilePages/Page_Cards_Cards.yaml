@@ -66,6 +66,14 @@ title: Cards
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Card Container\",\"shortDesc\":\"ion-card\",\"longDesc\":[\"Cards are a great way to display important pieces of content, and are quickly emerging as a core design pattern for application.\"]},{\"title\":\"Card Header\",\"shortDesc\":\"ion-card-header\",\"longDesc\":[\"Just like a page, cards can be customized to include headers. Use a Card Header component inside of a Card container.\"]},{\"title\":\"Card Content\",\"shortDesc\":\"ion-card-content\",\"longDesc\":[\"This component is the content part of the card. Use a Card Content component inside of a Card container.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588002123857]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588002123860]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Card Container'
 ↓Content [mobile.components.UIDynamicElement-1582737922374]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -324,13 +332,13 @@ title: Cards
               	
               	.card-title {
               		position: relative;
-              		font-size: 2.5vw;
+              		font-size: 2.9vw;
               		margin-bottom: 1.5vw;
               		font-weight: bold;
               	}
               	
               	.card-subtitle {
-              		font-size: 1.5vw;
+              		font-size: 2.1vw;
               		position: relative;
               		width: 100%;
               	}
@@ -422,8 +430,8 @@ title: Cards
                     	background-color: rgb(255, 183, 58);
                     	font-weight: bold;
                     	margin-top: 10px;
-                        height: 2.5vw;
-                        font-size: 1.2vw;
+                        height: 2.8vw;
+                        font-size: 1.8vw;
                     '
           ↓Attr1 [mobile.components.UIAttribute-1582812460181]: 
             attrName: href
