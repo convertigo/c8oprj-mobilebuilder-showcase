@@ -73,6 +73,14 @@ title: Searchbar
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Search Bar\",\"shortDesc\":\"ion-searchbar\",\"longDesc\":[\"Defines a Search Bar component.\",\"This component manages the display of a searchbar which can be used to search or filter items.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588091409006]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588091409012]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Search Bar'
   ↓ToolBar [mobile.components.UIDynamicElement-1582623730331]: 
     beanData: '{"ionBean":"ToolBar","IonColor":"plain:primary"}'
     tagName: ion-toolbar
@@ -111,6 +119,20 @@ title: Searchbar
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: script:'Search Cleared'
+      ↓Event1 [mobile.components.UIControlEvent-1588091666655]: 
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588091671970]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588091671973]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Search Bar'
+          ↓qname [mobile.components.UIControlVariable-1588091678498]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_zHowTos_Searchbar.Header.ToolBar.SearchBar'
     ↓Attr [mobile.components.UIAttribute-1582625019384]: 
       attrName: 
       attrValue: 
@@ -177,6 +199,20 @@ title: Searchbar
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'1500'
+    ↓Event12 [mobile.components.UIControlEvent-1588091937158]: 
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588091937161]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓clabel [mobile.components.UIControlVariable-1588091937164]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Search Bar'
+        ↓qname [mobile.components.UIControlVariable-1588091937167]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_zHowTos_Searchbar.Content.SearchBar'
   ↓ListContainer [mobile.components.UIDynamicElement-1582623533963]: 
     beanData: '{"ionBean":"List"}'
     tagName: ion-list
@@ -260,6 +296,20 @@ title: Searchbar
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: script:'Search Cleared'
+      ↓Event12 [mobile.components.UIControlEvent-1588092003996]: 
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588092003999]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588092004002]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Search Bar'
+          ↓qname [mobile.components.UIControlVariable-1588092004005]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_zHowTos_Searchbar.Footer.ToolBar.SearchBar'
 ↓PageEvent [mobile.components.UIPageEvent-1582623534065]: 
   ↓getPeopleSearchbar [mobile.components.UIDynamicInvoke-1582623534068]: 
     beanData: '{"ionBean":"InvokeAction"}'

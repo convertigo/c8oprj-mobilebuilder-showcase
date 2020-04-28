@@ -66,6 +66,14 @@ title: Spinner
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Spinner\",\"shortDesc\":\"ion-spinner\",\"longDesc\":[\"The ion-spinner component provides a variety of animated SVG spinners. Spinners enables you to give users feedback that the app is actively processing\/thinking\/waiting\/chillin’ out, or whatever you’d like it to indicate.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588093418612]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588093418615]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Spinner'
 ↓Content [mobile.components.UIDynamicElement-1584106040210]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -329,6 +337,19 @@ title: Spinner
                       		this.global.spinStarted = !this.global.spinStarted;
                       		resolve();
                       '
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588093457410]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588093457413]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Spinner'
+              ↓qname [mobile.components.UIControlVariable-1588093457416]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Miscellaneous_Spinner.Content.Grid.Row_Spinner_binding.GridCol1.Button.Event.togglePauseSpinner'
           ↓Spinner_crescent [mobile.components.UIDynamicElement-1584352840063]: 
             beanData: |
               '{
@@ -427,6 +448,19 @@ title: Spinner
                             '
                   ↓Toast [mobile.components.UIDynamicAction-1584355680351]: 
                     beanData: '{"ionBean":"ToastAction","message":"script:this.listen([''MobileBuilderComponents.generatePeople#SPINNER'']).People?.length + '' People loaded!''"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588093504418]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588093504421]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Spinner'
+              ↓qname [mobile.components.UIControlVariable-1588093504424]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Miscellaneous_Spinner.Content.Grid.Row_Spinner_binding1.GridCol1.Button.Event.unpauseSpinner'
           ↓Directive [mobile.components.UIControlDirective-1584355680354]: 
             directiveName: If
             directiveSource: 

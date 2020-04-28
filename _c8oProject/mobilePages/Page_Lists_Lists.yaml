@@ -67,6 +67,19 @@ title: Lists
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"List Container\",\"shortDesc\":\"ion-list\",\"longDesc\":[\"Defines a List Container component.\",\"Lists are used to display rows of information.\",\"You can insert items or buttons in lists to make list items clickable. You can also add to list items many other components such as icons, avatars or thumbnails.\"]},{\"title\":\"List Header Item\",\"shortDesc\":\"ion-list-header\",\"longDesc\":[\"Defines a List Header Item component.\",\"Each list can include a header at the top of the list.\"]},{\"title\":\"List Item\",\"shortDesc\":\"ion-item\",\"longDesc\":[\"Defines a List Item component.\",\"A List Item can be replaced by a Button with its button type property set to ion-item to make the item clickable.\",\"It can also contain Sliding Options to reveal buttons when swiped left or right.\"]},{\"title\":\"Group Item\",\"shortDesc\":\"ion-item-group\",\"longDesc\":[\"Defines a Group Item component.\",\"To make groups of items:\"],\"list\":[\"use Group Item instead of List Container\",\"use Divider Item components to divide the group into multiple sections.\"]},{\"title\":\"Divider Item\",\"shortDesc\":\"ion-item-divider\",\"longDesc\":[\"Defines a Divider Item component.\",\"To make groups of items:\"],\"list\":[\"use Group Item instead of List Container\",\"use Divider Item components to divide the group into multiple sections.\"]},{\"title\":\"Sliding Item\",\"shortDesc\":\"ion-item-sliding\",\"longDesc\":[\"Defines a Sliding Item component.\",\"Sliding items can be swiped to the left or right to reveal a hidden set of buttons.\",\"To use a <ion-item-sliding>, add a Sliding Item component inside of an List Container component.\",\"Next, add a Sliding Options component inside of the sliding item to contain the buttons.\"]},{\"title\":\"Avatar Item\",\"shortDesc\":\"ion-avatar\",\"longDesc\":[\"Defines an Avatar Item component.\",\"Item avatars showcase an image larger than an icon, but smaller than a thumbnail.\",\"To use an <ion-avatar>, add an Avatar Item component inside of a Generic Item component. The position property of the Avatar Item can be set to item-left or item-right value.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588066311025]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓qname [mobile.components.UIControlVariable-1588066311028]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Lists_Lists.Content.ListContainer'
+            ↓clabel [mobile.components.UIControlVariable-1588066311031]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'List Container'
 ↓Content [mobile.components.UIDynamicElement-1579283174196]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

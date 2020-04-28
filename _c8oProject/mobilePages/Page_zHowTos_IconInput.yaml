@@ -47,7 +47,7 @@ title: IconInput
         ↓Fragment [mobile.components.UICustom-1585778821598]: 
           htmlTemplate: |
             <div>
-            	<p>Page demonstration of:</p>
+            	<p>Demonstration page of:</p>
             	<ul>
             		<li>Adding a button next to an Input text </li>
             		<li>Dynamically changing an icon name</li>

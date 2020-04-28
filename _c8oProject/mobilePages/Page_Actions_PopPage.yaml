@@ -1,4 +1,5 @@
 comment: Not intented to be directly accessed. Use 'Page_Actions_PushPage'
+inAutoMenu: false
 preloadPriority: high
 scriptContent: 
   - xmlizable: 

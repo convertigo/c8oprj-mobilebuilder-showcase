@@ -67,6 +67,14 @@ title: Modal
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Modal Page\",\"shortDesc\":\"Displays a Modal Page.\",\"longDesc\":[\"A Modal is a content pane that goes over the user''s current page. Usually it is used for making a choice or editing an item.\",\"You can use the Close Modal action to dismiss a Modal Page.\",\"You can also pass data to the page, the passed data will be available in the NavParams Object.\",\"By default, Modal pages will be displayed as full screen on small devices (SmartPhones) or as an Popup overlays on larget Devices (Tablets). If you want to change this behavior, you can customize the following parameters for your app in the Theme Component.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075635911]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588075635914]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Modal Page'
 ↓Content [mobile.components.UIDynamicElement-1576057405955]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -128,6 +136,19 @@ title: Modal
                       		page.c8o.log.warn(''>>>>choices:'' + JSON.stringify(this.modalParameters[''choices'']));
                       		resolve();
                       '
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075693967]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588075693970]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Menu'
+          ↓qname [mobile.components.UIControlVariable-1588075705526]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_Actions_modal.Content.GenericItem.Button.Event.resetModalParams.ModalPage'
       ↓Text [mobile.components.UIText-1576058829379]: 
         textValue: 
           - xmlizable: 

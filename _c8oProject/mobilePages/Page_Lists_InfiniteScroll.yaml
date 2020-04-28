@@ -91,6 +91,19 @@ title: Infinite Scroll
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"InfiniteScroll\",\"shortDesc\":\"ion-infinite-scroll\",\"longDesc\":[\"The InfiniteScroll component holds an infinite scroll logic and requires a child InfiniteScrollContent component in order to display its content.\",\"It allows you to perform a given task when the user scrolls a specified distance from the bottom or top of the page.\"]},{\"title\":\"InfiniteScrollContent\",\"shortDesc\":\"ion-infinite-scroll-content\",\"longDesc\":[\"The InfiniteScrollContent component displays its parent infinite scroll.\",\"You may add it under a InfiniteScroll component.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588064677848]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓qname [mobile.components.UIControlVariable-1588064677851]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Lists_InfiniteScroll.Content.InfiniteScroll'
+            ↓clabel [mobile.components.UIControlVariable-1588064677854]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'InfiniteScroll'
 ↓Content [mobile.components.UIDynamicElement-1583850058037]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content

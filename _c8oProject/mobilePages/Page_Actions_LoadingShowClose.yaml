@@ -66,6 +66,19 @@ title: Loading (Show / Close )
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Show Loading\",\"shortDesc\":\"\",\"longDesc\":[\"Shows the page loader. Place this action component before calling a Convertigo requestable (sequence, fullsync) and actions that may take.\"]},{\"title\":\"Close Loading\",\"shortDesc\":\"\",\"longDesc\":[\"Hides the page loader. Place this action component after a chain of actions.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588066851496]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓qname [mobile.components.UIControlVariable-1588066851499]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Actions_LoadingShowClose.Content.Button.Event.Show_Loading'
+            ↓clabel [mobile.components.UIControlVariable-1588066851502]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Show Loading'
 ↓Content [mobile.components.UIDynamicElement-1584554471286]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -143,6 +156,19 @@ title: Loading (Show / Close )
                       }'
               ↓Close_Loading [mobile.components.UIDynamicAction-1584974432511]: 
                 beanData: '{"ionBean":"CloseLoadingAction"}'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588066948206]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588066948209]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Actions_LoadingShowClose.Content.Button.Event.Show_Loading'
+        ↓clabel [mobile.components.UIControlVariable-1588066948212]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Show Loading'
   ↓ListContainer [mobile.components.UIDynamicElement-1584973661226]: 
     beanData: '{"ionBean":"List"}'
     tagName: ion-list

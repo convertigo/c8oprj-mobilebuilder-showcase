@@ -49,6 +49,43 @@ title: Fingerprint
       ↓Icon [mobile.components.UIDynamicElement-1579603141874]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1588062857920]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1588062857923]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1588062857926]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1588062857929]: 
+          ↓wrapper [mobile.components.UICustomAction-1588063486067]: 
+            ↓Popover [mobile.components.UIDynamicAction-1588063486070]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"CustomAction\",\"shortDesc\":\"Defines CustomAction action component.\",\"longDesc\":[\"You can call from CustomAction code any additional package available on NPM. To do so, simply configure the Application packages property with a NPM Package and version number, and configure the Page Imports property to declare all the packages import you will need. This will automatically insert TypeScript ''Import'' statements in the page where the CustomAction is used. If you want to use use one the imported classes, you may have to get an Instance of it. To do so, you can use the CAF utility method this.getInstance(Class).\",\"Some NPM packages may require also additional module declarations. To do so, configure the Application modules property, the Application providers property and the Application imports property. This will insert automatically the module to the app.module.ts file in the @NgModule ''imports'' or ''provider'' arrays, and add an ''Import'' TypeScript statement in the file header.\",\"Some other NPM packages may also require an Additional Cordova plugin. (For example ionic Native packages). You can also declare these plugins in the Application plugins property. This will cause Convertigo Studio to automatically add the plugin to the project''s Cordova Config.xml file.\"]}]}"
+                }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588062857938]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓qname [mobile.components.UIControlVariable-1588062857944]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_zHowTos_Fingerprint.PageEvent.init_Fingerprint'
+            ↓clabel [mobile.components.UIControlVariable-1588063148507]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'CustomAction'
 ↓Content [mobile.components.UIDynamicElement-1579603141877]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -71,7 +108,8 @@ title: Fingerprint
         ↓Fragment [mobile.components.UICustom-1585776994734]: 
           htmlTemplate: |
             <div>
-            	<p>At page loading, it should propose you to log in using finger print, if your device supports it.</p>
+            	<p>At page loading, it should propose you to authenticate using your finger print, if your device supports it.</p>
+            	<p>You can click the "<b>AUTHENTICATE</b>" button to restart the demo.
             </div>
   ↓Directive [mobile.components.UIControlDirective-1585750786150]: 
     directiveName: If
@@ -114,7 +152,7 @@ title: Fingerprint
           textValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:log in
+              - MobileSmartSourceType: plain:Authenticate
         ↓Event [mobile.components.UIControlEvent-1579609434414]: 
           ↓RootPage [mobile.components.UIDynamicAction-1579609434418]: 
             beanData: |

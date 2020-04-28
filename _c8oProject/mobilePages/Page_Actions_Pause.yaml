@@ -50,6 +50,14 @@ title: Pause
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"PauseAction\",\"shortDesc\":\"Defines an PauseAction component.\",\"longDesc\":[\"This component helps waiting for a given time to be elapsed.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588076593497]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588076593500]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'PauseAction'
 ↓Content [mobile.components.UIDynamicElement-1575036313309]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -128,6 +136,19 @@ title: Pause
                              "Property": "plain:buttonText",
                              "Value": "plain:click"
                             }'
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588076936611]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588076936614]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'PauseAction'
+          ↓qname [mobile.components.UIControlVariable-1588076943442]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_Actions_Pause.Content.GenericItem.Button.Event.SetGlobal.PauseAction'
 ↓PageEvent [mobile.components.UIPageEvent-1575036454153]: 
   ↓SetGlobal [mobile.components.UIDynamicAction-1575036467385]: 
     beanData: |

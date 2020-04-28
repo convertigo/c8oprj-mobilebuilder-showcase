@@ -65,6 +65,14 @@ title: File Chooser
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"File Chooser\",\"shortDesc\":\"Defines a File Chooser action component.\",\"longDesc\":[\"This component helps selecting a file.\",\"Whenever cordova platform is not available, the value defined in mocking option is returned.\",\"You can access data from the next action in the chain in (TS) mode with: \"],\"list\":[\"out: The file URI\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588061910312]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588061910315]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'File Chooser'
 ↓Content [mobile.components.UIDynamicElement-1578661956249]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -86,7 +94,7 @@ title: File Chooser
         ↓Fragment [mobile.components.UICustom-1585904107972]: 
           htmlTemplate: |
             <div>
-            	<p>In browser mode will use mocked properties responses</p>
+            	<p>In browser mode, it will use mocked properties responses</p>
             </div>
     ↓GridRow1 [mobile.components.UIDynamicElement-1585904107975]: 
       beanData: '{"ionBean":"GridRow"}'
@@ -117,6 +125,19 @@ title: File Chooser
                      "Property": "plain:fileChooser",
                      "Value": "script:out"
                     }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588062084036]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588062084039]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'File Chooser'
+              ↓qname [mobile.components.UIControlVariable-1588062088653]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_NativeActions_FileChooser.Content.Grid.GridRow1.GridCol.Button.Event.SetGlobal.FileChooser'
     ↓GridRow2 [mobile.components.UIDynamicElement-1585904107999]: 
       beanData: '{"ionBean":"GridRow"}'
       tagName: ion-row

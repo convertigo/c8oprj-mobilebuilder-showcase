@@ -116,6 +116,14 @@ title: modal1
                 '
         ↓CloseModal [mobile.components.UIDynamicAction-1576061367565]: 
           beanData: '{"ionBean":"CloseModalAction"}'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075822564]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588075822570]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Actions_modal1.Content.Button.Event.CustomActionCancel.CloseModal'
   ↓Button1 [mobile.components.UIDynamicElement-1576061499468]: 
     beanData: '{"ionBean":"Button"}'
     tagName: button
@@ -138,6 +146,14 @@ title: modal1
                 '
         ↓CloseModal [mobile.components.UIDynamicAction-1576061499480]: 
           beanData: '{"ionBean":"CloseModalAction"}'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075874656]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588075874659]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Actions_modal1.Content.Button1.Event.CustomActionValid.CloseModal                                                                                                                                                                   '
 ↓PageEvent [mobile.components.UIPageEvent-1576084741963]: 
   viewEvent: onWillEnter
   ↓CallSequence [mobile.components.UIDynamicAction-1576084755241]: 

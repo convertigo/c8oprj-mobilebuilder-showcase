@@ -491,6 +491,19 @@ title: Title for Page_Actions_Popover1
         ↓Event [mobile.components.UIControlEvent-1585330484086]: 
           ↓ClosePopover [mobile.components.UIDynamicAction-1585330489758]: 
             beanData: '{"ionBean":"ClosePopoverAction"}'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588085081260]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588085081263]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Close Popover'
+            ↓qname [mobile.components.UIControlVariable-1588085081266]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Actions_Popover_template.ListContainer.GridRow11.GridCol.Button.Event.ClosePopover'
 ↓Style [mobile.components.UIStyle-1585242168207]: 
   styleContent: 
     - xmlizable: 

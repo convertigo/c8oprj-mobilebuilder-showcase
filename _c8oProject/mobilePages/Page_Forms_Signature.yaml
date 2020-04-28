@@ -67,6 +67,14 @@ title: Signature
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Signature\",\"shortDesc\":\"c8o-signature\",\"longDesc\":[\"Displays a Signature pad. This component uses an Angular2 component based on the Signature Pad JavaScript library.\",\"Note: Make sure to add your component under a Generic Item or <ion-item> to make it work properly in form.\",\"If you''d like to have some label, add a Text under a Div. Do not use Label component.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588092519196]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588092519199]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Signature'
 ↓Content [mobile.components.UIDynamicElement-1574951079499]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -147,6 +155,19 @@ title: Signature
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: script:this.Zsig?.signaturePad
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588092807123]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588092807126]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Signature'
+          ↓qname [mobile.components.UIControlVariable-1588092811432]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_Forms_Signature.Content.BUTTONS.Button_Undo.Event.undoAction'
     ↓Button_Clear [mobile.components.UIDynamicElement-1574951079541]: 
       beanData: '{"ionBean":"Button"}'
       tagName: button
@@ -175,6 +196,19 @@ title: Signature
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                 - MobileSmartSourceType: script:this.Zsig?.signaturePad
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588092946207]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588092946210]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Signature'
+          ↓qname [mobile.components.UIControlVariable-1588092946213]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_Forms_Signature.Content.BUTTONS.Button_Clear.Event.clearAction'
     ↓Button_SavePNG [mobile.components.UIDynamicElement-1574951079556]: 
       beanData: '{"ionBean":"Button"}'
       isEnabled: false
@@ -225,6 +259,19 @@ title: Signature
             ↓Else_Handler [mobile.components.UIActionElseEvent-1574951079592]: 
               ↓Toast [mobile.components.UIDynamicAction-1574951079595]: 
                 beanData: '{"ionBean":"ToastAction","message":"plain:Error while saving Signature..."}'
+        ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588092990037]: 
+          beanData: '{"ionBean":"InvokeAction"}'
+          stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+          ↓clabel [mobile.components.UIControlVariable-1588092990040]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Signature'
+          ↓qname [mobile.components.UIControlVariable-1588092990043]: 
+            varValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:'Page_Forms_Signature.Content.BUTTONS.Button_Submit.Event.CallSequence'
   ↓B64 [mobile.components.UIDynamicElement-1574951079598]: 
     beanData: '{"ionBean":"GenericItem"}'
     tagName: ion-item
@@ -673,5 +720,38 @@ title: Signature
           ↓Else_Handler [mobile.components.UIActionElseEvent-1574951079889]: 
             ↓Toast [mobile.components.UIDynamicAction-1574951079892]: 
               beanData: '{"ionBean":"ToastAction","message":"plain:Error while saving Signature..."}'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588093041473]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓clabel [mobile.components.UIControlVariable-1588093041476]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Signature'
+        ↓qname [mobile.components.UIControlVariable-1588093041479]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Forms_Signature.Content.Form.Event'
+  ↓Grid [mobile.components.UIDynamicElement-1588093817970]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1588093817973]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1588093817976]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1588093817979]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1588093817982]: 
+          htmlTemplate: |
+            <div>
+            	<p><b>Note:</b> The signature is saved as a PNG file in the "<b>signatures</b>" folder of this project.</p>
+            </div>
 ↓UseSharedComponent [mobile.components.UIUseShared-1582819373851]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

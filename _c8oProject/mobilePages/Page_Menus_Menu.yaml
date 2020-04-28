@@ -94,6 +94,14 @@ title: Menus
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Menu\",\"shortDesc\":\"ion-menu\",\"longDesc\":[\"Defines a Menu component.\",\"Note: different menus may be added to an application but only the first one is used by default.\",\"If you''d like to use a specific menu for a given page, simply specify it in the Menu id property of your Page component.\",\"A menu helps to navigate through pages. It may contains, or\/and:\"],\"list\":[\"a MenuAutoItems component to automatically add all your pages\",\"several MenuItem components to add specific pages.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075111994]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588075111997]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Menu'
 ↓Content [mobile.components.UIDynamicElement-1580914202823]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -111,6 +119,15 @@ title: Menus
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
           - MobileSmartSourceType: plain:Toggle Active Menu
+    ↓Event [mobile.components.UIControlEvent-1588075275112]: 
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075282166]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588075282169]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Menus_Menu.Content.Button_ActiveMenu'
   ↓Button_LeftMenu [mobile.components.UIDynamicElement-1582887662770]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -128,6 +145,14 @@ title: Menus
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'myLeftMenu'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075202487]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588075207331]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Menus_Menu.Content.Button_LeftMenu.Event.do'
   ↓Button_RightMenu [mobile.components.UIDynamicElement-1582883767035]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -145,6 +170,14 @@ title: Menus
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'RightMenu'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075331442]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588075331445]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Menus_Menu.Content.Button_RightMenu.Event.do'
   ↓Button_CustomMenu [mobile.components.UIDynamicElement-1583502892817]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -193,6 +226,14 @@ title: Menus
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'CustomMenu'
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075377545]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588075377548]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Menus_Menu.Content.Button_CustomMenu.Event.do'
   ↓Button_DefaultMenu [mobile.components.UIDynamicElement-1582898249167]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -205,5 +246,13 @@ title: Menus
       ↓do [mobile.components.UIDynamicInvoke-1582898249176]: 
         beanData: '{"ionBean":"InvokeAction"}'
         stack: MobileBuilderComponents.MobileApplication.Application.openMenu
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588075415669]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1588075415672]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Page_Menus_Menu.Content.Button_DefaultMenu.Event.do'
 ↓UseSharedComponent [mobile.components.UIUseShared-1583253611365]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

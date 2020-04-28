@@ -66,6 +66,14 @@ title: Logs
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Log\",\"shortDesc\":\"Defines an Log action component.\",\"longDesc\":[\"You can use logs actions to display some information in the device logs. These logs will also be automatically sent to the Convertigo Server and will be threaded within the backend sequence execution so that you can follow a full client interaction thread.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067001638]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588067001644]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Log'
 ↓Content [mobile.components.UIDynamicElement-1584553888142]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -123,6 +131,19 @@ title: Logs
                  "message": "plain:FATAL log level is the lowest level all can see.",
                  "level": "plain:fatal"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067044304]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1588067044307]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Log.Content.Grid.GridRow_Log_fatal.GridCol_right.Button.Event.Log'
+              ↓clabel [mobile.components.UIControlVariable-1588067044310]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Log'
           ↓Text [mobile.components.UIText-1584698473849]: 
             textValue: 
               - xmlizable: 
@@ -159,6 +180,19 @@ title: Logs
                  "message": "plain:ERROR log level.",
                  "level": "plain:error"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067082300]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1588067082303]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Log.Content.Grid.GridRow_Log_error.GridCol_right.Button.Event.Log'
+              ↓clabel [mobile.components.UIControlVariable-1588067082306]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Log'
           ↓Text1 [mobile.components.UIText-1584698473876]: 
             textValue: 
               - xmlizable: 
@@ -195,6 +229,19 @@ title: Logs
                  "message": "plain:WARN log level.",
                  "level": "plain:warn"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067093077]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1588067093080]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Log.Content.Grid.GridRow_Log_warn.GridCol_right.Button.Event.Log'
+              ↓clabel [mobile.components.UIControlVariable-1588067093083]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Log'
           ↓Text1 [mobile.components.UIText-1584698473903]: 
             textValue: 
               - xmlizable: 
@@ -226,6 +273,19 @@ title: Logs
           ↓Event [mobile.components.UIControlEvent-1584698473924]: 
             ↓Log [mobile.components.UIDynamicAction-1584699699130]: 
               beanData: '{"ionBean":"LogAction","message":"plain:INFO log level."}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067102525]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1588067102528]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Log.Content.Grid.GridRow_Log_info.GridCol_right.Button.Event.Log'
+              ↓clabel [mobile.components.UIControlVariable-1588067102531]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Log'
           ↓Text1 [mobile.components.UIText-1584698473930]: 
             textValue: 
               - xmlizable: 
@@ -262,6 +322,19 @@ title: Logs
                  "message": "plain:DEBUG log level.",
                  "level": "plain:debug"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067113011]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1588067113014]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Log.Content.Grid.GridRow_Log_debug.GridCol_right.Button.Event.Log'
+              ↓clabel [mobile.components.UIControlVariable-1588067113017]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Log'
           ↓Text1 [mobile.components.UIText-1584698473957]: 
             textValue: 
               - xmlizable: 
@@ -298,6 +371,19 @@ title: Logs
                  "message": "plain:TRACE log level.",
                  "level": "plain:trace"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067123021]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1588067123024]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Log.Content.Grid.GridRow_Log_trace.GridCol_right.Button.Event.Log'
+              ↓clabel [mobile.components.UIControlVariable-1588067123027]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Log'
           ↓Text1 [mobile.components.UIText-1584698473984]: 
             textValue: 
               - xmlizable: 
@@ -342,6 +428,19 @@ title: Logs
                       		page.c8o.log.trace(''TRACE LEVEL'');
                       		resolve();
                       '
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588067132674]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1588067132677]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Log.Content.Grid.GridRow_Log_AllInOne.GridCol_right.Button.Event.allLevelLogs'
+              ↓clabel [mobile.components.UIControlVariable-1588067132680]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Log'
           ↓Text1 [mobile.components.UIText-1584698474011]: 
             textValue: 
               - xmlizable: 

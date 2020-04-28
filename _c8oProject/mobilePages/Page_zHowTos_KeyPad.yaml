@@ -42,6 +42,30 @@ title: Keypad
       ↓Icon [mobile.components.UIDynamicElement-1580309028606]: 
         beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
         tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1588065965674]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1588065965677]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1588065965680]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1588065965683]: 
+          ↓wrapper [mobile.components.UICustomAction-1588065965686]: 
+            ↓Popover [mobile.components.UIDynamicAction-1588065965689]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"\",\"shortDesc\":\"Password is ''040475''\",\"longDesc\":[\"\"]}]}"
+                }'
 ↓Content [mobile.components.UIDynamicElement-1580309028609]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

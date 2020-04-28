@@ -77,6 +77,19 @@ title: Fragment
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Fragment\",\"shortDesc\":\"Defines a Fragment component. \",\"longDesc\":[\"This component acts as a standard HTML fragment inside the HTML document.\",\"You can use Fragment to write your own custom HTML code in a page. The code you write will be inserted in the page at the level the Fragment is defined.\",\"To write the code, double-click on the Fragment component in your project to open the HTML editor.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588063854110]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓qname [mobile.components.UIControlVariable-1588063854113]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Customs_Fragment.Content.Fragment'
+            ↓clabel [mobile.components.UIControlVariable-1588063854116]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Fragment'
 ↓Content [mobile.components.UIDynamicElement-1579166568460]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

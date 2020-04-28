@@ -67,6 +67,14 @@ title: Popover
                  "data": "script:{''contentEl'': this.popoverContent._elementRef.nativeElement, ''textEl'': this.popoverText.nativeElement, ''key'': ''value''}",
                  "enableBackdropDismiss": "plain:false"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588084970206]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588084970209]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Popover Page'
 ↓Content [mobile.components.UIDynamicElement-1585215458984]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

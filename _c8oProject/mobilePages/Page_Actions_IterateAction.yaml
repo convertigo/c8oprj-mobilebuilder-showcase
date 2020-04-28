@@ -66,6 +66,14 @@ title: Iterate/Loop
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"IterateAction\",\"shortDesc\":\"Defines an IterateAction component.\",\"longDesc\":[\"This component helps iterating any objects array.\",\"To work properly the IterateAction needs a Loop Handler in which you may add any kind of action to be executed at each loop.\",\"The Loop Handler exposes the loop''scurrentitemandindexyoucanuseinactions.\"]},{\"title\":\"Loop Handler\",\"shortDesc\":\"Defines a Loop Handler\",\"longDesc\":[\"A Loop Handler must be added inside an IterateAction.\",\"It helps defining actions to be executed for each loop.\",\"Each action can access the current loop index and item through the index and item parameters in TS mode. You can change the parameter names for more appropriate ones or to differentiate them in nested loops.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588064948857]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588064948863]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'IterateAction'
 ↓Content [mobile.components.UIDynamicElement-1585676030412]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -113,6 +121,19 @@ title: Iterate/Loop
           ↓Event [mobile.components.UIControlEvent-1585676662132]: 
             ↓PushPage [mobile.components.UIDynamicAction-1585676670659]: 
               beanData: '{"ionBean":"PushPageAction","page":"plain:MobileBuilderComponents.MobileApplication.Application.Page_Actions_LoadingShowClose"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588065529095]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588065529098]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'IterateAction'
+              ↓qname [mobile.components.UIControlVariable-1588065537416]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_LoadingShowClose.Content.Button.Event.Show_Loading.peopleLoading.SetGlobal.IterateAction'
   ↓Grid1 [mobile.components.UIDynamicElement-1587464007504]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
@@ -178,6 +199,19 @@ title: Iterate/Loop
                           }'
                       ↓PauseAction [mobile.components.UIDynamicAction-1587465333523]: 
                         beanData: '{"ionBean":"PauseAction","duration":"plain:125"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588065237636]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588065237639]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'IterateAction'
+              ↓qname [mobile.components.UIControlVariable-1588065263862]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_IterateAction.Content.Grid1.GridRow1.GridCol.Button1.Event.Log.IterateAction1'
   ↓Grid2 [mobile.components.UIDynamicElement-1587471998460]: 
     beanData: '{"ionBean":"Grid"}'
     tagName: ion-grid
@@ -246,5 +280,18 @@ title: Iterate/Loop
                       }'
                   ↓PauseAction [mobile.components.UIDynamicAction-1587472003149]: 
                     beanData: '{"ionBean":"PauseAction","duration":"plain:125"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588065414782]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588065414785]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'IterateAction'
+              ↓qname [mobile.components.UIControlVariable-1588065414788]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_IterateAction.Content.Grid2.GridRow1.GridCol.Button1.Event.Log.IterateAction1'
 ↓UseSharedComponent [mobile.components.UIUseShared-1586262122163]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

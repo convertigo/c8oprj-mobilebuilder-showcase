@@ -66,6 +66,14 @@ title: Speech To Text
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"SpeechToText\",\"shortDesc\":\"Defines a SpeechToText action component.\",\"longDesc\":[\"Listen a speech.\",\"This component retrieves speech recognition''s data.\",\"Note that more languages are avaible in an external browser, or device than in Convertigo viewer.\",\"You can access data from the next action in the chain in (TS) mode with: \"],\"list\":[\"out: A concatenation of spoken string(s) if the action succeed\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588093272301]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588093272304]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'SpeechToText'
 ↓Content [mobile.components.UIDynamicElement-1578662210011]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -149,6 +157,19 @@ title: Speech To Text
                        "Property": "plain:speechTT",
                        "Value": "script:out"
                       }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588093327992]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588093327995]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'SpeechToText'
+              ↓qname [mobile.components.UIControlVariable-1588093327998]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_NativeActions_SpeechToText.Content.Grid.GridRow1.GridCol.Button.Event.SetGlobal1.SetGlobal.SpeechToText'
     ↓GridRow2 [mobile.components.UIDynamicElement-1586166728825]: 
       beanData: '{"ionBean":"GridRow"}'
       tagName: ion-row

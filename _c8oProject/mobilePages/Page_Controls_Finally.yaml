@@ -50,6 +50,19 @@ title: Finally
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Finally Handler\",\"shortDesc\":\"Defines an Finally Handler.\",\"longDesc\":[\"Finally Handler can be used to execute some final actions once the main action chain is complete, whether there were errors or not.\",\"To do so, place a Finally Handler immediately under an Event, an AppEvent, a PageEvent, a SharedAction or a Subscribe Handler, and add to it any child action chain.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588062435274]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588062435277]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Finally Handler'
+            ↓qname [mobile.components.UIControlVariable-1588062435280]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Page_Controls_Finally.PageEvent.Finally_Handler'
 ↓Content [mobile.components.UIDynamicElement-1577960699035]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
