@@ -67,6 +67,14 @@ title: Style
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Style\",\"shortDesc\":\"Defines a Style component.\",\"longDesc\":[\"This component helps defining standard HTML CSS rules.\",\"You can add Style components to the Application component, to any Page or any single Component.\",\"Double-click on your Style component to open the editor and modify your CSS rules.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588149074781]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588149074784]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Style'
 ↓Content [mobile.components.UIDynamicElement-1579191468634]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

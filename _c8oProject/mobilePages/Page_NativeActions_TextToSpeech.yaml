@@ -66,6 +66,14 @@ title: Text To Speech
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"TextToSpeech\",\"shortDesc\":\"Defines a TextToSpeech action component.\",\"longDesc\":[\"Speaks a string.\",\"Note that more languages are avaible in an external browser, or device than in Convertigo viewer.\",\"You can access data from the next action in the chain in (TS) mode with: \"],\"list\":[\"out: A boolean thats indicates if the action succeed\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157412271]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588157412274]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'TextToSpeech'
 ↓Content [mobile.components.UIDynamicElement-1578662578730]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
@@ -198,6 +206,19 @@ title: Text To Speech
                          "Property": "plain:ttsound",
                          "Value": "script:''volume-mute''"
                         }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157487119]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157498988]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'TextToSpeech'
+              ↓qname [mobile.components.UIControlVariable-1588157502371]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_NativeActions_TextToSpeech.Content.Grid.GridRow1.GridCol.Button.Event.SetGlobal.SetGlobal.TextToSpeech'
           ↓Attr [mobile.components.UIAttribute-1586182117832]: 
             attrName: '[disabled]'
             attrValue: 

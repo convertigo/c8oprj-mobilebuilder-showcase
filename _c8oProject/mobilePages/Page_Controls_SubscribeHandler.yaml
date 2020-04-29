@@ -66,6 +66,14 @@ title: Subscribe Handler
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Subscribe Handler\",\"shortDesc\":\"Defines a Subscribe Handler component.\",\"longDesc\":[\"This component helps you subscribing to an event giving its topic and defining actions to execute when the event is triggered through a PublishEvent action.\",\"You may add a Subscribe Handler under the Application or a Page, then add to it any type of action such as CallSequence, CallFullSync or CustomAction component.\"]},{\"title\":\"PublishEvent\",\"shortDesc\":\"Defines a PublishEvent action component.\",\"longDesc\":[\"This component helps publishing an event giving its topic and optional data. The event may be handled by an existing Subscribe Handler component in any available page..\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588149127038]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588149127041]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Subscribe Handler'
 ↓Content [mobile.components.UIDynamicElement-1587476634254]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
@@ -121,6 +129,11 @@ title: Subscribe Handler
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'Page_Controls_SubscribeHandler.Subscribe_Handler'
+        ↓clabel [mobile.components.UIControlVariable-1588149162220]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Subscribe Handler'
   ↓Button1 [mobile.components.UIDynamicElement-1587482881516]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -146,6 +159,11 @@ title: Subscribe Handler
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'Page_Controls_SubscribeHandler.Subscribe_Handler1'
+        ↓clabel [mobile.components.UIControlVariable-1588149174300]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Subscribe Handler'
   ↓Button2 [mobile.components.UIDynamicElement-1587482904492]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -166,6 +184,11 @@ title: Subscribe Handler
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'Subscribe_Handler1'
+        ↓clabel [mobile.components.UIControlVariable-1588149183314]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Subscribe Handler'
   ↓Button3 [mobile.components.UIDynamicElement-1587547464205]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button
@@ -186,6 +209,11 @@ title: Subscribe Handler
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'publishTopic.PublishEvent'
+        ↓clabel [mobile.components.UIControlVariable-1588149195641]: 
+          varValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:'Subscribe Handler'
   ↓Button4 [mobile.components.UIDynamicElement-1587560117293]: 
     beanData: '{"ionBean":"Button","IonShape":"plain:full"}'
     tagName: button

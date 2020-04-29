@@ -67,6 +67,14 @@ title: Tag
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Tag\",\"shortDesc\":\"Defines a Tag component.\",\"longDesc\":[\"This component acts as a standard HTML element defined with a starting and an ending tag.\",\"All mobile components in the palette are already defined with a tag name. You can create your own mobile elements by using the Tag component specifying its Tag name property.\",\"You can also add Attr components to a Tag component to create custom attributes to this element.\",\"For example, you could create your own <ion-tab> element and add a title attribute to it.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157302021]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588157302024]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Tag'
 ↓Content [mobile.components.UIDynamicElement-1579257993840]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content

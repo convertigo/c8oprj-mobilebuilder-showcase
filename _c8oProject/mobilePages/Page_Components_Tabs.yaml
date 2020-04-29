@@ -64,14 +64,27 @@ title: Tabs
                 '{
                  "ionBean": "PopoverAction",
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
-                 "data": "script:{\"components\":[{\"title\":\"Tabs Container\",\"shortDesc\":\"ion-tabs\",\"longDesc\":[\"Defines a Tabs Container component.\",\"A Tabs Container component is a container of individual Tab Item which make it easy to navigate between different pages.\"]},{\"title\":\"Tab Item\",\"shortDesc\":\"ion-tab\",\"longDesc\":[\"Defines a Tab Item component.\",\"A tab has to be inserted in a Tabs Container component.\",\"A tab is associated to a page you can specify through its properties.\",\"Note: Make sure the page you associate contains a Content or <ion-content> to make it work properly in tab.\"]}]}"
+                 "data": "script:{\"components\":[{\"title\":\"Tabs Container\",\"shortDesc\":\"ion-tabs\",\"longDesc\":[\"Defines a Tabs Container component.\",\"A Tabs Container component is a container of individual Tab Item which make it easy to navigate between different pages.\"]},{\"title\":\"Tab Item\",\"shortDesc\":\"ion-tab\",\"longDesc\":[\"Defines a Tab Item component.\",\"A tab has to be inserted in a Tabs Container component.\",\"A tab is associated to a page you can specify through its properties.\",\"Note: Make sure the page you associate contains a Content or <ion-content> to make it work properly in tab.\"]},{\"title\":\"Events\",\"shortDesc\":\"\",\"longDesc\":[\"ionChange: Defined in the TabsContainer, emitted when tab changes.\",\"ionSelected(): Method defined in page class, fired when clicking active tab.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588149261250]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588149261253]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Tabs Container'
 ↓Content [mobile.components.UIDynamicElement-1579531139951]: 
   beanData: '{"ionBean":"Content","IonPadding":"plain:false"}'
   comment: Page content
   tagName: ion-content
   ↓TabsContainer [mobile.components.UIDynamicElement-1579531317798]: 
-    beanData: '{"ionBean":"Tabs","TabsPlacement":"plain:bottom"}'
+    beanData: |
+      '{
+       "ionBean": "Tabs",
+       "SelectedIndex": "plain:1",
+       "TabsPlacement": "plain:bottom"
+      }'
     tagName: ion-tabs
     ↓TabItem [mobile.components.UIDynamicTab-1579531326330]: 
       beanData: |
@@ -103,3 +116,27 @@ title: Tabs
         }'
       tabpage: MobileBuilderComponents.MobileApplication.Application.Page_Components_Tabs_Chat
       tagName: ion-tab
+    ↓Event [mobile.components.UIControlEvent-1588149346989]: 
+      attrName: (ionChange)
+      eventName: ionChange
+      ↓Toast [mobile.components.UIDynamicAction-1588154327249]: 
+        beanData: |
+          '{
+           "ionBean": "ToastAction",
+           "message": "script:''Charging tab \\\\'''' + $event.tabTitle + ''\\\\''''",
+           "duration": "plain:2000",
+           "position": "plain:middle"
+          }'
+      ↓invoke_Highlight [mobile.components.UICustomAction-1588155912360]: 
+        actionValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                		let qnames = [''Page_Components_Tabs.Content.TabsContainer.TabItem'', ''Page_Components_Tabs.Content.TabsContainer.TabItem1'', ''Page_Components_Tabs.Content.TabsContainer.TabItem2''];
+                		let id = event.index || 0;
+                		this.actionBeans.STS1587564394604(this,this.merge(this.merge({},{tplVersion: ''7.7.0.16'', actionName: ''InvokeSharedAction'', actionFunction: ''STS1587564394604''}), {stack:{root: {scope:{}, in:{}, out:event}}}),{clabel: ''Tabs Container'', qname: qnames[id]}, event);
+                		resolve();
+                '
+        comment: invoke sharedAction (highlight) in TS

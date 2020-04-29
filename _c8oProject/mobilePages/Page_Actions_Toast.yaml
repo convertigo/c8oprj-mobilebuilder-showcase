@@ -66,6 +66,14 @@ title: Toasts
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
                  "data": "script:{\"components\":[{\"title\":\"Toast\",\"shortDesc\":\"Defines a ToastAction action component.\",\"longDesc\":[\"This component helps displaying some informations.\",\"A Toast is a subtle notification commonly used in modern applications. It can be used to provide feedback about an operation or to display a system message. The toast appears on top of the applications content, and can be dismissed to resume user interaction with the application.\"]}]}"
                 }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157635546]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588157635549]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Toast'
   ↓Div [mobile.components.UIDynamicElement-1586262359185]: 
     beanData: '{"ionBean":"DivTag"}'
     tagName: div
@@ -162,6 +170,19 @@ title: Toasts
                      "Property": "plain:isProgress",
                      "Value": "script:false"
                     }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157670017]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157670020]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Toast'
+              ↓qname [mobile.components.UIControlVariable-1588157673979]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_Position_Top.GridCol_right.Button.Event.SetGlobal.Toast'
           ↓Text [mobile.components.UIText-1584538671986]: 
             textValue: 
               - xmlizable: 
@@ -198,6 +219,19 @@ title: Toasts
                  "message": "plain:THIS IS A MIDDLE TOAST!",
                  "position": "plain:middle"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157719622]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157719625]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Toast'
+              ↓qname [mobile.components.UIControlVariable-1588157719628]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_Position_Middle.GridCol_right.Button.Event.Toast'
           ↓Text1 [mobile.components.UIText-1584538732109]: 
             textValue: 
               - xmlizable: 
@@ -229,6 +263,19 @@ title: Toasts
           ↓Event [mobile.components.UIControlEvent-1584537961645]: 
             ↓Toast [mobile.components.UIDynamicAction-1584537961648]: 
               beanData: '{"ionBean":"ToastAction","message":"plain:THIS IS A BOTTOM TOAST!"}'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157771357]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157771360]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Toast'
+              ↓qname [mobile.components.UIControlVariable-1588157771363]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_Position_Bottom.GridCol_right.Button.Event.Toast'
           ↓Text1 [mobile.components.UIText-1584538795457]: 
             textValue: 
               - xmlizable: 
@@ -266,6 +313,19 @@ title: Toasts
                  "position": "plain:middle",
                  "showCloseButton": "plain:true"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157816863]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157816866]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Toast'
+              ↓qname [mobile.components.UIControlVariable-1588157816869]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_Close_Default.GridCol_right.Button.Event.Toast'
           ↓Text1 [mobile.components.UIText-1584538799027]: 
             textValue: 
               - xmlizable: 
@@ -304,6 +364,19 @@ title: Toasts
                  "showCloseButton": "plain:true",
                  "closeButtonText": "plain:X"
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157858277]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157858280]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Toast'
+              ↓qname [mobile.components.UIControlVariable-1588157858283]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_Close_Custom.GridCol_right.Button.Event.Toast'
           ↓Text1 [mobile.components.UIText-1584538801691]: 
             textValue: 
               - xmlizable: 
@@ -356,6 +429,19 @@ title: Toasts
                      "Property": "plain:isProgress10",
                      "Value": "script:false"
                     }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157913507]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157913510]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Toast'
+              ↓qname [mobile.components.UIControlVariable-1588157913513]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_Duration.GridCol_right.Button.Event.SetGlobal.Toast'
           ↓Text1 [mobile.components.UIText-1584538806753]: 
             textValue: 
               - xmlizable: 
@@ -396,6 +482,19 @@ title: Toasts
                  "showCloseButton": "plain:true",
                  "closeButtonText": "plain: "
                 }'
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588157952473]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓clabel [mobile.components.UIControlVariable-1588157952476]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Toast'
+              ↓qname [mobile.components.UIControlVariable-1588157952479]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_CSS.GridCol_right.Button.Event.Toast'
           ↓Text1 [mobile.components.UIText-1584538811527]: 
             textValue: 
               - xmlizable: 
