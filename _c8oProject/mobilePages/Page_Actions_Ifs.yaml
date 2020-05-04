@@ -1,0 +1,268 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	generateRnd(min, max){
+        	    let d =  Math.floor(Math.random() * (max - min + 1) + min);
+        	    console.log('>>>' + d);
+        	    return d;
+        	}
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_actions_ifs
+title: If / IfElse
+↓Header [mobile.components.UIDynamicElement-1588178281092]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1588178281095]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1588178281098]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1588178281101]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:If / IfElse
+    ↓Button [mobile.components.UIDynamicElement-1588178281104]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1588178281107]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1588178409397]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1588178409400]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1588178409403]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1588178409406]: 
+          ↓wrapper [mobile.components.UICustomAction-1588178409409]: 
+            ↓Popover [mobile.components.UIDynamicAction-1588178409412]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"If\",\"shortDesc\":\"Defines an If action component.\",\"longDesc\":[\"This component helps handling decisions to control the actions workflow.\",\"It tests the result of the given condition property. You can use the out expression in the condition, where out holds the parent action returned data. If the condition is verified, it will execute the next action underneath.\",\"You can use the Negate property to test the reverse condition. This is useful for an ''if then else'' type of flow. For example:\"],\"list\":[\"if mycondition: do some stuff\",\"if not mycondition: do some other stuff\"]},{\"title\":\"IfElse\",\"shortDesc\":\"Defines an IfElse action component.\",\"longDesc\":[\"This component helps handling decisions to control the actions workflow by testing the result of the given condition property.\",\"If the condition is verified, it will execute the next action underneath, otherwise it will execute actions placed under the Else Handler you may have added.\",\"You can use the Negate property to test the reverse condition.\"]}]}"
+                }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588178409415]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588178409418]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'If'
+↓Content [mobile.components.UIDynamicElement-1588178281110]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓GenericItem [mobile.components.UIDynamicElement-1588585411513]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓Label [mobile.components.UIDynamicElement-1588585419893]: 
+      beanData: '{"ionBean":"Label","Stacked":"plain:stacked"}'
+      tagName: ion-label
+      ↓Text [mobile.components.UIText-1588587218759]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Choose between 1-100
+    ↓TextInput [mobile.components.UIDynamicElement-1588585425956]: 
+      beanData: |
+        '{
+         "ionBean": "Input",
+         "Max": "plain:100",
+         "Min": "plain:0",
+         "Type": "plain:number"
+        }'
+      identifier: InputRND
+      tagName: ion-input
+      ↓Attr1 [mobile.components.UIAttribute-1588587796185]: 
+        attrName: '[disabled]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.rnd == null
+    ↓Button [mobile.components.UIDynamicElement-1588586089001]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "IonClear": "plain:clear",
+         "IconOnly": "plain:icon-only"
+        }'
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1588586089004]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:send"}'
+        tagName: ion-icon
+      ↓Attr [mobile.components.UIAttribute-1588586089007]: 
+        attrName: 
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:item-end
+      ↓Style [mobile.components.UIStyle-1588586089010]: 
+        styleContent: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '	font-size: 1.4rem !important;
+                	position: relative !important;
+                	top: 15px !important;
+                	margin: 0 auto !important;
+                '
+      ↓Event [mobile.components.UIControlEvent-1588586089013]: 
+        ↓SetGlobal1 [mobile.components.UIDynamicAction-1588598521968]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:tries",
+             "Value": "script:(this.global.tries = this.global.tries +1)"
+            }'
+        ↓IfElse [mobile.components.UIDynamicIf-1588586391958]: 
+          beanData: '{"ionBean":"IfElseAction","condition":"script:this.InputRND.value == this.global.rnd"}'
+          ↓SetGlobal [mobile.components.UIDynamicAction-1588586547023]: 
+            beanData: |
+              '{
+               "ionBean": "SetGlobalAction",
+               "Property": "plain:result",
+               "Value": "plain:Well done!"
+              }'
+          ↓SetGlobal1 [mobile.components.UIDynamicAction-1588587757234]: 
+            beanData: |
+              '{
+               "ionBean": "SetGlobalAction",
+               "Property": "plain:rnd",
+               "Value": "script:null"
+              }'
+          ↓Else_Handler [mobile.components.UIActionElseEvent-1588586582517]: 
+            ↓If_lesserThan [mobile.components.UIDynamicAction-1588586594582]: 
+              beanData: '{"ionBean":"IfAction","condition":"script:this.InputRND.value < this.global.rnd"}'
+              ↓SetGlobal [mobile.components.UIDynamicAction-1588586698914]: 
+                beanData: |
+                  '{
+                   "ionBean": "SetGlobalAction",
+                   "Property": "plain:result",
+                   "Value": "plain:It''s greater"
+                  }'
+            ↓If_greaterThan [mobile.components.UIDynamicAction-1588586646073]: 
+              beanData: |
+                '{
+                 "ionBean": "IfAction",
+                 "condition": "script:this.InputRND.value < this.global.rnd",
+                 "negate": "plain:true"
+                }'
+              ↓SetGlobal [mobile.components.UIDynamicAction-1588586701019]: 
+                beanData: |
+                  '{
+                   "ionBean": "SetGlobalAction",
+                   "Property": "plain:result",
+                   "Value": "plain:It''s lesser"
+                  }'
+      ↓Attr1 [mobile.components.UIAttribute-1588587444009]: 
+        attrName: '[disabled]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.rnd == null
+    ↓Button1 [mobile.components.UIDynamicElement-1588587086983]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "IonClear": "plain:clear",
+         "IconOnly": "plain:icon-only"
+        }'
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1588587086986]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:refresh"}'
+        tagName: ion-icon
+      ↓Attr [mobile.components.UIAttribute-1588587086989]: 
+        attrName: 
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:item-end
+      ↓Style [mobile.components.UIStyle-1588587086992]: 
+        styleContent: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '	font-size: 1.4rem !important;
+                	position: relative !important;
+                	top: 15px !important;
+                	margin: 0 auto !important;
+                '
+      ↓Event [mobile.components.UIControlEvent-1588587086995]: 
+        ↓SetGlobal [mobile.components.UIDynamicAction-1588587124693]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:rnd",
+             "Value": "script:this.generateRnd(1, 100)"
+            }'
+        ↓SetGlobal1 [mobile.components.UIDynamicAction-1588587909339]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:result",
+             "Value": "plain:false"
+            }'
+        ↓SetGlobal11 [mobile.components.UIDynamicAction-1588598487670]: 
+          beanData: |
+            '{
+             "ionBean": "SetGlobalAction",
+             "Property": "plain:tries",
+             "Value": "plain:false"
+            }'
+      ↓Attr1 [mobile.components.UIAttribute-1588587530660]: 
+        attrName: '[disabled]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.rnd != null
+  ↓Div [mobile.components.UIDynamicElement-1588586468135]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓Paragraph [mobile.components.UIDynamicElement-1588587842857]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      tagName: p
+      ↓Text [mobile.components.UIText-1588586474680]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global.result || ''
+      ↓Text1 [mobile.components.UIText-1588598462834]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:(this.global.tries + this.global.tries ?  '', #''+this.global.tries + '' tries'' : '''') || '''''
+↓UseSharedComponent [mobile.components.UIUseShared-1588178382013]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer

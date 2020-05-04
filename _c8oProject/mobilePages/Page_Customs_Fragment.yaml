@@ -170,6 +170,10 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Icon in Input page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Actions_Ifs')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		If / IfElse
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Lists_InfiniteScroll')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Infinite Scroll page
