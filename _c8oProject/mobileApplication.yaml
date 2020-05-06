@@ -92,6 +92,7 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Actions_Toast [mobile.components.PageComponent-1584522277732]: 🗏 mobilePages/Page_Actions_Toast.yaml
 ↓Page_Miscellaneous_Tooltip [mobile.components.PageComponent-1576254807835]: 🗏 mobilePages/Page_Miscellaneous_Tooltip.yaml
 ↓Page_Docs_documentation [mobile.components.PageComponent-1585817337154]: 🗏 mobilePages/Page_Docs_documentation.yaml
+↓Page_Controls_Directive [mobile.components.PageComponent-1588664768603]: 🗏 mobilePages/Page_Controls_Directive.yaml
 ↓Theme [mobile.components.UITheme-1584032508351]: 
   styleContent: 
     - xmlizable: 

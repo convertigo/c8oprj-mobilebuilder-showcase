@@ -1,0 +1,395 @@
+comment: In progress
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_controls_directive
+title: Directive
+↓Header [mobile.components.UIDynamicElement-1588664769423]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1588664769426]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1588664769429]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1588664769432]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Directive
+    ↓Button [mobile.components.UIDynamicElement-1588664769435]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1588664769438]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1588785174868]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1588785174871]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1588785174874]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1588785174877]: 
+          ↓wrapper [mobile.components.UICustomAction-1588785174880]: 
+            ↓Popover [mobile.components.UIDynamicAction-1588785174883]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"Directive\",\"shortDesc\":\"Defines a Directive component.\",\"longDesc\":[\"Angular''s structural directives are responsible for HTML layout. They shape or reshape the DOM''s structure, typically by adding, removing, or manipulating elements.\",\"Directives can be:\"],\"list\":[\"ForEach - each occurrence of a source collection will generate an UI Component\",\"If - the UI Component will be displayed If the source is true\",\"Switch, Switch, SwichtDefault - the UI Component will be displayed with the Switch options\"]}]}"
+                }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588785174886]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1588785174889]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'Directive'
+↓Content [mobile.components.UIDynamicElement-1588664769441]: 
+  beanData: |
+    '{
+     "ionBean": "Content",
+     "IonPadding": "plain:false",
+     "Fullscreen": "plain:true"
+    }'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1588759455534]: 
+    beanData: |
+      '{
+       "ionBean": "Grid",
+       "Height": "plain:height:100%",
+       "NoPadding": "plain:true"
+      }'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1588759472886]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1588759483085]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+        tagName: ion-col
+        ↓Directive [mobile.components.UIControlDirective-1588760002715]: 
+          directiveName: Switch
+          directiveSource: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:this.global.data_json?.status[this.global.data_day].mood
+          ↓Directive [mobile.components.UIControlDirective-1588780974489]: 
+            directiveName: SwitchCase
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:'sleepy'
+            ↓Image [mobile.components.UIDynamicElement-1588760862345]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/sleepy.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588784962755]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+          ↓Directive2 [mobile.components.UIControlDirective-1588781254835]: 
+            directiveName: SwitchCase
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:'sad'
+            ↓Image [mobile.components.UIDynamicElement-1588781254838]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/crying.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588784965873]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+          ↓Directive21 [mobile.components.UIControlDirective-1588781264706]: 
+            directiveName: SwitchCase
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:'gloomy'
+            ↓Image [mobile.components.UIDynamicElement-1588781264709]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/depression.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588784968286]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+          ↓Directive3 [mobile.components.UIControlDirective-1588781268750]: 
+            directiveName: SwitchCase
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:'cheerful'
+            ↓Image [mobile.components.UIDynamicElement-1588781268753]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/happy.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588783614487]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+          ↓Directive31 [mobile.components.UIControlDirective-1588781284069]: 
+            directiveName: SwitchCase
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:'sunny'
+            ↓Image [mobile.components.UIDynamicElement-1588781284072]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/cool.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588784971487]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+          ↓Directive32 [mobile.components.UIControlDirective-1588781287015]: 
+            directiveName: SwitchCase
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:'humorous'
+            ↓Image [mobile.components.UIDynamicElement-1588781287018]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/humor.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588784973836]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+          ↓Directive33 [mobile.components.UIControlDirective-1588781288957]: 
+            directiveName: SwitchCase
+            directiveSource: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:'lighthearted'
+            ↓Image [mobile.components.UIDynamicElement-1588781288960]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/love.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588784976239]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+          ↓Directive1 [mobile.components.UIControlDirective-1588781139689]: 
+            directiveName: SwitchDefault
+            ↓Image [mobile.components.UIDynamicElement-1588781162130]: 
+              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/robot.svg''"}'
+              selfClose: true
+              tagName: img
+              ↓Style [mobile.components.UIStyle-1588784978674]: 
+                styleContent: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                      →: |
+                        '	width: 95vw;
+                        	max-height: 60vh;
+                        '
+        ↓Attr [mobile.components.UIAttribute-1588761040632]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-center
+        ↓H1 [mobile.components.UIDynamicElement-1588783018699]: 
+          beanData: '{"ionBean":"Heading1"}'
+          isEnabled: false
+          tagName: h1
+          ↓Text [mobile.components.UIText-1588781630195]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.global.data_json?.status[this.global.data_day].weekday_en
+          ↓Style [mobile.components.UIStyle-1588783043846]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	font-size: 15.5vw;
+                    '
+      ↓Attr1 [mobile.components.UIAttribute-1588760931816]: 
+        attrName: '[ngStyle]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:{''background-color'': this.global.data_json?.status[this.global.data_day].color, ''padding-top'': ''38px''}'
+    ↓GridRow1 [mobile.components.UIDynamicElement-1588784134216]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1588784134219]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1588784134276]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-center
+        ↓H1 [mobile.components.UIDynamicElement-1588784134300]: 
+          beanData: '{"ionBean":"Heading1"}'
+          tagName: h1
+          ↓Text [mobile.components.UIText-1588784134303]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: script:this.global.data_json?.status[this.global.data_day].weekday_en
+          ↓Style [mobile.components.UIStyle-1588784134306]: 
+            styleContent: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                  →: |
+                    '	font-size: 11.5vw;
+                    '
+      ↓Attr1 [mobile.components.UIAttribute-1588784134309]: 
+        attrName: '[ngStyle]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:{''background-color'': this.global.data_json?.status[this.global.data_day].color}'
+↓UseSharedComponent [mobile.components.UIUseShared-1588664854556]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+  ↓color [mobile.components.UIControlVariable-1588759863927]: 
+    varValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+        - MobileSmartSourceType: script:'light'
+↓PageEvent [mobile.components.UIPageEvent-1588752333051]: 
+  ↓readJson [mobile.components.UICustomAction-1588752343080]: 
+    actionValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+            		let http = this.getInstance(HttpClient);
+            		http.get(vars.filename).subscribe(
+            		        response => {
+            		            resolve(response);
+            //		            let day = new Date().getDay();
+            //		            console.log(response["status"] ? response["status"][day]["weekday"] : "unknown");
+            		        },
+            		        error => {
+            		            console.log(error);
+            		            resolve({});
+            		        }
+                    );
+            '
+    module_ng_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: HttpClientModule
+    module_ts_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: HttpClientModule
+              - java.lang.String: 
+                - ↑value: '@angular/common/http'
+    page_ts_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: HttpClient
+              - java.lang.String: 
+                - ↑value: '@angular/common/http'
+    ↓filename [mobile.components.UIControlVariable-1588752383176]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:assets/directive_data.json
+    ↓SetGlobal [mobile.components.UIDynamicAction-1588759317487]: 
+      beanData: |
+        '{
+         "ionBean": "SetGlobalAction",
+         "Property": "plain:data_json",
+         "Value": "script:parent.out"
+        }'
+    ↓SetGlobal1 [mobile.components.UIDynamicAction-1588759748111]: 
+      beanData: |
+        '{
+         "ionBean": "SetGlobalAction",
+         "Property": "plain:data_day",
+         "Value": "script:new Date().getDay()"
+        }'

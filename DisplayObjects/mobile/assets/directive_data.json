@@ -1,0 +1,53 @@
+{
+	"status":
+	[
+		{
+			"weekday_fr":"Dimanche",
+			"weekday_en":"Sunday",
+			"color": "red",
+			"mood": "sleepy"
+		},
+		{
+			"weekday_fr":"Lundi",
+			"weekday_en":"Monday",
+			"color": "orange",
+			"mood": "sad"
+		
+		},
+		{
+			"weekday_fr":"Mardi",
+			"weekday_en":"Tuesday",
+			"color": "yellow",
+			"mood": "gloomy"
+		
+		},
+		{
+			"weekday_fr":"Mercredi",
+			"weekday_en":"Wednesday",
+			"color": "green",
+			"mood": "cheerful"
+		
+		},
+		{
+			"weekday_fr":"Jeudi",
+			"weekday_en":"Thursday",
+			"color": "blue",
+			"mood": "sunny"
+		
+		},
+		{
+			"weekday_fr":"Vendredi",
+			"weekday_en":"Friday",
+			"color": "indigo",
+			"mood": "humorous"
+		
+		},
+		{
+			"weekday_fr":"Samedi",
+			"weekday_en":"Saturday",
+			"color": "violet",
+			"mood": "lighthearted"
+		
+		}
+	]
+}
