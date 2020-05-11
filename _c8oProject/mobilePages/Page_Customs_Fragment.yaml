@@ -138,6 +138,10 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		ChatBot page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_Controls_Directive')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Directive page
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Buttons_Fabs')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Fabs page

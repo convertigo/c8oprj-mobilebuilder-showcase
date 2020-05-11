@@ -1,4 +1,3 @@
-comment: In progress
 preloadPriority: high
 scriptContent: 
   - xmlizable: 
@@ -84,237 +83,250 @@ title: Directive
     }'
   comment: Page content
   tagName: ion-content
-  ↓Grid [mobile.components.UIDynamicElement-1588759455534]: 
-    beanData: |
-      '{
-       "ionBean": "Grid",
-       "Height": "plain:height:100%",
-       "NoPadding": "plain:true"
-      }'
-    tagName: ion-grid
-    ↓GridRow [mobile.components.UIDynamicElement-1588759472886]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
-      tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1588759483085]: 
-        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
-        tagName: ion-col
-        ↓Directive [mobile.components.UIControlDirective-1588760002715]: 
-          directiveName: Switch
-          directiveSource: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:this.global.data_json?.status[this.global.data_day].mood
-          ↓Directive [mobile.components.UIControlDirective-1588780974489]: 
-            directiveName: SwitchCase
-            directiveSource: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:'sleepy'
-            ↓Image [mobile.components.UIDynamicElement-1588760862345]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/sleepy.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588784962755]: 
-                styleContent: 
+  ↓SlidesContainer [mobile.components.UIDynamicElement-1589208090399]: 
+    beanData: '{"ionBean":"Slides"}'
+    identifier: slides
+    tagName: ion-slides
+    ↓Directive [mobile.components.UIControlDirective-1589208132055]: 
+      directiveIndexName: statusIndex
+      directiveItemName: statusItem
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global.data_json?.status
+      ↓SlideItem [mobile.components.UIDynamicElement-1589208279059]: 
+        beanData: '{"ionBean":"Slide"}'
+        tagName: ion-slide
+        ↓Grid [mobile.components.UIDynamicElement-1588759455534]: 
+          beanData: |
+            '{
+             "ionBean": "Grid",
+             "Height": "plain:height:100%",
+             "NoPadding": "plain:true"
+            }'
+          tagName: ion-grid
+          ↓GridRow [mobile.components.UIDynamicElement-1588759472886]: 
+            beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+            tagName: ion-row
+            ↓GridCol [mobile.components.UIDynamicElement-1588759483085]: 
+              beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+              tagName: ion-col
+              ↓Directive [mobile.components.UIControlDirective-1588760002715]: 
+                directiveName: Switch
+                directiveSource: 
                   - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-          ↓Directive2 [mobile.components.UIControlDirective-1588781254835]: 
-            directiveName: SwitchCase
-            directiveSource: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:'sad'
-            ↓Image [mobile.components.UIDynamicElement-1588781254838]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/crying.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588784965873]: 
-                styleContent: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:statusItem.mood
+                ↓Directive0 [mobile.components.UIControlDirective-1588780974489]: 
+                  directiveName: SwitchCase
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:'sleepy'
+                  ↓Image [mobile.components.UIDynamicElement-1588760862345]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/sleepy.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588784962755]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+                ↓Directive1 [mobile.components.UIControlDirective-1588781254835]: 
+                  directiveName: SwitchCase
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:'sad'
+                  ↓Image [mobile.components.UIDynamicElement-1588781254838]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/crying.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588784965873]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+                ↓Directive2 [mobile.components.UIControlDirective-1588781264706]: 
+                  directiveName: SwitchCase
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:'gloomy'
+                  ↓Image [mobile.components.UIDynamicElement-1588781264709]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/depression.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588784968286]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+                ↓Directive3 [mobile.components.UIControlDirective-1588781268750]: 
+                  directiveName: SwitchCase
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:'cheerful'
+                  ↓Image [mobile.components.UIDynamicElement-1588781268753]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/happy.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588783614487]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+                ↓Directive4 [mobile.components.UIControlDirective-1588781284069]: 
+                  directiveName: SwitchCase
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:'sunny'
+                  ↓Image [mobile.components.UIDynamicElement-1588781284072]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/cool.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588784971487]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+                ↓Directive5 [mobile.components.UIControlDirective-1588781287015]: 
+                  directiveName: SwitchCase
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:'humorous'
+                  ↓Image [mobile.components.UIDynamicElement-1588781287018]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/humor.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588784973836]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+                ↓Directive6 [mobile.components.UIControlDirective-1588781288957]: 
+                  directiveName: SwitchCase
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: plain:'lighthearted'
+                  ↓Image [mobile.components.UIDynamicElement-1588781288960]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/love.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588784976239]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+                ↓Directive7 [mobile.components.UIControlDirective-1588781139689]: 
+                  directiveName: SwitchDefault
+                  ↓Image [mobile.components.UIDynamicElement-1588781162130]: 
+                    beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/robot.svg''"}'
+                    selfClose: true
+                    tagName: img
+                    ↓Style [mobile.components.UIStyle-1588784978674]: 
+                      styleContent: 
+                        - xmlizable: 
+                          - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                          - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                            →: |
+                              '	width: 95vw;
+                              	max-height: 60vh;
+                              '
+              ↓Attr [mobile.components.UIAttribute-1588761040632]: 
+                attrName: 
+                attrValue: 
                   - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-          ↓Directive21 [mobile.components.UIControlDirective-1588781264706]: 
-            directiveName: SwitchCase
-            directiveSource: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:'gloomy'
-            ↓Image [mobile.components.UIDynamicElement-1588781264709]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/depression.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588784968286]: 
-                styleContent: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:text-center
+          ↓GridRow1 [mobile.components.UIDynamicElement-1588784134216]: 
+            beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+            tagName: ion-row
+            ↓GridCol [mobile.components.UIDynamicElement-1588784134219]: 
+              beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+              tagName: ion-col
+              ↓Attr [mobile.components.UIAttribute-1588784134276]: 
+                attrName: 
+                attrValue: 
                   - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-          ↓Directive3 [mobile.components.UIControlDirective-1588781268750]: 
-            directiveName: SwitchCase
-            directiveSource: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:'cheerful'
-            ↓Image [mobile.components.UIDynamicElement-1588781268753]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/happy.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588783614487]: 
-                styleContent: 
-                  - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-          ↓Directive31 [mobile.components.UIControlDirective-1588781284069]: 
-            directiveName: SwitchCase
-            directiveSource: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:'sunny'
-            ↓Image [mobile.components.UIDynamicElement-1588781284072]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/cool.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588784971487]: 
-                styleContent: 
-                  - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-          ↓Directive32 [mobile.components.UIControlDirective-1588781287015]: 
-            directiveName: SwitchCase
-            directiveSource: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:'humorous'
-            ↓Image [mobile.components.UIDynamicElement-1588781287018]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/humor.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588784973836]: 
-                styleContent: 
-                  - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-          ↓Directive33 [mobile.components.UIControlDirective-1588781288957]: 
-            directiveName: SwitchCase
-            directiveSource: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: plain:'lighthearted'
-            ↓Image [mobile.components.UIDynamicElement-1588781288960]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/love.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588784976239]: 
-                styleContent: 
-                  - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-          ↓Directive1 [mobile.components.UIControlDirective-1588781139689]: 
-            directiveName: SwitchDefault
-            ↓Image [mobile.components.UIDynamicElement-1588781162130]: 
-              beanData: '{"ionBean":"Image","url":"script:''assets\/moods\/robot.svg''"}'
-              selfClose: true
-              tagName: img
-              ↓Style [mobile.components.UIStyle-1588784978674]: 
-                styleContent: 
-                  - xmlizable: 
-                    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                    - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                      →: |
-                        '	width: 95vw;
-                        	max-height: 60vh;
-                        '
-        ↓Attr [mobile.components.UIAttribute-1588761040632]: 
-          attrName: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: plain:text-center
+              ↓H1 [mobile.components.UIDynamicElement-1588784134300]: 
+                beanData: '{"ionBean":"Heading1"}'
+                tagName: h1
+                ↓Directive [mobile.components.UIControlDirective-1589214003459]: 
+                  directiveName: If
+                  directiveSource: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: script:statusIndex == this.global.data_day
+                  ↓Text [mobile.components.UIText-1589214091685]: 
+                    textValue: 
+                      - xmlizable: 
+                        - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                        - MobileSmartSourceType: plain:Today is 
+                ↓Text [mobile.components.UIText-1588784134303]: 
+                  textValue: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                      - MobileSmartSourceType: script:statusItem.weekday_en
+                ↓Style [mobile.components.UIStyle-1588784134306]: 
+                  styleContent: 
+                    - xmlizable: 
+                      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+                      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                        →: |
+                          '	font-size: 11.5vw;
+                          '
+        ↓Attr1 [mobile.components.UIAttribute-1589213648831]: 
+          attrName: '[ngStyle]'
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-center
-        ↓H1 [mobile.components.UIDynamicElement-1588783018699]: 
-          beanData: '{"ionBean":"Heading1"}'
-          isEnabled: false
-          tagName: h1
-          ↓Text [mobile.components.UIText-1588781630195]: 
-            textValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: script:this.global.data_json?.status[this.global.data_day].weekday_en
-          ↓Style [mobile.components.UIStyle-1588783043846]: 
-            styleContent: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                  →: |
-                    '	font-size: 15.5vw;
-                    '
-      ↓Attr1 [mobile.components.UIAttribute-1588760931816]: 
-        attrName: '[ngStyle]'
-        attrValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: 'script:{''background-color'': this.global.data_json?.status[this.global.data_day].color, ''padding-top'': ''38px''}'
-    ↓GridRow1 [mobile.components.UIDynamicElement-1588784134216]: 
-      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
-      tagName: ion-row
-      ↓GridCol [mobile.components.UIDynamicElement-1588784134219]: 
-        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
-        tagName: ion-col
-        ↓Attr [mobile.components.UIAttribute-1588784134276]: 
-          attrName: 
-          attrValue: 
+              - MobileSmartSourceType: 'script:{''background-color'': statusItem.color, ''padding-top'': ''38px''}'
+    ↓Event [mobile.components.UIControlEvent-1589212641830]: 
+      attrName: (ionSlideDidChange)
+      eventName: ionSlideDidChange
+      ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1589212853800]: 
+        beanData: '{"ionBean":"InvokeAction"}'
+        stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+        ↓qname [mobile.components.UIControlVariable-1589212880200]: 
+          varValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:text-center
-        ↓H1 [mobile.components.UIDynamicElement-1588784134300]: 
-          beanData: '{"ionBean":"Heading1"}'
-          tagName: h1
-          ↓Text [mobile.components.UIText-1588784134303]: 
-            textValue: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                - MobileSmartSourceType: script:this.global.data_json?.status[this.global.data_day].weekday_en
-          ↓Style [mobile.components.UIStyle-1588784134306]: 
-            styleContent: 
-              - xmlizable: 
-                - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
-                - com.twinsoft.convertigo.beans.common.FormatedContent: 
-                  →: |
-                    '	font-size: 11.5vw;
-                    '
-      ↓Attr1 [mobile.components.UIAttribute-1588784134309]: 
-        attrName: '[ngStyle]'
-        attrValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: 'script:{''background-color'': this.global.data_json?.status[this.global.data_day].color}'
+              - MobileSmartSourceType: script:'Page_Controls_Directive.Content.SlidesContainer.Directive.SlideItem.Grid.GridRow.GridCol.Directive.Directive' + this.slides.getActiveIndex()
 ↓UseSharedComponent [mobile.components.UIUseShared-1588664854556]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
   ↓color [mobile.components.UIControlVariable-1588759863927]: 
@@ -323,6 +335,7 @@ title: Directive
         - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
         - MobileSmartSourceType: script:'light'
 ↓PageEvent [mobile.components.UIPageEvent-1588752333051]: 
+  viewEvent: onDidLoad
   ↓readJson [mobile.components.UICustomAction-1588752343080]: 
     actionValue: 
       - xmlizable: 
@@ -393,3 +406,16 @@ title: Directive
          "Property": "plain:data_day",
          "Value": "script:new Date().getDay()"
         }'
+      ↓setInitialSlide [mobile.components.UICustomAction-1589210579389]: 
+        actionValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                		window.setTimeout(() => {
+                            this.slides.slideTo(this.global.data_day, 0, true);
+                        }, 100);
+                		resolve();
+                '
+        comment: Setting initial slide to day of week. Must be done programmatically as  Slides are  added dynamically.

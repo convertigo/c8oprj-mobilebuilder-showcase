@@ -59,11 +59,6 @@ title: Tooltip
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
                   - MobileSmartSourceType: script:'Tooltips'
-            ↓qname [mobile.components.UIControlVariable-1588158112549]: 
-              varValue: 
-                - xmlizable: 
-                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                  - MobileSmartSourceType: script:'Page_Actions_Toast.Content.Grid.GridRow_Toast_CSS.GridCol_right.Button.Event.Toast'
 ↓Content [mobile.components.UIDynamicElement-1576254819531]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
