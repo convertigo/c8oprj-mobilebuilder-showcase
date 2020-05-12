@@ -327,6 +327,12 @@ title: Directive
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'Page_Controls_Directive.Content.SlidesContainer.Directive.SlideItem.Grid.GridRow.GridCol.Directive.Directive' + this.slides.getActiveIndex()
+    ↓Attr1 [mobile.components.UIAttribute-1589272241673]: 
+      attrName: '[ngStyle]'
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: 'script:{''visibility'': (this.global.statusVisibility || ''hidden'')}'
 ↓UseSharedComponent [mobile.components.UIUseShared-1588664854556]: 
   sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
   ↓color [mobile.components.UIControlVariable-1588759863927]: 
@@ -415,6 +421,7 @@ title: Directive
                 '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
                 		window.setTimeout(() => {
                             this.slides.slideTo(this.global.data_day, 0, true);
+                            this.global.statusVisibility = ''visible'';
                         }, 100);
                 		resolve();
                 '
