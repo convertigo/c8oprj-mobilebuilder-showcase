@@ -218,6 +218,10 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Popover page
       	</ion-item>
+      	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_Progressbar')">
+      		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
+      		Progress bar
+      	</ion-item>
       	<ion-item tappable (click)="this.openPageWithName('Page_Actions_PushPage')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		PushPage page

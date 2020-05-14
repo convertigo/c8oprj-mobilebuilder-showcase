@@ -1,0 +1,49 @@
+comment: Polled sequence to ckeck main sequence status
+↓Get_from_session [steps.SessionGetStep-1589472386931]: 
+  key: status
+  output: false
+↓jSimpleSource [steps.SimpleSourceStep-1589472386934]: 
+  sourceDefinition: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+      - com.twinsoft.convertigo.beans.common.XMLVector: 
+        - java.lang.String: 
+          - ↑value: 1589472386931
+        - java.lang.String: 
+          - ↑value: ./expression/text()
+  variableName: jsStatus
+↓jIfThenElse [steps.IfThenElseStep-1589472386937]: 
+  condition: jsStatus != ""
+  ↓jThen [steps.ThenStep-1589472386940]: 
+    ↓Sequence_JS [steps.SimpleStep-1589472386943]: 
+      expression: o = JSON.parse(jsStatus);
+    ↓Complex [steps.XMLComplexStep-1589472386946]: 
+      nodeName: progressbar
+      ↓jElement [steps.ElementStep-1589472386949]: 
+        expression: o.progressbar.color
+        nodeName: color
+        nodeText: white
+      ↓jElement1 [steps.ElementStep-1589472386952]: 
+        expression: o.progressbar.status
+        nodeName: status
+        nodeText: 0
+      ↓jElement11 [steps.ElementStep-1589472386955]: 
+        expression: o.progressbar.isEnd
+        nodeName: isEnd
+        nodeText: 0
+        ↓Attribute [steps.XMLAttributeStep-1589472386958]: 
+          nodeName: type
+          nodeText: boolean
+  ↓jElse [steps.ElseStep-1589472386961]: 
+    ↓Complex [steps.XMLComplexStep-1589472386964]: 
+      nodeName: progressbar
+      ↓jElement [steps.ElementStep-1589472386967]: 
+        nodeName: color
+        nodeText: white
+      ↓jElement1 [steps.ElementStep-1589472386970]: 
+        nodeName: status
+        nodeText: 0
+      ↓jElement11 [steps.ElementStep-1589472386973]: 
+        expression: false
+        nodeName: isEnd
+        nodeText: 0

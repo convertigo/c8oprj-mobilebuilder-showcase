@@ -1,0 +1,388 @@
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page_zhowtos_progressbar
+title: Progress bar
+↓Header [mobile.components.UIDynamicElement-1589457996341]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓NavBar [mobile.components.UIDynamicElement-1589457996344]: 
+    beanData: '{"ionBean":"NavBar"}'
+    tagName: ion-navbar
+    ↓BarTitle [mobile.components.UIDynamicElement-1589457996347]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [mobile.components.UIText-1589457996350]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Progress Bar
+    ↓Button [mobile.components.UIDynamicElement-1589457996353]: 
+      beanData: |
+        '{
+         "ionBean": "Button",
+         "ButtonFormType": "plain:false",
+         "MenuMode": "plain:menuToggle"
+        }'
+      comment: A button to toggle the menu
+      tagName: button
+      ↓Icon [mobile.components.UIDynamicElement-1589457996356]: 
+        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
+        tagName: ion-icon
+    ↓ButtonSet [mobile.components.UIDynamicElement-1589458062662]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
+      tagName: ion-buttons
+      ↓Button [mobile.components.UIDynamicElement-1589458062665]: 
+        beanData: |
+          '{
+           "ionBean": "Button",
+           "ButtonFormType": "plain:false",
+           "IonColor": "plain:primary",
+           "IconOnly": "plain:icon-only"
+          }'
+        tagName: button
+        ↓Icon [mobile.components.UIDynamicElement-1589458062668]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:help-circle"}'
+          tagName: ion-icon
+        ↓Event [mobile.components.UIControlEvent-1589458062671]: 
+          ↓wrapper [mobile.components.UICustomAction-1589458062674]: 
+            ↓Popover [mobile.components.UIDynamicAction-1589458062677]: 
+              beanData: |
+                '{
+                 "ionBean": "PopoverAction",
+                 "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
+                 "data": "script:{\"components\":[{\"title\":\"ProgressBar\",\"shortDesc\":\"angular-progress-bar\",\"longDesc\":[\"Defines a ProgressBar component. This component displays a progress bar that helps to monitor progression\"]}]}"
+                }'
+          ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1589458062680]: 
+            beanData: '{"ionBean":"InvokeAction"}'
+            stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+            ↓clabel [mobile.components.UIControlVariable-1589458062683]: 
+              varValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: script:'ProgressBar'
+↓Content [mobile.components.UIDynamicElement-1589457996359]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Grid [mobile.components.UIDynamicElement-1589473971263]: 
+    beanData: '{"ionBean":"Grid"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1589473971266]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height: 100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1589473971269]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Attr [mobile.components.UIAttribute-1589473971272]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text-justify
+        ↓Fragment [mobile.components.UICustom-1589473971275]: 
+          htmlTemplate: |
+            <div>
+            	<p>The first two progress bars are manually created with Html components.</p>
+            	<p>The last progress bar is from the Mobile Palette component.</p>
+            	<p>This demo will simulate a Convertigo sequence execution progress.
+            	 Main sequence use "<b>Set in session</b>" steps to place checkpoints.
+            	 Another sequence is polled in a customAction to "read" these checkpoints with a "<b>Get from session</b>" step.
+            	 </p>
+            </div>
+    ↓GridRow1 [mobile.components.UIDynamicElement-1589477045971]: 
+      beanData: '{"ionBean":"GridRow"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1589477048465]: 
+        beanData: '{"ionBean":"GridCol"}'
+        tagName: ion-col
+        ↓Tag [mobile.components.UIElement-1589477466229]: 
+          tagName: a
+          ↓Text [mobile.components.UIText-1589477493200]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Main sequence
+          ↓Event [mobile.components.UIControlEvent-1589477499999]: 
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1589477500002]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1589477500005]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'pg_main'
+              ↓base [mobile.components.UIControlVariable-1589477500008]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'MobileBuilderComponents.'
+        ↓Text [mobile.components.UIText-1589477614333]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain://
+        ↓Tag1 [mobile.components.UIElement-1589477513208]: 
+          tagName: a
+          ↓Text [mobile.components.UIText-1589477244582]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:Polled sequence
+          ↓Event [mobile.components.UIControlEvent-1589477244570]: 
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1589477244573]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1589477244576]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'pg_checkStatus'
+              ↓base [mobile.components.UIControlVariable-1589477244579]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'MobileBuilderComponents.'
+        ↓Text1 [mobile.components.UIText-1589477631098]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain://
+        ↓Tag11 [mobile.components.UIElement-1589477524624]: 
+          tagName: a
+          ↓Text [mobile.components.UIText-1589477323083]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:customAction
+          ↓Event [mobile.components.UIControlEvent-1589477323071]: 
+            ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1589477323074]: 
+              beanData: '{"ionBean":"InvokeAction"}'
+              stack: MobileBuilderComponents.MobileApplication.Application.highlightObject
+              ↓qname [mobile.components.UIControlVariable-1589477323077]: 
+                varValue: 
+                  - xmlizable: 
+                    - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                    - MobileSmartSourceType: script:'Page_zHowTos_Progressbar.Content.Button.Event.checkStatus'
+  ↓Button [mobile.components.UIDynamicElement-1589472482194]: 
+    beanData: '{"ionBean":"Button","IonSize":"plain:small"}'
+    tagName: button
+    ↓Text [mobile.components.UIText-1589472482197]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:start
+    ↓Event [mobile.components.UIControlEvent-1589472482200]: 
+      ↓CallSequence [mobile.components.UIDynamicAction-1589472482203]: 
+        beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:MobileBuilderComponents.pg_main"}'
+      ↓checkStatus [mobile.components.UICustomAction-1589472482206]: 
+        actionValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                		//page.c8o.log.debug(event ? event.toString():'no event');
+                		    if(this.global.check){
+                		        window.clearInterval(this.global.check);
+                		        this.global.check = null;
+                		    }
+                		    this.global.check = window.setInterval(() => {
+                		        page.call(".pg_checkStatus", {}, null, 10000)
+                		        .then((result)=> {
+                	                page.c8o.log.warn("R:" + result.progressbar.status);
+                	                this.global.pgWidth = result.progressbar.status;
+                	                this.global.pgBgColor = result.progressbar.color;
+                	                if(result.progressbar.isEnd === true){
+                	                    window.clearInterval(this.global.check);
+                	                    this.global.check = null;
+                	                }
+                	            })
+                	            .catch(() => {
+                	                if(this.global.check){
+                	                    window.clearInterval(this.global.check);
+                	                    this.global.check = null;
+                	                   }
+                	            });
+                		    }, 500);
+                		    
+                		resolve();
+                
+  ↓GenericItem [mobile.components.UIDynamicElement-1589472482209]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓progress_bar [mobile.components.UIDynamicElement-1589472482212]: 
+      beanData: '{"ionBean":"DivTag"}'
+      tagName: div
+      ↓Attr [mobile.components.UIAttribute-1589472482215]: 
+        attrName: class
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:progress-bar
+      ↓progress_outer [mobile.components.UIDynamicElement-1589472482218]: 
+        beanData: '{"ionBean":"DivTag"}'
+        tagName: div
+        ↓Attr [mobile.components.UIAttribute-1589472482221]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:progress-outer
+        ↓progress_inner [mobile.components.UIDynamicElement-1589472482224]: 
+          beanData: '{"ionBean":"DivTag"}'
+          tagName: div
+          ↓Attr [mobile.components.UIAttribute-1589472482227]: 
+            attrName: class
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:progress-inner
+          ↓Attr1 [mobile.components.UIAttribute-1589472482230]: 
+            attrName: '[style.width.%]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:(this.global.pgWidth ? this.global.pgWidth : 0)'
+          ↓Attr111 [mobile.components.UIAttribute-1589472482233]: 
+            attrName: '[style.background-color]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:(this.global.pgBgColor ? this.global.pgBgColor : ''#000'')'
+            isEnabled: false
+      ↓Attr1 [mobile.components.UIAttribute-1589472482236]: 
+        attrName: '[attr.data-label]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:(this.global.pgWidth ? this.global.pgWidth : 0)'
+      ↓Attr11 [mobile.components.UIAttribute-1589472482239]: 
+        attrName: '[style.color]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:(this.global.pgWidth ? this.global.pgWidth > 50 ? ''#fff'' : ''#000'' : ''#000'')'
+  ↓GenericItem1 [mobile.components.UIDynamicElement-1589473219135]: 
+    beanData: '{"ionBean":"ListItem"}'
+    tagName: ion-item
+    ↓progress_bar [mobile.components.UIDynamicElement-1589473219138]: 
+      beanData: '{"ionBean":"DivTag"}'
+      tagName: div
+      ↓Attr [mobile.components.UIAttribute-1589473219141]: 
+        attrName: class
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:progress-bar
+      ↓progress_outer [mobile.components.UIDynamicElement-1589473219144]: 
+        beanData: '{"ionBean":"DivTag"}'
+        tagName: div
+        ↓Attr [mobile.components.UIAttribute-1589473219147]: 
+          attrName: class
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:progress-outer
+        ↓progress_inner [mobile.components.UIDynamicElement-1589473219150]: 
+          beanData: '{"ionBean":"DivTag"}'
+          tagName: div
+          ↓Attr [mobile.components.UIAttribute-1589473219153]: 
+            attrName: class
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:progress-inner
+          ↓Attr1 [mobile.components.UIAttribute-1589473219156]: 
+            attrName: '[style.width.%]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:(this.global.pgWidth ? this.global.pgWidth : 0)'
+          ↓Attr111 [mobile.components.UIAttribute-1589473219159]: 
+            attrName: '[style.background-color]'
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                - MobileSmartSourceType: 'script:(this.global.pgBgColor ? this.global.pgBgColor : ''#000'')'
+      ↓Attr1 [mobile.components.UIAttribute-1589473219162]: 
+        attrName: '[attr.data-label]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:(this.global.pgWidth ? this.global.pgWidth : 0)'
+      ↓Attr11 [mobile.components.UIAttribute-1589473219165]: 
+        attrName: '[style.color]'
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'script:(this.global.pgWidth ? this.global.pgWidth > 50 ? ''#fff'' : ''#000'' : ''#000'')'
+        isEnabled: false
+  ↓GenericItem2 [mobile.components.UIDynamicElement-1589473382603]: 
+    beanData: '{"ionBean":"GenericItem"}'
+    tagName: ion-item
+    ↓ProgressBar [mobile.components.UIDynamicElement-1589473392448]: 
+      beanData: |
+        '{
+         "ionBean": "ProgressBar",
+         "progress": "script:this.global.pgWidth || 0",
+         "color": "script:(this.global.pgBgColor ? this.global.pgBgColor : ''#f00'')"
+        }'
+      tagName: progress-bar
+↓UseSharedComponent [mobile.components.UIUseShared-1589458073092]: 
+  sharedcomponent: MobileBuilderComponents.MobileApplication.Application.Footer
+↓Style [mobile.components.UIStyle-1589472450112]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '.progress-bar {
+          	
+          	& {
+          		text-align: center;
+          	}
+          	
+          	&::before {
+          		content: attr(data-label) '' %'';
+          		font-size: 0.8em;
+          		font-weight: bold;
+          		vertical-align: 0;
+          		position: absolute;
+          		left: 0;
+          		right: 0;
+          		padding-top: 4px;
+          	}
+           
+              .progress-outer {
+                  width: 96%;
+                  margin: 10px 2%;
+                  padding: 3px;
+                  text-align: center;
+                  background-color: #f4f4f4;
+                  border: 1px solid #dcdcdc;
+                  border-radius: 20px;
+              }
+           
+              .progress-inner {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  border-radius: 20px;
+                  background-color: color($colors, primary);
+                  height: 15px;
+              }
+              
+          }
+          '

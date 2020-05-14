@@ -75,8 +75,9 @@ tplProjectName: mobilebuilder_tpl_7_7_0
 ↓Page_Actions_Pause [mobile.components.PageComponent-1575036271785]: 🗏 mobilePages/Page_Actions_Pause.yaml
 ↓Page_Actions_Popover [mobile.components.PageComponent-1585215457952]: 🗏 mobilePages/Page_Actions_Popover.yaml
 ↓Page_Actions_Popover_template [mobile.components.PageComponent-1585232375855]: 🗏 mobilePages/Page_Actions_Popover_template.yaml
-↓Page_Actions_PushPage [mobile.components.PageComponent-1587977557050]: 🗏 mobilePages/Page_Actions_PushPage.yaml
 ↓Page_Actions_PopPage [mobile.components.PageComponent-1587977856454]: 🗏 mobilePages/Page_Actions_PopPage.yaml
+↓Page_zHowTos_Progressbar [mobile.components.PageComponent-1589457995492]: 🗏 mobilePages/Page_zHowTos_Progressbar.yaml
+↓Page_Actions_PushPage [mobile.components.PageComponent-1587977557050]: 🗏 mobilePages/Page_Actions_PushPage.yaml
 ↓Page_zHowTos_Searchbar [mobile.components.PageComponent-1582623530545]: 🗏 mobilePages/Page_zHowTos_Searchbar.yaml
 ↓Page_Forms_Signature [mobile.components.PageComponent-1574951079411]: 🗏 mobilePages/Page_Forms_Signature.yaml
 ↓Page_NativeActions_SpeechToText [mobile.components.PageComponent-1578662209808]: 🗏 mobilePages/Page_NativeActions_SpeechToText.yaml

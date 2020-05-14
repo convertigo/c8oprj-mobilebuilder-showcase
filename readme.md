@@ -8,27 +8,28 @@ Components and howtos covered so far:
 
 |                                   |     |
 | ---                               | --- |
-| [Alert][Alert]                    | [Loading Close][Loading Close] |
-| [Animation][Animation]            | [Loading Show][Loading Show] |
-| [Attribute][Attribute]            | [Log][Log] |
-| [Barcode][Barcode]                | [Menu][Menu] |
-| [Bars][Bars]                      | [Modal][Modal] |
-| [Buttons][Buttons]                | [Pause][Pause] |
-| [Camera][Camera]                  | [Popover][Popover] |
+| [Alert][Alert]                    | [Log][Log] |
+| [Animation][Animation]            | [Menu][Menu] |
+| [Attribute][Attribute]            | [Modal][Modal] |
+| [Barcode][Barcode]                | [Pause][Pause] |
+| [Bars][Bars]                      | [Popover][Popover] |
+| [Buttons][Buttons]                | [Pop][Pop] |
+| [Camera][Camera]                  | [ProgressBar][ProgressBar] |
 | [Cards][Cards]                    | [Push][Push] |
-| [Charts][Charts]                  | [Pop][Pop] |
-| [Directive][Directive]            | [Publish][Publish] |
-| [Fabs][Fabs]                      | [Signature][Signature] |
-| [FileChooser][FileChooser]        | [Speech To Text][Speech To Text] |
-| [Finally][Finally]                | [Spinner][Spinner] |
-| [Forms][Forms]                    | [Style][Style] |
-| [Fragment][Fragment]              | [Subscribe][Subscribe] |
-| [Html][Html]                      | [Tabs][Tabs] |
-| [IfElse][IfElse]                  | [Tag][Tag] |
-| [InfiniteScroll][InfiniteScroll]  | [Text][Text] |
-| [IterateAction][IterateAction]    | [Text To Speech][Text To Speech] |
-| [Lists][Lists]                    | [Toast][Toast]   |
-|                                   | [Tooltips][Tooltips] |
+| [Charts][Charts]                  | [Publish][Publish] |
+| [Directive][Directive]            | [Signature][Signature] |
+| [Fabs][Fabs]                      | [Speech To Text][Speech To Text] |
+| [FileChooser][FileChooser]        | [Spinner][Spinner] |
+| [Finally][Finally]                | [Style][Style] |
+| [Forms][Forms]                    | [Subscribe][Subscribe] |
+| [Fragment][Fragment]              | [Tabs][Tabs] |
+| [Html][Html]                      | [Tag][Tag] |
+| [IfElse][IfElse]                  | [Text][Text] |
+| [InfiniteScroll][InfiniteScroll]  | [Text To Speech][Text To Speech] |
+| [IterateAction][IterateAction]    | [Toast][Toast] |
+| [Lists][Lists]                    | [Tooltips][Tooltips] |
+| [Loading Close][Loading Close]    |  |
+| [Loading Show][Loading Show]      |  |
 
 
 ### Howtos
@@ -73,8 +74,9 @@ Convertigo Github : https://github.com/convertigo/convertigo
 [Modal]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/action-components/modal-page/
 [Pause]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/action-components/pauseaction/
 [Popover]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/action-components/popover-page/
-[Push]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/action-components/pushpage/
 [Pop]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/action-components/poppage/
+[ProgressBar]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/form-components/progressbar/
+[Push]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/action-components/pushpage/
 [Publish]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/action-components/publishevent/
 [Signature]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/form-components/signature/
 [Speech To Text]: https://www.convertigo.com/documentation/latest/reference-manual/convertigo-objects/mobile-application/components/native-action-components/speechtotext/

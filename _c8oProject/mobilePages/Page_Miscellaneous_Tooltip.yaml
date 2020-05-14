@@ -49,7 +49,7 @@ title: Tooltip
                 '{
                  "ionBean": "PopoverAction",
                  "page": "plain:MobileBuilderComponents.MobileApplication.Application.Page_Docs_documentation",
-                 "data": "script:{\"components\":[{\"title\":\"Tooltips\",\"shortDesc\":\"ionic-tooltips\",\"longDesc\":[\"Defines a Tooltip component. This component displays a tooltip that can be positioned around any item giving the position properties. You can set as many tooltips in a page.\",\"To use it, you have to place the tooltip as a parent of the item. \"]}]}"
+                 "data": "script:{\"components\":[{\"title\":\"Tooltips\",\"shortDesc\":\"ionic-tooltips\",\"longDesc\":[\"Defines a Tooltip component. This component displays a tooltip that can be positioned around any item giving the position properties. You can set as many tooltips in a page.\",\"To use it, you have to place the tooltip as a parent of the item.\"]}]}"
                 }'
           ↓InvokeSharedAction [mobile.components.UIDynamicInvoke-1588158112543]: 
             beanData: '{"ionBean":"InvokeAction"}'

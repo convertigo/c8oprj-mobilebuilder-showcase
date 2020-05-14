@@ -1,0 +1,92 @@
+comment: very long sequence
+↓Set_0 [steps.SessionSetStep-1589472386977]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"red\", \"status\": \"0\", \"isEnd\": \"false\"}}"'
+  key: status
+  output: true
+↓wait0 [steps.SimpleStep-1589472386980]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_125 [steps.SessionSetStep-1589472386983]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#ff0000\", \"status\": \"12.5\", \"isEnd\": \"false\"}}"'
+  key: status
+↓wait125 [steps.SimpleStep-1589472386986]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_25 [steps.SessionSetStep-1589472386989]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#ff9500\", \"status\": \"25\", \"isEnd\": \"false\"}}"'
+  key: status
+↓wait25 [steps.SimpleStep-1589472386992]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_375 [steps.SessionSetStep-1589472386995]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#ffc900\", \"status\": \"37.5\", \"isEnd\": \"false\"}}"'
+  key: status
+↓wait375 [steps.SimpleStep-1589472386998]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_50 [steps.SessionSetStep-1589472387001]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#fff405\", \"status\": \"50\", \"isEnd\": \"false\"}}"'
+  key: status
+↓wait50 [steps.SimpleStep-1589472387004]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_625 [steps.SessionSetStep-1589472387007]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#f5ff00\", \"status\": \"62.5\", \"isEnd\": \"false\"}}"'
+  key: status
+↓wait625 [steps.SimpleStep-1589472387010]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_75 [steps.SessionSetStep-1589472387013]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#b5ff00\", \"status\": \"75\", \"isEnd\": \"false\"}}"'
+  key: status
+↓wait75 [steps.SimpleStep-1589472387016]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_875 [steps.SessionSetStep-1589472387019]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#70f507\", \"status\": \"87.5\", \"isEnd\": \"false\"}}"'
+  key: status
+↓wait875 [steps.SimpleStep-1589472387022]: 
+  expression: java.lang.Thread.sleep(delay);
+↓Set_100 [steps.SessionSetStep-1589472387025]: 
+  expression: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.steps.SmartType
+      - SmartType: 
+        - ↑mode: JS
+        - →→: '"{\"progressbar\": {\"color\": \"#00ff00\", \"status\": \"100\", \"isEnd\": \"true\"}}"'
+  key: status
+↓delay [variables.RequestableVariable-1589472387028]: 
+  value: 1000
