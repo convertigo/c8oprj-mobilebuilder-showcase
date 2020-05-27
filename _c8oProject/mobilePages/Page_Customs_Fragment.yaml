@@ -134,7 +134,7 @@ title: Fragment
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		Charts page
       	</ion-item>
-      	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_ChatBot')">
+      	<ion-item tappable (click)="this.openPageWithName('Page_zHowTos_Chatbot')">
       		<ion-icon name="cloud" item-start large color="primary"></ion-icon>
       		ChatBot page
       	</ion-item>
